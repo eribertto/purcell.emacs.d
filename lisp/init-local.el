@@ -7,6 +7,13 @@
 (display-battery-mode)
 (when (version<= "27.1" emacs-version) ; speed up long lines
   (global-so-long-mode 1))
+(desktop-save-mode 1) ; start emacs in prev state
+(save-place-mode 1) ; come back to the same point of the last file
+(require 'midnight) ; delete buffers at midnight assuming emacs is 24/7
+(midnight-mode 1)
+
+
+
 
 
 
