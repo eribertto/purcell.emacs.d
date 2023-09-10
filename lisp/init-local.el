@@ -7,6 +7,7 @@
 ;;;Make emacs always use its own browser for opening URLs
 (setq browse-url-browser-function 'eww-browse-url)
 (desktop-save-mode 1)
+(menu-bar-mode)
 
 ;; try out emacs transparency as per EmacsWiki guide
 ;; Fri 01 Sep 2023 04:38:27 AM +03
@@ -16,6 +17,8 @@
 ;; auto save hooks
 (add-hook 'diary-mode (lambda) (auto-save-visited-mode))
 (add-hook 'todo-mode (lambda) (auto-save-visited-mode))
+(add-hook 'dired-mode-hook 'all-the-icons-dired-mode)
+
 
 ;; example snippet of determining major mode
 ;; you can check the buffers major mode by doing M-x: major-mode <enter>
@@ -46,6 +49,11 @@
 (require 'popper-echo)
 (popper-echo-mode +1)
 
+(when (display-graphic-p)
+  (require 'all-the-icons))
+
+;; shorten the ls mode of dired
+(dired-hide-details-mode)
 
 
 

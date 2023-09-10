@@ -1,0 +1,29 @@
+;; Happy hacking, eriberttom - Emacs ♥ you!
+;; Sample org capture templates
+;; https://www.reddit.com/r/orgmode/comments/nmgs2i/hey_orgmode_users_show_us_your_org_capture/
+
+(setq org-capture-templates
+      '(("t" "Tasks" entry
+         (file+headline "" "Inbox")
+         "* TODO %?\n %U")
+        ("c" "Phone Call" entry
+         (file+headline "" "Inbox")
+         "* TODO Call %?\n %U")
+        ("m" "Meeting" entry
+         (file+headline "" "Meetings")
+         "* %?\n %U")
+        ("j" "Journal Entry" entry
+         (file+datetree "journal.org")
+         "* %U\n%?")))
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+(setq org-capture-templates
+      ;; Explaination of values here: 
+      ;; https://orgmode.org/manual/Template-elements.html#Template-elements 
+      `(("t" "Todo" entry (file+olp+datetree "~/Dropbox/docs/eng-log.org" "Engineering Worklog") "**** TODO %?\n%a" :tree-type week)
+        ("m" "Meeting" entry (file+olp+datetree "~/Dropbox/docs/eng-log.org" "Engineering Worklog") "**** %?\n%t" :tree-type week)
+        ("i" "Item" entry (file+olp+datetree "~/Dropbox/docs/eng-log.org" "Engineering Worklog") "**** %?\n%a" :tree-type week)
+        ("a" "Action item" entry (file+olp+datetree "~/Dropbox/docs/eng-log.org" "Engineering Worklog") "* WAITING %?\n:PROPERTIES:\n:WAITING_ON: %^{Who owns this?}\n:END:\n %i %U %a" :tree-type week)
+        ("p" "Perf Note" entry (file+olp+datetree "~/Dropbox/docs/eng-log.org" "Engineering Worklog") "* %? :perf:\n\n %i %U" :tree-type week)
+        ))
