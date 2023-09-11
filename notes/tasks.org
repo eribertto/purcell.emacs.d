@@ -8,3 +8,15 @@ Plan to transfer funds from BPI to BDO to start the transition e.g. reduce depen
 [2023-09-11 Mon 06:29]
 - Add journal entry aka acting as NOTES file
 - Add work related entry in a separate file
+* Basic guide how to get started with org-capture                               :NOTE:
+[2023-09-11 Mon 20:10]
+[[https://howardism.org/Technical/Emacs/capturing-intro.html][Org Capturing Introduction]]
+* Org-capture demo using datetree in the template                               :NOTE:
+[2023-09-11 Mon 20:30]
+[[https://www.youtube.com/watch?v=KdcXu_RdKI0][How I Use org-capture and Stuff - YouTube]]
+* Org mode org-capture introduction                                             :NOTE:
+- The author shows some interesting configuration related to org-capture and how it will fit into your workflow.
+[2023-09-11 Mon 20:55]
+[[https://github.com/james-stoup/emacs-org-mode-tutorial#the-beautiful-nightmare-that-is-org-mode]]
+* TODO Plan to contact Prulife UK e.g. email them of the status of agent assigned to me NOW since the old agent has gone awol e.g. no sign or notice from her the whole year.
+[2023-09-11 Mon 21:05]
