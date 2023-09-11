@@ -3,7 +3,7 @@
 ;;; Commentary:
 ;;; your personal settings go here
 
-(popper-mode)
+;; (popper-mode)
 ;;;Make emacs always use its own browser for opening URLs
 (setq browse-url-browser-function 'eww-browse-url)
 (desktop-save-mode 1)
@@ -53,8 +53,19 @@
   (require 'all-the-icons))
 
 ;; shorten the ls mode of dired
-(dired-hide-details-mode)
+;; (dired-hide-details-mode +1)
 
+;;; edit to follow this tutorial
+;;; https://howardism.org/Technical/Emacs/capturing-intro.html
+;;; 9/11/23 TODO: how to insert date stamp
+
+;;; this overrides the default variable in init-org.el
+(setq org-default-notes-file "~/.emacs.d/notes/tasks.org")
+(setq org-capture-templates
+      '(("t" "Personal Tasks" entry (file "") ; use the default
+         "* TODO %?\n%U\n" :clock-resume t)
+        ("n" "Note" entry  (file "")
+         "* %? :NOTE:\n%U\n%a\n" :clock-resume t)))
 
 
 

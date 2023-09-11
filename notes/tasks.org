@@ -1,0 +1,10 @@
+* TODO
+Plan to transfer funds from BPI to BDO to start the transition e.g. reduce dependency with just one bank.
+[2023-09-11 Mon 05:56]
+* Here's my first note capture. Note the date/time and file stamps below.       :NOTE:
+[2023-09-11 Mon 06:01]
+[[file:~/.emacs.d/lisp/init-local.el]]
+* TODO Consider to emulate the org-capture templates in howardism.org https://howardism.org/Technical/Emacs/capturing-intro.html
+[2023-09-11 Mon 06:29]
+- Add journal entry aka acting as NOTES file
+- Add work related entry in a separate file
