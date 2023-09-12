@@ -1,3 +1,7 @@
 * 2023
 ** 2023-09 September
 *** 2023-09-12 Tuesday
+**** Nix Search options this is valuable to set up the various million options available to the user.
+Added on [2023-09-12 Tue 06:53]
+
+ [[https://search.nixos.org/options][NixOS Search]]

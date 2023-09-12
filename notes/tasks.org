@@ -1,10 +1,31 @@
-* TODO
+* CANCELLED
+CLOSED: [2023-09-12 Tue 21:29]
+:LOGBOOK:
+- State "CANCELLED"  from "HOLD"       [2023-09-12 Tue 21:29] \\
+  cancelled
+- State "DELEGATED"  from "WAITING"    [2023-09-12 Tue 21:28]
+- State "DELEGATED"  from "WAITING"    [2023-09-12 Tue 21:27]
+- State "NEXT"       from "DONE"       [2023-09-12 Tue 21:25]
+- State "DONE"       from "PROJECT"    [2023-09-12 Tue 21:24]
+- State "PROJECT"    from "DONE"       [2023-09-12 Tue 21:24]
+- State "DONE"       from "PROJECT"    [2023-09-12 Tue 21:24]
+- State "PROJECT"    from "DONE"       [2023-09-12 Tue 21:24]
+- State "DONE"       from "PROJECT"    [2023-09-12 Tue 21:24]
+- State "PROJECT"    from "DONE"       [2023-09-12 Tue 21:24]
+- State "DONE"       from "PROJECT"    [2023-09-12 Tue 21:24]
+- State "PROJECT"    from "DONE"       [2023-09-12 Tue 21:24]
+- State "DONE"       from "NEXT"       [2023-09-12 Tue 21:24]
+:END:
 Plan to transfer funds from BPI to BDO to start the transition e.g. reduce dependency with just one bank.
 [2023-09-11 Mon 05:56]
 * Here's my first note capture. Note the date/time and file stamps below.       :NOTE:
 [2023-09-11 Mon 06:01]
 [[file:~/.emacs.d/lisp/init-local.el]]
-* TODO Consider to emulate the org-capture templates in howardism.org https://howardism.org/Technical/Emacs/capturing-intro.html
+* DONE Consider to emulate the org-capture templates in howardism.org https://howardism.org/Technical/Emacs/capturing-intro.html
+CLOSED: [2023-09-12 Tue 21:30]
+:LOGBOOK:
+- State "DONE"       from "NEXT"       [2023-09-12 Tue 21:30]
+:END:
 [2023-09-11 Mon 06:29]
 - Add journal entry aka acting as NOTES file
 - Add work related entry in a separate file
@@ -29,3 +50,19 @@ Plan to transfer funds from BPI to BDO to start the transition e.g. reduce depen
 * TODO Record bpi soa in notion online for transaction today
 * TODO When i press C-<enter> or S-<enter> why is indentation not working as expected?
 * TODO Need to fix this date stamp it should be below all the task entries.
+* Org table playlist very good reference guide                                  :NOTE:
+[[https://www.youtube.com/playlist?list=PLGMx7bOKMJTw4p7vs1kTGBAnW81NB57Wv][Org-mode tables playlist]]
+
+[2023-09-12 Tue 18:32]
+* TODO Plan to install this Ivy package as per the manual tutorial below.
+[2023-09-12 Tue 19:13]
+
+ [[https://oremacs.com/swiper/][Ivy User Manual]]
+* TODO See random thoughts below
+
+[2023-09-12 Tue 21:05]
+
+ [[file:~/.emacs.d/personal/thoughts.org::*thoughts][thoughts]]
+* TIL how to run simple emacs macro as per the link below. Not bad lol :-)      :NOTE:
+[2023-09-12 Tue 21:54]
+[[https://www.emacswiki.org/emacs/KeyboardMacros][EmacsWiki: Keyboard Macros]]

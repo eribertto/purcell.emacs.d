@@ -62,8 +62,8 @@
 ;;; this overrides the default variable in init-org.el
 (setq org-default-notes-file "~/.emacs.d/notes/tasks.org")
 (setq org-capture-templates
-      '(("t" "Personal Tasks" entry (file "") ; use the default
-         "* TODO %?\n%U\n" :clock-resume t)
+      '(("t" "Personal Todo/Tasks" entry (file "") ; use the default
+         "* TODO %?\n%U\n %i\n %a" :clock-resume t)
         ("n" "Note" entry  (file "")
          "* %? :NOTE:\n%U\n%a\n" :clock-resume t)
         ("j" "Journal" entry (file+datetree "~/.emacs.d/notes/journal.org")
