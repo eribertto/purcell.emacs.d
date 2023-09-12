@@ -65,7 +65,9 @@
       '(("t" "Personal Tasks" entry (file "") ; use the default
          "* TODO %?\n%U\n" :clock-resume t)
         ("n" "Note" entry  (file "")
-         "* %? :NOTE:\n%U\n%a\n" :clock-resume t)))
+         "* %? :NOTE:\n%U\n%a\n" :clock-resume t)
+        ("j" "Journal" entry (file+datetree "~/.emacs.d/notes/journal.org")
+         "* %?\nAdded on %U\n %i\n %a")))
 
 
 

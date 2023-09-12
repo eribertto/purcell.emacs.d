@@ -20,3 +20,12 @@ Plan to transfer funds from BPI to BDO to start the transition e.g. reduce depen
 [[https://github.com/james-stoup/emacs-org-mode-tutorial#the-beautiful-nightmare-that-is-org-mode]]
 * TODO Plan to contact Prulife UK e.g. email them of the status of agent assigned to me NOW since the old agent has gone awol e.g. no sign or notice from her the whole year.
 [2023-09-11 Mon 21:05]
+* TODO Make a tracking table of fund transfer from BPI to BDO (fyi today initiated the first 50K transfer)
+1) Make a tracking table of fund transfer from BPI to BDO (fyi: today initiated first transfer)
+2) Record bpi soa in notion online
+3) When i press C-<enter> or S-<enter> why is indentation not working as expected?
+
+[2023-09-12 Tue 06:35]
+* TODO Record bpi soa in notion online for transaction today
+* TODO When i press C-<enter> or S-<enter> why is indentation not working as expected?
+* TODO Need to fix this date stamp it should be below all the task entries.
