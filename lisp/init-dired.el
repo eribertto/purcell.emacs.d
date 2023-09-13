@@ -24,7 +24,8 @@
 
 (when (maybe-require-package 'diff-hl)
   (with-eval-after-load 'dired
-    (add-hook 'dired-mode-hook 'diff-hl-dired-mode)))
+    (add-hook 'dired-mode-hook 'diff-hl-dired-mode)
+    (add-hook 'dired-mode-hook 'dired-hide-details-mode +1)))
 
 (provide 'init-dired)
 ;;; init-dired.el ends here

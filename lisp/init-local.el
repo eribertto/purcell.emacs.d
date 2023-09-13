@@ -53,7 +53,8 @@
   (require 'all-the-icons))
 
 ;; shorten the ls mode of dired
-;; (dired-hide-details-mode +1)
+;; (add-hook 'dired-mode-hook (dired-hide-details-mode +1))
+;; DONE: made some tweaking in the file init-dired.el under lisp dir
 
 ;;; edit to follow this tutorial
 ;;; https://howardism.org/Technical/Emacs/capturing-intro.html
