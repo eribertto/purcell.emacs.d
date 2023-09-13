@@ -66,3 +66,5 @@ CLOSED: [2023-09-12 Tue 21:30]
 * TIL how to run simple emacs macro as per the link below. Not bad lol :-)      :NOTE:
 [2023-09-12 Tue 21:54]
 [[https://www.emacswiki.org/emacs/KeyboardMacros][EmacsWiki: Keyboard Macros]]
+* Inbox
+* Notes

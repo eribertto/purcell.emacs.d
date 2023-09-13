@@ -62,13 +62,21 @@
 ;;; this overrides the default variable in init-org.el
 (setq org-default-notes-file "~/.emacs.d/notes/tasks.org")
 (setq org-capture-templates
-      '(("t" "Personal Todo/Tasks" entry (file "") ; use the default
-         "* TODO %?\n%U\n %i\n %a" :clock-resume t)
-        ("n" "Note" entry  (file "")
-         "* %? :NOTE:\n%U\n%a\n" :clock-resume t)
+      '(("t" "Personal Todo/Tasks" entry (file+headline "" "Inbox") ; use the default
+         "* TODO %?\n%U")
+        ("n" "Note" entry  (file+headline "" "Notes")
+         "* %? :NOTE:\nEntry date %U\n %i\n %a")
         ("j" "Journal" entry (file+datetree "~/.emacs.d/notes/journal.org")
-         "* %?\nAdded on %U\n %i\n %a")))
+         "* %?\nEntry date %U\n %i\n %a")))
 
+;; function for line wrapping
+(defun setup-textorg-mode ()
+  (set-fill-column 80)
+  (column-number-mode 1)
+  (setq truncate-lines t))
+
+(add-hook 'text-mode-hook 'setup-textorg-mode)
+(add-hook 'org-mode-hook 'setup-textorg-mode)
 
 
 (provide 'init-local)

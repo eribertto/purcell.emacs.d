@@ -2,15 +2,16 @@
 ** Mostly random 
 
 
-* TODO copy mysettings.el from prelude/eos-machine to benefit from the tweaks
-* TODO create keybinding for function avy-goto-char e.g. winkey+dot s-.
-* TODO plan to install ivy where swiper is included in the package
-* TODO list all paid payments to bpi credit card, include snaps from email notices.
-* TODO email to Prulife to check who is my new agent since the last one is no longer communicating, probably dead?
-* TODO track fund transfer from bpi to bdo, mbt to rcbc as per written table.
-* TODO continue putting Tonik TDs for the family e.g. Mama, nonoy, tata and me to reach 1M total.
-* TODO drink dental meds as and when required.
-* TODO continue tracking of Bluetti packages x 2 in LBC website.
+* DONE copy mysettings.el from prelude/eos-machine to benefit from the tweaks
+CLOSED: [2023-09-13 Wed 06:05]
+:LOGBOOK:
+- State "DONE"       from "CANCELLED"  [2023-09-13 Wed 06:06]
+- State "DELEGATED"  from "WAITING"    [2023-09-13 Wed 06:05]
+- State "WAITING"    from "DELEGATED"  [2023-09-13 Wed 06:05]
+- State "DELEGATED"  from "WAITING"    [2023-09-13 Wed 06:05]
+- State "WAITING"    from "CANCELLED"  [2023-09-13 Wed 06:05]
+:END:
+
 * DONE do LM with CTB tonight 9/12/23, will fuck her brains out again lol.
 CLOSED: [2023-09-12 Tue 21:52]
 :LOGBOOK:
@@ -22,6 +23,35 @@ CLOSED: [2023-09-12 Tue 21:52]
 - State "DELEGATED"  from "WAITING"    [2023-09-12 Tue 21:51]
 :END:
 
+* DONE continue tracking of Bluetti packages x 2 in LBC website.
+CLOSED: [2023-09-13 Wed 06:07]
+:LOGBOOK:
+- State "DONE"       from "NEXT"       [2023-09-13 Wed 06:07]
+:END:
+
+* TODO create keybinding for function avy-goto-char e.g. winkey+dot s-.
+* TODO plan to install ivy where swiper is included in the package
+* TODO list all paid payments to bpi credit card, include snaps from email notices.
+* TODO plan to login to Philstocks portal to check portfolio e.g cash dividend
+* TODO cancel Linkedln subscription before end of this month of September
+* TODO email to Prulife to check who is my new agent since the last one is no longer communicating, probably dead?
+* TODO track fund transfer from bpi to bdo, mbt to rcbc as per written table.
+:LOGBOOK:
+- State "NEXT"       from "DONE"       [2023-09-13 Wed 06:08]
+- State "DONE"       from "PROJECT"    [2023-09-13 Wed 06:08]
+- State "PROJECT"    from "DONE"       [2023-09-13 Wed 06:08]
+- State "DONE"       from "PROJECT"    [2023-09-13 Wed 06:08]
+- State "PROJECT"    from "DONE"       [2023-09-13 Wed 06:08]
+- State "DONE"       from "PROJECT"    [2023-09-13 Wed 06:08]
+- State "PROJECT"    from "DONE"       [2023-09-13 Wed 06:08]
+- State "DONE"       from "CANCELLED"  [2023-09-13 Wed 06:08]
+- State "CANCELLED"  from              [2023-09-13 Wed 06:08]
+- State "NEXT"       from "DONE"       [2023-09-13 Wed 06:08]
+- State "DONE"       from "NEXT"       [2023-09-13 Wed 06:08]
+:END:
+
+* TODO continue putting Tonik TDs for the family e.g. Mama, nonoy, tata and me to reach 1M total.
+* TODO drink dental meds as and when required.
 * How to go to the content of org-capture that i saved?
 Org provides a couple ways to jump to the most recent captured item. The org-capture command can be called with a C-u C-u
 prefix to jump to the last entry. For example if you have bound org-capture to C-c c you should be able to use C-u C-u C-c c.
