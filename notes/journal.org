@@ -1,0 +1,24 @@
+* 2023
+** 2023-09 September
+*** 2023-09-12 Tuesday
+**** Nix Search options this is valuable to set up the various million options available to the user.
+Added on [2023-09-12 Tue 06:53]
+
+ [[https://search.nixos.org/options][NixOS Search]]
+*** 2023-09-13 Wednesday
+**** See below the notes I achieved for todays time stamp.
+Entry date [2023-09-13 Wed 21:42]
+
+* Notes of stuffs learned today
+
+So what shall I do now?
+Well I just finished viewing 2 videos of Prot and they are stored in the viewed folder under Videos dir.
+I want to document or make a record of those viewed videos in a journal in Emacs.
+* TODO Also I want to save the shownotes of the last viewed video so I can gain information of the topics that were discussed.
+* TODO dired mode defaults to long list view not the short one so I need to do a setq variable declaration to achieve this. TIP: go to the dired buffer then do C-h m then find the function that toggles the long/short view mode then setq that function in your init file, somthing to that effect.
+
+- Emacs：_introduction_to_VC_(version_control_framework)_[SQ3Beqn2CEc].mp4
+- Emacs：_Learn_to_ask_for_Help_and_write_Elisp_[46w9e4GAjsU].mp4
+- Emacs：_mark_and_register_basics_[TJrAkCyH6Dk].mp4
+- Emacs_Org_mode_basics.mp4
+- Philosophy_life_lessons_from_the_hut.mp4
