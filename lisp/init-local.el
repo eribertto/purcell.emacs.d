@@ -11,8 +11,8 @@
 
 ;; try out emacs transparency as per EmacsWiki guide
 ;; Fri 01 Sep 2023 04:38:27 AM +03
-(set-frame-parameter nil 'alpha-background 75)
-(add-to-list 'default-frame-alist '(alpha-background . 75))
+(set-frame-parameter nil 'alpha-background 80)
+(add-to-list 'default-frame-alist '(alpha-background . 80))
 
 ;; auto save hooks
 (add-hook 'diary-mode (lambda) (auto-save-visited-mode))
@@ -78,6 +78,13 @@
 
 (add-hook 'text-mode-hook 'setup-textorg-mode)
 (add-hook 'org-mode-hook 'setup-textorg-mode)
+
+;; for w3m from emacswiki.org/emacs/emacs-w3m
+;; TODO: make this a conditional using (system-name) function
+;; since this conflicts with eww above
+;;(setq browse-url-browser-function 'w3m-browse-url)
+;; (autoload 'w3m-browse-url "w3m" "Ask the WWW browser to show a URL" t)
+
 
 
 (provide 'init-local)
