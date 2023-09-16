@@ -24,5 +24,7 @@ it appears in the minibuffer prompt."
 
 ;; TODO: this keychord seems like error
 ;; (global-set-key "C-c\C-i" 'my-insert-file-name)
-;; this is the output
-;; ~/.emacs.d/code-snippets/insert-file-name.el
+;; TIP have a look at diff kbd setup in emacs repos locally
+;; TIP also do readup of the function kbd and work out something.
+(provide 'insert-file-name.el)
+;;; insert-file-name.el ends here
