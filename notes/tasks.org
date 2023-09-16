@@ -70,8 +70,18 @@ CLOSED: [2023-09-12 Tue 21:30]
 ** TODO Plan to setup and try emms in emacs.
 ** TODO Plan to setup and try w3m.
 ** TODO Plan to DL soft audio files using yt-dlp.
-** TODO Plan to readup and understand org-todo toggle states.
-** TODO Plan to readup and understand Prots learning emacs show notes esp the help system.
+** DONE Plan to readup and understand org-todo toggle states.
+CLOSED: [2023-09-15 Fri 04:36]
+:LOGBOOK:
+- State "DONE"       from "NEXT"       [2023-09-15 Fri 04:36]
+:END:
+
+** DONE Plan to readup and understand Prots learning emacs show notes esp the help system.
+CLOSED: [2023-09-15 Fri 04:36]
+:LOGBOOK:
+- State "DONE"       from "NEXT"       [2023-09-15 Fri 04:36]
+:END:
+
 ** TODO Plan to check out websites of xah lee and tony alden emacs gurus.
 ** TODO Plan to change this time stamp location of org-capture task/todos.
 
@@ -88,3 +98,7 @@ Entry date [2023-09-13 Wed 22:19]
 Entry date [2023-09-14 Thu 05:37]
 
  [[https://github.com/minad/vertico][GitHub - minad/vertico: :dizzy: vertico.el - VERTical Interactive COmpletion]]
+** Open file in a separate frame then apply my theme of choice                  :NOTE:
+Entry date [2023-09-15 Fri 04:52]
+
+ [[file:~/.emacs.d/notes/learning.emacs.help.system.org::\[\[https://protesilaos.com/codelog/2022-01-31-learning-emacs/\]\[Link to Youtube\]\]]]
