@@ -1,11 +1,23 @@
-;;; package --- summary of package
+;;; package --- summary init-local.el
 ;;; Code:
 ;;; Commentary:
-;;; your personal settings go here
+;;; This is the users personal settings override
 
 ;; (popper-mode)
-;;;Make emacs always use its own browser for opening URLs
+;; Use Emacs or w3m as browser, xah lee has some tips to this
 (setq browse-url-browser-function 'eww-browse-url)
+
+
+;;; add to emacs path the users hand made code snippets
+;;; https://www.emacswiki.org/emacs/LoadPath
+(add-to-list 'load-path "~/.emacs.d/code-snippets")
+
+;;; (setq browse-url-browser-function 'w3m-browse-url)
+;;; (require 'w3m-load)
+;; TODO consider if to install wanderlust or no
+;; https://github.com/wanderlust/wanderlust
+
+
 (desktop-save-mode 1)
 (menu-bar-mode)
 
@@ -38,6 +50,7 @@
       '("\\*Messages\\*"
         "Output\\*$"
         "\\*Async Shell Command\\*"
+        "\\*Compile-Log\\*"
         help-mode
         compilation-mode))
 (global-set-key (kbd "C-`") 'popper-toggle)
@@ -54,7 +67,7 @@
 
 ;; shorten the ls mode of dired
 ;; (add-hook 'dired-mode-hook (dired-hide-details-mode +1))
-;; DONE: made some tweaking in the file init-dired.el under lisp dir
+;; DONE: adjustment is made in the file init-dired.el under lisp dir
 
 ;;; edit to follow this tutorial
 ;;; https://howardism.org/Technical/Emacs/capturing-intro.html

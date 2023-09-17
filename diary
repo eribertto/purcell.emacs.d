@@ -14,3 +14,37 @@ Sunday
 * TODO check BPI credit card cancellation
 Sep 11, 2023
 * TODO Plan to move funds from BPI to BDO to slowly transition away from BPI
+Sep 14, 2023
+- change this mode to org mode then start entering diary entries.
+* TODO Plan to contact Prulife UK e.g. email them of the status of agent assigned to me NOW since the old agent has gone awol e.g. no sign or notice from her the whole year.
+[2023-09-11 Mon 21:05]
+* TODO Make a tracking table of fund transfer from BPI to BDO (fyi today initiated the first 50K transfer)
+1) Make a tracking table of fund transfer from BPI to BDO (fyi: today initiated first transfer)
+2) Record bpi soa in notion online
+3) When i press C-<enter> or S-<enter> why is indentation not working as expected?
+
+[2023-09-12 Tue 06:35]
+* TODO Record bpi soa in notion online for transaction today
+* TODO When i press C-<enter> or S-<enter> why is indentation not working as expected?
+* TODO Need to fix this date stamp it should be below all the task entries.
+* TODO Plan to install this Ivy package as per the manual tutorial below.
+[2023-09-12 Tue 19:13]
+
+ [[https://oremacs.com/swiper/][Ivy User Manual]]
+* TODO See random thoughts below
+
+[2023-09-12 Tue 21:05]
+
+ [[file:~/.emacs.d/personal/thoughts.org::*thoughts][thoughts]]
+** TODO Plan to setup and try emms in emacs.
+** TODO Plan to setup and try w3m.
+** TODO Plan to DL soft audio files using yt-dlp.
+** TODO Plan to readup and understand org-todo toggle states.
+** TODO Plan to readup and understand Prots learning emacs show notes esp the help system.
+** TODO Plan to check out websites of xah lee and tony alden emacs gurus.
+** TODO Plan to change this time stamp location of org-capture task/todos.
+
+
+
+
+[2023-09-14 Thu 20:26]
