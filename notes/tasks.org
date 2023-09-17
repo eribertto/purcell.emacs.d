@@ -102,3 +102,9 @@ Entry date [2023-09-14 Thu 05:37]
 Entry date [2023-09-15 Fri 04:52]
 
  [[file:~/.emacs.d/notes/learning.emacs.help.system.org::\[\[https://protesilaos.com/codelog/2022-01-31-learning-emacs/\]\[Link to Youtube\]\]]]
+** Today I learned about magit stash command used within magit especially the   :NOTE:
+** z p dwim command, see this link https://magit.vc/manual/magit/Stashing.html
+
+Entry date [2023-09-17 Sun 10:21]
+
+ [[file:~/.emacs.d/lisp/init-local.el::autoload 'w3m-browse-url "w3m" "Ask the WWW browser to show a URL" t]]
