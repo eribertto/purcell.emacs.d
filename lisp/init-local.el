@@ -1,12 +1,16 @@
-;;; package --- summary of package
+;;; package --- summary init-local.el
 ;;; Code:
 ;;; Commentary:
-;;; your personal settings go here
+;;; This is the users personal settings override
 
 ;; (popper-mode)
-;; Use emacs or w3m as browser, xah lee has some tips to this
+;; Use Emacs or w3m as browser, xah lee has some tips to this
 (setq browse-url-browser-function 'eww-browse-url)
 
+
+;;; add to emacs path the users hand made code snippets
+;;; https://www.emacswiki.org/emacs/LoadPath
+(add-to-list 'load-path "~/.emacs.d/code-snippets")
 
 ;;; (setq browse-url-browser-function 'w3m-browse-url)
 ;;; (require 'w3m-load)
