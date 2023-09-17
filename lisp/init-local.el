@@ -96,7 +96,8 @@
 ;; TODO: make this a conditional using (system-name) function
 ;; since this conflicts with eww above
 ;;(setq browse-url-browser-function 'w3m-browse-url)
-;; (autoload 'w3m-browse-url "w3m" "Ask the WWW browser to show a URL" t)
+;;
+(autoload 'w3m-browse-url "w3m" "Ask the WWW browser to show a URL" t)
 
 
 
