@@ -1,12 +1,10 @@
-(("private" . [22 0 9 0]))
+(("private" . [10 0 7 0]))
 --==-- private
-[Sep 19, 2023] Send FB msgr invites for the coming sunday adv bday celeb
 [Sep 18, 2023] Plan to upgrade to latest bpi android app before sept 30
 [Sep 19, 2023] Consider to try out emacs modern theme https://github.com/emacs-jp/replace-colorthemes
-[Sep 19, 2023] fyi nix-bin is installed for your followup to use and try out all things nix/nixos
+[Sep 19, 2023] fyi nix-bin is installed in nuc-eos for your followup to use and try out all things nix/nixos
 [Sep 18, 2023] How to claim bpi ccard excess fund paid? see statement in bpi app
 [Sep 18, 2023] How to have different themes based on frame or workspace? Ask in emacs forum/discourse/reddit
-[Sep 18, 2023] Check for replies in emacs reddit re how to set diff themes in diff frames
 [Sep 18, 2023] What is elvish shell? go check this out
 [Sep 18, 2023] Plan to place order of home generators to BluettiPH for mama
 [Sep 18, 2023] Plan to place order of home generators to BluettiPH for mymy
@@ -14,7 +12,6 @@
 [Sep 17, 2023] how to set a diff theme in a diff frame (or window)
 [Sep 17, 2023] Consider checking out bufler a popper alternative to manage your buffers https://github.com/alphapapa/bufler.el
 [Sep 15, 2023] Plan to install Prots ef-themes, also checkout package embark, counsel for avy (check videos) and emacs help system
-[Sep 14, 2023] Plan to browse and absorb elisp tutorials of xah lee and tony alden, see gmail inbox and whatsup links
 [Sep 14, 2023] Plan to try out org-roam if better than this org-todo, or maybe Prots denote
 [Sep 14, 2023] Plan to make tracking table of BPI ccard payments and inquire for refund
 [Sep 14, 2023] Plan to setup keyboard shortcut of avy-goto-char function
@@ -24,6 +21,9 @@
 [Sep 14, 2023] Plan to email Prulife UK re status of my new agent if still alive or dead now
 
 ==--== DONE 
+[DONE Sep 19, 2023] [Sep 14, 2023] Plan to browse and absorb elisp tutorials of xah lee and tony alden, see gmail inbox and whatsup links
+[DONE Sep 19, 2023] [Sep 18, 2023] Check for replies in emacs reddit re how to set diff themes in diff frames
+[DONE Sep 19, 2023] [Sep 19, 2023] Send FB msgr invites for the coming sunday adv bday celeb
 [DONE Sep 19, 2023] [Sep 18, 2023] Plan to install nix in this account to learn basic nix language, also note the nix plugin is enabled in this Emacs
    see this link https://www.youtube.com/watch?v=Nvh7A3HA_4U
 [DONE Sep 18, 2023] [Sep 18, 2023] Plan to place order of 28,680 home generator EB3A+PV120W to BluettiPH for ctb
