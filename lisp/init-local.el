@@ -39,9 +39,11 @@
 ;;   (message "No you're not!"))
 (blink-cursor-mode 1)
 
-
+(require-theme 'modus-themes)
+;; (load-theme 'modus-operandi)
 (if (string= (system-name) "TP460-eos")
-    (add-to-list 'default-frame-alist '(cursor-color . "yellow")))
+    (add-to-list 'default-frame-alist '(cursor-color . "yellow")
+                 (load-theme 'modus-vivendi)))
 
 (turn-on-visual-line-mode)
 
@@ -85,6 +87,7 @@
 
 ;; function for line wrapping
 (defun setup-textorg-mode ()
+  "Set some variables when in text or org mode."
   (set-fill-column 80)
   (column-number-mode 1)
   (setq truncate-lines t))
