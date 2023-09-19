@@ -85,9 +85,6 @@ CLOSED: [2023-09-15 Fri 04:36]
 ** TODO Plan to check out websites of xah lee and tony alden emacs gurus.
 ** TODO Plan to change this time stamp location of org-capture task/todos.
 
-
-
-
 [2023-09-14 Thu 20:26]
 * Notes
 ** Modified this init-dired.el and set short listing as default view in dired mode. :NOTE:
@@ -102,9 +99,21 @@ Entry date [2023-09-14 Thu 05:37]
 Entry date [2023-09-15 Fri 04:52]
 
  [[file:~/.emacs.d/notes/learning.emacs.help.system.org::\[\[https://protesilaos.com/codelog/2022-01-31-learning-emacs/\]\[Link to Youtube\]\]]]
+
+** Nix starter kit guide, see below it might become handy one day.              :NOTE:
+
+Entry date [2023-09-17 Sun 19:23]
+
+ [[https://github.com/Misterio77/nix-starter-configs][GitHub - Misterio77/nix-starter-configs: Simple and documented config templates to help you get started with NixOS + home-manager + flakes. All the boilerplate you need!]]
+** Plan to install this theme set                                               :NOTE:
+Entry date [2023-09-19 Tue 05:17]
+
+ [[https://protesilaos.com/emacs/modus-themes][Modus Themes | Protesilaos Stavrou]]
+
 ** Today I learned about magit stash command used within magit especially the   :NOTE:
 ** z p dwim command, see this link https://magit.vc/manual/magit/Stashing.html
 
 Entry date [2023-09-17 Sun 10:21]
 
  [[file:~/.emacs.d/lisp/init-local.el::autoload 'w3m-browse-url "w3m" "Ask the WWW browser to show a URL" t]]
+
