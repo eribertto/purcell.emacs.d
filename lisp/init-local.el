@@ -10,8 +10,8 @@
 
 ;;; add to emacs path the users hand made code snippets
 ;;; https://www.emacswiki.org/emacs/LoadPath
-(add-to-list 'load-path "~/.emacs.d/code-snippets")
-
+;; (add-to-list 'load-path "~/.emacs.d/code-snippets")
+(add-to-list 'load-path (expand-file-name "code-snippets" user-emacs-directory))
 ;;; (setq browse-url-browser-function 'w3m-browse-url)
 ;;; (require 'w3m-load)
 ;; TODO consider if to install wanderlust or no
@@ -45,13 +45,16 @@
     (add-to-list 'default-frame-alist '(cursor-color . "yellow")
                  (load-theme 'modus-vivendi)))
 
-(if (string= (system-name) "eribertto-nuc7i5bnh")
+(if (string= (system-name)
+             "eribertto-nuc7i5bnh")
     (add-to-list 'default-frame-alist '(cursor-color . "white")
                  (load-theme 'ef-night)))
 
 
 (turn-on-visual-line-mode)
 
+
+;; why is below line an error?
 (require 'popper)
 (setq popper-reference-buffers
       '("\\*Messages\\*"
@@ -80,7 +83,11 @@
 ;;; https://howardism.org/Technical/Emacs/capturing-intro.html
 ;;; 9/11/23 TODO: how to insert date stamp
 
-;;; this overrides the default variable in init-org.el
+;;; some Org overrides
+;;; this replaces some defaults in init-org.el
+(require 'org-bullets)
+(add-hook 'org-mode-hook (lambda () (org-bullets-mode 1)))
+
 (setq org-default-notes-file "~/.emacs.d/notes/tasks.org")
 (setq org-capture-templates
       '(("t" "Personal Todo/Tasks" entry (file+headline "" "Inbox") ; use the default
@@ -95,6 +102,7 @@
   "Set some variables when in text or org mode."
   (set-fill-column 80)
   (column-number-mode 1)
+  (visual-line-mode)
   (setq truncate-lines t))
 
 (add-hook 'text-mode-hook 'setup-textorg-mode)
