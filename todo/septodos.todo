@@ -1,15 +1,11 @@
-(("private" . [15 0 7 0]))
+(("private" . [11 0 12 0]))
 --==-- private
-[Sep 19, 2023] Plan to unsub to OSN+ this pesky thing is putting up a fight not as easy as i expect to be
-[Sep 19, 2023] FYI locked out of web account after 2x wrong passwd entry also roaming signal is down so no OTP re: Check BDO soa asap
 [Sep 19, 2023] Update: Cant do any sponsoring due to billing problem re Plan to donate or be a recurring donor to Magit maintainer tarsius_ as per emacs reddit page
 [Sep 19, 2023] Keep track of LBC packages of CTB re Bluetti porta home generator set
 [Sep 19, 2023] Plan to readup the info manual of Magit even on set interval times only, for sure you can get some nuggets of wisdom just by reading it
 [Sep 18, 2023] Plan to upgrade to latest bpi android app before sept 30
-[Sep 19, 2023] Consider to try out emacs modern theme https://github.com/emacs-jp/replace-colorthemes
 [Sep 19, 2023] fyi nix-bin is installed in nuc-eos for your followup to use and try out all things nix/nixos
 [Sep 18, 2023] How to claim bpi ccard excess fund paid? see statement in bpi app
-[Sep 18, 2023] How to have different themes based on frame or workspace? Ask in emacs forum/discourse/reddit
 [Sep 18, 2023] What is elvish shell? go check this out
 [Sep 18, 2023] Plan to place order of home generators to BluettiPH for mama
 [Sep 18, 2023] Plan to place order of home generators to BluettiPH for mymy
@@ -26,6 +22,11 @@
 [Sep 14, 2023] Plan to email Prulife UK re status of my new agent if still alive or dead now
 
 ==--== DONE 
+[DONE Sep 20, 2023] [Sep 18, 2023] How to have different themes based on frame or workspace? Ask in emacs forum/discourse/reddit
+[DONE Sep 20, 2023] [Sep 19, 2023] Consider to try out emacs modern theme https://github.com/emacs-jp/replace-colorthemes
+[DONE Sep 20, 2023] [Sep 20, 2023] DONE installed ef-themes and modus-theme in this emacs nuc7i5 machine
+[DONE Sep 20, 2023] [Sep 19, 2023] (DONE: found it in my eribert.mendez account) Plan to unsub to OSN+ this pesky thing is putting up a fight not as easy as i expect to be
+[DONE Sep 19, 2023] [Sep 19, 2023] Done reset new password and was able to login FYI locked out of web account after 2x wrong passwd entry also roaming signal is down so no OTP re: Check BDO soa asap
 [DONE Sep 19, 2023] [Sep 14, 2023] Plan to browse and absorb elisp tutorials of xah lee and tony alden, see gmail inbox and whatsup links
 [DONE Sep 19, 2023] [Sep 18, 2023] Check for replies in emacs reddit re how to set diff themes in diff frames
 [DONE Sep 19, 2023] [Sep 19, 2023] Send FB msgr invites for the coming sunday adv bday celeb
