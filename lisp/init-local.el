@@ -45,6 +45,11 @@
     (add-to-list 'default-frame-alist '(cursor-color . "yellow")
                  (load-theme 'modus-vivendi)))
 
+(if (string= (system-name) "eribertto-nuc7i5bnh")
+    (add-to-list 'default-frame-alist '(cursor-color . "white")
+                 (load-theme 'ef-night)))
+
+
 (turn-on-visual-line-mode)
 
 (require 'popper)
