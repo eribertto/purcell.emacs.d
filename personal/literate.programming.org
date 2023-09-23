@@ -1,0 +1,3 @@
+* this scratch is for Literate Programming tutorial from howardism.org
+* change the major mode to org-mode so you can hack away all things Org
+* test

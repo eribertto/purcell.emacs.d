@@ -1,0 +1,160 @@
+* DONE now how to search and replace thos date stamps with TODO placeholder?
+CLOSED: [2023-09-22 Fri 07:38]
+:LOGBOOK:
+- State "DONE"       from "NEXT"       [2023-09-22 Fri 07:38]
+:END:
+
+* DONE use regex search and replace
+CLOSED: [2023-09-22 Fri 07:39]
+:LOGBOOK:
+- State "DONE"       from "NEXT"       [2023-09-22 Fri 07:39]
+:END:
+
+** Fyi: use the menu UI to use regex search and replace since finger contortion is real
+** Graphical menu is helpful in this instance
+
+* DONE Plan to readup the info manual of Magit even on set interval times only, for sure you can get some nuggets of wisdom just by reading it
+CLOSED: [2023-09-22 Fri 07:40]
+:LOGBOOK:
+- State "DONE"       from "NEXT"       [2023-09-22 Fri 07:40]
+:END:
+
+* DONE fyi nix-bin is installed in nuc-eos for your followup to use and try out all things nix/nixos
+CLOSED: [2023-09-22 Fri 07:41]
+:LOGBOOK:
+- State "DONE"       from "NEXT"       [2023-09-22 Fri 07:41]
+:END:
+
+* DONE Plan to install Prots ef-themes, also checkout package embark, counsel for avy (check videos) and emacs help system
+CLOSED: [2023-09-22 Fri 07:42]
+:LOGBOOK:
+- State "DONE"       from "TODO"       [2023-09-22 Fri 07:42]
+:END:
+
+* DONE Plan to make tracking table of BPI ccard payments and inquire for refund
+CLOSED: [2023-09-22 Fri 10:03]
+:LOGBOOK:
+- State "DONE"       from "TODO"       [2023-09-22 Fri 10:03]
+:END:
+
+* DONE Make a tracking table of fund transfers from BPI to BDO as per hand list made (note use org-table)
+CLOSED: [2023-09-22 Fri 10:04]
+:LOGBOOK:
+- State "DONE"       from "TODO"       [2023-09-22 Fri 10:04]
+:END:
+
+* DONE Watch and learn [[https://www.youtube.com/watch?v=TxYGHjKBMUg][Emacs regular expression]]
+CLOSED: [2023-09-23 Sat 07:31]
+:LOGBOOK:
+- State "DONE"       from "TODO"       [2023-09-23 Sat 07:31]
+:END:
+
+* DONE Update: received 9/22/23 Keep track of LBC packages of CTB re Bluetti porta home generator set
+CLOSED: [2023-09-23 Sat 07:33]
+:LOGBOOK:
+- State "DONE"       from "TODO"       [2023-09-23 Sat 07:33]
+:END:
+
+* DONE Study, test out and understand org-mode todo states and cycle them
+CLOSED: [2023-09-23 Sat 07:42]
+:LOGBOOK:
+- State "DONE"       from "TODO"       [2023-09-23 Sat 07:42]
+:END:
+
+* DONE Plan to setup and try out emms emacs multimedia player
+CLOSED: [2023-09-23 Sat 07:43]
+:LOGBOOK:
+- State "DONE"       from "TODO"       [2023-09-23 Sat 07:43]
+:END:
+
+
+* DONE asap recharge data plan of STC sim today
+CLOSED: [2023-09-23 Sat 08:23]
+:LOGBOOK:
+- State "DONE"       from "TODO"       [2023-09-23 Sat 08:23]
+:END:
+
+* DONE plan to check latest BDO soa. Update: soa is 314,516 php
+CLOSED: [2023-09-23 Sat 08:57]
+:LOGBOOK:
+- State "DONE"       from "TODO"       [2023-09-23 Sat 08:57]
+:END:
+
+* DONE plan to practice in short spurts Literate Programming e.g. use watch timer
+CLOSED: [2023-09-23 Sat 17:26]
+:LOGBOOK:
+- State "DONE"       from "TODO"       [2023-09-23 Sat 17:26]
+:END:
+
+**** Begin today 30 min session
+* DONE how to make diff themes for each open window/frame, see this [[http://xahlee.info/emacs/emacs/emacs_set_theme_on_mode.html][xah-lee solution]].
+CLOSED: [2023-09-23 Sat 18:46]
+:LOGBOOK:
+- State "DONE"       from "WAITING"    [2023-09-23 Sat 18:46]
+- State "WAITING"    from "TODO"       [2023-09-23 Sat 12:30] \\
+  xah lee's solution
+:END:
+
+* DONE Plan to study and practice home-manager to apply to Nixos machine https://www.youtube.com/watch?v=FcC2dzecovw :nixos:
+CLOSED: [2023-09-23 Sat 18:47]
+:LOGBOOK:
+- State "DONE"       from "TODO"       [2023-09-23 Sat 18:47]
+:END:
+
+* DONE use hook to change buffer theme when in a certain file, mode, or app inside emacs
+CLOSED: [2023-09-23 Sat 18:47]
+:LOGBOOK:
+- State "DONE"       from "TODO"       [2023-09-23 Sat 18:47]
+:END:
+
+* DONE plan to install cloc, see in yay and description in github
+CLOSED: [2023-09-23 Sat 18:48]
+:LOGBOOK:
+- State "DONE"       from "TODO"       [2023-09-23 Sat 18:48]
+:END:
+
+* CANCELLED Consider checking out bufler a popper alternative to manage your buffers https://github.com/alphapapa/bufler.el
+CLOSED: [2023-09-23 Sat 18:56]
+:LOGBOOK:
+- State "CANCELLED"  from "WAITING"    [2023-09-23 Sat 18:56] \\
+  forget this
+- State "WAITING"    from "TODO"       [2023-09-23 Sat 07:41] \\
+  for later
+:END:
+
+* DONE plan to record nonoys tuition payment prelim 3rd year semester 1
+CLOSED: [2023-09-23 Sat 19:14]
+:LOGBOOK:
+- State "DONE"       from "TODO"       [2023-09-23 Sat 19:14]
+:END:
+
+* TIL to disable read-only mode in a buffer do C-x C-q [[https://www.gnu.org/software/emacs/manual/html_node/elisp/Read-Only-Buffers.html#:~:text=A%20buffer%20visiting%20a%20write,only%20flag%20with%20C-x%20C-q%20.][read-only mode]]
+* FYI riyadbank account 2030867649940 Shoevert for tennis payment of mommmy C lol
+* FYI Update: Cant do any sponsor mode for Magit maintainer tarsius_ as per emacs reddit page
+* WAITING Plan to pay MBT credit card due payment 545.26 via Gcash                    :credit:card:
+DEADLINE: <2023-10-09 Mon>
+:LOGBOOK:
+- State "WAITING"    from              [2023-09-22 Fri 09:46] \\
+  Pay using Gcash channel
+:END:
+
+* WAITING Plan to email Prulife UK re status of my new agent if still alive or dead now
+:LOGBOOK:
+- State "WAITING"    from "TODO"       [2023-09-23 Sat 18:55] \\
+  do this asap
+:END:
+
+* TODO how to change font face of org mode status waiting, etc
+
+* TODO reset sioyek in default mode e.g. the present state is too enlarged
+* TODO plan to do times code followon Tony Aldons elisp chann in YT
+* TODO do a git merge of this branch to GH
+* TODO Plan to upgrade to latest bpi android app before sept 30
+* TODO How to claim bpi ccard excess fund paid? see statement in bpi app
+* TODO What is elvish shell? go check this out
+* TODO Plan to place order of home generators to BluettiPH for mama
+* TODO Plan to place order of home generators to BluettiPH for mymy
+* TODO Solve how to enable javascript in eww to watch videos
+* TODO how to set a diff theme in a diff frame (or window)
+* TODO Plan to try out org-roam if better than this org-todo, or maybe Prots denote
+* TODO Plan to setup keyboard shortcut of avy-goto-char function

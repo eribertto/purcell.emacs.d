@@ -3,7 +3,14 @@
 ;;; Commentary:
 ;;; This is the users personal settings override
 
-;; (popper-mode)
+(vertico-mode)
+(desktop-save-mode 1)
+(menu-bar-mode)
+(blink-cursor-mode 1)
+(turn-on-visual-line-mode)
+
+(add-to-list 'load-path (expand-file-name "code-snippets" user-emacs-directory))
+
 ;; Use Emacs or w3m as browser, xah lee has some tips to this
 (setq browse-url-browser-function 'eww-browse-url)
 
@@ -11,50 +18,31 @@
 ;;; add to emacs path the users hand made code snippets
 ;;; https://www.emacswiki.org/emacs/LoadPath
 ;; (add-to-list 'load-path "~/.emacs.d/code-snippets")
-(add-to-list 'load-path (expand-file-name "code-snippets" user-emacs-directory))
+
 ;;; (setq browse-url-browser-function 'w3m-browse-url)
 ;;; (require 'w3m-load)
 ;; TODO consider if to install wanderlust or no
 ;; https://github.com/wanderlust/wanderlust
-
-
-(desktop-save-mode 1)
-(menu-bar-mode)
-
 ;; try out emacs transparency as per EmacsWiki guide
 ;; Fri 01 Sep 2023 04:38:27 AM +03
 (set-frame-parameter nil 'alpha-background 80)
 (add-to-list 'default-frame-alist '(alpha-background . 80))
 
-;; auto save hooks
+;; some hooks
 (add-hook 'diary-mode (lambda) (auto-save-visited-mode))
 (add-hook 'todo-mode (lambda) (auto-save-visited-mode))
 (add-hook 'dired-mode-hook 'all-the-icons-dired-mode)
-
-
-;; example snippet of determining major mode
-;; you can check the buffers major mode by doing M-x: major-mode <enter>
-;; (if (eq major-mode 'lisp-interaction-mode)
-;;     (message "Yes you are!")
-;;   (message "No you're not!"))
-(blink-cursor-mode 1)
 
 (require-theme 'modus-themes)
 ;; (load-theme 'modus-operandi)
 (if (string= (system-name) "TP460-eos")
     (add-to-list 'default-frame-alist '(cursor-color . "yellow")
                  (load-theme 'modus-vivendi)))
-
 (if (string= (system-name)
              "eribertto-nuc7i5bnh")
     (add-to-list 'default-frame-alist '(cursor-color . "white")
                  (load-theme 'ef-night)))
-
-
-(turn-on-visual-line-mode)
-
-
-;; why is below line an error?
+;; why does flymake flagged require popper an error?
 (require 'popper)
 (setq popper-reference-buffers
       '("\\*Messages\\*"
@@ -75,14 +63,6 @@
 (when (display-graphic-p)
   (require 'all-the-icons))
 
-;; shorten the ls mode of dired
-;; (add-hook 'dired-mode-hook (dired-hide-details-mode +1))
-;; DONE: adjustment is made in the file init-dired.el under lisp dir
-
-;;; edit to follow this tutorial
-;;; https://howardism.org/Technical/Emacs/capturing-intro.html
-;;; 9/11/23 TODO: how to insert date stamp
-
 ;;; some Org overrides
 ;;; this replaces some defaults in init-org.el
 (require 'org-bullets)
@@ -102,10 +82,13 @@
   "Set some variables when in text or org mode."
   (set-fill-column 80)
   (column-number-mode 1)
+  (flymake-mode nil)
   (visual-line-mode)
   (setq truncate-lines t))
 
-(add-hook 'text-mode-hook 'setup-textorg-mode)
+(add-hook 'text-mode-hook 
+          'setup-textorg-mode
+          'my-set-theme-on-mode) ;; this doesnt work it seems 9/23/23
 (add-hook 'org-mode-hook 'setup-textorg-mode)
 
 ;; for w3m from emacswiki.org/emacs/emacs-w3m
@@ -115,7 +98,10 @@
 ;;
 (autoload 'w3m-browse-url "w3m" "Ask the WWW browser to show a URL" t)
 
-
+;; for literate programming from guide howardism.org
+(setq org-confirm-babel-evaluate nil
+      org-src-fontify-natively t
+      org-src-tab-acts-natively t)
 
 (provide 'init-local)
 ;;; init-local.el ends here
