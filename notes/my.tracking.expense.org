@@ -1,0 +1,19 @@
+#+TITLE: Expenses tracking table, money journal, etc
+#+AUTHOR: Eriberto Mendez
+#+DATE: <2023-09-22 Fri>
+
+* This is the start of my expenses tracking using org table
+** BPI to BDO fund transfer
+| Date    | Transfer Amount | BPI current bal | BDO current bal | Note |
+| 9/12/23 | 50K             |         3309337 | na              | na   |
+| 9/13/23 | 50K             |         3259337 | na              | na   |
+| 9/14/23 | 50K             |         3209337 | na              | na   |
+| 9/15/23 | 50K             |         3159337 | na              | na   |
+| 9/19/23 | 50K             |         3079337 | na              | na   |
+| 9/22/23 | 50K             |         3029337 | na              | na   |
+| tba     |                 |                 |                 |      |
+| tba     |                 |                 |                 |      |
+| tba     |                 |                 |                 |      |
+* TODO how to insert proper date fiedl in a table column like above?
+* TODO how to format numbers in a column like above?
+* TODO how to wrap long lines in a table like above?

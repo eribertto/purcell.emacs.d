@@ -86,6 +86,8 @@ CLOSED: [2023-09-15 Fri 04:36]
 ** TODO Plan to change this time stamp location of org-capture task/todos.
 
 [2023-09-14 Thu 20:26]
+** TODO My September todos file I can no longer add/modify in todo mode. What seems to be the issue?
+[2023-09-22 Fri 05:30]
 * Notes
 ** Modified this init-dired.el and set short listing as default view in dired mode. :NOTE:
 Entry date [2023-09-13 Wed 22:19]
