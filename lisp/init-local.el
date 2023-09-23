@@ -95,9 +95,11 @@
   "Set some variables when in text or org mode."
   (set-fill-column 80)
   (column-number-mode 1)
+  (flymake-mode nil)
   (setq truncate-lines t))
 
-(add-hook 'text-mode-hook 'setup-textorg-mode)
+(add-hook 'text-mode-hook 'setup-textorg-mode
+          'my-set-theme-on-mode)
 (add-hook 'org-mode-hook 'setup-textorg-mode)
 
 ;; for w3m from emacswiki.org/emacs/emacs-w3m
@@ -107,7 +109,10 @@
 ;;
 (autoload 'w3m-browse-url "w3m" "Ask the WWW browser to show a URL" t)
 
-
+;; for literate programming
+(setq org-confirm-babel-evaluate nil
+      org-src-fontify-natively t
+      org-src-tab-acts-natively t)
 
 (provide 'init-local)
 ;;; init-local.el ends here

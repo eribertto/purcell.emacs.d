@@ -4,16 +4,25 @@
 
 * This is the start of my expenses tracking using org table
 ** BPI to BDO fund transfer
-| Date    | Transfer Amount | BPI current bal | BDO current bal | Note |
-| 9/12/23 | 50K             |         3309337 | na              | na   |
-| 9/13/23 | 50K             |         3259337 | na              | na   |
-| 9/14/23 | 50K             |         3209337 | na              | na   |
-| 9/15/23 | 50K             |         3159337 | na              | na   |
-| 9/19/23 | 50K             |         3079337 | na              | na   |
-| 9/22/23 | 50K             |         3029337 | na              | na   |
-| tba     |                 |                 |                 |      |
-| tba     |                 |                 |                 |      |
-| tba     |                 |                 |                 |      |
-* TODO how to insert proper date fiedl in a table column like above?
-* TODO how to format numbers in a column like above?
-* TODO how to wrap long lines in a table like above?
+
+| Date    | Transfer Amount | BPI current bal | BDO current bal | Note                             |
+| 9/12/23 | 50K             |         3309337 | na              | na                               |
+| 9/13/23 | 50K             |         3259337 | na              | na                               |
+| 9/14/23 | 50K             |         3209337 | na              | na                               |
+| 9/15/23 | 50K             |         3159337 | na              | na                               |
+| 9/19/23 | 50K             |         3079337 | na              | na                               |
+| 9/22/23 | 50K             |         3029337 | na              | na                               |
+| 9/23/23 | na              |              na | 314516.71       | this months due not yet deducted |
+| tba     |                 |                 |                 |                                  |
+| tba     |                 |                 |                 |                                  |
+|         |                 |                 |                 |                                  |
+
+* TODO how to insert proper date field in a table column like above?
+
+* TODO rewatch Tony Aldons org-table tutorials in Vid folder
+* TODO how to format numbers in a column like above e.g. add proper comma-separated values?
+* DONE how to wrap long lines in a table like above? Answer: just press tab inside the cell
+CLOSED: [2023-09-23 Sat 08:54]
+:LOGBOOK:
+- State "DONE"       from "TODO"       [2023-09-23 Sat 08:54]
+:END:

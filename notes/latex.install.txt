@@ -1,0 +1,34 @@
+;; Happy hacking, eriberttom - Emacs ♥ you!
+
+Package (30)                    New Version    Net Change   Download Size
+
+extra/dvisvgm                   3.1.1-1           2.12 MiB       1.01 MiB
+extra/ffcall                    2.4-2             0.44 MiB       0.06 MiB
+extra/libsigsegv                2.14-2            0.03 MiB       0.01 MiB
+extra/potrace                   1.16-2            0.20 MiB       0.09 MiB
+extra/t1lib                     5.1.2-8           1.17 MiB       0.65 MiB
+extra/texlive-bibtexextra       2023.66594-19    31.14 MiB       4.17 MiB
+extra/texlive-bin               2023.66984-16    57.55 MiB      11.99 MiB
+extra/texlive-binextra          2023.66594-19   112.67 MiB      91.36 MiB
+extra/texlive-context           2023.66594-19    52.81 MiB       9.41 MiB
+extra/texlive-fontsextra        2023.66594-19  1433.62 MiB     531.01 MiB
+extra/texlive-fontutils         2023.66594-19     7.57 MiB       5.19 MiB
+extra/texlive-formatsextra      2023.66594-19     8.51 MiB       1.70 MiB
+extra/texlive-games             2023.66594-19     9.54 MiB       5.33 MiB
+extra/texlive-humanities        2023.66594-19     3.19 MiB       0.43 MiB
+extra/texlive-luatex            2023.66594-19    16.03 MiB       2.40 MiB
+extra/texlive-mathscience       2023.66594-19    17.68 MiB       3.64 MiB
+extra/texlive-metapost          2023.66594-19     2.44 MiB       0.48 MiB
+extra/texlive-music             2023.66594-19    50.50 MiB      22.37 MiB
+extra/texlive-pictures          2023.66594-19    72.32 MiB      15.44 MiB
+extra/texlive-plaingeneric      2023.66594-19    23.77 MiB       2.74 MiB
+extra/texlive-pstricks          2023.66594-19    46.28 MiB      28.65 MiB
+extra/texlive-publishers        2023.66594-19    58.29 MiB      19.69 MiB
+extra/texlive-xetex             2023.66594-19     3.29 MiB       0.72 MiB
+extra/zziplib                   0.13.72-2         0.33 MiB       0.06 MiB
+extra/texlive-basic             2023.66594-19    31.96 MiB       6.60 MiB
+extra/texlive-fontsrecommended  2023.66594-19   148.98 MiB      89.54 MiB
+extra/texlive-latex             2023.66594-19    10.73 MiB       1.22 MiB
+extra/texlive-latexextra        2023.66594-19    78.89 MiB      24.07 MiB
+extra/texlive-latexrecommended  2023.66594-19    16.75 MiB       2.37 MiB
+extra/texlive-meta              2023.66594-19     0.00 MiB       0.00 MiB
