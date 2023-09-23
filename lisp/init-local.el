@@ -3,7 +3,7 @@
 ;;; Commentary:
 ;;; This is the users personal settings override
 
-;; (popper-mode)
+(vertico-mode)
 ;; Use Emacs or w3m as browser, xah lee has some tips to this
 (setq browse-url-browser-function 'eww-browse-url)
 
