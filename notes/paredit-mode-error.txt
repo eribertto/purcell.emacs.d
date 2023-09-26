@@ -1,0 +1,13 @@
+Importing package-keyring.gpg...done
+Package refresh done
+Packages that can be upgraded: 9; type ‘U’ to mark for upgrading.
+Packages marked for upgrading: 9
+Packages to upgrade: 9 (git-commit-20230911.2217 ledger-mode-20230920.1222 magit-20230923.1526 marginalia-20230910.739 nim-mode-20211102.917 clojure-ts-mode-20230915.435 embark-20230922.226 forge-20230922.1334 magit-section-20230922.1332).  Proceed? (y or n) y
+Operation [ Upgrade 9 ] started
+Contacting host: melpa.org:443 [2 times]
+Parsing tar file...done
+Extracting...done
+  INFO     Scraping files for loaddefs...
+Mark set
+paredit-mode: Unmatched bracket or quote
+

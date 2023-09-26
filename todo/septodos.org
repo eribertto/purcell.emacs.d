@@ -136,7 +136,12 @@ CLOSED: [2023-09-25 Mon 05:35]
 :END:
 
 * FYI Update: Cant do any sponsor mode for Magit maintainer tarsius_ as per emacs reddit page
-* TODO consider using tab bar mode from this guide https://mihaiolteanu.me/ with one idea copy the contents of this eww buffer to scratch and filter out the codes then source it as a dot el file.
+* DONE consider using tab bar mode from this guide https://mihaiolteanu.me/ with one idea copy the contents of this eww buffer to scratch and filter out the codes then source it as a dot el file.
+CLOSED: [2023-09-26 Tue 05:17]
+:LOGBOOK:
+- State "DONE"       from "TODO"       [2023-09-26 Tue 05:17]
+:END:
+
 * WAITING Plan to pay MBT credit card due payment 545.26 via Gcash                    :credit:card:
 DEADLINE: <2023-10-09 Mon>
 :LOGBOOK:

@@ -154,3 +154,16 @@ Entry date [2023-09-17 Sun 10:21]
 Entry date [2023-09-23 Sat 20:00]
  
  [[https://mihaiolteanu.me/emacs-workspace-management][Mihai Olteanu]]
+** TIL that the error below was somehow link when I followed the tab bar tutorial of Mihai Olteanu so I disabled it in my init-local.el :NOTE:
+
+Entry date [2023-09-26 Tue 05:20]
+ 
+ [[file:~/.emacs.d/notes/paredit-mode-error.txt::INFO Scraping files for loaddefs...]]
+** Today this package today to try out its workspace capabilities               :NOTE:
+Entry date [2023-09-26 Tue 05:31]
+ 
+ [[https://github.com/alphapapa/burly.el][GitHub - alphapapa/burly.el: Save and restore frames and windows with their buffers in Emacs]]
+** Installed this burly and friends for workspace mgmt of windows and frames. See init-local.el :NOTE:
+Entry date [2023-09-26 Tue 05:59]
+ 
+ [[https://github.com/alphapapa/burly.el][GitHub - alphapapa/burly.el: Save and restore frames and windows with their buffers in Emacs]]
