@@ -1,3 +1,40 @@
+* TODO Resume elisp coding in exercism since monthly deduction is active
+* TODO Plan to place order of home generators to BluettiPH for mama
+* WAITING Plan to pay MBT credit card due payment 545.26 via Gcash                    :credit:card:
+DEADLINE: <2023-10-09 Mon>
+:LOGBOOK:
+- State "WAITING"    from              [2023-09-22 Fri 09:46] \\
+  Pay using Gcash channel
+:END:
+
+* WAITING Plan to email Prulife UK re status of my new agent if still alive or dead now
+:LOGBOOK:
+- State "WAITING"    from "TODO"       [2023-09-23 Sat 18:55] \\
+  do this asap
+:END:
+
+* TODO how to change font face of org mode status waiting, etc
+
+* TODO reset sioyek in default mode e.g. the present state is too enlarged
+
+* TODO create keybinding shortcuts for tab-next and tab-previous functions
+* TODO plan to do times code followon Tony Aldons elisp chann in YT
+* TODO do a git merge of this branch to GH
+* TODO Plan to upgrade to latest bpi android app before sept 30
+* TODO How to claim bpi ccard excess fund paid? see statement in bpi app
+* TODO What is elvish shell? go check this out
+* TODO Plan to place order of home generators to BluettiPH for mymy
+* TODO record BPI soa after less 8k to sjp for tire replacement 3,013,337
+* TODO Plan to try out org-roam if better than this org-todo, or maybe Prots denote
+* TODO Plan to setup keyboard shortcut of avy-goto-char function
+* TODO Plan to install this Ivy package as per the manual tutorial below.
+* CANCELLED Solve how to enable javascript in eww to watch videos
+CLOSED: [2023-09-27 Wed 05:56]
+:LOGBOOK:
+- State "CANCELLED"  from "TODO"       [2023-09-27 Wed 05:56] \\
+  not a priority
+:END:
+
 * DONE now how to search and replace thos date stamps with TODO placeholder?
 CLOSED: [2023-09-22 Fri 07:38]
 :LOGBOOK:
@@ -142,31 +179,8 @@ CLOSED: [2023-09-26 Tue 05:17]
 - State "DONE"       from "TODO"       [2023-09-26 Tue 05:17]
 :END:
 
-* WAITING Plan to pay MBT credit card due payment 545.26 via Gcash                    :credit:card:
-DEADLINE: <2023-10-09 Mon>
+* DONE send 8k for wigo tire replacement after the damage
+CLOSED: [2023-09-27 Wed 05:56]
 :LOGBOOK:
-- State "WAITING"    from              [2023-09-22 Fri 09:46] \\
-  Pay using Gcash channel
+- State "DONE"       from "TODO"       [2023-09-27 Wed 05:56]
 :END:
-
-* WAITING Plan to email Prulife UK re status of my new agent if still alive or dead now
-:LOGBOOK:
-- State "WAITING"    from "TODO"       [2023-09-23 Sat 18:55] \\
-  do this asap
-:END:
-
-* TODO how to change font face of org mode status waiting, etc
-
-* TODO reset sioyek in default mode e.g. the present state is too enlarged
-* TODO plan to do times code followon Tony Aldons elisp chann in YT
-* TODO do a git merge of this branch to GH
-* TODO Plan to upgrade to latest bpi android app before sept 30
-* TODO How to claim bpi ccard excess fund paid? see statement in bpi app
-* TODO What is elvish shell? go check this out
-* TODO Plan to place order of home generators to BluettiPH for mama
-* TODO Plan to place order of home generators to BluettiPH for mymy
-* TODO Solve how to enable javascript in eww to watch videos
-* TODO how to set a diff theme in a diff frame (or window)
-* TODO Plan to try out org-roam if better than this org-todo, or maybe Prots denote
-* TODO Plan to setup keyboard shortcut of avy-goto-char function
-* TODO Plan to install this Ivy package as per the manual tutorial below.
