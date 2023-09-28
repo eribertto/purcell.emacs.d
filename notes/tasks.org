@@ -167,3 +167,7 @@ Entry date [2023-09-26 Tue 05:31]
 Entry date [2023-09-26 Tue 05:59]
  
  [[https://github.com/alphapapa/burly.el][GitHub - alphapapa/burly.el: Save and restore frames and windows with their buffers in Emacs]]
+** This is a good snippet to copy and use                                       :NOTE:
+Entry date [2023-09-28 Thu 05:48]
+ 
+ [[https://www.emacswiki.org/emacs/basic-toolkit.el][EmacsWiki: basic-toolkit.el]]
