@@ -1,12 +1,5 @@
 * TODO Resume elisp coding in exercism since monthly deduction is active
 * TODO Plan to place order of home generators to BluettiPH for mama
-* WAITING Plan to pay MBT credit card due payment 545.26 via Gcash                    :credit:card:
-DEADLINE: <2023-10-09 Mon>
-:LOGBOOK:
-- State "WAITING"    from              [2023-09-22 Fri 09:46] \\
-  Pay using Gcash channel
-:END:
-
 * WAITING Plan to email Prulife UK re status of my new agent if still alive or dead now
 :LOGBOOK:
 - State "WAITING"    from "TODO"       [2023-09-23 Sat 18:55] \\
@@ -24,10 +17,23 @@ DEADLINE: <2023-10-09 Mon>
 * TODO How to claim bpi ccard excess fund paid? see statement in bpi app
 * TODO What is elvish shell? go check this out
 * TODO Plan to place order of home generators to BluettiPH for mymy
-* TODO record BPI soa after less 8k to sjp for tire replacement 3,013,337
 * TODO Plan to try out org-roam if better than this org-todo, or maybe Prots denote
-* TODO Plan to setup keyboard shortcut of avy-goto-char function
 * TODO Plan to install this Ivy package as per the manual tutorial below.
+* TODO plan to install Ruby and friends in the EOS machine
+* DONE record BPI soa after less 8k to sjp for tire replacement 3,013,337
+CLOSED: [2023-09-28 Thu 05:17]
+:LOGBOOK:
+- State "DONE"       from "TODO"       [2023-09-28 Thu 05:17]
+:END:
+
+* DONE Plan to pay MBT credit card due payment 545.26 via Gcash                 :credit:card:
+CLOSED: [2023-09-28 Thu 05:14] DEADLINE: <2023-10-09 Mon>
+:LOGBOOK:
+- State "DONE"       from "WAITING"    [2023-09-28 Thu 05:14]
+- State "WAITING"    from              [2023-09-22 Fri 09:46] \\
+  Pay using Gcash channel
+:END:
+
 * CANCELLED Solve how to enable javascript in eww to watch videos
 CLOSED: [2023-09-27 Wed 05:56]
 :LOGBOOK:

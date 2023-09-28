@@ -1,5 +1,6 @@
 ;; Auto-generated file; don't edit -*- mode: lisp-data -*-
-((:url "https://github.com/alphapapa/burly.el" :title "GitHub - alphapapa/burly.el: Save and restore frames and windows with their buffers in Emacs" :time "Tue Sep 26 06:54:38 2023")
+((:url "https://www.emacswiki.org/emacs/InsertDate" :title "EmacsWiki: Insert Date" :time "Wed Sep 27 07:00:17 2023")
+ (:url "https://github.com/alphapapa/burly.el" :title "GitHub - alphapapa/burly.el: Save and restore frames and windows with their buffers in Emacs" :time "Tue Sep 26 06:54:38 2023")
  (:url "https://protesilaos.com/emacs/modus-themes" :title "Modus Themes | Protesilaos Stavrou" :time "Tue Sep 19 05:25:12 2023")
  (:url "https://oremacs.com/swiper/" :title "Ivy User Manual" :time "Tue Sep 12 18:55:55 2023")
  (:url "https://howardism.org/Technical/Emacs/capturing-intro.html" :title "Org Capturing Introduction" :time "Mon Sep 11 04:23:36 2023")

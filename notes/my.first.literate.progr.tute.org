@@ -4,10 +4,14 @@
 
 * Begin Literate Programming code followon
 
-* TODO install latex and friends in this machine
+* CANCELLED install latex and friends in this machine
+CLOSED: [2023-09-28 Thu 05:06]
+:LOGBOOK:
+- State "CANCELLED"  from "TODO"       [2023-09-28 Thu 05:06] \\
+  this is dupe
+:END:
 
 * FYI dont forget to browse the cloned emacs dir under MyGitrepos to learn emacs lisp among other things
-
 * DONE done install latex and friends in this eos machine, browse the aur with yay [[https://wiki.archlinux.org/title/tex_live][texlive arch linux]]
 CLOSED: [2023-09-23 Sat 12:18]
 closed: [2023-09-23 sat 12:15]
@@ -17,7 +21,6 @@ closed: [2023-09-23 sat 12:15]
 :end:
 
 * fyi installed packages are listed in this [[file:latex.install.txt][file]]
-
 * TIL to open link at point in org mode do C-c C-o
 
 #+BEGIN_SRC emacs-lisp
@@ -172,3 +175,8 @@ ls -d $(pwd)
 
 #+RESULTS:
 : /etc
+
+* Thu 28 Sep 2023 05:10:32 AM +03
+** Begin literate session
+** todo install ruby in this eos nucmachine to follow along the code examples
+** also save the date code snippets in the scratch
