@@ -1,25 +1,62 @@
-* TODO Resume elisp coding in exercism since monthly deduction is active
+* PROJECT Resume elisp coding in exercism since monthly deduction is active
 * TODO Plan to place order of home generators to BluettiPH for mama
-* WAITING Plan to email Prulife UK re status of my new agent if still alive or dead now
+* TODO plan to learn Denote note taking package by Prot which is also mentioned in Emacs writing studio
+* TODO reset sioyek in default mode e.g. the present state is too enlarged
+
+* TODO create keybinding shortcuts for tab-next and tab-previous functions
+* TODO do a git merge of this branch to GH
+* TODO Plan to upgrade to latest bpi android app before sept 30
+* TODO How to claim bpi ccard excess fund paid? see statement in bpi app
+* TODO Plan to place order of home generators to BluettiPH for mymy
+* TODO Plan to try out org-roam if better than this org-todo, or maybe Prots denote
+* TODO plan to install and try out xah lees fly-keys http://xahlee.info/emacs/misc/xah-fly-keys.html
+* DONE Plan to email Prulife UK re status of my new agent if still alive or dead now
+CLOSED: [2023-09-29 Fri 09:00]
 :LOGBOOK:
+- State "DONE"       from "WAITING"    [2023-09-29 Fri 09:00]
 - State "WAITING"    from "TODO"       [2023-09-23 Sat 18:55] \\
   do this asap
 :END:
 
-* TODO how to change font face of org mode status waiting, etc
+* CANCELLED What is elvish shell? go check this out
+CLOSED: [2023-09-29 Fri 08:14]
+:LOGBOOK:
+- State "CANCELLED"  from "TODO"       [2023-09-29 Fri 08:14] \\
+  not important rn
+:END:
 
-* TODO reset sioyek in default mode e.g. the present state is too enlarged
+* DONE plan to do times code followon Tony Aldons elisp chann in YT
+CLOSED: [2023-09-29 Fri 08:11]
+:LOGBOOK:
+- State "DONE"       from "TODO"       [2023-09-29 Fri 08:11]
+:END:
 
-* TODO create keybinding shortcuts for tab-next and tab-previous functions
-* TODO plan to do times code followon Tony Aldons elisp chann in YT
-* TODO do a git merge of this branch to GH
-* TODO Plan to upgrade to latest bpi android app before sept 30
-* TODO How to claim bpi ccard excess fund paid? see statement in bpi app
-* TODO What is elvish shell? go check this out
-* TODO Plan to place order of home generators to BluettiPH for mymy
-* TODO Plan to try out org-roam if better than this org-todo, or maybe Prots denote
-* TODO Plan to install this Ivy package as per the manual tutorial below.
-* TODO plan to install Ruby and friends in the EOS machine
+* DONE Record bpi soa was 3,013,337 now 2,963,337 after less 50K to sjp for October home budget
+CLOSED: [2023-09-29 Fri 08:10]
+:LOGBOOK:
+- State "DONE"       from "TODO"       [2023-09-29 Fri 08:10]
+:END:
+
+* CANCELLED Plan to install this Ivy package as per the manual tutorial below.
+CLOSED: [2023-09-29 Fri 06:07]
+:LOGBOOK:
+- State "CANCELLED"  from "TODO"       [2023-09-29 Fri 06:07] \\
+  not needed right now
+:END:
+
+* CANCELLED how to change font face of org mode status waiting, etc
+CLOSED: [2023-09-29 Fri 05:53]
+:LOGBOOK:
+- State "CANCELLED"  from "TODO"       [2023-09-29 Fri 05:53] \\
+  not useful for now
+:END:
+
+* DONE plan to install Ruby and friends in the EOS machine
+CLOSED: [2023-09-28 Thu 18:41]
+:LOGBOOK:
+- State "DONE"       from "TODO"       [2023-09-28 Thu 18:41]
+:END:
+
 * DONE record BPI soa after less 8k to sjp for tire replacement 3,013,337
 CLOSED: [2023-09-28 Thu 05:17]
 :LOGBOOK:
