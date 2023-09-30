@@ -1,5 +1,6 @@
-(("private" . [-2 0 21 0]))
+(("private" . [-1 0 21 0]))
 --==-- private
+[Sep 30, 2023] Try to git merge latest branches inside emacs
 [Sep 30, 2023] Plan to make tracking table of BPI ccard payments and inquire for refund
 [Sep 30, 2023] fyi nix-bin is installed in nuc-eos for your followup to use and try out all things nix/nixos
 [Sep 30, 2023] Plan to place order of home generators to BluettiPH for mama
