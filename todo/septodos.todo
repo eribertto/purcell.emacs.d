@@ -1,27 +1,23 @@
-(("private" . [11 0 12 0]))
+(("private" . [-2 0 21 0]))
 --==-- private
-[Sep 19, 2023] Update: Cant do any sponsoring due to billing problem re Plan to donate or be a recurring donor to Magit maintainer tarsius_ as per emacs reddit page
-[Sep 19, 2023] Keep track of LBC packages of CTB re Bluetti porta home generator set
-[Sep 19, 2023] Plan to readup the info manual of Magit even on set interval times only, for sure you can get some nuggets of wisdom just by reading it
-[Sep 18, 2023] Plan to upgrade to latest bpi android app before sept 30
-[Sep 19, 2023] fyi nix-bin is installed in nuc-eos for your followup to use and try out all things nix/nixos
-[Sep 18, 2023] How to claim bpi ccard excess fund paid? see statement in bpi app
-[Sep 18, 2023] What is elvish shell? go check this out
-[Sep 18, 2023] Plan to place order of home generators to BluettiPH for mama
+[Sep 30, 2023] Plan to make tracking table of BPI ccard payments and inquire for refund
+[Sep 30, 2023] fyi nix-bin is installed in nuc-eos for your followup to use and try out all things nix/nixos
+[Sep 30, 2023] Plan to place order of home generators to BluettiPH for mama
 [Sep 18, 2023] Plan to place order of home generators to BluettiPH for mymy
-[Sep 15, 2023] Solve how to enable javascript in eww to watch videos
 [Sep 17, 2023] how to set a diff theme in a diff frame (or window)
 [Sep 17, 2023] Consider checking out bufler a popper alternative to manage your buffers https://github.com/alphapapa/bufler.el
-[Sep 15, 2023] Plan to install Prots ef-themes, also checkout package embark, counsel for avy (check videos) and emacs help system
 [Sep 14, 2023] Plan to try out org-roam if better than this org-todo, or maybe Prots denote
-[Sep 14, 2023] Plan to make tracking table of BPI ccard payments and inquire for refund
-[Sep 14, 2023] Plan to setup keyboard shortcut of avy-goto-char function
-[Sep 14, 2023] Study, test out and understand org-mode todo states and cycle them
-[Sep 14, 2023] Plan to setup and try out emms emacs multimedia player
-[Sep 14, 2023] Make a tracking table of fund transfers from BPI to BDO as per hand list made (note use org-table)
-[Sep 14, 2023] Plan to email Prulife UK re status of my new agent if still alive or dead now
 
 ==--== DONE 
+[DONE Sep 30, 2023] [Sep 18, 2023] How to claim bpi ccard excess fund paid? see statement in bpi app
+[DONE Sep 30, 2023] [Sep 19, 2023] Plan to readup the info manual of Magit even on set interval times only, for sure you can get some nuggets of wisdom just by reading it
+[DONE Sep 30, 2023] [Sep 19, 2023] Update: Cant do any sponsoring due to billing problem re Plan to donate or be a recurring donor to Magit maintainer tarsius_ as per emacs reddit page
+[DONE Sep 30, 2023] [Sep 14, 2023] Study, test out and understand org-mode todo states and cycle them
+[DONE Sep 30, 2023] [Sep 14, 2023] Make a tracking table of fund transfers from BPI to BDO as per hand list made (note use org-table)
+[DONE Sep 30, 2023] [Sep 14, 2023] Plan to email Prulife UK re status of my new agent if still alive or dead now
+[DONE Sep 30, 2023] [Sep 15, 2023] Plan to install Prots ef-themes, also checkout package embark, counsel for avy (check videos) and emacs help system
+[DONE Sep 30, 2023] [Sep 18, 2023] Plan to upgrade to latest bpi android app before sept 30
+[DONE Sep 30, 2023] [Sep 19, 2023] Keep track of LBC packages of CTB re Bluetti porta home generator set
 [DONE Sep 20, 2023] [Sep 18, 2023] How to have different themes based on frame or workspace? Ask in emacs forum/discourse/reddit
 [DONE Sep 20, 2023] [Sep 19, 2023] Consider to try out emacs modern theme https://github.com/emacs-jp/replace-colorthemes
 [DONE Sep 20, 2023] [Sep 20, 2023] DONE installed ef-themes and modus-theme in this emacs nuc7i5 machine
