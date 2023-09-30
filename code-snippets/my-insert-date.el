@@ -1,18 +1,13 @@
 ;;; my-insert-date.el --- insert date
 ;;; Commentary:
 ;;; Code:
-
-
-
-
-
 ;; practice inserting date and time
 
 (defun insert-standard-date ()
   "Insert standard date time string."
   (interactive)
   (insert (format-time-string ";; %A %F")))
-
+;; Saturday 2023-09-30
 ;; 2023-09-17
 ;; 17 2023-09-17
 

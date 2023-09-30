@@ -11,8 +11,13 @@
 * TODO plan to install golden-ratio package https://www.youtube.com/watch?v=k5Nwwo4QTmI
 * TODO plan to install and try out xah lees fly-keys http://xahlee.info/emacs/misc/xah-fly-keys.html
 * TODO plan to learn Denote note taking package by Prot which is also mentioned in Emacs writing studio
-* TODO Plan to upgrade to latest bpi android app before sept 30
 * TODO How to claim bpi ccard excess fund paid? see statement in bpi app
+* DONE Plan to upgrade to latest bpi android app before sept 30
+CLOSED: [2023-09-30 Sat 12:31]
+:LOGBOOK:
+- State "DONE"       from "TODO"       [2023-09-30 Sat 12:31]
+:END:
+
 * DONE do a git merge of this branch to GH
 CLOSED: [2023-09-30 Sat 06:07]
 :LOGBOOK:
