@@ -1,3 +1,106 @@
+* PROJECT Resume elisp coding in exercism since monthly deduction is active
+* TODO Plan to place order of home generators to BluettiPH for mymy
+* TODO Plan to place order of home generators to BluettiPH for mama
+** Fillup the home address c/o mymy and send to Bluetti FB msgr app
+** Then arrange money payment
+* TODO consider to get ergonomic keyboard Kinesis Advantage2 https://www.amazon.sa/-/en/Kinesis-Advantage2-Ergonomic-Keyboard-KB600/dp/B01KR1C5PY?th=1
+** Or the Perixx Perlboard https://www.amazon.sa/-/en/Perixx-Periboard-512-Ergonomic-Split-Keyboard/dp/B075GZVD4T/ref=d_pd_sbs_sccl_2_2/262-4147414-8753364?pd_rd_w=PYlHU&content-id=amzn1.sym.eb5ce24c-6c98-4fb8-8a3d-c6c6d23e3333&pf_rd_p=eb5ce24c-6c98-4fb8-8a3d-c6c6d23e3333&pf_rd_r=SV47SAE8V6651CP19Z54&pd_rd_wg=iVV0r&pd_rd_r=3eec9fb5-ee8d-450e-a137-644fe4e11047&pd_rd_i=B075GZVD4T&th=1
+** Check more ideas in this YT split keyboard https://www.youtube.com/watch?v=ZNr4BV3ujAg
+** Kinesis Freestyle2 keyboard https://www.amazon.sa/-/en/Kinesis-Freestyle2-Ergonomic-Keyboard-Separation/dp/B00CMALD3E/ref=pd_rhf_d_dp_s_pd_crcd_sccl_1_15/262-4147414-8753364?pd_rd_w=frGuJ&content-id=amzn1.sym.243ee758-11f5-4259-a250-bd1839134560&pf_rd_p=243ee758-11f5-4259-a250-bd1839134560&pf_rd_r=4GEW7M7EHY8WC1VTNNK5&pd_rd_wg=cOKVi&pd_rd_r=df36c2e6-a826-4c3f-8f91-e99020eeaa89&pd_rd_i=B00CMALD3E&th=1
+** sjks
+* TODO plan to install golden-ratio package https://www.youtube.com/watch?v=k5Nwwo4QTmI
+* TODO plan to install and try out xah lees fly-keys http://xahlee.info/emacs/misc/xah-fly-keys.html
+* TODO plan to learn Denote note taking package by Prot which is also mentioned in Emacs writing studio
+* TODO Plan to upgrade to latest bpi android app before sept 30
+* TODO How to claim bpi ccard excess fund paid? see statement in bpi app
+* DONE do a git merge of this branch to GH
+CLOSED: [2023-09-30 Sat 06:07]
+:LOGBOOK:
+- State "DONE"       from "TODO"       [2023-09-30 Sat 06:07]
+:END:
+
+* CANCELLED create keybinding shortcuts for tab-next and tab-previous functions
+CLOSED: [2023-09-30 Sat 06:05]
+:LOGBOOK:
+- State "CANCELLED"  from "TODO"       [2023-09-30 Sat 06:05] \\
+  not urgent rn
+:END:
+
+* CANCELLED reset sioyek in default mode e.g. the present state is too enlarged
+CLOSED: [2023-09-30 Sat 05:56]
+:LOGBOOK:
+- State "CANCELLED"  from "TODO"       [2023-09-30 Sat 05:56] \\
+  not important atm
+:END:
+
+* DONE Plan to email Prulife UK re status of my new agent if still alive or dead now
+CLOSED: [2023-09-29 Fri 09:00]
+:LOGBOOK:
+- State "DONE"       from "WAITING"    [2023-09-29 Fri 09:00]
+- State "WAITING"    from "TODO"       [2023-09-23 Sat 18:55] \\
+  do this asap
+:END:
+
+* CANCELLED What is elvish shell? go check this out
+CLOSED: [2023-09-29 Fri 08:14]
+:LOGBOOK:
+- State "CANCELLED"  from "TODO"       [2023-09-29 Fri 08:14] \\
+  not important rn
+:END:
+
+* DONE plan to do times code followon Tony Aldons elisp chann in YT
+CLOSED: [2023-09-29 Fri 08:11]
+:LOGBOOK:
+- State "DONE"       from "TODO"       [2023-09-29 Fri 08:11]
+:END:
+
+* DONE Record bpi soa was 3,013,337 now 2,963,337 after less 50K to sjp for October home budget
+CLOSED: [2023-09-29 Fri 08:10]
+:LOGBOOK:
+- State "DONE"       from "TODO"       [2023-09-29 Fri 08:10]
+:END:
+
+* CANCELLED Plan to install this Ivy package as per the manual tutorial below.
+CLOSED: [2023-09-29 Fri 06:07]
+:LOGBOOK:
+- State "CANCELLED"  from "TODO"       [2023-09-29 Fri 06:07] \\
+  not needed right now
+:END:
+
+* CANCELLED how to change font face of org mode status waiting, etc
+CLOSED: [2023-09-29 Fri 05:53]
+:LOGBOOK:
+- State "CANCELLED"  from "TODO"       [2023-09-29 Fri 05:53] \\
+  not useful for now
+:END:
+
+* DONE plan to install Ruby and friends in the EOS machine
+CLOSED: [2023-09-28 Thu 18:41]
+:LOGBOOK:
+- State "DONE"       from "TODO"       [2023-09-28 Thu 18:41]
+:END:
+
+* DONE record BPI soa after less 8k to sjp for tire replacement 3,013,337
+CLOSED: [2023-09-28 Thu 05:17]
+:LOGBOOK:
+- State "DONE"       from "TODO"       [2023-09-28 Thu 05:17]
+:END:
+
+* DONE Plan to pay MBT credit card due payment 545.26 via Gcash                 :credit:card:
+CLOSED: [2023-09-28 Thu 05:14] DEADLINE: <2023-10-09 Mon>
+:LOGBOOK:
+- State "DONE"       from "WAITING"    [2023-09-28 Thu 05:14]
+- State "WAITING"    from              [2023-09-22 Fri 09:46] \\
+  Pay using Gcash channel
+:END:
+
+* CANCELLED Solve how to enable javascript in eww to watch videos
+CLOSED: [2023-09-27 Wed 05:56]
+:LOGBOOK:
+- State "CANCELLED"  from "TODO"       [2023-09-27 Wed 05:56] \\
+  not a priority
+:END:
+
 * DONE now how to search and replace thos date stamps with TODO placeholder?
 CLOSED: [2023-09-22 Fri 07:38]
 :LOGBOOK:
@@ -129,33 +232,21 @@ CLOSED: [2023-09-23 Sat 19:14]
 :END:
 
 * TIL to disable read-only mode in a buffer do C-x C-q [[https://www.gnu.org/software/emacs/manual/html_node/elisp/Read-Only-Buffers.html#:~:text=A%20buffer%20visiting%20a%20write,only%20flag%20with%20C-x%20C-q%20.][read-only mode]]
-* FYI riyadbank account 2030867649940 Shoevert for tennis payment of mommmy C lol
+* DONE FYI riyadbank account 2030867649940 Shoevert for tennis payment of mommmy C lol
+CLOSED: [2023-09-25 Mon 05:35]
+:LOGBOOK:
+- State "DONE"       from              [2023-09-25 Mon 05:35]
+:END:
+
 * FYI Update: Cant do any sponsor mode for Magit maintainer tarsius_ as per emacs reddit page
-* TODO consider using tab bar mode from this guide https://mihaiolteanu.me/ with one idea copy the contents of this eww buffer to scratch and filter out the codes then source it as a dot el file.
-* WAITING Plan to pay MBT credit card due payment 545.26 via Gcash                    :credit:card:
-DEADLINE: <2023-10-09 Mon>
+* DONE consider using tab bar mode from this guide https://mihaiolteanu.me/ with one idea copy the contents of this eww buffer to scratch and filter out the codes then source it as a dot el file.
+CLOSED: [2023-09-26 Tue 05:17]
 :LOGBOOK:
-- State "WAITING"    from              [2023-09-22 Fri 09:46] \\
-  Pay using Gcash channel
+- State "DONE"       from "TODO"       [2023-09-26 Tue 05:17]
 :END:
 
-* WAITING Plan to email Prulife UK re status of my new agent if still alive or dead now
+* DONE send 8k for wigo tire replacement after the damage
+CLOSED: [2023-09-27 Wed 05:56]
 :LOGBOOK:
-- State "WAITING"    from "TODO"       [2023-09-23 Sat 18:55] \\
-  do this asap
+- State "DONE"       from "TODO"       [2023-09-27 Wed 05:56]
 :END:
-
-* TODO how to change font face of org mode status waiting, etc
-
-* TODO reset sioyek in default mode e.g. the present state is too enlarged
-* TODO plan to do times code followon Tony Aldons elisp chann in YT
-* TODO do a git merge of this branch to GH
-* TODO Plan to upgrade to latest bpi android app before sept 30
-* TODO How to claim bpi ccard excess fund paid? see statement in bpi app
-* TODO What is elvish shell? go check this out
-* TODO Plan to place order of home generators to BluettiPH for mama
-* TODO Plan to place order of home generators to BluettiPH for mymy
-* TODO Solve how to enable javascript in eww to watch videos
-* TODO how to set a diff theme in a diff frame (or window)
-* TODO Plan to try out org-roam if better than this org-todo, or maybe Prots denote
-* TODO Plan to setup keyboard shortcut of avy-goto-char function

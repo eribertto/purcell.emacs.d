@@ -1,5 +1,10 @@
 ;; Auto-generated file; don't edit -*- mode: lisp-data -*-
-((:url "https://protesilaos.com/emacs/modus-themes" :title "Modus Themes | Protesilaos Stavrou" :time "Tue Sep 19 05:25:12 2023")
+((:url "https://lucidmanager.org/productivity/emacs-workflow/" :title "The Emacs Workflow for Publish Articles, Books and Websites" :time "Fri Sep 29 05:52:45 2023")
+ (:url "https://lucidmanager.org/tags/emacs/" :title "Write Articles, Websites and Books with Emacs Writing Studio" :time "Fri Sep 29 05:37:42 2023")
+ (:url "https://www.emacswiki.org/emacs/basic-toolkit.el" :title "EmacsWiki: basic-toolkit.el" :time "Thu Sep 28 06:06:45 2023")
+ (:url "https://www.emacswiki.org/emacs/InsertDate" :title "EmacsWiki: Insert Date" :time "Wed Sep 27 07:00:17 2023")
+ (:url "https://github.com/alphapapa/burly.el" :title "GitHub - alphapapa/burly.el: Save and restore frames and windows with their buffers in Emacs" :time "Tue Sep 26 06:54:38 2023")
+ (:url "https://protesilaos.com/emacs/modus-themes" :title "Modus Themes | Protesilaos Stavrou" :time "Tue Sep 19 05:25:12 2023")
  (:url "https://oremacs.com/swiper/" :title "Ivy User Manual" :time "Tue Sep 12 18:55:55 2023")
  (:url "https://howardism.org/Technical/Emacs/capturing-intro.html" :title "Org Capturing Introduction" :time "Mon Sep 11 04:23:36 2023")
  (:url "https://readingworldmagazine.com/emacs/2022-01-24-how-to-use-eww-browser-in-emacs/" :title "How to Use EWW Browser in Emacs [and What it Isn't Good For]" :time "Mon Sep 11 04:17:11 2023")
