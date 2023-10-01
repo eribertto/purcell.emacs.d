@@ -3,16 +3,26 @@
 * TODO Plan to place order of home generators to BluettiPH for mama
 ** Fillup the home address c/o mymy and send to Bluetti FB msgr app
 ** Then arrange money payment
-* TODO consider to get ergonomic keyboard Kinesis Advantage2 https://www.amazon.sa/-/en/Kinesis-Advantage2-Ergonomic-Keyboard-KB600/dp/B01KR1C5PY?th=1
+* TODO plan to install golden-ratio package https://www.youtube.com/watch?v=k5Nwwo4QTmI
+* TODO plan to install and try out xah lees fly-keys http://xahlee.info/emacs/misc/xah-fly-keys.html
+* TODO plan to learn Denote note taking package by Prot which is also mentioned in Emacs writing studio
+* TODO How to claim bpi ccard excess fund paid? see statement in bpi app
+* DONE Plan to upgrade to latest bpi android app before sept 30
+CLOSED: [2023-10-01 Sun 19:16]
+:LOGBOOK:
+- State "DONE"       from "TODO"       [2023-10-01 Sun 19:16]
+:END:
+
+* DONE consider to get ergonomic keyboard Kinesis Advantage2 https://www.amazon.sa/-/en/Kinesis-Advantage2-Ergonomic-Keyboard-KB600/dp/B01KR1C5PY?th=1
+CLOSED: [2023-10-01 Sun 19:16]
+:LOGBOOK:
+- State "DONE"       from "TODO"       [2023-10-01 Sun 19:16]
+:END:
+
 ** Or the Perixx Perlboard https://www.amazon.sa/-/en/Perixx-Periboard-512-Ergonomic-Split-Keyboard/dp/B075GZVD4T/ref=d_pd_sbs_sccl_2_2/262-4147414-8753364?pd_rd_w=PYlHU&content-id=amzn1.sym.eb5ce24c-6c98-4fb8-8a3d-c6c6d23e3333&pf_rd_p=eb5ce24c-6c98-4fb8-8a3d-c6c6d23e3333&pf_rd_r=SV47SAE8V6651CP19Z54&pd_rd_wg=iVV0r&pd_rd_r=3eec9fb5-ee8d-450e-a137-644fe4e11047&pd_rd_i=B075GZVD4T&th=1
 ** Check more ideas in this YT split keyboard https://www.youtube.com/watch?v=ZNr4BV3ujAg
 ** Kinesis Freestyle2 keyboard https://www.amazon.sa/-/en/Kinesis-Freestyle2-Ergonomic-Keyboard-Separation/dp/B00CMALD3E/ref=pd_rhf_d_dp_s_pd_crcd_sccl_1_15/262-4147414-8753364?pd_rd_w=frGuJ&content-id=amzn1.sym.243ee758-11f5-4259-a250-bd1839134560&pf_rd_p=243ee758-11f5-4259-a250-bd1839134560&pf_rd_r=4GEW7M7EHY8WC1VTNNK5&pd_rd_wg=cOKVi&pd_rd_r=df36c2e6-a826-4c3f-8f91-e99020eeaa89&pd_rd_i=B00CMALD3E&th=1
 ** sjks
-* TODO plan to install golden-ratio package https://www.youtube.com/watch?v=k5Nwwo4QTmI
-* TODO plan to install and try out xah lees fly-keys http://xahlee.info/emacs/misc/xah-fly-keys.html
-* TODO plan to learn Denote note taking package by Prot which is also mentioned in Emacs writing studio
-* TODO Plan to upgrade to latest bpi android app before sept 30
-* TODO How to claim bpi ccard excess fund paid? see statement in bpi app
 * DONE do a git merge of this branch to GH
 CLOSED: [2023-09-30 Sat 06:07]
 :LOGBOOK:

@@ -163,6 +163,14 @@
 (use-package burly
   :quelpa (burly :fetcher github :repo "alphapapa/burly.el"))
 
+;; Read ePub files
+(use-package nov
+  :init
+  (add-to-list 'auto-mode-alist '("\\.epub\\'" . nov-mode)))
+
+
+
+
 
 (provide 'init-local)
 ;;; init-local.el ends here
