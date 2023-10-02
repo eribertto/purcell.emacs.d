@@ -1,6 +1,18 @@
 * PROJECT Resume elisp coding in exercism since monthly deduction is active
-* TODO Plan to place order of home generators to BluettiPH for mymy
-* TODO Plan to place order of home generators to BluettiPH for mama
+** ongoing 10/2/23 0430-0530
+** xxx
+* WAITING Plan to place order of home generators to BluettiPH for mymy
+:LOGBOOK:
+- State "WAITING"    from "TODO"       [2023-10-02 Mon 05:45] \\
+  ongoing order
+:END:
+
+* WAITING Plan to place order of home generators to BluettiPH for mama
+:LOGBOOK:
+- State "WAITING"    from "TODO"       [2023-10-02 Mon 05:45] \\
+  ongoing order
+:END:
+
 ** Fillup the home address c/o mymy and send to Bluetti FB msgr app
 ** Then arrange money payment
 * TODO plan to install golden-ratio package https://www.youtube.com/watch?v=k5Nwwo4QTmI
