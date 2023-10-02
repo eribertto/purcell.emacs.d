@@ -19,6 +19,13 @@
 * TODO plan to install and try out xah lees fly-keys http://xahlee.info/emacs/misc/xah-fly-keys.html
 * TODO plan to learn Denote note taking package by Prot which is also mentioned in Emacs writing studio
 * TODO How to claim bpi ccard excess fund paid? see statement in bpi app
+* TODO plan to send 10K to mymy, 10K to CTB via MTB
+* DONE send 55k to sjp october home allowance incl 5K for borrow by Jerry, send 8k to nonoy oct school allowance 5k and 3k budget backpack
+CLOSED: [2023-10-02 Mon 06:36]
+:LOGBOOK:
+- State "DONE"       from              [2023-10-02 Mon 06:36]
+:END:
+
 * DONE Plan to upgrade to latest bpi android app before sept 30
 CLOSED: [2023-10-01 Sun 19:16]
 :LOGBOOK:
