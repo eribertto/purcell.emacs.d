@@ -9,9 +9,11 @@
 (blink-cursor-mode 1)
 (turn-on-visual-line-mode)
 
-(add-to-list 'load-path (expand-file-name "code-snippets" user-emacs-directory))
-(require 'my-insert-date)
-
+(add-to-list 'load-path "~/.emacs.d/elpa-29.1")
+;; 10/3/23 try out xah-fly-keys
+(require 'xah-fly-keys)
+(xah-fly-keys-set-layout "qwerty")
+(xah-fly-keys 1)
 
 
 ;; Use Emacs or w3m as browser, xah lee has some tips to this
