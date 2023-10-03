@@ -10,6 +10,9 @@
 (turn-on-visual-line-mode)
 
 (add-to-list 'load-path (expand-file-name "code-snippets" user-emacs-directory))
+(require 'my-insert-date)
+
+
 
 ;; Use Emacs or w3m as browser, xah lee has some tips to this
 (setq browse-url-browser-function 'eww-browse-url)

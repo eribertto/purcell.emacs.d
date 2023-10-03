@@ -1,6 +1,5 @@
-(("private" . [11 0 12 0]))
+(("private" . [-1 0 21 0]))
 --==-- private
-
 ==--== DONE 
 [DONE Oct 2, 2023] [Sep 14, 2023] Plan to make tracking table of BPI ccard payments and inquire for refund
 [DONE Oct 2, 2023] [Sep 14, 2023] Plan to try out org-roam if better than this org-todo, or maybe Prots denote
@@ -22,6 +21,15 @@
 [DONE Oct 2, 2023] [Sep 18, 2023] Plan to upgrade to latest bpi android app before sept 30
 [DONE Oct 2, 2023] [Sep 19, 2023] Plan to readup the info manual of Magit even on set interval times only, for sure you can get some nuggets of wisdom just by reading it
 [DONE Oct 2, 2023] [Sep 19, 2023] Keep track of LBC packages of CTB re Bluetti porta home generator set
+[DONE Sep 30, 2023] [Sep 18, 2023] How to claim bpi ccard excess fund paid? see statement in bpi app
+[DONE Sep 30, 2023] [Sep 19, 2023] Plan to readup the info manual of Magit even on set interval times only, for sure you can get some nuggets of wisdom just by reading it
+[DONE Sep 30, 2023] [Sep 19, 2023] Update: Cant do any sponsoring due to billing problem re Plan to donate or be a recurring donor to Magit maintainer tarsius_ as per emacs reddit page
+[DONE Sep 30, 2023] [Sep 14, 2023] Study, test out and understand org-mode todo states and cycle them
+[DONE Sep 30, 2023] [Sep 14, 2023] Make a tracking table of fund transfers from BPI to BDO as per hand list made (note use org-table)
+[DONE Sep 30, 2023] [Sep 14, 2023] Plan to email Prulife UK re status of my new agent if still alive or dead now
+[DONE Sep 30, 2023] [Sep 15, 2023] Plan to install Prots ef-themes, also checkout package embark, counsel for avy (check videos) and emacs help system
+[DONE Sep 30, 2023] [Sep 18, 2023] Plan to upgrade to latest bpi android app before sept 30
+[DONE Sep 30, 2023] [Sep 19, 2023] Keep track of LBC packages of CTB re Bluetti porta home generator set
 [DONE Sep 20, 2023] [Sep 18, 2023] How to have different themes based on frame or workspace? Ask in emacs forum/discourse/reddit
 [DONE Sep 20, 2023] [Sep 19, 2023] Consider to try out emacs modern theme https://github.com/emacs-jp/replace-colorthemes
 [DONE Sep 20, 2023] [Sep 20, 2023] DONE installed ef-themes and modus-theme in this emacs nuc7i5 machine

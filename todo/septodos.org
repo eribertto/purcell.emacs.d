@@ -42,6 +42,12 @@ CLOSED: [2023-10-01 Sun 19:16]
 ** Check more ideas in this YT split keyboard https://www.youtube.com/watch?v=ZNr4BV3ujAg
 ** Kinesis Freestyle2 keyboard https://www.amazon.sa/-/en/Kinesis-Freestyle2-Ergonomic-Keyboard-Separation/dp/B00CMALD3E/ref=pd_rhf_d_dp_s_pd_crcd_sccl_1_15/262-4147414-8753364?pd_rd_w=frGuJ&content-id=amzn1.sym.243ee758-11f5-4259-a250-bd1839134560&pf_rd_p=243ee758-11f5-4259-a250-bd1839134560&pf_rd_r=4GEW7M7EHY8WC1VTNNK5&pd_rd_wg=cOKVi&pd_rd_r=df36c2e6-a826-4c3f-8f91-e99020eeaa89&pd_rd_i=B00CMALD3E&th=1
 ** sjks
+* DONE Plan to upgrade to latest bpi android app before sept 30
+CLOSED: [2023-09-30 Sat 12:31]
+:LOGBOOK:
+- State "DONE"       from "TODO"       [2023-09-30 Sat 12:31]
+:END:
+
 * DONE do a git merge of this branch to GH
 CLOSED: [2023-09-30 Sat 06:07]
 :LOGBOOK:
