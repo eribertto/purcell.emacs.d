@@ -9,11 +9,17 @@
 (blink-cursor-mode 1)
 (turn-on-visual-line-mode)
 
-(add-to-list 'load-path "~/.emacs.d/elpa-29.1")
+(add-to-list 'load-path (expand-file-name "elpa-29.1/xah-fly-keys-24.13.20231005090319" user-emacs-directory))
+
+
+;; (add-to-list 'load-path "~/.emacs.d/elpa-29.1")
 ;; 10/3/23 try out xah-fly-keys
 (require 'xah-fly-keys)
+;; X(use-package xah-fly-keys)
 (xah-fly-keys-set-layout "qwerty")
 (xah-fly-keys 1)
+
+
 
 
 ;; Use Emacs or w3m as browser, xah lee has some tips to this
@@ -48,7 +54,8 @@
     (add-to-list 'default-frame-alist '(cursor-color . "white")
                  (load-theme 'ef-night)))
 ;; why does flymake flagged require popper an error?
-(require 'popper)
+;; (require 'popper)
+(use-package popper)
 (setq popper-reference-buffers
       '("\\*Messages\\*"
         "Output\\*$"
