@@ -11,13 +11,17 @@
 
 (add-to-list 'load-path (expand-file-name "elpa-29.1/xah-fly-keys-24.13.20231005090319" user-emacs-directory))
 
+(with-eval-after-load 'org (global-org-modern-mode))
 
 ;; (add-to-list 'load-path "~/.emacs.d/elpa-29.1")
 ;; 10/3/23 try out xah-fly-keys
-(require 'xah-fly-keys)
-;; X(use-package xah-fly-keys)
-(xah-fly-keys-set-layout "qwerty")
-(xah-fly-keys 1)
+;; (require 'xah-fly-keys)
+(use-package xah-fly-keys
+  :config
+  (xah-fly-keys-set-layout "qwerty")
+  (xah-fly-keys 1))
+;; (xah-fly-keys-set-layout "qwerty")
+;; (xah-fly-keys 1)
 
 
 
@@ -69,15 +73,18 @@
 (popper-mode +1)
 
 ;; For echo-area hints
-(require 'popper-echo)
-(popper-echo-mode +1)
+;; (require 'popper-echo)
+(use-package popper-echo
+  :config
+  popper-echo-mode 1)
 
 (when (display-graphic-p)
   (require 'all-the-icons))
 
 ;;; some Org overrides
 ;;; this replaces some defaults in init-org.el
-(require 'org-bullets)
+;; (require 'org-bullets)
+(use-package org-bullets)
 (add-hook 'org-mode-hook (lambda () (org-bullets-mode 1)))
 
 (setq org-default-notes-file "~/.emacs.d/notes/tasks.org")
@@ -169,8 +176,8 @@
  '(quelpa-use-package
    :fetcher git
    :url "https://github.com/quelpa/quelpa-use-package.git"))
-(require 'quelpa-use-package)
-
+;; (require 'quelpa-use-package)
+(use-package quelpa-use-package)
 
 (use-package burly
   :quelpa (burly :fetcher github :repo "alphapapa/burly.el"))
