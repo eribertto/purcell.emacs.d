@@ -2,5 +2,6 @@
 * TODO plan to install golden-ratio package https://www.youtube.com/watch?v=k5Nwwo4QTmI
 * TODO plan to learn Denote note taking package by Prot which is also mentioned in Emacs writing studio
 * TODO How to claim bpi ccard excess fund paid? see statement in bpi app
-* TODO Plan to mbt send to mymy, ctb accounts
 * TODO Plan to resume coding practice elisp
+* TODO Plan to send mbt transfer to mymy, ctb mbt accounts 10k each
+* TODO Continue practicing xah fly keys modal system

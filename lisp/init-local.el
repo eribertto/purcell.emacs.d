@@ -122,44 +122,6 @@
       org-src-fontify-natively t
       org-src-tab-acts-natively t)
 
-;; ;;; begin tab bar mode
-;; (tab-bar-mode)
-
-;; (defun tab-create (name)
-;;   "Create the NAME tab if it doesn't exist already."
-;;   (condition-case nil
-;;       (unless (equal (alist-get 'name (tab-bar--current-tab))
-;;                      name)
-;;         (tab-bar-rename-tab-by-name name name))
-;;     (error (tab-new)
-;;            (tab-bar-rename-tab name))))
-
-;; ;; Ensure the needed tabs are created or exist; add extra to your liking
-;; (progn (tab-create "files")
-;;        (tab-create "eshells")
-;;        (tab-create "others"))
-
-;; ;; show or hide tab bar???
-;; (setf tab-bar-show t)
-;; ;; note if t the 3 tabs are created automatically
-
-;; (defun tab-bar-files ()
-;;   "Select the files tab-bar. Force return `t'."
-;;   (interactive)
-;;   (tab-bar-select-tab-by-name "files")
-;;   t)
-
-;; (defun tab-bar-eshells ()
-;;   "Select the eshells tab-bar. Force return `t'."
-;;   (interactive)
-;;   (tab-bar-select-tab-by-name "eshells")
-;;   t)
-
-;; (defun tab-bar-others ()
-;;   "Select the wm tab-bar. Force return `t'."
-;;   (interactive)
-;;   (tab-bar-select-tab-by-name "others")
-;;   t)
 
 ;; setup burly and quelpa 9/26/23
 ;; https://github.com/quelpa/quelpa-use-package
@@ -187,6 +149,12 @@
   :init
   (add-to-list 'auto-mode-alist '("\\.epub\\'" . nov-mode)))
 
+(use-package eshell-syntax-highlighting
+  :after eshell-mode
+  :ensure t ;; Install if not already installed.
+  :config
+  ;; Enable in all Eshell buffers.
+  (eshell-syntax-highlighting-global-mode +1))
 
 
 
