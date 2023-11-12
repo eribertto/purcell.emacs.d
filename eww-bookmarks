@@ -1,5 +1,9 @@
 ;; Auto-generated file; don't edit -*- mode: lisp-data -*-
-((:url "http://xahlee.info/emacs/misc/xah-fly-keys_tutorial.html"
+((:url
+  "https://www.masteringemacs.org/article/complete-guide-mastering-eshell"
+  :title "Mastering Eshell - Mastering Emacs" :time
+  "Sun Nov  5 09:59:44 2023")
+ (:url "http://xahlee.info/emacs/misc/xah-fly-keys_tutorial.html"
        :title "Emacs: Xah Fly Keys Tutorial" :time
        "Wed Nov  1 17:03:13 2023")
  (:url "https://lucidmanager.org/productivity/emacs-workflow/" :title

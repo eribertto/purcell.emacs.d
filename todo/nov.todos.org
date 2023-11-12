@@ -5,3 +5,4 @@
 * TODO Plan to resume coding practice elisp
 * TODO Plan to send mbt transfer to mymy, ctb mbt accounts 10k each
 * TODO Continue practicing xah fly keys modal system
+* TODO copy the shortcut keys from ubuntu machine to here

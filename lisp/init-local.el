@@ -156,7 +156,17 @@
   ;; Enable in all Eshell buffers.
   (eshell-syntax-highlighting-global-mode +1))
 
+;; after emacs24.4
+;; https://www.masteringemacs.org/article/complete-guide-mastering-eshell
+(with-eval-after-load "esh-opt"
+  (autoload 'epe-theme-lambda "eshell-prompt-extras")
+  (setq eshell-highlight-prompt nil
+        eshell-prompt-function 'epe-theme-lambda))
+;; epe-theme-lambda
+;; epe-theme-dakrone
+(setq epe-theme-multiline-with-status t)
 
+(fit-frame-to-buffer)
 
 
 (provide 'init-local)
