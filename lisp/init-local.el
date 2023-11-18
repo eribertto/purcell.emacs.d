@@ -167,6 +167,37 @@
 (setq epe-theme-multiline-with-status t)
 
 (fit-frame-to-buffer)
+;; copied from xah-fly-keys init.el repo 2023-11-18
+(server-start)
+(server-mode 1)
+;; UTF-8 as default encoding
+(set-language-environment 'utf-8)
+(set-default-coding-systems 'utf-8)
+(set-keyboard-coding-system 'utf-8-unix)
+;; keep a list of recently opened files
+(require 'recentf)
+(recentf-mode 1)
+;; xah lees guide http://xahlee.info/emacs/emacs/keyboard_shortcuts.html
+;; keybinding shortcuts syntax for emacs 29
+(keymap-global-set "C-^" #'tab-previous)
+(keymap-global-set "C-&" #'tab-next)
+(global-set-key (kbd "<f5>") 'xah-fly-mode-toggle) ; this works
+
+;; add a key to insert mode to activate command mode sort of jk escape in vim
+;; note the term 'a key' meaning only one key char
+;; use target key \ aka forward slash but
+;; note to use this literal char (in insert mode) hit C-q first
+
+(define-key xah-fly-insert-map (kbd "\\") 'xah-fly-command-mode-activate)
+
+;; insert by doing C-q first then the character \  (in insert mode)
+;; modeline colors and icons
+(setq xah-fly-command-mode-indicator "🔺")
+(setq xah-fly-insert-mode-indicator "✏" )
+(defun my-modeline-color-on () (set-face-background 'mode-line "grey"))
+(defun my-modeline-color-off () (set-face-background 'mode-line "firebrick"))
+(add-hook 'xah-fly-command-mode-activate-hook 'my-modeline-color-on)
+(add-hook 'xah-fly-insert-mode-activate-hook  'my-modeline-color-off)
 
 
 (provide 'init-local)
