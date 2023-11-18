@@ -1,8 +1,74 @@
-* PROJECT Resume elisp coding in exercism since monthly deduction is active
-* TODO plan to install golden-ratio package https://www.youtube.com/watch?v=k5Nwwo4QTmI
+* TODO copy the xah lee shortcuts from ubuntu machine to here
+* TODO Plan to DL and setup DMW android app, also get passwd in OEC portal
+* TODO Get schedule of kids for Jan. 2024 to plan out vacation to diff places
+* TODO Followup to HAKA my latest offer before my EOC leave Dec. 28
+* TODO Request to CTB to bring bukayo on the meetup date Dec. 29
+* TODO Plan to resume coding practice elisp
+* TODO Dotfiles how to store bare git reposity  https://www.atlassian.com/git/tutorials/dotfiles
 * TODO plan to learn Denote note taking package by Prot which is also mentioned in Emacs writing studio
 * TODO How to claim bpi ccard excess fund paid? see statement in bpi app
-* TODO Plan to resume coding practice elisp
-* TODO Plan to send mbt transfer to mymy, ctb mbt accounts 10k each
-* TODO Continue practicing xah fly keys modal system
-* TODO copy the shortcut keys from ubuntu machine to here
+* TODO plan to install golden-ratio package https://www.youtube.com/watch?v=k5Nwwo4QTmI
+* DONE Followup SMSA package amazon.sa order online
+CLOSED: [2023-11-18 Sat 13:58]
+:LOGBOOK:
+- State "DONE"       from "TODO"       [2023-11-18 Sat 13:58]
+:END:
+
+* DONE FYI sjp to return to passi farm 11/18/23 to complete the bal document requirements for home electrification
+CLOSED: [2023-11-18 Sat 13:59]
+:LOGBOOK:
+- State "DONE"       from "TODO"       [2023-11-18 Sat 13:59]
+:END:
+
+* DONE Plan to review metrobankcard online survey in gmail inbox, followup mobile number update, give low review.
+CLOSED: [2023-11-18 Sat 13:59]
+:LOGBOOK:
+- State "DONE"       from "TODO"       [2023-11-18 Sat 13:59]
+:END:
+
+* DONE Plan to install tabby terminal https://github.com/Eugeny/tabby
+CLOSED: [2023-11-18 Sat 13:59]
+:LOGBOOK:
+- State "DONE"       from "TODO"       [2023-11-18 Sat 13:59]
+:END:
+
+* DONE Plan to install tabby-bin next-gen terminal emulator https://www.youtube.com/watch?v=0ATT6D53OEc&t=35s
+CLOSED: [2023-11-14 Tue 14:46]
+:LOGBOOK:
+- State "DONE"       from              [2023-11-14 Tue 14:46]
+:END:
+
+* DONE FYI zerolinux sha1 62c3089eec2968f1df5ae6ed662092b521482633
+CLOSED: [2023-11-13 Mon 08:14]
+:LOGBOOK:
+- State "DONE"       from              [2023-11-13 Mon 08:14]
+:END:
+
+* DONE Readup ventoy howto in YT, fyi ventoy-bin is installed in this eos machine ready to use.
+CLOSED: [2023-11-12 Sun 17:19]
+:LOGBOOK:
+- State "DONE"       from "TODO"       [2023-11-12 Sun 17:19]
+:END:
+
+* DONE Resume elisp coding in exercism since monthly deduction is active
+CLOSED: [2023-11-12 Sun 14:22]
+:LOGBOOK:
+- State "DONE"       from "PROJECT"    [2023-11-12 Sun 14:22]
+:END:
+
+* DONE download and burn to usb Fed39 for install to home machines laptop and nuc
+CLOSED: [2023-11-12 Sun 10:01]
+:LOGBOOK:
+- State "DONE"       from "TODO"       [2023-11-12 Sun 10:01]
+:END:
+
+* DONE Plan to send mbt transfer to mymy, ctb mbt accounts 10k each
+CLOSED: [2023-11-12 Sun 09:44]
+:LOGBOOK:
+- State "DONE"       from "TODO"       [2023-11-12 Sun 09:44]
+:END:
+* DONE Continue practicing xah fly keys modal system
+CLOSED: [2023-11-12 Sun 09:44]
+:LOGBOOK:
+- State "DONE"       from "TODO"       [2023-11-12 Sun 09:44]
+:END:
