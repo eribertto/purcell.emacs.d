@@ -1,28 +1,9 @@
-Toggle menu  
-
-Mastering Emacs
-
-* About
-* Article Index
-* Reading Guide
-* My Emacs Packages
-
-The Mastering Emacs ebook cover art 
-
-Emacs 28 Edition is out now!
-
-Read a Free Sample
--------------------------------------------------------------------------------------------------------------
-Learn More
-
-Mastering Eshell 
+Mastering Eshell
 
 Emacs has a shell written entirely in Emacs Lisp. Here's how you master Eshell, a versatile and powerful shell capable of
-supplanting bash or zsh as your daily driver. 
-* 
+supplanting bash or zsh as your daily driver.
 By Mickey Petersen
 Updated for emacs 28
-* 
 
 You can run Run Shells and Terminal Emulators in Emacs, but none can match the versatility and integration with Emacs
 like Eshell.
@@ -34,7 +15,7 @@ identically on any environment Emacs itself runs on.
 Unlike a terminal emulator, Eshell is more like bash, zsh or the python shells. That means it has its own idiosyncrasies,
 rules, modes of operation, advantages and disadvantages.
 
-Eshell in action. Using Tramp you can <code>cd</code> into remote systems. Here it's a docker container running locally. 
+Eshell in action. Using Tramp you can <code>cd</code> into remote systems. Here it's a docker container running locally.
 Eshell in action. Using Tramp you can cd into remote systems. Here it's a docker container running locally.
 
 The main advantage is that you’re just talking to Emacs. The downside, of course, is that it’s not a shell you’re probably

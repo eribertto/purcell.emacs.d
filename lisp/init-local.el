@@ -168,8 +168,8 @@
 
 (fit-frame-to-buffer)
 ;; copied from xah-fly-keys init.el repo 2023-11-18
-(server-start)
-(server-mode 1)
+;; (server-start)
+;; (server-mode 1)
 ;; UTF-8 as default encoding
 (set-language-environment 'utf-8)
 (set-default-coding-systems 'utf-8)
@@ -188,7 +188,7 @@
 ;; use target key \ aka forward slash but
 ;; note to use this literal char (in insert mode) hit C-q first
 
-(define-key xah-fly-insert-map (kbd "\\") 'xah-fly-command-mode-activate)
+;; (define-key xah-fly-insert-map (kbd "\\") 'xah-fly-command-mode-activate)
 
 ;; insert by doing C-q first then the character \  (in insert mode)
 ;; modeline colors and icons

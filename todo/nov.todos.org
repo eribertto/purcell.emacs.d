@@ -1,4 +1,6 @@
 * TODO copy the xah lee shortcuts from ubuntu machine to here
+* TODO Plan to install emacs bookmark package https://github.com/joodland/bm
+* TODO Plan to donate 15K to CTB re cemetery project Tacloban
 * TODO Plan to DL and setup DMW android app, also get passwd in OEC portal
 * TODO Get schedule of kids for Jan. 2024 to plan out vacation to diff places
 * TODO Followup to HAKA my latest offer before my EOC leave Dec. 28

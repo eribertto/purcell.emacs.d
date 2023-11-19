@@ -1,0 +1,10 @@
+* TODO Discuss with Mohd Johani re his coverage area non-highway AMA areas
+* TODO Get RFI tracking of solar lights site installation.
+* TODO Send to HAKA October fuel signed sheet
+* TODO Notice to PMT mgmt the road quality degradation after rain as per meeting Nov. 15/23
+* TODO Get AMA latest org chart of site personnel
+* DONE Send to worley re Qusay's query of drawing ifc stamp
+CLOSED: [2023-11-19 Sun 10:01]
+:LOGBOOK:
+- State "DONE"       from "TODO"       [2023-11-19 Sun 10:01]
+:END:
