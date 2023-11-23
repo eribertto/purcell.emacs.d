@@ -23,12 +23,8 @@
 ;; (xah-fly-keys-set-layout "qwerty")
 ;; (xah-fly-keys 1)
 
-
-
-
 ;; Use Emacs or w3m as browser, xah lee has some tips to this
 (setq browse-url-browser-function 'eww-browse-url)
-
 
 ;;; add to emacs path the users hand made code snippets
 ;;; https://www.emacswiki.org/emacs/LoadPath
@@ -122,7 +118,6 @@
       org-src-fontify-natively t
       org-src-tab-acts-natively t)
 
-
 ;; setup burly and quelpa 9/26/23
 ;; https://github.com/quelpa/quelpa-use-package
 ;; https://github.com/alphapapa/burly.el
@@ -192,13 +187,14 @@
 
 ;; insert by doing C-q first then the character \  (in insert mode)
 ;; modeline colors and icons
-(setq xah-fly-command-mode-indicator "🔺")
+;; command-mode-indicator-symbols = "" " "
+;; icons copied from toml file of starship.rs themes
+(setq xah-fly-command-mode-indicator " ")
 (setq xah-fly-insert-mode-indicator "✏" )
-(defun my-modeline-color-on () (set-face-background 'mode-line "grey"))
-(defun my-modeline-color-off () (set-face-background 'mode-line "firebrick"))
+(defun my-modeline-color-on () (set-face-background 'mode-line "green"))
+(defun my-modeline-color-off () (set-face-background 'mode-line "tomato"))
 (add-hook 'xah-fly-command-mode-activate-hook 'my-modeline-color-on)
 (add-hook 'xah-fly-insert-mode-activate-hook  'my-modeline-color-off)
-
 
 (provide 'init-local)
 ;;; init-local.el ends here

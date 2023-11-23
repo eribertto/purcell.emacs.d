@@ -1,6 +1,5 @@
-* TODO copy the xah lee shortcuts from ubuntu machine to here
+* TODO Plan to try out other ventoy isos in usb drive
 * TODO Plan to install emacs bookmark package https://github.com/joodland/bm
-* TODO Plan to donate 15K to CTB re cemetery project Tacloban
 * TODO Plan to DL and setup DMW android app, also get passwd in OEC portal
 * TODO Get schedule of kids for Jan. 2024 to plan out vacation to diff places
 * TODO Followup to HAKA my latest offer before my EOC leave Dec. 28
@@ -10,6 +9,18 @@
 * TODO plan to learn Denote note taking package by Prot which is also mentioned in Emacs writing studio
 * TODO How to claim bpi ccard excess fund paid? see statement in bpi app
 * TODO plan to install golden-ratio package https://www.youtube.com/watch?v=k5Nwwo4QTmI
+* DONE Plan to donate 15K to CTB re cemetery project Tacloban
+CLOSED: [2023-11-20 Mon 16:24]
+:LOGBOOK:
+- State "DONE"       from "TODO"       [2023-11-20 Mon 16:24]
+:END:
+
+* DONE copy the xah lee shortcuts from ubuntu machine to here
+CLOSED: [2023-11-19 Sun 16:02]
+:LOGBOOK:
+- State "DONE"       from "TODO"       [2023-11-19 Sun 16:02]
+:END:
+
 * DONE Followup SMSA package amazon.sa order online
 CLOSED: [2023-11-18 Sat 13:58]
 :LOGBOOK:
