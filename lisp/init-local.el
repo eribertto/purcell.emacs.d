@@ -48,7 +48,7 @@
 ;; (load-theme 'modus-operandi)
 (if (string= (system-name) "TP460-eos")
     (add-to-list 'default-frame-alist '(cursor-color . "yellow")
-                 (load-theme 'modus-vivendi)))
+                 (load-theme 'modus-vivendi-tinted)))
 (if (string= (system-name)
              "eribertto-nuc7i5bnh")
     (add-to-list 'default-frame-alist '(cursor-color . "white")
@@ -61,6 +61,7 @@
         "Output\\*$"
         "\\*Async Shell Command\\*"
         "\\*Compile-Log\\*"
+        "\\*Warnings\\*"
         help-mode
         compilation-mode))
 (global-set-key (kbd "C-`") 'popper-toggle)
@@ -183,8 +184,8 @@
 ;; use target key \ aka forward slash but
 ;; note to use this literal char (in insert mode) hit C-q first
 
-;; (define-key xah-fly-insert-map (kbd "\\") 'xah-fly-command-mode-activate)
-
+(define-key xah-fly-insert-map (kbd "\\") 'xah-fly-command-mode-activate)
+;; (global-set-key (kbd "\\") 'xah-fly-command-mode-activate)
 ;; insert by doing C-q first then the character \  (in insert mode)
 ;; modeline colors and icons
 ;; command-mode-indicator-symbols = "" " "
