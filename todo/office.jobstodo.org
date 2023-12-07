@@ -1,6 +1,11 @@
-* TODO Discuss with Mohd Johani re his coverage area non-highway AMA areas
-* TODO Send to HAKA October fuel signed sheet
+* TODO Send to HAKA October and November fuel signed sheets.
 * TODO Notice to PMT mgmt the road quality degradation after rain as per meeting Nov. 15/23
+* DONE Discuss with Mohd Johani re his coverage area non-highway AMA areas
+CLOSED: [2023-11-29 Wed 15:44]
+:LOGBOOK:
+- State "DONE"       from "TODO"       [2023-11-29 Wed 15:44]
+:END:
+
 * DONE Notice to PMT mgmt re reminder for interface items storage area.
 CLOSED: [2023-11-23 Thu 13:46]
 :LOGBOOK:

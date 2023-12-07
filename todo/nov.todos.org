@@ -1,14 +1,26 @@
-* TODO Plan to try out other ventoy isos in usb drive
 * TODO Plan to install emacs bookmark package https://github.com/joodland/bm
 * TODO Plan to DL and setup DMW android app, also get passwd in OEC portal
 * TODO Get schedule of kids for Jan. 2024 to plan out vacation to diff places
 * TODO Followup to HAKA my latest offer before my EOC leave Dec. 28
-* TODO Request to CTB to bring bukayo on the meetup date Dec. 29
-* TODO Plan to resume coding practice elisp
+* DONE Request to CTB to bring bukayo on the meetup date Dec. 29
+CLOSED: [2023-12-02 Sat 10:43]
+:LOGBOOK:
+- State "DONE"       from "TODO"       [2023-12-02 Sat 10:43]
+:END:
+
+* Setup Honor 90 new cellphone e.g. put sim and call PH for 6 minutes to deactivate region lock
+* Plan to do remit Dec transfers to beneficiaries.
+* PROJECT Plan to resume coding practice elisp
 * TODO Dotfiles how to store bare git reposity  https://www.atlassian.com/git/tutorials/dotfiles
 * TODO plan to learn Denote note taking package by Prot which is also mentioned in Emacs writing studio
 * TODO How to claim bpi ccard excess fund paid? see statement in bpi app
 * TODO plan to install golden-ratio package https://www.youtube.com/watch?v=k5Nwwo4QTmI
+* DONE Plan to try out other ventoy isos in usb drive
+CLOSED: [2023-11-29 Wed 15:46]
+:LOGBOOK:
+- State "DONE"       from "TODO"       [2023-11-29 Wed 15:46]
+:END:
+
 * DONE Plan to donate 15K to CTB re cemetery project Tacloban
 CLOSED: [2023-11-20 Mon 16:24]
 :LOGBOOK:
