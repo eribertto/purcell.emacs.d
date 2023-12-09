@@ -8,8 +8,18 @@ CLOSED: [2023-12-02 Sat 10:43]
 - State "DONE"       from "TODO"       [2023-12-02 Sat 10:43]
 :END:
 
-* Setup Honor 90 new cellphone e.g. put sim and call PH for 6 minutes to deactivate region lock
-* Plan to do remit Dec transfers to beneficiaries.
+* DONE Setup Honor 90 new cellphone e.g. put sim and call PH for 6 minutes to deactivate region lock
+CLOSED: [2023-12-07 Thu 13:21]
+:LOGBOOK:
+- State "DONE"       from              [2023-12-07 Thu 13:21]
+:END:
+
+* DONE Plan to do remit Dec transfers to beneficiaries.
+CLOSED: [2023-12-07 Thu 13:21]
+:LOGBOOK:
+- State "DONE"       from              [2023-12-07 Thu 13:21]
+:END:
+
 * PROJECT Plan to resume coding practice elisp
 * TODO Dotfiles how to store bare git reposity  https://www.atlassian.com/git/tutorials/dotfiles
 * TODO plan to learn Denote note taking package by Prot which is also mentioned in Emacs writing studio

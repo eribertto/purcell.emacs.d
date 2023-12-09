@@ -3,11 +3,12 @@
 ;;; Commentary:
 ;;; This is the users personal settings override
 
-(vertico-mode)
+(vertico-mode 1)
 (desktop-save-mode 1)
 (menu-bar-mode)
 (blink-cursor-mode 1)
 (turn-on-visual-line-mode)
+(set-cursor-color cyan)
 
 (add-to-list 'load-path (expand-file-name "elpa-29.1/xah-fly-keys-24.13.20231005090319" user-emacs-directory))
 
@@ -192,7 +193,8 @@
 ;; icons copied from toml file of starship.rs themes
 (setq xah-fly-command-mode-indicator " ")
 (setq xah-fly-insert-mode-indicator "✏" )
-(defun my-modeline-color-on () (set-face-background 'mode-line "green"))
+;; (defun my-modeline-color-on () (set-face-background 'mode-line "green"))
+(defun my-modeline-color-on () (set-face-background 'mode-line "royal blue"))
 (defun my-modeline-color-off () (set-face-background 'mode-line "tomato"))
 (add-hook 'xah-fly-command-mode-activate-hook 'my-modeline-color-on)
 (add-hook 'xah-fly-insert-mode-activate-hook  'my-modeline-color-off)
