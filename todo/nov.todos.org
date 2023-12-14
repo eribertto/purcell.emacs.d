@@ -1,3 +1,4 @@
+* PROJECT Plan to resume coding practice elisp
 * TODO Plan to install emacs bookmark package https://github.com/joodland/bm
 * TODO Plan to DL and setup DMW android app, also get passwd in OEC portal
 * TODO Get schedule of kids for Jan. 2024 to plan out vacation to diff places
@@ -20,7 +21,6 @@ CLOSED: [2023-12-07 Thu 13:21]
 - State "DONE"       from              [2023-12-07 Thu 13:21]
 :END:
 
-* PROJECT Plan to resume coding practice elisp
 * TODO Dotfiles how to store bare git reposity  https://www.atlassian.com/git/tutorials/dotfiles
 * TODO plan to learn Denote note taking package by Prot which is also mentioned in Emacs writing studio
 * TODO How to claim bpi ccard excess fund paid? see statement in bpi app
