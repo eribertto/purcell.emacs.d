@@ -324,6 +324,26 @@
 ;; end snippets emacs-bedrock
 ;; #################################################################################
 
+(use-package pdf-tools
+  :demand t
+  :hook (TeX-after-compilation-finished . TeX-revert-document-buffer)
+  :mode ("\\.pdf\\'" . pdf-view-mode)
+  :config
+  (require 'pdf-tools)
+  (require 'pdf-view)
+  (require 'pdf-misc)
+  (require 'pdf-occur)
+  (require 'pdf-util)
+  (require 'pdf-annot)
+  ;; (require 'pdf-info)
+  (require 'pdf-isearch)
+  (require 'pdf-history)
+  (require 'pdf-links)
+  (pdf-tools-install :no-query))
+
+
+
+
 
 (provide 'init-local)
 ;;; init-local.el ends here
