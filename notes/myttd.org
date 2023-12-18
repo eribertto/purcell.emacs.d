@@ -12,11 +12,9 @@
 DEADLINE: <2023-12-23 Sat>
 * Learn more from this emacs pro https://github.com/fniessen mentioned in the emacsconf 2023 video presentation.
 * Action Nikkis liquidation file e.g. sign it and return.
-* Plan for mamas birthday this Dec. 16
 * Use new Honor phone as ksa phone or use in PH?
 * Review all pins of PH banks e.g. mbt, rcbc, bpi.
 * Plan for places to visit with SJP this january 2024.
-* Followup John eric Juen re Ford pickup canopy or cover.
 * Make list of bahay-kubo veggies to plant in Passi farm.
 * Top up Tonik account of kids, mrs account this January 2024, source account MBT.
 * MBT credit card update of new cellphone number.
@@ -32,7 +30,8 @@ DEADLINE: <2023-12-23 Sat>
 - State "TIL/FYI"    from              [2023-12-12 Tue 17:32]
 :END:
 
-* TIL/FYI How to lock android apps away in addition to biometric lock? This is safeguard for accidental leaks.
+* TIL/FYI How to lock android apps away in addition to biometric lock? This is safeguard for accidental
+leaks.
 :LOGBOOK:
 - State "TIL/FYI"    from              [2023-12-02 Sat 07:28]
 :END:
@@ -52,6 +51,18 @@ DEADLINE: <2023-12-23 Sat>
 ** https://discovery.endeavouros.com/storage-and-partitions/how-to-permanently-mount-external-internal-drives-in-linux/2022/02/
 * HOLD Learn add-hook when in scroll-mode and bind esc to scroll stop.
 * HOLD Reset pagedown key in KA2 since no need for extensive use of Alt-key in xah-fly-keys.
+* DONE Followup John eric Juen re Ford pickup canopy or cover.
+CLOSED: [2023-12-18 Mon 13:56]
+:LOGBOOK:
+- State "DONE"       from              [2023-12-18 Mon 13:56]
+:END:
+
+* DONE Plan for mamas birthday this Dec. 16
+CLOSED: [2023-12-18 Mon 13:56]
+:LOGBOOK:
+- State "DONE"       from              [2023-12-18 Mon 13:56]
+:END:
+
 * DONE Transfer 30k to sjp and 10K to nonoy for Ford insurance yearly fee
 CLOSED: [2023-12-13 Wed 22:56]
 :LOGBOOK:

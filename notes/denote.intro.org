@@ -1,5 +1,6 @@
 * Denote
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
 DENOTE: SIMPLE NOTES WITH AN EFFICIENT
 FILE-NAMING SCHEME
 

@@ -1,5 +1,8 @@
 ;; Auto-generated file; don't edit -*- mode: lisp-data -*-
 ((:url
+  "https://caiorss.github.io/Emacs-Elisp-Programming/Elisp_Programming.html"
+  :title "Elisp Programming" :time "Mon Dec 18 14:39:37 2023")
+ (:url
   "https://www.masteringemacs.org/article/complete-guide-mastering-eshell"
   :title "Mastering Eshell - Mastering Emacs" :time
   "Sun Nov  5 09:59:44 2023")
