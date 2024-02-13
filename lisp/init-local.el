@@ -3,7 +3,10 @@
 ;;; Commentary:
 ;;; This is the users personal settings override
 
-(vertico-mode 1)
+(use-package vertico
+  :config
+  vertico-mode 1)
+;; (vertico-mode 1)
 (desktop-save-mode 1)
 (menu-bar-mode)
 (blink-cursor-mode 1)

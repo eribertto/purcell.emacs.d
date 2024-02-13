@@ -1,5 +1,6 @@
 ;;; package --- Summary
 ;;; Commentary:
+;;; this is practice file for emacs lisp coding
 ;;; Happy hacking, eriberttom - Emacs ♥ you!
 
 (insert (buffer-file-name (current-buffer)))
@@ -89,6 +90,75 @@ y ; error, variable is void, since y is used inside the let definition
 (defun myfun ()
   (message "Hello there %s, welcome to Emacs world!" user-login-name))
 (myfun) ; ok
+
+;; from the elisp manual
+(progn (prin1 'foo)
+       (princ "\n")
+       (prin1 'bar))
+;; progn is a special form in ‘C source code’.
+;; (progn BODY...)
+;; Eval BODY forms sequentially and return value of last one.
+
+(emacs-version t)
+;; GNU Emacs 30.0.50 (build 1, x86_64-pc-linux-gnu, GTK+ Version 3.24.38, cairo version 1.18.0)
+(emacs-build-description)
+(current-buffer) ; output is printed in hash notation
+;; im reading elisp manual including intro to emacs programming
+;; variadic functions aka those with many arguments
+(defun mysum (&rest numbers)
+  (apply #'+ numbers)) ;; note the function symbol +
+;; call it
+(mysum 1 2 3 4 5) ; 15
+;; using builtin func apply
+(apply #'mysum '(1 2 3 5 6 7)) ; 24
+
+;; apply is a built-in function in ‘C source code’.
+;; (apply FUNCTION &rest ARGUMENTS)
+;; Call FUNCTION with our remaining args, using our last arg as list of args.
+;; Then return the value FUNCTION returns.
+;; With a single argument, call the argument’s first element using the
+;; other elements as args.
+;; Thus, (apply '+ 1 2 '(3 4)) returns 10.
+
+(defun sum-prod (a &rest xs)
+  "Add A to the sum of arguments XS."
+  (* a (apply #'+ xs)))
+(sum-prod 3 1 2 3 4 5) ; 45
+
+;; functions with optional arguments
+(defun test-optional (a &optional b)
+  (list a b))
+
+(test-optional 10 20) ; (10 20)
+(setq herbivores '(zebra elephant horse camel spider)
+      carnivores '(lion tiger bear wild-dogs shark killer-whales)
+      evenumbers '(2 4 6 8 10))
+(test-optional evenumbers carnivores)
+;; ((2 4 6 8 10) (lion tiger bear wild-dogs shark killer-whales))
+(test-optional carnivores)
+;; ((lion tiger bear wild-dogs shark killer-whales) nil)
+
+;; another func with optional args
+(defun testop2 (a b &optional b c d e)
+  (list :a a :b b :c c :d d :e e)) ; note b is part of optional
+(testop2 0 1 2 3 4 5) ; second element 1 is not in the output list!!!
+;; (:a 0 :b 2 :c 3 :d 4 :e 5)
+(testop2 carnivores) ; this is error
+;; pp-eval-expression: Wrong number of arguments: (lambda (a b &optional b c d e) (list :a a :b b :c c :d d :e ...)), 1
+(testop2 carnivores herbivores)
+;; (:a (lion tiger bear wild-dogs shark killer-whales) :b nil :c nil :d
+(testop2 carnivores herbivores evenumbers)
+;; (:a (lion tiger bear wild-dogs shark killer-whales) :b (2 4 6 8 10) :c
+;;     nil :d nil :e nil)
+
+;; now required arg is just 1 and the rest optional
+(defun testop3 (a &optional b c d e)
+  (list :a a :b b :c c :d d :e e))
+
+(testop3 carnivores herbivores evenumbers)
+;; (:a (lion tiger bear wild-dogs shark killer-whales) :b
+;;     (zebra elephant horse camel spider) :c (2 4 6 8 10) :d nil :e nil)
+
 
 
 

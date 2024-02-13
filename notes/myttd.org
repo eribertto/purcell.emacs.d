@@ -36,6 +36,7 @@ leaks.
 - State "TIL/FYI"    from              [2023-12-02 Sat 07:28]
 :END:
 
+
 * TIL/FYI Sticky: resume intro-emacs-elisp tutorial, check bookmark list.
 :LOGBOOK:
 - State "TIL/FYI"    from              [2023-11-30 Thu 06:18]
