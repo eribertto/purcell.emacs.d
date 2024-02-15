@@ -1,0 +1,15 @@
+#+title:      MyTTD 2024
+#+date:       [2024-02-15 ĵaŭ 05:31]
+#+filetags:   :priv:
+#+identifier: 20240215T053125
+
+* Begin my things to do for 2024.
+
+* Followup BDO release of original OR/CR.
+* Begin topup of GotyMe digital bank.
+* NEXT Plan for places to visit with SJP and kids this january 2024.
+* NEXT Top up Tonik account of kids, mrs account this January 2024, source account MBT.
+* PROJECT learn more of denote note-taking by Prot
+* NEXT make defalias for scroll-up/down
+* NEXT Plan to install deadgrep https://github.com/Wilfred/deadgrep
+* HOLD Plan to transfer funds from riyadbank to bpi/mbt then to rcbc

@@ -1,0 +1,465 @@
+#+title:      MyTTD
+#+date:       [2023-12-13 Wed 22:17]
+#+filetags:   :priv:
+#+identifier: 20231213T221754
+
+
+* DONE Plan to secure room items before going on leave, e.g turn off nuc, cover monitor with cloth, secure keyboard, etc.
+CLOSED: [2024-02-15 ĵaŭ 03:51]
+:LOGBOOK:
+- State "DONE"       from              [2024-02-15 ĵaŭ 03:51]
+:END:
+
+* DONE MBT credit card update of new cellphone number.
+CLOSED: [2024-02-15 ĵaŭ 03:50]
+:LOGBOOK:
+- State "DONE"       from "NEXT"       [2024-02-15 ĵaŭ 03:50]
+:END:
+
+* DONE Review all pins of PH banks e.g. mbt, rcbc, bpi.
+CLOSED: [2023-12-28 ĵaŭ 05:29]
+:LOGBOOK:
+- State "DONE"       from              [2023-12-28 ĵaŭ 05:29]
+:END:
+
+* DONE trim head/beard, bring shaver blade for emergency use.
+CLOSED: [2023-12-28 ĵaŭ 05:20]
+:LOGBOOK:
+- State "DONE"       from              [2023-12-28 ĵaŭ 05:20]
+:END:
+
+* DONE Leave camp ID in Tamimi admin office on day of leave
+CLOSED: [2023-12-28 ĵaŭ 05:22]
+:LOGBOOK:
+- State "DONE"       from              [2023-12-28 ĵaŭ 05:22]
+:END:
+
+* DONE Make ready tip money for Akhlaq haka this Thursday 28 Dec.
+CLOSED: [2023-12-28 ĵaŭ 05:20]
+:LOGBOOK:
+- State "DONE"       from              [2023-12-28 ĵaŭ 05:20]
+:END:
+
+* DONE Remove sim from new Honor phone as ksa phone or use in PH?
+CLOSED: [2023-12-26 mar 17:36]
+:LOGBOOK:
+- State "DONE"       from              [2023-12-26 mar 17:36]
+:END:
+
+* DONE Followup arrival of renewed riyadbank credit card to aramex.
+CLOSED: [2023-12-25 lun 19:43]
+:LOGBOOK:
+- State "DONE"       from              [2023-12-25 lun 19:43]
+:END:
+
+* DONE Plan to complete eTravel requirements https://etravel.gov.ph
+CLOSED: [2023-12-25 lun 06:30] DEADLINE: <2023-12-24 dim>
+:LOGBOOK:
+- State "DONE"       from              [2023-12-25 lun 06:30]
+:END:
+
+* DONE Notice tamimi camp of EOC leave this Dec. 28
+CLOSED: [2023-12-23 sab 15:06]
+:LOGBOOK:
+- State "DONE"       from              [2023-12-23 sab 15:06]
+:END:
+
+* DONE TIL about search function occur maybe at par or better than isearch.
+CLOSED: [2023-12-23 sab 15:40]
+:LOGBOOK:
+- State "DONE"       from              [2023-12-23 sab 15:40]
+:END:
+
+* DONE trim nose hairs.
+CLOSED: [2023-12-23 sab 15:05]
+:LOGBOOK:
+- State "DONE"       from              [2023-12-23 sab 15:05]
+:END:
+
+* DONE Print HAKA vehicle acknowledgement form Jan. 2023 for return to them this Dec 28.
+CLOSED: [2023-12-23 sab 15:07]
+:LOGBOOK:
+- State "DONE"       from              [2023-12-23 sab 15:07]
+:END:
+
+* DONE Action Nikkis Citihub liquid form e.g. sign it and return.
+CLOSED: [2023-12-23 sab 05:29]
+:LOGBOOK:
+- State "DONE"       from              [2023-12-23 sab 05:29]
+:END:
+
+** Update 2023-12-17: containers are now good as scrap in latest FB msgr group chat. This is goodbye for Citihub investment.
+* DONE load roaming phone using Gcash,
+CLOSED: [2023-12-23 sab 05:01]
+:LOGBOOK:
+- State "DONE"       from              [2023-12-23 sab 05:01]
+:END:
+
+* DONE Cannot do eos-update today due to this [[file:~/endeavour.update.error.txt][endeavour-update-error]]
+CLOSED: [2023-12-22 ven 19:52]
+:LOGBOOK:
+- State "DONE"       from              [2023-12-22 ven 19:52]
+:END:
+
+* DONE Make backup of home dir with restic https://restic.readthedocs.io/en/stable/010_introduction.html#quickstart-guide
+CLOSED: [2023-12-22 ven 10:30]
+:LOGBOOK:
+- State "DONE"       from              [2023-12-22 ven 10:30]
+:END:
+
+** try out new OS Zorin 17
+** or Rhino Linux
+* DONE get new slipons for home travel
+CLOSED: [2023-12-22 ven 19:50]
+:LOGBOOK:
+- State "DONE"       from              [2023-12-22 ven 19:50]
+:END:
+
+* DONE Plan to activate riyadbank ccard or revive expired ccard by visiting physical riyadbank branch.
+CLOSED: [2023-12-22 ven 19:48]
+:LOGBOOK:
+- State "DONE"       from              [2023-12-22 ven 19:48]
+:END:
+
+* DONE Begin list of things to do
+CLOSED: [2023-12-22 ven 10:30]
+:LOGBOOK:
+- State "DONE"       from              [2023-12-22 ven 10:30]
+:END:
+
+* DONE also complete the rcbc reset password required details.
+CLOSED: [2023-12-17 Sun 21:49]
+:LOGBOOK:
+- State "DONE"       from              [2023-12-17 Sun 21:49]
+:END:
+* DONE Plan for mamas birthday this Dec. 16
+CLOSED: [2023-12-16 Sat 20:50]
+:LOGBOOK:
+- State "DONE"       from              [2023-12-16 Sat 20:50]
+:END:
+
+* DONE pdf view inside emacs is working fyi.
+CLOSED: [2023-12-14 Thu 06:21]
+:LOGBOOK:
+- State "DONE"       from              [2023-12-14 Thu 06:21]
+:END:
+
+* DONE install org-superstar or equivalent, see source code in downloads folder
+CLOSED: [2023-12-16 Sat 22:02]
+:LOGBOOK:
+- State "DONE"       from              [2023-12-16 Sat 22:02]
+:END:
+
+* DONE Repack luggage bags, also measure the dimensions to match the airline luggage rules.
+CLOSED: [2023-12-17 Sun 21:46]
+:LOGBOOK:
+- State "DONE"       from "WAITING"    [2023-12-17 Sun 21:46]
+- State "WAITING"    from              [2023-12-17 Sun 17:58] \\
+  ongoing state
+:END:
+
+* HOLD Make list of bahay-kubo veggies to plant in Passi farm.
+* HOLD Learn more from this emacs pro https://github.com/fniessen mentioned in the emacsconf 2023 video presentation.
+* HOLD Plan to install speechNote https://flathub.org/apps/net.mkiol.SpeechNote
+* WAITING Learn more  https://github.com/emacs-straigh/embark-consult
+:LOGBOOK:
+- State "WAITING"    from              [2023-12-07 Thu 05:47] \\
+  for later learning
+:END:
+
+* HOLD Followup John eric Juen re Ford pickup canopy or cover.
+* TIL/FYI Spice up org-mode in emacs
+:LOGBOOK:
+- State "TIL/FYI"    from              [2023-12-12 Tue 17:32]
+:END:
+
+* TIL/FYI How to lock android apps away in addition to biometric lock? This is safeguard for accidental leaks.
+:LOGBOOK:
+- State "TIL/FYI"    from              [2023-12-02 Sat 07:28]
+:END:
+
+* TIL/FYI Sticky: resume intro-emacs-elisp tutorial, check bookmark list.
+:LOGBOOK:
+- State "TIL/FYI"    from              [2023-11-30 Thu 06:18]
+:END:
+
+* TIL/FYI TIL about sudo-edit-find-file command exec as root using emacs tramp
+:LOGBOOK:
+- State "TIL/FYI"    from "PROJECT"    [2023-11-30 Thu 06:11]
+:END:
+
+* HOLD Plan to try bottom process mngr https://github.com/ClementTsang/bottom#arch-linux
+* HOLD Fix os-prober following the below link
+** https://discovery.endeavouros.com/storage-and-partitions/how-to-permanently-mount-external-internal-drives-in-linux/2022/02/
+* HOLD Learn add-hook when in scroll-mode and bind esc to scroll stop.
+* HOLD Reset pagedown key in KA2 since no need for extensive use of Alt-key in xah-fly-keys.
+* CANCELLED plan to install doom-modeline, see gmail inbox for link
+CLOSED: [2023-12-16 Sat 21:44]
+:LOGBOOK:
+- State "CANCELLED"  from "DONE"       [2023-12-16 Sat 22:03] \\
+  default modeline is better
+- State "DONE"       from              [2023-12-16 Sat 21:44]
+:END:
+
+** HOLD go to khobar this Fri or visit shoevert in Hofuf?
+* DONE Transfer 30k to sjp and 10K to nonoy for Ford insurance yearly fee
+CLOSED: [2023-12-13 Wed 22:56]
+:LOGBOOK:
+- State "DONE"       from              [2023-12-13 Wed 22:56]
+:END:
+
+* DONE Plan to install emacs mms
+CLOSED: [2023-12-12 Tue 19:11]
+:LOGBOOK:
+- State "DONE"       from              [2023-12-12 Tue 19:11]
+:END:
+
+* DONE Start packing stuffs to luggage bags this weekend til due date.
+CLOSED: [2023-12-12 Tue 18:52]
+:LOGBOOK:
+- State "DONE"       from "PROJECT"    [2023-12-12 Tue 18:52]
+:END:
+
+** DONE Wash my UA muscle tees and sport tees this thursday.
+CLOSED: [2023-12-07 Thu 20:40]
+:LOGBOOK:
+- State "DONE"       from              [2023-12-07 Thu 20:40]
+:END:
+
+** DONE Fix and pack purchased electronics in backpack this thursday.
+CLOSED: [2023-12-12 Tue 18:51]
+:LOGBOOK:
+- State "DONE"       from              [2023-12-12 Tue 18:51]
+:END:
+
+** DONE Pack accumulated items stored in cabinet this thursday.
+CLOSED: [2023-12-06 Wed 20:30]
+:LOGBOOK:
+- State "DONE"       from              [2023-12-06 Wed 20:30]
+:END:
+
+** DONE Setup new mobile Honor 90, see review https://www.gsmarena.com/honor_90-review-2611.php
+CLOSED: [2023-12-06 Wed 05:45]
+:LOGBOOK:
+- State "DONE"       from              [2023-12-06 Wed 05:45]
+:END:
+
+* DONE to sjp 50k part 2 of 2 e.g. 10K bal home budget, 6k tax expenses, 34K xmas expenses including gifts to family
+CLOSED: [2023-12-12 Tue 17:01]
+:LOGBOOK:
+- State "DONE"       from              [2023-12-12 Tue 17:01]
+:END:
+
+** DONE to sjp 50k part 1 of 2
+CLOSED: [2023-12-04 Mon 06:10]
+:LOGBOOK:
+- State "DONE"       from              [2023-12-04 Mon 06:10]
+:END:
+
+** DONE to mymy 10k for mama
+CLOSED: [2023-12-04 Mon 06:10]
+:LOGBOOK:
+- State "DONE"       from              [2023-12-04 Mon 06:10]
+:END:
+
+** DONE to ctb 10k
+CLOSED: [2023-12-06 Wed 05:53]
+:LOGBOOK:
+- State "DONE"       from              [2023-12-06 Wed 05:53]
+:END:
+
+* DONE Proceed with rcbc credit card apply? Jeanne is very helpful, but check reddit review.
+CLOSED: [2023-12-07 Thu 20:41]
+:LOGBOOK:
+- State "DONE"       from              [2023-12-07 Thu 20:41]
+:END:
+
+* DONE Plan to send Dec transfers to beneficiaries.
+CLOSED: [2023-12-07 Thu 05:47]
+:LOGBOOK:
+- State "DONE"       from              [2023-12-07 Thu 05:47]
+:END:
+
+* DONE Backup essential dotfiles in dot emacs dir.
+CLOSED: [2023-12-06 Wed 05:52]
+:LOGBOOK:
+- State "DONE"       from              [2023-12-06 Wed 05:52]
+:END:
+
+* DONE Do https://github.com/justintime50/github-dark-vscode-emacs-theme
+CLOSED: [2023-12-04 Mon 18:57]
+:LOGBOOK:
+- State "DONE"       from              [2023-12-04 Mon 18:57]
+:END:
+
+* DONE Plan to install popper for buffer popups https://github.com/karthink/popper
+CLOSED: [2023-12-04 Mon 18:56]
+:LOGBOOK:
+- State "DONE"       from              [2023-12-04 Mon 18:56]
+:END:
+
+* DONE Email to rcbc re apply credit card.
+CLOSED: [2023-12-04 Mon 18:53]
+:LOGBOOK:
+- State "DONE"       from              [2023-12-04 Mon 18:53]
+:END:
+
+* DONE Look for latest android phone with facial lock feature.
+CLOSED: [2023-12-02 Sat 07:14]
+:LOGBOOK:
+- State "DONE"       from              [2023-12-02 Sat 07:14]
+:END:
+
+* DONE Check latest BDO soa re monthly deductions to date
+CLOSED: [2023-12-03 Sun 04:11]
+:LOGBOOK:
+- State "DONE"       from              [2023-12-03 Sun 04:11]
+:END:
+
+* DONE Followup amazon order headphone Anker Q45 https://www.soundguys.com/anker-soundcore-space-q45-review-78320/
+CLOSED: [2023-12-07 Thu 05:48]
+:LOGBOOK:
+- State "DONE"       from "WAITING"    [2023-12-07 Thu 05:48]
+- State "WAITING"    from              [2023-12-03 Sun 04:11] \\
+  ongoing tracking of order online
+:END:
+
+* DONE Done install, balance setup syncthing in this machine
+CLOSED: [2023-12-03 Sun 04:56]
+:LOGBOOK:
+- State "DONE"       from "TIL/FYI"    [2023-12-03 Sun 04:56]
+- State "TIL/FYI"    from              [2023-12-02 Sat 07:36]
+:END:
+
+* DONE fatal: The current branch nuc.kde.eos has no upstream branch.
+CLOSED: [2023-12-02 Sat 07:37]
+:LOGBOOK:
+- State "DONE"       from "TIL/FYI"    [2023-12-02 Sat 07:37]
+- State "TIL/FYI"    from              [2023-11-30 Thu 06:37]
+:END:
+
+* DONE Learn defalias https://www.youtube.com/watch?v=ufVldIrUOBg
+CLOSED: [2023-11-29 Wed 20:53]
+:LOGBOOK:
+- State "DONE"       from              [2023-11-29 Wed 20:53]
+:END:
+
+* DONE Practice zellij terminal multiplexer powered by Rust.
+CLOSED: [2023-11-29 Wed 20:51]
+:LOGBOOK:
+- State "DONE"       from              [2023-11-29 Wed 20:51]
+- State "DONE"       from              [2023-11-28 Tue 20:51]
+:END:
+
+* DONE Plan payment for nonoys Final exams last week of November.
+CLOSED: [2023-11-28 Tue 20:51]
+:LOGBOOK:
+- State "DONE"       from              [2023-11-28 Tue 20:51]
+:END:
+
+* DONE Prepare fund 30K for nonoys birthday Dec. 2 plus tablet gift + bday expenses.
+* DONE Plan to install new OS in /dev/nvme0* partition then setup emacs new init file from purcells starter kit, also use xah-fly-keys and setup new KA2 bindings.
+CLOSED: [2023-11-28 Tue 20:51]
+:LOGBOOK:
+- State "DONE"       from              [2023-11-28 Tue 20:51]
+:END:
+
+* DONE Collect delivery of tatas iPad+pen+case
+CLOSED: [2023-11-28 Tue 20:51]
+:LOGBOOK:
+- State "DONE"       from              [2023-11-28 Tue 20:51]
+:END:
+
+* DONE SJPs S22 samsung ultra
+CLOSED: [2023-11-28 Tue 20:50]
+:LOGBOOK:
+- State "DONE"       from              [2023-11-28 Tue 20:50]
+:END:
+
+* DONE Wash CTB nike tees.
+- State "DONE"       from              [2023-11-24 Fri 13:53]
+* DONE Check nonoys tuition table for payment due.
+- State "DONE"       from              [2023-11-24 Fri 13:01]
+* DONE Plan to restart this PC after an upgrade 2023-11-22
+- State "DONE"       from              [2023-11-22 Wed 18:19]
+* DONE TIL about treemacs a tree-like file manager on the left side bar.
+- State "DONE"       from              [2023-11-22 Wed 06:25]
+* DONE Readup GatesNotes https://www.gatesnotes.com/Economics?WT.mc_id=20230907090000_EOY-List-2023_BG-EM_&WT.tsrc=BGEM
+- State "DONE"       from              [2023-11-22 Wed 06:25]
+* DONE PH map https://www.worldometers.info/img/maps/philippines_political_map.gif
+- State "DONE"       from              [2023-11-22 Wed 06:25]
+* DONE Plan to donate to CTB's cemetery project.
+- State "DONE"       from              [2023-11-21 Tue 05:51]
+* DONE Get ctb BT mouse with usb-c receiver for macbook pro.
+- State "DONE"       from              [2023-11-18 Sat 18:11]
+* DONE Do test install isos in Ventoy usb drive including Fed39
+- State "DONE"       from              [2023-11-15 Wed 20:07]
+* DONE Check org captures for saved notes and todos e.g. org-roam-node-find
+- State "DONE"       from              [2023-11-14 Tue 19:57]
+* DONE Big fuckup tonight 2023-11-11 i deleted my EOS partition /dev/nvme0* OMG what a dumb ass I was! Was it a sign to install latest Fed39 in that disk? Hmmm only time can tell.
+- State "DONE"       from              [2023-11-14 Tue 19:57]
+* DONE Write up waraywaray lyrics lima kami nga magburugto.
+- State "DONE"       from              [2023-11-14 Tue 19:55]
+* DONE Use tabby appimage using this ubuntu link https://askubuntu.com/questions/774490/what-is-an-appimage-how-do-i-install-it
+- State "DONE"       from              [2023-11-14 Tue 19:55]
+* DONE xah guide http://xahlee.info/emacs/misc/xah-fly-keys_mode_status.html
+- State "DONE"       from              [2023-11-11 Sat 19:48]
+* DONE Try audacity re edit of opus sound files e.g. waraywaray chacha.
+- State "DONE"       from              [2023-11-11 Sat 17:52]
+* DONE Centaur tabs  https://github.com/ema2159/centaur-tabs
+- State "DONE"       from              [2023-11-11 Sat 17:52]
+* DONE setup eww as default url browser in emacs
+- State "DONE"       from              [2023-11-11 Sat 17:51]
+* DONE Learn eshell https://www.gnu.org/software/emacs/manual/html_mono/eshell.html
+- State "DONE"       from              [2023-11-11 Sat 17:51]
+* DONE Plan to install iso burner app balena.
+- State "DONE"       from              [2023-11-11 Sat 17:50]
+* DONE Read up emacs refactoring https://lambdaland.org/posts/2023-05-31_warp_factor_refactor/
+- State "DONE"       from              [2023-11-10 Fri 08:01]
+* DONE Add $home/bin to path to use remove.spaces.sh
+- State "DONE"       from              [2023-11-09 Thu 21:18]
+* DONE Plan to install telephone-line modeline, see gmail inbox
+- State "DONE"       from              [2023-11-09 Thu 20:42]
+* DONE Re read xah fly keys cheatsheet to discover more shortcuts
+- State "DONE"       from              [2023-11-09 Thu 20:41]
+* DONE Install juliamono font, see eww buffer.
+- State "DONE"       from              [2023-11-09 Thu 20:40]
+* DONE Plan to DL Magda Kays youtube vlog
+- State "DONE"       from              [2023-11-08 Wed 06:24]
+* DONE setup dotfiles and bash prompt, copy from nuc eos machine
+- State "DONE"       from              [2023-11-08 Wed 06:09]
+* DONE Write the lyrics of this waraywaray song https://www.youtube.com/watch?v=i0H7ygjdCrk
+- State "DONE"       from              [2023-11-08 Wed 05:53]
+** also copy waray waray song file from github repo
+* DONE Install okular pdf reader
+- State "DONE"       from              [2023-11-07 Tue 20:50]
+* DONE git init dot emacs.d dir to github, see the github link in eww separate frame
+- State "DONE"       from              [2023-11-06 Mon 19:30]
+* DONE add server mode in init file per this tute  https://www.emacswiki.org/emacs/EmacsAsDaemon
+- State "DONE"       from "TODO"       [2023-11-04 Sat 20:13]
+* DONE check bpi, mbt soas
+- State "DONE"       from              [2023-11-04 Sat 19:37]
+* DONE setup github client in this box
+- State "DONE"       from              [2023-11-04 Sat 19:42]
+* DONE Plan to learn tiling capability of Ubuntu 23.10 https://www.youtube.com/watch?v=JKqsA_B7USM
+- State "DONE"       from "TODO"       [2023-11-04 Sat 20:11]
+* DONE copy dot gitignore from nuc eos machine
+- State "DONE"       from              [2023-11-04 Sat 20:49]
+* DONE copy dot bash_aliases from nuc eos to this ubuntu machine
+- State "DONE"       from              [2023-11-04 Sat 21:36]
+* DONE Plan to MBT transfer to mymy, ctb accounts 10K each
+- State "DONE"       from              [2023-11-06 Mon 05:54]
+* DONE Kulas vlog Lake mahagnao Burauen Leyte https://www.youtube.com/watch?v=GJioQehSyK0
+- State "DONE"       from              [2023-11-06 Mon 05:54]
+* DONE Record LM session with ctb today 2023-11-04
+- State "DONE"       from              [2023-11-06 Mon 05:55]
+* DONE Install dracula theme, see inbox for instructions https://draculatheme.com/emacs
+- State "DONE"       from              [2023-11-06 Mon 06:04]
+* DONE send bpi receipt to sjp re 10K transfer
+- State "DONE"       from              [2023-11-06 Mon 18:50]
+
+** DONE copy TTDs from other emacs branch to use here
+CLOSED: [2023-12-13 Wed 22:50]
+:LOGBOOK:
+- State "DONE"       from              [2023-12-13 Wed 22:50]
+:END:
