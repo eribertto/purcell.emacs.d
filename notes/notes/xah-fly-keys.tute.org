@@ -1,0 +1,302 @@
+* Xah Fly Keys 
+
+Emacs: Xah Fly Keys Tutorial
+
+By Xah Lee. Date: 2018-03-30. Last updated: 2023-09-30.
+
+Here's Xah Fly Keys tutorial for beginners. I assume you have made no customization. 
+
+[X] QWERTY [ ] Dvorak [ ] Colemak [ ] Colemak DH [ ] Workman 
+
+* Pick a layout above. All keybinding shortcuts on this page changes accordingly.
+
+Command/Insert Mode Switch
+
+Alt+Space (xah-fly-command-mode-activate) → switch to command mode. 
+
+f or Space Space (xah-fly-insert-mode-activate) → switch to insert mode. 
+
+Cursor Movement
+
+Switch to command mode. Then, follow keys are arrows.
+
+
+    i
+ j k l
+
+* u (backward-word) → Move left by word.
+* o (forward-word) → Move right by word.
+
+Try them. Try many times. Feel your finger muscles with the cursor movement. 
+
+* h (xah-beginning-of-line-or-block) → Move to beginning of line/indent/paragraph. Repeated call moves to
+ previous paragraph.
+* ; (xah-end-of-line-or-block) → Move to end of line/indent/paragraph. Repeated call moves to next paragraph.
+
+Space h (beginning-of-buffer) 
+
+Space n (end-of-buffer) 
+
+Text Editing
+
+* e (xah-backward-kill-word) → Delete word left.
+* r (xah-kill-word) → Delete word right.
+
+d (xah-smart-delete) → Delete something to the left. It may be 1 char, or whitespace, or bracketed text. 
+
+g (xah-delete-current-text-block) → Delete the current text block. 
+
+5 (delete-char) → Delete 1 character to the right. 
+
+w (xah-shrink-whitespaces) → Delete whitespaces. Repeated call delete more whitespaces. 
+
+Space g (kill-line) → Delete to end of line. 
+
+* Undo
+
+y (undo) → undo. 
+
+To redo, do an undo, then press key to switch to command mode (or Ctrl+g), then do undo. To reverse
+direction, press Ctrl+g again. 
+
+Tip: I recommend not to use any external undo/redo package. 
+
+Cut Copy Paste
+
+x (xah-cut-line-or-region) → Cut current line or selection. Repeated call cut more lines. 
+
+c (xah-copy-line-or-region) → Copy current line or selection. Repeated call copy more lines. 
+
+v (xah-paste-or-paste-previous) → Paste. Repeated call paste previous. 
+
+To paste something twice, call paste, then enter space or return or switch command mode, then paste again. 
+
+To paste something 5 times, Space . (universal-argument) 5, then call paste. 
+
+More: 
+
+Space c (xah-copy-all-or-region) → Copy all. 
+
+Space x (xah-cut-all-or-region) → Cut all. 
+
+Space t (xah-show-kill-ring) → Show copy history. 
+
+Copy and Paste to Register
+
+* Space k 3 (xah-copy-to-register-1) → Copy current line or selection to register 1. 
+* Space k 4 (xah-paste-from-register-1) → Paste from register 1. 
+* Space k c (copy-to-register) → Copy selection to a register.
+* Space k v (copy-to-register) → Paste from a register.
+
+* Mark and Text Selection
+
+t (set-mark-command) → Start selection. Move cursor to expand. Press again to unmark. 
+
+Text Selection Shortcuts
+
+6 (xah-select-block) → Selects text block. Repeated call extends to next block. 
+
+7 (xah-select-line) → Selects line. Repeated call extends to next line. 
+
+8 (xah-extend-selection) → Select current word or bracketed text. Repeated call extend selection. 
+
+9 (xah-select-text-in-quote) → selects inner text between brackets or quotes (e.g. string) 
+
+Space a (mark-whole-buffer) → select all. 
+
+execute-extended-command (M-x)
+
+a or Space Enter (execute-extended-command) → call a command by name. 
+
+* iSearch
+
+n (isearch-forward) → Interactive search and also move cursor. 
+
+Space y (xah-search-current-word) → Search current word or selection. 
+
+When in isearch: 
+
+* Ctrl+y to paste.
+* left/right arrow keys ← → do search backward/forward.
+* up/down arrow keys ↑ ↓ do previous/next search item.
+* Return exit isearch and leave cursor at the current location.
+* Ctrl+g exit isearch and leave cursor at original location.
+
+There's no key to begin backward search. Just do isearch then press left arrow key. 
+
+Tip: i recommend not installing external packages to jump cursor to locations. 
+
+* Find Replace
+
+Space r (query-replace) 
+
+Space k r (query-replace-regexp) 
+
+Open Close Save
+
+You can use the following standard keys for now. 
+
+* Ctrl+n (xah-new-empty-buffer) → New. 
+* Ctrl+o (find-file) → Open. 
+* Ctrl+w (xah-close-current-buffer) → Close. 
+* Ctrl+s (save-buffer) → Save. 
+* Ctrl+Shift+s (write-file) → Save as. 
+* Ctrl+Shift+t (xah-open-last-closed) → Open last closed 
+
+When you are comfortable with Xah Fly Keys, and feel like you want to reduce using Control key, then learn
+the following. 
+
+* Space i l (xah-new-empty-buffer) 
+* Space i e (find-file) 
+* Space u (xah-close-current-buffer) 
+* Space ; (save-buffer) 
+* Space i ; (write-file) 
+* Space i r (xah-open-last-closed) 
+
+* Open Files
+
+Space i e (find-file) → Open file. 
+
+Space i f (xah-open-file-at-cursor) → Open URL or file path. 
+
+Space i c (xah-copy-file-path) 
+
+Space m (dired-jump) → go to dired and place cursor on file name. 
+
+Open recently opened/closed files: 
+
+* Space i j (recentf-open-files) → List recently opened files. 
+* Space i r (xah-open-last-closed)
+* Space i y (xah-open-recently-closed) → list recently closed files. 
+
+Bookmark related for fast open files: 
+
+* Space i p (bookmark-set) → Add current file to bookmark. 
+* Space i i (bookmark-bmenu-list) → list bookmarks
+* Space i o (bookmark-jump) → open a file in bookmark. 
+
+You should never need to type file path to open file, unless it's a new file you rarely work with. 
+
+All files or directories you work daily, should be bookmarked [see Emacs: Bookmark] , or with open recent.
+[see Emacs: Open Recently Opened File] 
+
+Open Files in External App
+
+* Space i w (xah-open-in-external-app) → Open in external apps (for image, pdf, vidio/audio files, etc.) 
+* Space i s (xah-show-in-desktop) → Open the operating system's folder viewer. 
+
+switch buffer
+
+* Space f (switch-to-buffer)
+* Space i d (ibuffer) → list buffers.
+
+* Ctrl+8 or Ctrl+Tab (xah-next-user-buffer)
+* Ctrl+7 or Ctrl+Shift+Tab (xah-previous-user-buffer)
+* Ctrl+6 (xah-next-emacs-buffer)
+* Ctrl+5 (xah-previous-emacs-buffer)
+
+Split Buffer
+
+3 (delete-other-windows) → Unsplit all. 
+
+4 (split-window-below) → Split top/bottom 
+
+, (xah-next-window-or-frame) → Switch cursor to next pane or next window (emacs frame). 
+
+Space 3 (delete-window) → remove current pane. 
+
+Space 4 (split-window-right) → split left/right. 
+
+Tip: on large monitor, avoid workflow with 1 fullscreen. [see Emacs Workflow: Fullscreen vs Multiple Frames] 
+
+Working with Quote and Brackets
+
+xah-fly-keys has a system to work with brackets. Brackets includes ()[]{}“” and all Unicode: Brackets, Quotes
+«»「」【】《》 
+
+Move to Brackets
+
+* m (xah-backward-left-bracket) → move to left bracket.
+* . (xah-forward-right-bracket) → move to right bracket.
+* / (xah-goto-matching-bracket) → When cursor is on a bracket, jump to the matching one. If cursor is not on a
+ bracket, move it to parent left bracket.
+
+Select Brackets
+
+when cursor is on a bracket, 8 (xah-extend-selection) selects the whole. 
+
+Delete Whole Bracketed Text
+
+d (xah-smart-delete) → when the left char is a bracket, delete the bracketed text. The deleted text is
+automatically copied. 
+
+Delete Bracket Pair
+
+move cursor to the right of a bracket, then Space . (universal-argument) d (xah-smart-delete) 
+
+Delete a Single Bracket
+
+move cursor to the left of it, then press 5 (delete-char) . 
+
+Insert Brackets
+
+* ALWAYS insert left/right brackets together.
+* These commands insert bracket pairs.
+* When cursor is at beginning of line, they put brackets around the line.
+* When there is a text selection, they put brackets around it.
+
+* Space d k (xah-insert-paren) → Insert parenthesis pair.
+* Space d l (xah-insert-square-bracket) → Insert square brackets pair.
+* Space d j (xah-insert-brace) → Insert curly brackets pair.
+* Space d u (xah-insert-ascii-double-quote) → Insert double quote pair.
+* Space d s (xah-insert-ascii-single-quote) → Insert single quote pair.
+
+Now, type Space d Ctrl+h to see all other brackets and quotes you can insert. 
+
+Change Brackets
+
+* Alt+x xah-change-bracket-pairs
+
+Font Size
+
+* Ctrl++ (text-scale-increase)
+* Ctrl+- (text-scale-decrease)
+
+* Space l a (text-scale-adjust) 
+
+List All Leader Keys
+
+Space Ctrl+h → list all leader key sequences and commands. (if you have which-key-mode installed, you must
+turn it off first.) 
+
+More Advanced
+
+ok, the above are the basics. 
+
+Now, there are about 200 commands with leader keys. These basically replace what emacs C-x does. 
+
+You might want to learn them as you go. 
+
+When in command mode, press Space Ctrl+h to list all leader key sequence commands. 
+
+Remember to use Alt+x describe-function and Alt+x describe-key to find what's the key or command name. 
+
+Misc Notes
+
+Command Mode Key Must be Most Easy Key
+
+It's critically important that the key to switch to command mode must be the most easy key on your keyboard. 
+
+I suggest the CapsLock on typical PC keyboards or laptop keyboards. 
+
+For how, see Emacs: Xah Fly Keys Customization 
+
+Insert Mode is Same as Default GNU Emacs Key
+
+When in insert mode, it acts like Xah Fly Keys is off. (except a handful of global keys with Ctrl or Meta,
+but you can turn them off in customization.) 
+
+In some emacs modes such as dired , typing a letter will run some special command. For example, in dired, m
+for mark, u for unmark. 
+
+So, whenever you think there is some problem, do switch to insert mode.

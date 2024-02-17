@@ -1,0 +1,15 @@
+* Note the elfeed-related packages below:
+
+elfeed                         20221108.755  installed             an Emacs Atom/RSS feed reader
+elfeed-autotag                 20210607.637  installed             Easy auto-tagging for elfeed
+elfeed-curate                  20231119.32   installed             Elfeed entry curation
+elfeed-dashboard               20210727.603  installed             An extensible frontend for elfeed using org-mode
+elfeed-goodies                 20221003.1406 installed             Elfeed goodies
+elfeed-org                     20231009.1125 installed             Configure elfeed with one or more org-mode files
+elfeed-protocol                20231007.1535 installed             Provide fever/newsblur/owncloud/ttrss protocols for elfeed
+elfeed-score                   20230728.1433 installed             Gnus-style scoring for Elfeed
+elfeed-summary                 20230823.925  installed             Feed summary interface for elfeed
+elfeed-tube                    20231022.1733 installed             YouTube integration for Elfeed
+elfeed-tube-mpv                20230607.717  installed             Control mpv from Elfeed
+elfeed-web                     20210226.258  installed             web interface to Elfeed
+elfeed-webkit                  20230604.2111 installed             Render elfeed entries in embedded webkit widgets
