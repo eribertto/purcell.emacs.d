@@ -6,13 +6,25 @@
 * Begin my things to do for 2024.
 
 * TODO Followup BDO release of original OR/CR.
+
 * TODO Begin topup of GotyMe digital bank.
-* TODO Send fund for birthday of tata tom Feb. 16, 2024.
 * NEXT Top up Tonik account of kids, mrs account this January 2024, source account MBT.
 * PROJECT learn more of denote note-taking by Prot
 * NEXT make defalias for scroll-up/down
 * NEXT Plan to install deadgrep https://github.com/Wilfred/deadgrep
 * HOLD Plan to transfer funds from riyadbank to bpi/mbt then to rcbc
+* DONE install rustup and friends
+CLOSED: [2024-02-15 ĵaŭ 07:06]
+:LOGBOOK:
+- State "DONE"       from "TODO"       [2024-02-15 ĵaŭ 07:06]
+:END:
+
+* DONE Send fund for birthday of tata tom Feb. 16, 2024.
+CLOSED: [2024-02-17 sab 17:39]
+:LOGBOOK:
+- State "DONE"       from "TODO"       [2024-02-17 sab 17:39]
+:END:
+
 * CANCELLED Plan for places to visit with SJP and kids this january 2024.
 CLOSED: [2024-02-15 ĵaŭ 05:37]
 :LOGBOOK:

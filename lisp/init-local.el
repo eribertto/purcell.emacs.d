@@ -298,7 +298,8 @@
 ;;   :hook (after-init . doom-modeline-mode))
 
 ;; note org-superstar.el is placed under lisp dir
-(require 'org-superstar)
+;; (require 'org-superstar)
+(use-package org-superstar)
 (add-hook 'org-mode-hook (lambda () (org-superstar-mode 1)))
 
 (setq
@@ -358,8 +359,8 @@
 ;; add ef-themes
 ;; Make customisations that affect Emacs faces BEFORE loading a theme
 ;; (any change needs a theme re-load to take effect).
-(require 'ef-themes)
-
+;; (require 'ef-themes)
+(use-package ef-themes)
 ;; If you like two specific themes and want to switch between them, you
 ;; can specify them in `ef-themes-to-toggle' and then invoke the command
 ;; `ef-themes-toggle'.  All the themes are included in the variable
@@ -385,10 +386,10 @@
 (mapc #'disable-theme custom-enabled-themes)
 
 ;; Load the theme of choice:
-(load-theme 'ef-summer :no-confirm)
+(load-theme 'ef-winter :no-confirm)
 
 ;; OR use this to load the theme which also calls `ef-themes-post-load-hook':
-(ef-themes-select 'ef-summer)
+;; (ef-themes-select 'ef-summer)
 
 ;; The themes we provide are recorded in the `ef-themes-dark-themes',
 ;; `ef-themes-light-themes'.

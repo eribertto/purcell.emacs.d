@@ -4,6 +4,7 @@
 #+identifier: 20231213T221754
 
 
+
 * DONE Plan to secure room items before going on leave, e.g turn off nuc, cover monitor with cloth, secure keyboard, etc.
 CLOSED: [2024-02-15 ĵaŭ 03:51]
 :LOGBOOK:
