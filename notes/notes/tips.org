@@ -10,3 +10,4 @@ You can unset the key in at least two ways:
 Note that I got this information with a web search for emacs unset key.
 
 * NB: deadgrep is installed and is awesome!!!
+** https://github.com/Wilfred/deadgrep
