@@ -393,11 +393,6 @@
 
 ;; The themes we provide are recorded in the `ef-themes-dark-themes',
 ;; `ef-themes-light-themes'.
-
-;; for deadgrep
-(global-set-key (kbd "<f6>") nil) ;; unset f6 to give way to deadgrep
-(global-set-key (kbd "<f6>") #'deadgrep)
-
 ;; We also provide these commands, but do not assign them to any key:
 ;;
 ;; - `ef-themes-toggle'
@@ -408,7 +403,9 @@
 ;; - `ef-themes-preview-colors'
 ;; - `ef-themes-preview-colors-current'
 
-
+;; for deadgrep
+(global-set-key (kbd "<f6>") nil) ;; unset f6 to give way to deadgrep
+(global-set-key (kbd "<f6>") #'deadgrep)
 
 (provide 'init-local)
 ;;; init-local.el ends here
