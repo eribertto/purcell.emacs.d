@@ -394,6 +394,10 @@
 ;; The themes we provide are recorded in the `ef-themes-dark-themes',
 ;; `ef-themes-light-themes'.
 
+;; for deadgrep
+(global-set-key (kbd "<f6>") nil)
+(global-set-key (kbd "<f6>") #'deadgrep)
+
 ;; We also provide these commands, but do not assign them to any key:
 ;;
 ;; - `ef-themes-toggle'
@@ -403,7 +407,6 @@
 ;; - `ef-themes-load-random'
 ;; - `ef-themes-preview-colors'
 ;; - `ef-themes-preview-colors-current'
-
 
 
 

@@ -1,1 +1,12 @@
 * NB: use occur to search for texts of choice in a buffer, sort of a replacement for isearch since the latter seems like not working in an org buffer.
+
+* [[https://emacs.stackexchange.com/questions/12383/how-to-unbind-a-key][How to bind/unbind a key in emacs]]
+** see the above link or the below:
+You can unset the key in at least two ways:
+
+(global-set-key (kbd "C-e") nil)
+(global-unset-key (kbd "C-e"))
+
+Note that I got this information with a web search for emacs unset key.
+
+* NB: deadgrep is installed and is awesome!!!
