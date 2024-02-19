@@ -1,0 +1,1 @@
+* NB: use occur to search for texts of choice in a buffer, sort of a replacement for isearch since the latter seems like not working in an org buffer.

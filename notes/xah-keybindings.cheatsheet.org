@@ -2,6 +2,16 @@
 
 Key             Binding
 
+SPC , ,		delete-frame
+SPC , c		xah-run-current-file
+SPC , d		eval-defun
+SPC , e		eval-buffer
+SPC , f		eval-region
+SPC , m		eval-last-sexp
+SPC , r		eval-expression
+SPC , x		save-buffers-kill-terminal
+SPC , DEL	xah-delete-current-file-make-backup
+
 SPC RET		execute-extended-command
 SPC SPC		xah-fly-insert-mode-activate
 SPC .		universal-argument
@@ -28,16 +38,6 @@ SPC t		xah-show-kill-ring
 SPC u		xah-close-current-buffer
 SPC x		xah-cut-all-or-region
 SPC y		xah-search-current-word
-
-SPC , ,		delete-frame
-SPC , c		xah-run-current-file
-SPC , d		eval-defun
-SPC , e		eval-buffer
-SPC , f		eval-region
-SPC , m		eval-last-sexp
-SPC , r		eval-expression
-SPC , x		save-buffers-kill-terminal
-SPC , DEL	xah-delete-current-file-make-backup
 
 SPC k ,		xah-next-window-or-frame
 SPC k 1		xah-append-to-register-1
