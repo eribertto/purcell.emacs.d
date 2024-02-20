@@ -1,6 +1,6 @@
 The Business Anti-Guru
-Lucid Manager 
-About Categories Topics 
+Lucid Manager
+About Categories Topics
 Install and configure Emacs and Elfeed to read and manage RSS feeds. Read your favourite blogs with Emacs.
 
 Read RSS and Atom feeds with Emacs and Elfeed
@@ -8,19 +8,19 @@ Read RSS and Atom feeds with Emacs and Elfeed
 Peter Prevos
 
 Peter Prevos | 17 December 2020
-Last Updated | 19 October 2023 
-1381 words | 7 minutes 
+Last Updated | 19 October 2023
+1381 words | 7 minutes
 
 Share this content
 
-* 
-* 
-* 
-* 
-* 
+*
+*
+*
+*
+*
 
-Productiviy 
-Emacs 
+Productiviy
+Emacs
 
 Finding interesting content on the internet can be like sifting your way through a pile of garbage to discover something valuable. Social media
 can be fun and engaging, but the cacophony of irrelevant content driven by dark algorithms can be disheartening. RSS and Atom let you
@@ -30,13 +30,13 @@ excerpt. This article describes reading RSS and Atom files with Org mode and the
 This article is part of the Emacs Writing Studio, which explains how to use Emacs to undertake research and write and publish articles, books,
 and websites. You can find the configuration files on GitHub:
 
-emacs-writing-studio  
+emacs-writing-studio
 
-RSS and Atom Feeds 
+RSS and Atom Feeds
 
 RSS is an elegant mechanism to consume content because you only get to see those blogs or podcasts that you subscribe to. When you use
 RSS, no algorithm decides what you can and cannot see. Subscribing to RSS feeds is anonymous, so you will not be spammed with email
-funnels trying to sell you stuff or services. Some websites have multiple feeds, so readers can subscribe to specific topics. 
+funnels trying to sell you stuff or services. Some websites have multiple feeds, so readers can subscribe to specific topics.
 
 Atom feeds are a newer feed format that clarifies some of the ambiguities in RSS. Both feeds are a form of XML, and you need an aggregator
 to display the content. Unfortunately, RSS and Atom feeds have lost importance due to the dominance of social media. However, the
@@ -49,7 +49,7 @@ and Bob's your uncle. For example, the RSS feed for Emacs articles on this websi
 
 https://lucidmanager.org/tags/emacs/index.xml
 
-Elfeed 
+Elfeed
 
 The Elfeed Emacs package manages and reads your favourite RSS feeds. You can add the feeds of your favourite websites and categorise them
 with tags. The Elfeed browser helps you to navigate through your collection of unread articles or podcasts.
@@ -67,12 +67,12 @@ last line sets the keyboard shortcut to start Elfeed to C-c w.
     :bind
     ("C-c w e" . elfeed ))
 Emacs Elfeed screendump
-Elfeed screendump. 
+Elfeed screendump.
 
 You must install the cURL program, which stands for 'Client for URLs'. This program assists with downloading files from the internet. Updates
 using cURL are faster than the built-in method. Also, the built-in Emacs method for retrieving feeds only works on Unix-based systems.
 
-Adding RSS Feeds 
+Adding RSS Feeds
 
 The basic configuration for Elfeed includes a list of RSS feeds by setting the elfeed-feeds list variable. You can easily access this variable with
 the customise-variable function.
@@ -87,7 +87,7 @@ The example below shows how you can structure your Elfeed Org Mode file. Note th
 elfeed: tag also applies to the Emacs and news headings. To get started, you can copy and paste this example into an Org File.
 
   #+title: Elfeed configuration
-  
+
   * Blogs                                             :elfeed:
   ** Emacs                                            :emacs:
   Anything Emacs related.
@@ -134,7 +134,7 @@ If you don't use the full Emacs Writing Studio configuration, then remote the :a
 rmh-elfeed-org-files to another name, for example, (list "~/Documents/elfeed.org"). Please note that this variable has to be a list with
 the filename(s) as strings.
 
-Using Elfeed 
+Using Elfeed
 
 You are now ready to read your RSS feeds. The first time you use Elfeed, use the elfeed-update command to establish the database of feed
 content.
@@ -160,14 +160,14 @@ they are marked as read.
 Elfeed has a powerful search filter that you can use to filter by tag, feed name and dates. The filter can process Regex queries. The Elfeed
 manual describes the functionality in more detail than is warranted in this article.
 
-Emacs Writing Studio 
+Emacs Writing Studio
 
 The Emacs Writing Studio consists of a series articles and a configuration to help you publish articles, books, movie and theatre scripts and
 websites.
 
 All the configuration explained in this series of articles is available as an init file on GitHub.
 
-emacs-writing-studio  
+emacs-writing-studio
 
 Emacs is a malleable system, and everybody has personal preferences on how to undertake a task and configure Emacs. Any article on how to
 use Emacs is thus opinionated. If you have a different way of doing things, please complete the contact form to send me an email or contact
@@ -177,11 +177,11 @@ The next article in this series describes how to listen to music with the Emacs 
 
 Share this content
 
-* 
-* 
-* 
-* 
-* 
+*
+*
+*
+*
+*
 
 You might also enjoy reading these articles
 
@@ -197,16 +197,16 @@ This article describes how to improve the Emacs user interface as part of the Em
 
 Improving the User Interface
 
-Please enable JavaScript to view the comments powered by Disqus. comments powered by Disqus 
+Please enable JavaScript to view the comments powered by Disqus. comments powered by Disqus
 
 Social Media
 
-This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License. 
+This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License.
 
 Powered by
 
 Hugo
-    
+
 Bulma
-    
+
 Emacs

@@ -11,6 +11,8 @@
 
 * TODO Plan to transfer funds from riyadbank to bpi, mbt
 * TODO Begin topup of GotyMe digital bank.
+* TODO Take down notes/tips from reddit post digital bank password recovery strats in the event of death of owner.
+* TODO Install elfeed and friends, use as reddit reader?
 
 * PROJECT learn more of denote note-taking by Prot
 * NEXT Top up Tonik account of kids, mrs account this January 2024, source account MBT.

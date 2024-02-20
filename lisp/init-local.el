@@ -407,5 +407,19 @@
 (global-set-key (kbd "<f6>") nil) ;; unset f6 to give way to deadgrep
 (global-set-key (kbd "<f6>") #'deadgrep)
 
+;; Elfeed basic entries
+(setq elfeed-feeds
+      '("http://nullprogram.com/feed/"
+        "https://planet.emacslife.com/atom.xml"
+        "https://www.reddit.com/r/emacs.rss"
+        "https://www.reddit.com/r/orgmode.rss"
+        "https://blog.tecosaur.com/tmio/rss.xml"
+        "http://oremacs.com/atom.xml"))
+
+(setf url-queue-timeout 30)
+
+
+
+
 (provide 'init-local)
 ;;; init-local.el ends here

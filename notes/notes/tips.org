@@ -11,3 +11,33 @@ Note that I got this information with a web search for emacs unset key.
 
 * NB: deadgrep is installed and is awesome!!!
 ** https://github.com/Wilfred/deadgrep
+
+* Begin using elfeed and friends https://github.com/skeeto/elfeed
+Some I have in my feeds
+
+https://oneofus.la/have-emacs-will-hack/feed.xml
+
+http://oremacs.com/atom.xml
+
+https://updates.orgmode.org/feed/changes
+
+https://planet.emacslife.com/atom.xml
+
+http://pragmaticemacs.com/feed/
+
+https://www.reddit.com/r/emacs.rss
+
+https://www.reddit.com/r/orgmode.rss
+
+https://blog.tecosaur.com/tmio/rss.xml
+
+;; Somewhere in your .emacs file
+(setq elfeed-feeds
+      '("http://nullprogram.com/feed/"
+        "https://planet.emacslife.com/atom.xml"
+        "https://www.reddit.com/r/emacs.rss"
+        "https://www.reddit.com/r/orgmode.rss"
+        "https://blog.tecosaur.com/tmio/rss.xml"
+        "http://oremacs.com/atom.xml"))
+
+(setf url-queue-timeout 30)
