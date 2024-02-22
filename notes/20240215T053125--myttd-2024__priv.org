@@ -5,14 +5,17 @@
 
 * Begin my things to do for 2024.
 
+* TODO Watch YT vid how to close all positions ibkr
 * TODO Followup BDO release of original OR/CR.
-
 * TODO Plan to subscribe to mystc new data plan 7 days from today 2024-02-17
-
 * TODO Plan to transfer funds from riyadbank to bpi, mbt
 * TODO Begin topup of GotyMe digital bank.
 * TODO Take down notes/tips from reddit post digital bank password recovery strats in the event of death of owner.
-* TODO Install elfeed and friends, use as reddit reader?
+* DONE Install elfeed and friends, use as reddit reader?
+CLOSED: [2024-02-22 ĵaŭ 10:46]
+:LOGBOOK:
+- State "DONE"       from "TODO"       [2024-02-22 ĵaŭ 10:46]
+:END:
 
 * PROJECT learn more of denote note-taking by Prot
 * NEXT Top up Tonik account of kids, mrs account this January 2024, source account MBT.

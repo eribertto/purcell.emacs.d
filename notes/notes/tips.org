@@ -1,5 +1,10 @@
 * NB: use occur to search for texts of choice in a buffer, sort of a replacement for isearch since the latter seems like not working in an org buffer.
 
+* New Toyota Innova Zenix non-hybrid variant 1.67M php.
+** https://www.youtube.com/watch?v=DmjqynsZ9xc
+** This is the hybrid variant very good at 1.97M php.
+*** https://www.youtube.com/watch?v=pzZamcIDbRc
+
 * [[https://emacs.stackexchange.com/questions/12383/how-to-unbind-a-key][How to bind/unbind a key in emacs]]
 ** see the above link or the below:
 You can unset the key in at least two ways:
@@ -41,3 +46,5 @@ https://blog.tecosaur.com/tmio/rss.xml
         "http://oremacs.com/atom.xml"))
 
 (setf url-queue-timeout 30)
+
+* To search and replace regexp e.g. replace numbers with something else, use isearch-query-replace-regexp or use the menu edit->replace->replace regexp
