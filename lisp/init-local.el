@@ -52,7 +52,7 @@
 ;; (load-theme 'modus-operandi)
 (if (string= (system-name) "TP460-eos")
     (add-to-list 'default-frame-alist '(cursor-color . "yellow")
-                 (load-theme 'modus-vivendi-tinted)))
+                 (load-theme 'ef-cyprus)))
 (if (string= (system-name)
              "eribertto-nuc7i5bnh")
     (add-to-list 'default-frame-alist '(cursor-color . "white")
