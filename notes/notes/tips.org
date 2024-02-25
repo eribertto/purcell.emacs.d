@@ -48,3 +48,13 @@ https://blog.tecosaur.com/tmio/rss.xml
 (setf url-queue-timeout 30)
 
 * To search and replace regexp e.g. replace numbers with something else, use isearch-query-replace-regexp or use the menu edit->replace->replace regexp
+
+* [[https://www.youtube.com/watch?v=1-UIzYPn38s][Emacs control where buffers are displayed]]
+** the link above is a good one explanation how display-buffer-alist works.
+
+* Home electricity monthly consumption in kwh:
+
+** October 2023 616
+** November 692
+** December 631
+** January 2024 669

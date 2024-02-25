@@ -409,8 +409,7 @@
 
 ;; Elfeed basic entries
 (setq elfeed-feeds
-      '("http://nullprogram.com/feed/"
-        "https://planet.emacslife.com/atom.xml"
+      '("https://planet.emacslife.com/atom.xml"
         "https://www.reddit.com/r/emacs.rss"
         "https://www.reddit.com/r/orgmode.rss"
         "https://blog.tecosaur.com/tmio/rss.xml"
