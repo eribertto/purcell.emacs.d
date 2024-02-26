@@ -3,9 +3,8 @@
 #+filetags:   :priv:
 #+identifier: 20240219T133613
 
-* Plan to test drive bluefin.gts.iso from universal blue, check the DLed iso.
-https://universal-blue.discourse.group/docs?topic=41
 * MADA card will expire in 09/24 this year so fya.
+* Plan to try out Fedora 39 silverblue, remove bluefin since its buggy.
 * Plan to close red positions in ibkr portfolio.
 * Visit UM for vehicle checkup re 4x4 error message randomly popping up each morning startup.
 * Pay mbt credit card min 850 php until due date March 11, 2024.
@@ -15,6 +14,12 @@ https://universal-blue.discourse.group/docs?topic=41
 **** Farm house garage pavement for parking.
 **** Home solar system install.
 **** ajkalajal
+* DONE Plan to test drive bluefin.gts.iso from universal blue, check the DLed iso.
+CLOSED: [2024-02-26 Mon 16:22]
+:LOGBOOK:
+- State "DONE"       from              [2024-02-26 Mon 16:22]
+:END:
+https://universal-blue.discourse.group/docs?topic=41
 * DONE Backup dotfiles of this machine for migration to other machine.
 CLOSED: [2024-02-26 Mon 10:46]
 :LOGBOOK:
