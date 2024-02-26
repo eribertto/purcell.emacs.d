@@ -1,4 +1,4 @@
-;;; package --- summary init-local.el
+;;; package --- summary init-local.el -*- lexical-binding: t -*-
 ;;; Code:
 ;;; Commentary:
 ;;; This is the users personal settings override
@@ -59,7 +59,10 @@
                  (load-theme 'ef-night)))
 ;; why does flymake flagged require popper an error?
 ;; (require 'popper)
-(use-package popper)
+(use-package popper
+  :config
+  (popper-mode 1))
+
 (setq popper-reference-buffers
       '("\\*Messages\\*"
         "Output\\*$"
@@ -71,13 +74,12 @@
 (global-set-key (kbd "C-`") 'popper-toggle)
 (global-set-key (kbd "M-`") 'popper-cycle)
 (global-set-key (kbd "C-M-`") 'popper-toggle-type)
-(popper-mode +1)
 
 ;; For echo-area hints
 ;; (require 'popper-echo)
 (use-package popper-echo
   :config
-  popper-echo-mode 1)
+  (popper-echo-mode 1))
 
 (when (display-graphic-p)
   (require 'all-the-icons))
@@ -139,7 +141,11 @@
    :fetcher git
    :url "https://github.com/quelpa/quelpa-use-package.git"))
 ;; (require 'quelpa-use-package)
-(use-package quelpa-use-package)
+(use-package quelpa-use-package
+  :ensure t
+  :init
+  (setq quelpa-self-upgrade-p nil)
+  (setq quelpa-update-melpa-p nil))
 
 (use-package burly
   :quelpa (burly :fetcher github :repo "alphapapa/burly.el"))
@@ -197,8 +203,12 @@
 (setq xah-fly-command-mode-indicator " ")
 (setq xah-fly-insert-mode-indicator "✏" )
 ;; (defun my-modeline-color-on () (set-face-background 'mode-line "green"))
-(defun my-modeline-color-on () (set-face-background 'mode-line "royal blue"))
-(defun my-modeline-color-off () (set-face-background 'mode-line "tomato"))
+(defun my-modeline-color-on ()
+  "Set to royal blue color."
+  (set-face-background 'mode-line "royal blue"))
+(defun my-modeline-color-off ()
+  "Set to color tomato."
+  (set-face-background 'mode-line "tomato"))
 (add-hook 'xah-fly-command-mode-activate-hook 'my-modeline-color-on)
 (add-hook 'xah-fly-insert-mode-activate-hook  'my-modeline-color-off)
 
@@ -394,6 +404,27 @@
 ;; - `ef-themes-load-random'
 ;; - `ef-themes-preview-colors'
 ;; - `ef-themes-preview-colors-current'
+
+;;;;; Dired-sidebar Configuration
+;; https://github.com/danijelcamdzic/dotemacs/blob/main/init.el
+
+(use-package dired-sidebar
+  :ensure t
+  :config
+  ;; Make the window not fixed
+  (setq dired-sidebar-window-fixed nil))
+
+;;;;;; Functions - Dired-sidebar toggle
+
+(defun em/dired-sidebar-toggle ()
+  "Toggle `dired-sidebar'."
+  (interactive)
+  (dired-sidebar-toggle-sidebar))
+
+;;;; Visual Modes
+;; Enable outline-minor-mode as soon as .el file is opened
+(add-hook 'emacs-lisp-mode-hook 'outline-minor-mode)
+
 
 
 (provide 'init-local)

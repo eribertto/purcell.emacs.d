@@ -3,8 +3,8 @@
 #+filetags:   :priv:
 #+identifier: 20240219T133613
 
-* Bring new office toothbrush
 * Plan to close red positions in ibkr portfolio.
+* MADA card will expire in 09/24 this year so fya.
 * Backup dotfiles of this machine for migration to other machine.
 * Visit UM for vehicle checkup re 4x4 error message randomly popping up each morning startup.
 * Pay mbt credit card min 850 php until due date March 11, 2024.
@@ -14,6 +14,12 @@
 **** Farm house garage pavement for parking.
 **** Home solar system install.
 **** ajkalajal
+* DONE Bring new office toothbrush
+CLOSED: [2024-02-26 Mon 08:54]
+:LOGBOOK:
+- State "DONE"       from              [2024-02-26 Mon 08:54]
+:END:
+
 * DONE Install new linux distro in E590 laptop, delete the existing installed OS.
 CLOSED: [2024-02-24 Sat 15:21]
 :LOGBOOK:
