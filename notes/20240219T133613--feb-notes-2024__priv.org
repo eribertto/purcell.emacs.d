@@ -4,6 +4,7 @@
 #+identifier: 20240219T133613
 
 * Plan to close red positions in ibkr portfolio.
+* Plan to test drive bluefin.gts.iso from universal blue, check the DLed iso.
 * MADA card will expire in 09/24 this year so fya.
 * Backup dotfiles of this machine for migration to other machine.
 * Visit UM for vehicle checkup re 4x4 error message randomly popping up each morning startup.
