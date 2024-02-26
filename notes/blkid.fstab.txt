@@ -1,0 +1,25 @@
+
+# /etc/fstab: static file system information.
+#
+# Use 'blkid' to print the universally unique identifier for a device; this may
+# be used with UUID= as a more robust way to name devices that works even if
+# disks are added and removed. See fstab(5).
+#
+# <file system>             <mount point>  <type>  <options>  <dump>  <pass>
+UUID=315C-6613                            /efi           vfat    defaults,noatime 0 2
+UUID=f0b61e99-5343-4e50-9116-34bd70adacb6 /              ext4    defaults,noatime 0 1
+UUID=6e1ba027-016b-4515-89f6-7e847252d250 swap           swap    defaults   0 0
+tmpfs                                     /tmp           tmpfs   defaults,noatime,mode=1777 0 0
+
+## below is output of lsblk --fs
+NAME   FSTYPE FSVER LABEL       UUID                                 FSAVAIL FSUSE% MOUNTPOINTS
+sda
+├─sda1 vfat   FAT32             F78A-A779
+├─sda2 ext4   1.0               6e6dc315-3da6-4474-ac94-7b5858aa88e7
+└─sda3 swap   1     swap        f91ba060-6486-4f70-b2dd-019488b915fc
+sdb
+├─sdb1 vfat   FAT32             315C-6613                             911.7M     9% /efi
+├─sdb2 ext4   1.0   endeavouros f0b61e99-5343-4e50-9116-34bd70adacb6  353.7G    15% /
+└─sdb3 swap   1     swap        6e1ba027-016b-4515-89f6-7e847252d250                [SWAP]
+
+## NOTE: TARGET PARTITION TO REPLACE WILL BE /DEV/SDA
