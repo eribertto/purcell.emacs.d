@@ -1,7 +1,7 @@
 ━━━━━━━━━━━━━━━━━━━━━━━━━
 * EAT: EMULATE A TERMINAL
 ━━━━━━━━━━━━━━━━━━━━━━━━━
-
+* FOR THE COMPREHENSIVE DETAILS, SEE THE INFO MANUAL FOR EAT.
 
 Eat's name self-explanatory, it stands for "Emulate A Terminal".  Eat is
 a terminal emulator.  It can run most (if not all) full-screen terminal
