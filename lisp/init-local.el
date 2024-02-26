@@ -425,6 +425,8 @@
 ;; Enable outline-minor-mode as soon as .el file is opened
 (add-hook 'emacs-lisp-mode-hook 'outline-minor-mode)
 
+(use-package eat
+  :ensure t)
 
 
 (provide 'init-local)
