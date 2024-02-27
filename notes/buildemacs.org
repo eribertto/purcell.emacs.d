@@ -1,0 +1,9 @@
+#+TITLE: Building Emacs from source
+#+AUTHOR: Eriberto Mendz
+#+EMAIL: erimendz@gmail.com
+
+* README :noexport:
+This is a literate document that can potentially execute code from your computer to this document.
+#+begin_src elisp :results none
+  (load-theme 'ef-spring)
+#+end_src
