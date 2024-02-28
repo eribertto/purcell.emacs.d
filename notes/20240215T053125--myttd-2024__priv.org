@@ -5,6 +5,7 @@
 
 * Begin my things to do for 2024.
 
+* Add this message from NixOS e590 machine.
 * TODO Watch YT vid how to close all positions ibkr
 * TODO Plan to transfer funds from riyadbank to bpi, mbt
 * TODO Begin topup of GotyMe digital bank.
