@@ -1,0 +1,14 @@
+#+title:      Diary TIL journal
+#+date:       [2024-02-28 Wed 21:18]
+#+filetags:   :priv:
+#+identifier: 20240228T211842
+
+* Begin journal of my diary entries and Today-I-Learned notes.
+
+** success setting up home-manager in NixOS machine e.g. slowly added some entries in home.nix file.
+
+** next is setup emacs extra settings, google home.nix sample files
+
+** yesterday's TIL: switching to different branch aka checkout in magit gives me access to files of that branch.
+
+** also adding commit to one branch from one machine then fetch/pulling it from another is a breeze.
