@@ -14,7 +14,7 @@
 **** Home solar system install.
 **** ajkalajal
 * TODO How to install fonts in NixOS.
-* what else to write?
+* TODO Make a TIL org file to journal 'new things discovered'.
 * CANCELLED Plan to try out Fedora 39 silverblue, remove bluefin since its buggy.
 CLOSED: [2024-02-28 Wed 05:25]
 :LOGBOOK:
