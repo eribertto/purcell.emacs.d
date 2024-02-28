@@ -1,0 +1,77 @@
+#+title:      FEB notes 2024
+#+date:       [2024-02-19 Mon 13:36]
+#+filetags:   :priv:
+#+identifier: 20240219T133613
+
+* MADA card will expire in 09/24 this year so fya.
+* Plan to close red positions in ibkr portfolio.
+* Visit UM for vehicle checkup re 4x4 error message randomly popping up each morning startup.
+* Pay mbt credit card min 850 php until due date March 11, 2024.
+* Make list of home projects TTD this 2024 e.g.
+**** Farm house fencing
+**** Farm house elevated tank installation
+**** Farm house garage pavement for parking.
+**** Home solar system install.
+**** ajkalajal
+* TODO How to install fonts in NixOS.
+* what else to write?
+* CANCELLED Plan to try out Fedora 39 silverblue, remove bluefin since its buggy.
+CLOSED: [2024-02-28 Wed 05:25]
+:LOGBOOK:
+- State "CANCELLED"  from              [2024-02-28 Wed 05:25] \\
+  Installed NixOS instead.
+:END:
+
+* DONE Plan to test drive bluefin.gts.iso from universal blue, check the DLed iso.
+CLOSED: [2024-02-26 Mon 16:22]
+:LOGBOOK:
+- State "DONE"       from              [2024-02-26 Mon 16:22]
+:END:
+https://universal-blue.discourse.group/docs?topic=41
+* DONE Backup dotfiles of this machine for migration to other machine.
+CLOSED: [2024-02-26 Mon 10:46]
+:LOGBOOK:
+- State "DONE"       from              [2024-02-26 Mon 10:46]
+:END:
+
+* DONE Bring new office toothbrush
+CLOSED: [2024-02-26 Mon 08:54]
+:LOGBOOK:
+- State "DONE"       from              [2024-02-26 Mon 08:54]
+:END:
+
+* DONE Install new linux distro in E590 laptop, delete the existing installed OS.
+CLOSED: [2024-02-24 Sat 15:21]
+:LOGBOOK:
+- State "DONE"       from              [2024-02-24 Sat 15:21]
+:END:
+
+* DONE Check expiry date of KSA drivers license. Update: it will expire in 04/03/2025 e.g. March 4, 2025
+CLOSED: [2024-02-24 Sat 11:02]
+:LOGBOOK:
+- State "DONE"       from              [2024-02-24 Sat 11:02]
+:END:
+
+* DONE Begin adding notes for FEB 2024 10 days after i returned from EOC leave.
+CLOSED: [2024-02-24 Sat 11:01]
+:LOGBOOK:
+- State "DONE"       from              [2024-02-24 Sat 11:01]
+:END:
+
+*** DONE Until now I'm still struggling with login to my office workstation
+CLOSED: [2024-02-24 Sat 10:35]
+:LOGBOOK:
+- State "DONE"       from              [2024-02-24 Sat 10:35]
+:END:
+
+*** DONE I called IT group already plus asked help from Saudi Aramco peers to resolve my issue.
+CLOSED: [2024-02-24 Sat 10:35]
+:LOGBOOK:
+- State "DONE"       from              [2024-02-24 Sat 10:35]
+:END:
+
+* DONE Print out ibkr port and plan to close red positions, keep the greens.
+CLOSED: [2024-02-24 Sat 10:35]
+:LOGBOOK:
+- State "DONE"       from              [2024-02-24 Sat 10:35]
+:END:
