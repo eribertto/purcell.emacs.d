@@ -4,6 +4,7 @@
 
 * README :noexport:
 This is a literate document that can potentially execute code from your computer to this document.
+See this link https://www.youtube.com/watch?v=BAFZ-vTnfSo&t=10s
 #+begin_src elisp :results none
-  (load-theme 'ef-spring)
+  (load-theme 'ef-elea-light)
 #+end_src
