@@ -1,0 +1,38 @@
+#+title:      Install Nix package manager
+#+date:       [2024-03-01 ven 12:41]
+#+filetags:   :nixos:priv:
+#+identifier: 20240301T124101
+
+* Success installing Nix package manager following the below link:
+** https://github.com/DeterminateSystems/nix-installer
+* See below binary  tree location of installed apps:
+
+󰕈 eriberttom  …/profiles/default/bin   12:42  ll
+total 3.6M
+-r-xr-xr-x 1 root root 3.6M Jan  1  1970 nix*
+lrwxrwxrwx 1 root root    3 Jan  1  1970 nix-build -> nix*
+lrwxrwxrwx 1 root root    3 Jan  1  1970 nix-channel -> nix*
+lrwxrwxrwx 1 root root    3 Jan  1  1970 nix-collect-garbage -> nix*
+lrwxrwxrwx 1 root root    3 Jan  1  1970 nix-copy-closure -> nix*
+lrwxrwxrwx 1 root root    3 Jan  1  1970 nix-daemon -> nix*
+lrwxrwxrwx 1 root root    3 Jan  1  1970 nix-env -> nix*
+lrwxrwxrwx 1 root root    3 Jan  1  1970 nix-hash -> nix*
+lrwxrwxrwx 1 root root    3 Jan  1  1970 nix-instantiate -> nix*
+lrwxrwxrwx 1 root root    3 Jan  1  1970 nix-prefetch-url -> nix*
+lrwxrwxrwx 1 root root    3 Jan  1  1970 nix-shell -> nix*
+lrwxrwxrwx 1 root root    3 Jan  1  1970 nix-store -> nix*
+* The above tree is cp/paste from eat buffer. If exec as insert-buffer function it makes this org file read-only-text.
+* Good starting guide for NixOS distribution:
+** https://nixos-and-flakes.thiscute.world/nixos-with-flakes/get-started-with-nixos
+* Manual NixOS home-manager:
+** https://nix-community.github.io/home-manager/
+* [[https://www.youtube.com/watch?v=glQoiK5DOZY&t=53s][Nix Revolution : Crafting the Ultimate Dev Toolkit - Part 1]]
+** note: i followed this nix tutorial in YT
+** TIL today i learned that readlink binary follows soft link(s) in the FS.
+** See transcript notes as per below link, open with org-open-at-point command.
+*** [[file:nix.rev.part.1.YT.transcript.org][transcript notes]]
+** Completed the section Nix develop.
+** TIL do home-manager switch anytime you add edits in home.nix.
+** Do nix-collect-garbage command to reclaim space of installed apps.
+** Installed nnn with home-manager
+*** https://github.com/jarun/nnn?tab=readme-ov-file

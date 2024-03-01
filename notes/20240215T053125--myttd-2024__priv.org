@@ -6,10 +6,20 @@
 * Begin my things to do for 2024.
 
 * TODO Watch YT vid how to close all positions ibkr
-* TODO Plan to learn Nix and NixOS configuration
-* TODO Plan to setup emacs EAF.
+* PROJECT Plan to learn Nix and NixOS configuration
 * TODO Plan for home solar lighting system
+* DONE Disable emacs EAF
+CLOSED: [2024-03-01 Fri 21:05]
+:LOGBOOK:
+- State "DONE"       from              [2024-03-01 Fri 21:05]
+:END:
+
 * TODO Plan to transfer funds from riyadbank to bpi, mbt
+* Send bank transfers:
+** to sjp bpi 40K
+** to nonoy bpi 5K
+** to mymy mbt 10K (for mama)
+** to ctb mbt 10K
 * TODO Begin topup of GotyMe digital bank.
 * TODO Take down notes/tips from reddit post digital bank password recovery strats in the event of death of owner.
 * TODO Reset KA2 to default settings, find updates and make new keybinding configuration.
@@ -18,6 +28,12 @@
 * PROJECT Followup BDO release of original OR/CR.
 * NEXT Top up Tonik account of kids, mrs account this January 2024, source account MBT.
 * NEXT make defalias for scroll-up/down
+* DONE Plan to setup emacs EAF.
+CLOSED: [2024-03-01 Fri 20:40]
+:LOGBOOK:
+- State "DONE"       from "TODO"       [2024-03-01 Fri 20:40]
+:END:
+
 * DONE Add this message from NixOS e590 machine.
 CLOSED: [2024-02-29 ĵaŭ 20:12]
 :LOGBOOK:
