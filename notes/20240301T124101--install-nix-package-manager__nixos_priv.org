@@ -26,7 +26,12 @@ lrwxrwxrwx 1 root root    3 Jan  1  1970 nix-store -> nix*
 ** https://nixos-and-flakes.thiscute.world/nixos-with-flakes/get-started-with-nixos
 * Manual NixOS home-manager:
 ** https://nix-community.github.io/home-manager/
-* [[https://www.youtube.com/watch?v=glQoiK5DOZY&t=53s][Nix Revolution : Crafting the Ultimate Dev Toolkit - Part 1]]
+* DONE [[https://www.youtube.com/watch?v=glQoiK5DOZY&t=53s][Nix Revolution : Crafting the Ultimate Dev Toolkit - Part 1]]
+CLOSED: [2024-03-01 Fri 22:49]
+:LOGBOOK:
+- State "DONE"       from              [2024-03-01 Fri 22:49]
+:END:
+
 ** note: i followed this nix tutorial in YT
 ** TIL today i learned that readlink binary follows soft link(s) in the FS.
 ** See transcript notes as per below link, open with org-open-at-point command.
