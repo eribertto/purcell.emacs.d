@@ -8,13 +8,16 @@
 * TODO Watch YT vid how to close all positions ibkr
 * PROJECT Plan to learn Nix and NixOS configuration
 * TODO Plan for home solar lighting system
-* DONE Disable emacs EAF
-CLOSED: [2024-03-01 Fri 21:05]
-:LOGBOOK:
-- State "DONE"       from              [2024-03-01 Fri 21:05]
-:END:
-
 * TODO Plan to transfer funds from riyadbank to bpi, mbt
+* MADA card will expire in 09/24 this year so fya.
+** visit riyadbank mubarraz industrial area as it is faster there.
+* Plan to close red positions in ibkr portfolio.
+* Pay mbt credit card min 850 php until due date March 11, 2024.
+* Make list of home projects TTD this 2024 e.g.
+**** Farm house fencing
+**** Farm house elevated tank installation
+**** Farm house garage pavement for parking.
+**** Home solar system install.
 * Send bank transfers:
 ** DONE to sjp bpi 40K
 CLOSED: [2024-03-01 Fri 21:19]
@@ -33,6 +36,18 @@ CLOSED: [2024-03-01 Fri 21:19]
 * PROJECT Followup BDO release of original OR/CR.
 * NEXT Top up Tonik account of kids, mrs account this January 2024, source account MBT.
 * NEXT make defalias for scroll-up/down
+* DONE Visit UM for vehicle checkup re 4x4 error message randomly popping up each morning startup.
+CLOSED: [2024-03-01 Fri 21:29]
+:LOGBOOK:
+- State "DONE"       from              [2024-03-01 Fri 21:29]
+:END:
+
+* DONE Disable emacs EAF
+CLOSED: [2024-03-01 Fri 21:05]
+:LOGBOOK:
+- State "DONE"       from              [2024-03-01 Fri 21:05]
+:END:
+
 * DONE Plan to setup emacs EAF.
 CLOSED: [2024-03-01 Fri 20:40]
 :LOGBOOK:
