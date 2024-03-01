@@ -16,7 +16,12 @@ CLOSED: [2024-03-01 Fri 21:05]
 
 * TODO Plan to transfer funds from riyadbank to bpi, mbt
 * Send bank transfers:
-** to sjp bpi 40K
+** DONE to sjp bpi 40K
+CLOSED: [2024-03-01 Fri 21:19]
+:LOGBOOK:
+- State "DONE"       from              [2024-03-01 Fri 21:19]
+:END:
+
 ** to nonoy bpi 5K
 ** to mymy mbt 10K (for mama)
 ** to ctb mbt 10K
