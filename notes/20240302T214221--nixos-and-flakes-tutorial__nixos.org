@@ -1,0 +1,9 @@
+#+title:      NixOS and Flakes tutorial
+#+date:       [2024-03-02 Sat 21:42]
+#+filetags:   :nixos:
+#+identifier: 20240302T214221
+
+* See below link to get started with Flake enabled in NixOS:
+** https://nixos-and-flakes.thiscute.world/nixos-with-flakes/nixos-with-flakes-enabled
+** See nix flake init --help
+** jdkajak
