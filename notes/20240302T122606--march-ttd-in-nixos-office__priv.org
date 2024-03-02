@@ -1,0 +1,6 @@
+#+title:      March TTD in NixOS office
+#+date:       [2024-03-02 Sat 12:26]
+#+filetags:   :priv:
+#+identifier: 20240302T122606
+
+* Begin adding notes from T460P machine.

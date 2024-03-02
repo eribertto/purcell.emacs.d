@@ -13,7 +13,7 @@
 (turn-on-visual-line-mode)
 ;;(set-cursor-color cyan)
 
-(add-to-list 'load-path (expand-file-name "elpa-29.1/xah-fly-keys-24.13.20231005090319" user-emacs-directory))
+;; (add-to-list 'load-path (expand-file-name "elpa-29.1/xah-fly-keys-24.13.20231005090319" user-emacs-directory))
 
 (with-eval-after-load 'org (global-org-modern-mode))
 
