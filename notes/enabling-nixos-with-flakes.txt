@@ -2,6 +2,8 @@
 
   Enabling Flakes Support for NixOS ​
 
+https://nixos-and-flakes.thiscute.world/nixos-with-flakes/nixos-with-flakes-enabled
+
   Compared to the default configuration method currently used in NixOS, Flakes
   offers better reproducibility. Its clear package structure definition
   inherently supports dependencies on other Git repositories, facilitating code
@@ -37,31 +39,6 @@
 
   # ......
 }
-  1
-  2
-  3
-  4
-  5
-  6
-  7
-  8
-  9
-  10
-  11
-  12
-  13
-  14
-  15
-  16
-  17
-  18
-  19
-  20
-  21
-  22
-  23
-  24
-  25
 
   After making these changes, run sudo nixos-rebuild switch to apply the
   modifications. Then, you can use the Flakes feature to manage your system
@@ -83,7 +60,6 @@
 
 --
 nix flake show templates
-  1
 
   Among them, the templates#full template demonstrates all possible usage. Take
   a look at its content:
@@ -91,8 +67,7 @@ nix flake show templates
 --
 nix flake init -t templates#full
 cat flake.nix
-  1
-  2
+
 
   Referencing this template, create the file /etc/nixos/flake.nix and write the
   configuration content. All subsequent system modifications will be taken over
@@ -119,26 +94,6 @@ cat flake.nix
     };
   };
 }
-  1
-  2
-  3
-  4
-  5
-  6
-  7
-  8
-  9
-  10
-  11
-  12
-  13
-  14
-  15
-  16
-  17
-  18
-  19
-  20
 
   Here we defined a system named my-nixos, with its configuration file located
   at /etc/nixos/ as ./configuration.nix. This means we are still using the old
@@ -205,16 +160,6 @@ cat flake.nix
     # Omitting previous configurations......
   };
 }
-  1
-  2
-  3
-  4
-  5
-  6
-  7
-  8
-  9
-  10
 
   Dependencies in inputs has many types and definitions. It can be another
   flake, a regular Git repository, or a local path. The section Other Usage of
@@ -255,26 +200,6 @@ cat flake.nix
     };
   };
 }
-  1
-  2
-  3
-  4
-  5
-  6
-  7
-  8
-  9
-  10
-  11
-  12
-  13
-  14
-  15
-  16
-  17
-  18
-  19
-  20
 
   Flakes can have various purposes and can have different types of outputs. The
   section Flake Outputs provides a more detailed introduction. Here, we are only
@@ -309,7 +234,6 @@ sudo nixos-rebuild switch --flake /path/to/your/flake#your-hostname
 
 --
 sudo nixos-rebuild switch --flake github:owner/repo#your-hostname
-  1
 
   3. Simple Introduction to nixpkgs.lib.nixosSystem Function ​
 
@@ -339,21 +263,6 @@ sudo nixos-rebuild switch --flake github:owner/repo#your-hostname
     };
   };
 }
-  1
-  2
-  3
-  4
-  5
-  6
-  7
-  8
-  9
-  10
-  11
-  12
-  13
-  14
-  15
 
   The attribute set following nixpkgs.lib.nixosSystem is the function's
   parameter. We have only set two parameters here:
@@ -409,17 +318,6 @@ sudo nixos-rebuild switch --flake github:owner/repo#your-hostname
   # Other option declarations
   # ...
 }
-  1
-  2
-  3
-  4
-  5
-  6
-  7
-  8
-  9
-  10
-  11
 
   The definition is actually a Nix function, and it has five automatically
   generated, automatically injected, and declaration-free parameters provided by
@@ -514,25 +412,6 @@ sudo nixos-rebuild switch --flake github:owner/repo#your-hostname
     };
   };
 }
-  1
-  2
-  3
-  4
-  5
-  6
-  7
-  8
-  9
-  10
-  11
-  12
-  13
-  14
-  15
-  16
-  17
-  18
-  19
 
   Or you can achieve the same effect using the _module.args option:
 
@@ -556,25 +435,6 @@ sudo nixos-rebuild switch --flake github:owner/repo#your-hostname
     };
   };
 }
-  1
-  2
-  3
-  4
-  5
-  6
-  7
-  8
-  9
-  10
-  11
-  12
-  13
-  14
-  15
-  16
-  17
-  18
-  19
 
   Choose one of the two methods above to modify your configuration, and then you
   can use the inputs parameter in /etc/nixos/configuration.nix. The module
@@ -588,12 +448,6 @@ sudo nixos-rebuild switch --flake github:owner/repo#your-hostname
 {
   # ...
 }
-  1
-  2
-  3
-  4
-  5
-  6
 
   The next section will demonstrate how to use specialArgs/_module.args to
   install system software from other flake sources.
@@ -638,28 +492,6 @@ sudo nixos-rebuild switch --flake github:owner/repo#your-hostname
     };
   };
 }
-  1
-  2
-  3
-  4
-  5
-  6
-  7
-  8
-  9
-  10
-  11
-  12
-  13
-  14
-  15
-  16
-  17
-  18
-  19
-  20
-  21
-  22
 
   Next, you can reference this flake input data source in configuration.nix:
 
@@ -677,19 +509,6 @@ sudo nixos-rebuild switch --flake github:owner/repo#your-hostname
   ];
   # ...
 }
-  1
-  2
-  3
-  4
-  5
-  6
-  7
-  8
-  9
-  10
-  11
-  12
-  13
 
   Make the necessary changes and deploy with sudo nixos-rebuild switch. The
   deployment will take much longer this time because Nix will compile the entire
@@ -709,7 +528,6 @@ sudo nixos-rebuild switch --flake github:owner/repo#your-hostname
 
 --
 nix run github:helix-editor/helix/master
-  1
 
   We will go into more detail on the usage of nix run in the following section
   Usage of the New CLI.
