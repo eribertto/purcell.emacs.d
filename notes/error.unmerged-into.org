@@ -40,3 +40,12 @@ nothing to commit, working tree clean
 * march.nixos.t460
 master
 nov.1.2023
+
+* see error below:
+
+Head:     march.nixos.t460 add unmerged into xxx branch error.
+Rebase:   origin/nov.1.2023 add first commits from nixos t460
+Push:     origin/march.nixos.t460 add unmerged into xxx branch error.
+
+Unmerged into origin/nov.1.2023 (1)
+edd8d5dd origin/march.nixos.t460 add unmerged into xxx branch error.
