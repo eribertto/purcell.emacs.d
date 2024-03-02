@@ -1,0 +1,42 @@
+* Emacs unmerged into <xxx-branch> error.
+* Solution: go to the CLI and follow the git prompts as needed.
+
+[eriberttom@eribenixos:~/.emacs.d]$ git status
+On branch march.nixos.t460
+Your branch is ahead of 'origin/nov.1.2023' by 1 commit.
+(use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+
+[eriberttom@eribenixos:~/.emacs.d]$ git push
+fatal: The upstream branch of your current branch does not match
+the name of your current branch.  To push to the upstream branch
+on the remote, use
+
+git push origin HEAD:nov.1.2023
+
+To push to the branch of the same name on the remote, use
+
+git push origin HEAD
+
+To choose either option permanently, see push.default in 'git help config'.
+
+To avoid automatically configuring an upstream branch when its name
+won't match the local branch, see option 'simple' of branch.autoSetupMerge
+in 'git help config'.
+
+[eriberttom@eribenixos:~/.emacs.d]$ git push origin HEAD:nov.1.2023
+Total 0 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/eribertto/purcell.emacs.d.git
+af9d2840..a094e578  HEAD -> nov.1.2023
+
+[eriberttom@eribenixos:~/.emacs.d]$ git status
+On branch march.nixos.t460
+Your branch is up to date with 'origin/nov.1.2023'.
+
+nothing to commit, working tree clean
+
+[eriberttom@eribenixos:~/.emacs.d]$ git branch
+* march.nixos.t460
+master
+nov.1.2023
