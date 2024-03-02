@@ -13,3 +13,5 @@
 ** yesterday's TIL: switching to different branch aka checkout in magit gives me access to files of that branch.
 
 ** also adding commit to one branch from one machine then fetch/pulling it from another is a breeze.
+
+** use readlink app to read/follow soft links
