@@ -1,0 +1,6 @@
+;; Auto-generated file; don't edit -*- mode: lisp-data -*-
+((:url "https://nixos.org/manual/nix/unstable/command-ref/new-cli/nix3-flake.html" :title "nix flake - Nix Reference Manual" :time "Sat Mar  2 21:12:47 2024")
+ (:url "https://serokell.io/blog/practical-nix-flakes" :title "Practical Nix Flakes" :time "Sat Mar  2 21:06:46 2024")
+ (:url "https://xeiaso.net/blog/nix-flakes-1-2022-02-21/" :title "Nix Flakes: an Introduction - Xe Iaso" :time "Sat Mar  2 21:00:14 2024")
+ (:url "https://nixos.wiki/wiki/Flakes" :title "Flakes - NixOS Wiki" :time "Sat Mar  2 20:50:01 2024")
+ (:url "https://hoverbear.org/blog/declarative-gnome-configuration-in-nixos/" :title "Declarative GNOME configuration with NixOS" :time "Sat Mar  2 20:38:13 2024"))
