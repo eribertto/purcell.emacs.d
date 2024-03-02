@@ -9,6 +9,8 @@
 * PROJECT Plan to learn Nix and NixOS configuration
 * TODO Plan for home solar lighting system
 * TODO Plan to transfer funds from riyadbank to bpi, mbt
+* TODO How to update to latest kernel NixOS
+* TODO how to do emacs overlay in NixOS
 * MADA card will expire in 09/24 this year so fya.
 ** visit riyadbank mubarraz industrial area as it is faster there.
 * Plan to close red positions in ibkr portfolio.
