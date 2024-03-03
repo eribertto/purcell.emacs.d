@@ -461,6 +461,10 @@
 ;; (require 'eaf-map)
 ;; (require 'eaf-demo)
 
+;; enable nix mode
+(use-package nix-mode
+  :mode "\\.nix\\'")
+
 
 (provide 'init-local)
 ;;; init-local.el ends here
