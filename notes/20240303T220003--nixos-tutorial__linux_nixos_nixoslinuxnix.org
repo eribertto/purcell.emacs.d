@@ -4,10 +4,16 @@
 #+identifier: 20240303T220003
 
 * See below link to YT tutorial series for NixOS:
-https://www.youtube.com/watch?v=ACybVzRvDhs&list=PL_WcXIXdDWWpuypAEKzZF2b5PijTluxRG
+** DONE https://www.youtube.com/watch?v=ACybVzRvDhs&list=PL_WcXIXdDWWpuypAEKzZF2b5PijTluxRG
+CLOSED: [2024-03-04 Mon 07:27]
+:LOGBOOK:
+- State "DONE"       from              [2024-03-04 Mon 07:27]
+:END:
+** https://www.youtube.com/watch?v=IiyBeR-Guqw&list=PL_WcXIXdDWWpuypAEKzZF2b5PijTluxRG&index=3
 
-* Must follow this to the tee.
 
 * See other nix tutorial link [[denote:20240301T124101][Install Nix package manager]]
 
 * See infor for Emacs [[https://github.com/nix-community/emacs-overlay][overlays]]
+
+* Search for [[https://mynixos.com/][NixOS packages]]
