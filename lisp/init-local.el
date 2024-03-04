@@ -484,5 +484,11 @@
 (use-package nix-mode
   :mode "\\.nix\\'")
 
+(use-package org-web-tools
+  :ensure t)
+
+
+
+
 (provide 'init-local)
 ;;; init-local.el ends here
