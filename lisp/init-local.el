@@ -84,8 +84,12 @@
 ;; EndeavourOS = " "
 (setq xah-fly-command-mode-indicator " ")
 (setq xah-fly-insert-mode-indicator "✏" )
-(defun my-modeline-color-on () (set-face-background 'mode-line "blue"))
-(defun my-modeline-color-off () (set-face-background 'mode-line "firebrick"))
+(defun my-modeline-color-on ()
+  "Make mode-line color blue."
+  (set-face-background 'mode-line "blue"))
+(defun my-modeline-color-off ()
+  "Make mode-line color firebrick."
+  (set-face-background 'mode-line "firebrick"))
 
 (add-hook 'xah-fly-command-mode-activate-hook 'my-modeline-color-on)
 (add-hook 'xah-fly-insert-mode-activate-hook  'my-modeline-color-off)

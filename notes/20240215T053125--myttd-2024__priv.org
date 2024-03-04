@@ -3,39 +3,55 @@
 #+filetags:   :priv:
 #+identifier: 20240215T053125
 
-* Begin my things to do for 2024.
-
-* TODO Watch YT vid how to close all positions ibkr
 * PROJECT Plan to learn Nix and NixOS configuration
+* PROJECT learn more of denote note-taking by Prot
+* PROJECT Followup BDO release of original OR/CR.
+* PROJECT Monitor completion of Prulife payment to end this May 2024, see this[[file:~/Downloads/PruLife.calc.2024.pdf][ scanned copy]]
+* TODO Watch YT vid how to close all positions ibkr
 * TODO Plan for home solar lighting system
-* TODO Plan to transfer funds from riyadbank to bpi, mbt
 * TODO How to update to latest kernel NixOS
 * TODO how to do emacs overlay in NixOS
-* MADA card will expire in 09/24 this year so fya.
-** visit riyadbank mubarraz industrial area as it is faster there.
-* Plan to close red positions in ibkr portfolio.
-* Pay mbt credit card min 850 php until due date March 11, 2024.
-* Make list of home projects TTD this 2024 e.g.
-**** Farm house fencing
-**** Farm house elevated tank installation
-**** Farm house garage pavement for parking.
-**** Home solar system install.
-* Send bank transfers:
+* TODO Send bank transfers:
 ** DONE to sjp bpi 40K
 CLOSED: [2024-03-01 Fri 21:19]
 :LOGBOOK:
 - State "DONE"       from              [2024-03-01 Fri 21:19]
 :END:
 
-** to nonoy bpi 5K
+** DONE to nonoy bpi 5K
+CLOSED: [2024-03-04 Mon 05:56]
+:LOGBOOK:
+- State "DONE"       from              [2024-03-04 Mon 05:56]
+:END:
+
 ** to mymy mbt 10K (for mama)
 ** to ctb mbt 10K
+* MADA card will expire in 09/24 this year so fya.
+** visit riyadbank mubarraz industrial area as it is faster there.
+* Plan to close red positions in ibkr portfolio.
+* Make list of home projects TTD this 2024 e.g.
+**** Farm house fencing
+**** Farm house elevated tank installation
+**** Farm house garage pavement for parking.
+**** Home solar system install.
+* DONE Pay mbt credit card min 850 php until due date March 11, 2024.
+CLOSED: [2024-03-04 Mon 05:56]
+:LOGBOOK:
+- State "DONE"       from              [2024-03-04 Mon 05:56]
+:END:
+
+** Update 2024-03-04: paid 3K via Gcash channel.
+* DONE Plan to transfer funds from riyadbank to bpi, mbt
+CLOSED: [2024-03-04 Mon 04:25]
+:LOGBOOK:
+- State "DONE"       from "TODO"       [2024-03-04 Mon 04:25]
+:END:
+
 * TODO Begin topup of GotyMe digital bank.
 * TODO Take down notes/tips from reddit post digital bank password recovery strats in the event of death of owner.
 * TODO Reset KA2 to default settings, find updates and make new keybinding configuration.
 * Plan to replace from all-terrain to offroad tires our Ford ranger sport pickup.
-* PROJECT learn more of denote note-taking by Prot
-* PROJECT Followup BDO release of original OR/CR.
+
 * NEXT Top up Tonik account of kids, mrs account this January 2024, source account MBT.
 * NEXT make defalias for scroll-up/down
 * DONE Visit UM for vehicle checkup re 4x4 error message randomly popping up each morning startup.
