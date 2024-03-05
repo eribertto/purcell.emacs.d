@@ -11,7 +11,7 @@
 **** Farm house fencing
 **** Farm house elevated tank installation
 **** Farm house garage pavement for parking.
-**** Goat house
+**** Build chicken and goat houses for the animals.
 **** Home solar system install.
 **** add others here.
 * Create nixos-dotfiles dir inside emacs-dir
