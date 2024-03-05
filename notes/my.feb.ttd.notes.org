@@ -12,7 +12,7 @@
 **** Farm house elevated tank installation
 **** Farm house garage pavement for parking.
 **** Home solar system install.
-**** ajkalajal
+**** Farm chicken coop, goat house for the farm animals.
 * TODO How to install fonts in NixOS.
 * what else to write?
 * CANCELLED Plan to try out Fedora 39 silverblue, remove bluefin since its buggy.
