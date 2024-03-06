@@ -17,21 +17,6 @@
 * TODO Watch YT vid how to close all positions ibkr
 * TODO How to update to latest kernel NixOS
 * TODO how to do emacs overlay in NixOS
-* TODO Send bank transfers:
-** DONE to sjp bpi 40K
-CLOSED: [2024-03-01 Fri 21:19]
-:LOGBOOK:
-- State "DONE"       from              [2024-03-01 Fri 21:19]
-:END:
-
-** DONE to nonoy bpi 5K
-CLOSED: [2024-03-04 Mon 05:56]
-:LOGBOOK:
-- State "DONE"       from              [2024-03-04 Mon 05:56]
-:END:
-
-** to mymy mbt 10K (for mama)
-** to ctb mbt 10K
 * TODO MADA card will expire in 09/24 this year so fya.
 ** visit riyadbank mubarraz industrial area as it is faster there.
 * TODO Plan to close red positions in ibkr portfolio.
@@ -44,6 +29,36 @@ CLOSED: [2024-03-04 Mon 05:56]
 :LOGBOOK:
 - State "WAITING"    from              [2024-03-04 Mon 06:03] \\
   Not a priority
+:END:
+
+* DONE Send bank transfers:
+CLOSED: [2024-03-06 Wed 06:23]
+:LOGBOOK:
+- State "DONE"       from "TODO"       [2024-03-06 Wed 06:23]
+:END:
+
+** DONE to sjp bpi 40K
+CLOSED: [2024-03-01 Fri 21:19]
+:LOGBOOK:
+- State "DONE"       from              [2024-03-01 Fri 21:19]
+:END:
+
+** DONE to nonoy bpi 5K
+CLOSED: [2024-03-04 Mon 05:56]
+:LOGBOOK:
+- State "DONE"       from              [2024-03-04 Mon 05:56]
+:END:
+
+** DONE to mymy mbt 10K (for mama)
+CLOSED: [2024-03-06 Wed 06:23]
+:LOGBOOK:
+- State "DONE"       from              [2024-03-06 Wed 06:23]
+:END:
+
+** DONE to ctb mbt 10K
+CLOSED: [2024-03-06 Wed 06:23]
+:LOGBOOK:
+- State "DONE"       from              [2024-03-06 Wed 06:23]
 :END:
 
 * DONE Pay mbt credit card min 850 php until due date March 11, 2024.
