@@ -421,49 +421,26 @@
 
 (setf url-queue-timeout 30)
 
+;;;;; Dired-sidebar Configuration
+;; https://github.com/danijelcamdzic/dotemacs/blob/main/init.el
 
-;; https://github.com/emacs-eaf/emacs-application-framework
-;; (use-package eaf
-;;   :load-path "~/.emacs.d/site-lisp/emacs-application-framework"
-;;   :custom
-;;                                         ; See https://github.com/emacs-eaf/emacs-application-framework/wiki/Customization
-;;   (eaf-browser-continue-where-left-off t)
-;;   (eaf-browser-enable-adblocker t)
-;;   (browse-url-browser-function 'eaf-open-browser)
-;;   :config
-;;   (defalias 'browse-web #'eaf-open-browser)
-;;   (eaf-bind-key scroll_up "C-n" eaf-pdf-viewer-keybinding)
-;;   (eaf-bind-key scroll_down "C-p" eaf-pdf-viewer-keybinding)
-;;   (eaf-bind-key take_photo "p" eaf-camera-keybinding)
-;;   (eaf-bind-key nil "M-q" eaf-browser-keybinding)) ;; unbind, see more in the Wiki
+(use-package dired-sidebar
+  :ensure t
+  :config
+  ;; Make the window not fixed
+  (setq dired-sidebar-window-fixed nil))
 
-;; (require 'eaf-mindmap)
-;; (require 'eaf-file-browser)
-;; (require 'eaf-pdf-viewer)
-;; (require 'eaf-pyqterminal)
-;; (require 'eaf-org-previewer)
-;; (require 'eaf-markmap)
-;; (require 'eaf-2048)
-;; (require 'eaf-git)
-;; (require 'eaf-rss-reader)
-;; (require 'eaf-browser)
-;; (require 'eaf-airshare)
-;; (require 'eaf-netease-cloud-music)
-;; (require 'eaf-vue-demo)
-;; (require 'eaf-file-manager)
-;; (require 'eaf-vue-tailwindcss)
-;; (require 'eaf-camera)
-;; (require 'eaf-markdown-previewer)
-;; (require 'eaf-terminal)
-;; (require 'eaf-music-player)
-;; (require 'eaf-system-monitor)
-;; (require 'eaf-jupyter)
-;; (require 'eaf-image-viewer)
-;; (require 'eaf-video-player)
-;; (require 'eaf-file-sender)
-;; (require 'eaf-js-video-player)
-;; (require 'eaf-map)
-;; (require 'eaf-demo)
+;;;;;; Functions - Dired-sidebar toggle
+
+(defun em/dired-sidebar-toggle ()
+  "Toggle `dired-sidebar'."
+  (interactive)
+  (dired-sidebar-toggle-sidebar))
+
+;;;; Visual Modes
+;; Enable outline-minor-mode as soon as .el file is opened
+(add-hook 'emacs-lisp-mode-hook 'outline-minor-mode)
+
 
 ;; enable nix mode
 (use-package nix-mode
