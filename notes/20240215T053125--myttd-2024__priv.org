@@ -15,11 +15,9 @@
 **** Home solar system install.
 **** Make goat house
 * TODO Watch YT vid how to close all positions ibkr
-* TODO How to update to latest kernel NixOS
 * TODO how to do emacs overlay in NixOS
 * TODO MADA card will expire in 09/24 this year so fya.
 ** visit riyadbank mubarraz industrial area as it is faster there.
-* TODO Plan to close red positions in ibkr portfolio.
 * TODO Begin topup of GotyMe digital bank.
 
 * TODO Take down notes/tips from reddit post digital bank password recovery strats in the event of death of owner.
@@ -29,6 +27,12 @@
 :LOGBOOK:
 - State "WAITING"    from              [2024-03-04 Mon 06:03] \\
   Not a priority
+:END:
+
+* DONE How to update to latest kernel NixOS
+CLOSED: [2024-03-09 Sat 07:22]
+:LOGBOOK:
+- State "DONE"       from "TODO"       [2024-03-09 Sat 07:22]
 :END:
 
 * DONE Send bank transfers:
