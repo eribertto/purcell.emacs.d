@@ -12,8 +12,10 @@
 **** Farm house fencing
 **** Farm house elevated tank installation
 **** Farm house garage pavement for parking.
+**** Farm goat house construction.
 **** Home solar system install.
-**** Make goat house
+**** Repair of home roof
+**** Replacement of home water pump.
 * TODO Watch YT vid how to close all positions ibkr
 * TODO how to do emacs overlay in NixOS
 * TODO MADA card will expire in 09/24 this year so fya.
