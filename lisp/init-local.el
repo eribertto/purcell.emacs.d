@@ -413,34 +413,35 @@
         "https://www.reddit.com/r/emacs.rss"
         "https://www.reddit.com/r/orgmode.rss"
         "https://blog.tecosaur.com/tmio/rss.xml"
+        "https://librephoenix.com/feed.xml"
         "http://oremacs.com/atom.xml"))
 
 (setf url-queue-timeout 30)
 
 ;; begin yeetube entry
 ;; https://michal.sapka.me/emacs/watching-youtube-with-emacs/
-(use-package yeetube
-  :config
-  (:states 'normal
-           :keymaps 'yeetube-mode-map
-           "RET" 'yeetube-play
-           "d" 'yeetube-download-video
-           "b" 'yeetube-play-saved-video
-           "B" 'yeetube-save-video
-           "x" 'yeetube-remove-saved-video
-           "/" 'yeetube-search
-           "0" 'yeetube-toggle-video
-           ))
+;; (use-package yeetube
+;;   :config
+;;   (:states 'normal
+;;            :keymaps 'yeetube-mode-map
+;;            "RET" 'yeetube-play
+;;            "d" 'yeetube-download-video
+;;            "b" 'yeetube-play-saved-video
+;;            "B" 'yeetube-save-video
+;;            "x" 'yeetube-remove-saved-video
+;;            "/" 'yeetube-search
+;;            "0" 'yeetube-toggle-video
+;;            ))
 
-;; YT link handler
-(defun mms-open-link-under-point ()
-  "Youtube link handler."
-  (interactive)
-  (setq url (thing-at-point 'url))
-  (cond
-   ((string-match "youtube.com" url) (yeetube-search url))
-   (t (eww url)))
-  )
+;; ;; YT link handler
+;; (defun mms-open-link-under-point ()
+;;   "Youtube link handler."
+;;   (interactive)
+;;   (setq url (thing-at-point 'url))
+;;   (cond
+;;    ((string-match "youtube.com" url) (yeetube-search url))
+;;    (t (eww url)))
+;;   )
 
 ;; Add a simple keyboard navigation, and you’re done
 ;; (mms-leader-keys "RET RET" '(lambda () (interactive) (mms-open-link-under-point) :wk "follow link"))
