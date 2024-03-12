@@ -1,0 +1,13 @@
+See below error when running sudo nixos-rebuild switch --flake .
+
+====
+Failed to restart nix-optimise.timer: Unit nix-optimise.timer has a bad unit file setting.
+See system logs and 'systemctl status nix-optimise.timer' for details.
+starting the following units: ModemManager.service, NetworkManager-wait-online.service, NetworkManager.service, accounts-daemon.service, alsa-store.service, audit.service, avahi-daemon.socket, bluetooth.service, colord.service, cups-browsed.service, cups.socket, kmod-static-nodes.service, logrotate-checkconf.service, mount-pstore.service, network-local-commands.service, network-setup.service, nscd.service, power-profiles-daemon.service, resolvconf.service, rtkit-daemon.service, systemd-machined.service, systemd-modules-load.service, systemd-oomd.socket, systemd-sysctl.service, systemd-timesyncd.service, systemd-udevd-control.socket, systemd-udevd-kernel.socket, systemd-vconsole-setup.service, udisks2.service, upower.service, wpa_supplicant.service
+the following new units were started: NetworkManager-dispatcher.service, systemd-hostnamed.service
+warning: error(s) occurred while switching to the new configuration
+====
+nix-optimise.timer: Timer unit lacks value setting. Refusing.
+====
+Quick hack solution: set the below setting to false in the configuration.nix file
+  nix.optimise.automatic = false;

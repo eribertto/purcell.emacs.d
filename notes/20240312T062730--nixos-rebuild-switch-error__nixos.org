@@ -1,0 +1,8 @@
+#+title:      NixOS rebuild switch error
+#+date:       [2024-03-12 Tue 06:27]
+#+filetags:   :nixos:
+#+identifier: 20240312T062730
+
+* Begin journaling of NixOS encounters in this box
+* See below link for error when running the rebuild switch
+[[file:nix.optimise.error.txt][sudo nixos-rebuild switch]]

@@ -5,12 +5,6 @@
 
 * MADA card will expire in 09/24 this year so fya.
 * Plan to close red positions in ibkr portfolio.
-* DONE Visit UM for vehicle checkup re 4x4 error message randomly popping up each morning startup.
-CLOSED: [2024-03-11 Mon 17:55]
-:LOGBOOK:
-- State "DONE"       from              [2024-03-11 Mon 17:55]
-:END:
-
 * Pay mbt credit card min 850 php until due date March 11, 2024.
 * Make list of home projects TTD this 2024 e.g.
 **** Farm house fencing
@@ -20,6 +14,12 @@ CLOSED: [2024-03-11 Mon 17:55]
 **** Home solar system install.
 **** add others here.
 * Create nixos-dotfiles dir inside emacs-dir
+* DONE Visit UM for vehicle checkup re 4x4 error message randomly popping up each morning startup.
+CLOSED: [2024-03-11 Mon 17:55]
+:LOGBOOK:
+- State "DONE"       from              [2024-03-11 Mon 17:55]
+:END:
+
 * DONE How to install fonts in NixOS.
 CLOSED: [2024-03-02 Sat 20:11]
 :LOGBOOK:

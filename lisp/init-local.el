@@ -40,7 +40,7 @@
 (menu-bar-mode 1)
 (auto-save-visited-mode)
 ;;(tab-bar-mode 1)
-(desktop-save-mode 1)
+;; (desktop-save-mode 1)
 ;; Show the tab-bar as soon as tab-bar functions are invoked
 ;; (setopt tab-bar-show 1)
 (setq tab-bar-tab-hints 1)
@@ -61,9 +61,10 @@
   (when (member "Menlo" (font-family-list))
     (set-frame-font "Menlo" t t)))
  ((eq system-type 'gnu/linux)
-  (when (member "Hack" (font-family-list))
-    (set-frame-font "Hack-20" t t)
-    (load-theme 'ef-frost t))))
+  (when (member "FiraCode" (font-family-list))
+    (set-frame-font "FiraCode-16" t t)
+    (load-theme 'ef-dark t))))
+
 
 ;; begin customization of xah fly keys
 ;; add global toggle key command/insert mode
@@ -90,21 +91,6 @@
 (add-hook 'xah-fly-command-mode-activate-hook 'my-modeline-color-on)
 (add-hook 'xah-fly-insert-mode-activate-hook  'my-modeline-color-off)
 
-;; setup unicode as per this link
-;; http://xahlee.info/emacs/emacs/emacs_set_font_symbol.html
-;; symbola-font and JuliaMono are installed via apt-get
-;; (set-fontset-font t 'symbol
-;;                   (cond
-;;                    ((eq system-type 'windows-nt)
-;;                     (cond
-;;                      ((member "Segoe UI Symbol" (font-family-list)) "Segoe UI Symbol")))
-;;                    ((eq system-type 'darwin)
-;;                     (cond
-;;                      ((member "Apple Symbols" (font-family-list)) "Apple Symbols")))
-;;                    ((eq system-type 'gnu/linux)
-;;                     (cond
-;;                      ((member "Symbola" (font-family-list)) "Symbola")))))
-;;     ;; ((member "JuliaMono" (font-family-list)) "JuliaMono")))))
 
 ;; make aliases per this link https://www.youtube.com/watch?v=ufVldIrUOBg
 (defalias 'pcr 'package-refresh-contents)
