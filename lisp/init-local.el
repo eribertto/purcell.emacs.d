@@ -447,6 +447,7 @@
   :mode "\\.nix\\'")
 
 (global-org-modern-mode-enable-in-buffers)
+;; (org-roam-mode)
 
 (provide 'init-local)
 ;;; init-local.el ends here

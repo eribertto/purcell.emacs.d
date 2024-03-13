@@ -1,0 +1,8 @@
+#+title:      Emacs TIL
+#+date:       [2024-03-13 Wed 06:53]
+#+filetags:   :emacs:
+#+identifier: 20240313T065315
+
+* Org-roam mode enabled in elisp buffer is not a good idea. It makes the buffer read-only.
+
+* To return to emacs lisp mode run emacs-lisp-mode.
