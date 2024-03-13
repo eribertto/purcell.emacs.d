@@ -40,7 +40,7 @@
 (menu-bar-mode 1)
 (auto-save-visited-mode)
 ;;(tab-bar-mode 1)
-(desktop-save-mode 1)
+;; (desktop-save-mode 1)
 ;; Show the tab-bar as soon as tab-bar functions are invoked
 ;; (setopt tab-bar-show 1)
 (setq tab-bar-tab-hints 1)
@@ -446,6 +446,7 @@
 (use-package nix-mode
   :mode "\\.nix\\'")
 
+(global-org-modern-mode-enable-in-buffers)
 
 (provide 'init-local)
 ;;; init-local.el ends here
