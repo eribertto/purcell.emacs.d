@@ -449,5 +449,19 @@
 (global-org-modern-mode-enable-in-buffers)
 ;; (org-roam-mode)
 
+(defun org-agenda-open-hook ()
+  ;; Turn on Olivetti mode."
+  olivetti-mode)
+(add-hook 'org-agenda-mode-hook 'org-agenda-open-hook)
+
+;; https://github.com/alphapapa/org-super-agenda
+(use-package org-super-agenda)
+(org-super-agenda-mode)
+
+
+
+
+
+
 (provide 'init-local)
 ;;; init-local.el ends here

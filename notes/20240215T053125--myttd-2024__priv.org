@@ -17,11 +17,10 @@
 **** Repair of home roof
 **** Replacement of home water pump.
 * TODO Watch YT vid how to close all positions ibkr
+* TODO Learn org-agenda and org-super-agenda
 * TODO how to do emacs overlay in NixOS
-* TODO MADA card will expire in 09/24 this year so fya.
-** visit riyadbank mubarraz industrial area as it is faster there.
+* TODO MADA card will expire in 09/24 this year so fya. Visit mubarraz industrial area office.
 * TODO Begin topup of GotyMe digital bank.
-
 * TODO Take down notes/tips from reddit post digital bank password recovery strats in the event of death of owner.
 * TODO Reset KA2 to default settings, find updates and make new keybinding configuration.
 ** make defalias for scroll-up/down
