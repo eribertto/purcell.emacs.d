@@ -308,13 +308,6 @@
 (use-package org-superstar)
 (add-hook 'org-mode-hook (lambda () (org-superstar-mode 1)))
 
-(setq
- browse-url-browser-function 'eww-browse-url ; Use eww as the default browser
- shr-use-fonts  nil                          ; No special fonts
- shr-use-colors nil                          ; No colours
- shr-indentation 2                           ; Left-side margin
- shr-width 80                                ; Fold text to specified columns
- eww-search-prefix "https://wiby.me/?q=")    ; Use another engine for searching
 
 ;; http://caiorss.github.io/Emacs-Elisp-Programming/Elisp_Programming.html#sec-1-4-1
 
@@ -509,6 +502,44 @@
 (use-package vundo
   :ensure t)
 (setq vundo-glyph-alist vundo-unicode-symbols)
+
+(use-package hyperbole
+  :ensure t
+  :config
+  (hyperbole-mode))
+
+(use-package w3m
+  :ensure t)
+
+;; rewrite this browser setting on 2024-03-15
+;; as per this link https://www.emacswiki.org/emacs/BrowseUrl
+;; Choosing among various browsers
+;; note w3m is installed using nix home-manager
+
+
+
+;; (setq
+;;  browse-url-browser-function 'eww-browse-url ; Use eww as the default browser
+;;  shr-use-fonts  nil                          ; No special fonts
+;;  shr-use-colors nil                          ; No colours
+;;  shr-indentation 2                           ; Left-side margin
+;;  shr-width 80                                ; Fold text to specified columns
+;;  eww-search-prefix "https://wiby.me/?q=")    ; Use another engine for searching
+
+(use-package w3m)
+(setq browse-url-browser-function 'browse-url-generic
+      browse-url-generic-program "/usr/bin/firefox")
+
+(defun choose-browser (url &rest args)
+  "Ask user what browser to open the URL using ARGS."
+  (interactive "sURL: ")
+  (if (y-or-n-p "Use external browser? ")
+      (browse-url-generic url)
+    (w3m-browse-url url)))
+
+(setq browse-url-browser-function 'choose-browser)
+(global-set-key "\C-xm" 'browse-url-at-point)
+
 
 (provide 'init-local)
 ;;; init-local.el ends here

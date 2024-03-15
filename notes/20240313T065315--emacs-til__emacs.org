@@ -11,4 +11,4 @@
 
 ** https://github.com/alphapapa/org-super-agenda
 ** Give a good study of this and implement.
-* add more.
+* til that the command erase-buffer is disabled by default due to confusion to new users.
