@@ -1,4 +1,4 @@
-#+title:      MyTTD 2024
++title:      MyTTD 2024
 #+date:       [2024-02-15 ĵaŭ 05:31]
 #+filetags:   :priv:
 #+identifier: 20240215T053125
@@ -17,6 +17,8 @@
 **** Repair of home roof
 **** Replacement of home water pump.
 * TODO Watch YT vid how to close all positions ibkr
+* TODO Learn yet another dotfile manager https://yadm.io/
+* TODO Learn about hyperbole https://www.gnu.org/software/hyperbole/
 * TODO Learn org-agenda and org-super-agenda
 * TODO how to do emacs overlay in NixOS
 * TODO MADA card will expire in 09/24 this year so fya. Visit mubarraz industrial area office.
@@ -66,7 +68,7 @@ CLOSED: [2024-03-06 Wed 06:23]
 - State "DONE"       from              [2024-03-06 Wed 06:23]
 :END:
 
-* DONE Pay mbt credit card min 850 php until due date March 11, 2024.
+* DONE Pay mbt credit card min 50 php until due date March 11, 2024.
 CLOSED: [2024-03-04 Mon 05:56]
 :LOGBOOK:
 - State "DONE"       from              [2024-03-04 Mon 05:56]

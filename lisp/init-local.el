@@ -39,6 +39,8 @@
 (fit-frame-to-buffer)
 (menu-bar-mode 1)
 (auto-save-visited-mode)
+;; NOTE: ‘auto-save-visited-interval’ value is now 25 from 5 2024-03-15
+
 ;;(tab-bar-mode 1)
 ;; (desktop-save-mode 1)
 ;; Show the tab-bar as soon as tab-bar functions are invoked
@@ -504,8 +506,9 @@
          )))
   (org-agenda nil "a"))
 
-
-
+(use-package vundo
+  :ensure t)
+(setq vundo-glyph-alist vundo-unicode-symbols)
 
 (provide 'init-local)
 ;;; init-local.el ends here

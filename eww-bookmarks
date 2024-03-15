@@ -1,5 +1,8 @@
 ;; Auto-generated file; don't edit -*- mode: lisp-data -*-
-((:url "https://www.arabnews.com/" :title "Arab News | Worldwide News, Latest Breaking News & Updates" :time "Mon Mar 11 06:15:59 2024")
+((:url "https://www.gnu.org/software/hyperbole/" :title "" :time "Fri Mar 15 08:49:14 2024")
+ (:url "https://blog.logseq.com/how-to-setup-and-use-logseq-sync/" :title "How to Setup and Use Logseq Sync" :time "Fri Mar 15 07:04:09 2024")
+ (:url "https://yadm.io/" :title "Yet Another Dotfiles Manager - yadm" :time "Fri Mar 15 06:43:57 2024")
+ (:url "https://www.arabnews.com/" :title "Arab News | Worldwide News, Latest Breaking News & Updates" :time "Mon Mar 11 06:15:59 2024")
  (:url "https://www.arabnews.com/node/2474321/saudi-arabia" :title "Saudi Arabia, Muslim world gear up as Ramadan begins | Arab News" :time "Mon Mar 11 06:11:57 2024")
  (:url "https://github.com/nix-community/emacs-overlay" :title "GitHub - nix-community/emacs-overlay: Bleeding edge emacs overlay [maintainer=@adisbladis]" :time "Mon Mar  4 05:02:10 2024")
  (:url "https://github.com/skeeto/elfeed" :title "GitHub - skeeto/elfeed: An Emacs web feeds client" :time "Tue Feb 20 05:53:04 2024")
