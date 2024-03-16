@@ -9,9 +9,15 @@
 
 ** next is setup emacs extra settings, google home.nix sample files
 ***** see this link esp the unstable branch https://nixos.wiki/wiki/Emacs
-
 ** yesterday's TIL: switching to different branch aka checkout in magit gives me access to files of that branch.
 
 ** also adding commit to one branch from one machine then fetch/pulling it from another is a breeze.
 
 ** use readlink app to read/follow soft links
+
+* This is just one of (many) how you make shell functions in NixOS
+** https://discourse.nixos.org/t/bash-functions-home-manager/23087/4
+* After you make edits to your home.nix file listed in the flake.nix make sure to run the commands:
+** home-manager switch --flake .
+** nix flake update
+** restart the terminal to reflect the changes, in case of shell aliases and functions.
