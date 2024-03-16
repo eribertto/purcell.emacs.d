@@ -1,5 +1,6 @@
 ;; Auto-generated file; don't edit -*- mode: lisp-data -*-
-((:url "https://www.gnu.org/software/hyperbole/" :title "" :time "Fri Mar 15 08:49:14 2024")
+((:url "https://serokell.io/blog/practical-nix-flakes" :title "Practical Nix Flakes" :time "Sat Mar 16 19:29:26 2024")
+ (:url "https://www.gnu.org/software/hyperbole/" :title "" :time "Fri Mar 15 08:49:14 2024")
  (:url "https://blog.logseq.com/how-to-setup-and-use-logseq-sync/" :title "How to Setup and Use Logseq Sync" :time "Fri Mar 15 07:04:09 2024")
  (:url "https://yadm.io/" :title "Yet Another Dotfiles Manager - yadm" :time "Fri Mar 15 06:43:57 2024")
  (:url "https://www.arabnews.com/" :title "Arab News | Worldwide News, Latest Breaking News & Updates" :time "Mon Mar 11 06:15:59 2024")
