@@ -288,49 +288,20 @@
 (use-package org-superstar)
 (add-hook 'org-mode-hook (lambda () (org-superstar-mode 1)))
 
-(setq
- browse-url-browser-function 'eww-browse-url ; Use eww as the default browser
- shr-use-fonts  nil                          ; No special fonts
- shr-use-colors nil                          ; No colours
- shr-indentation 2                           ; Left-side margin
- shr-width 80                                ; Fold text to specified columns
- eww-search-prefix "https://wiby.me/?q=")    ; Use another engine for searching
+;; emacs browser settings
+(use-package w3m)
+(setq browse-url-browser-function 'browse-url-generic
+      browse-url-generic-program "/usr/bin/firefox")
 
-;; http://caiorss.github.io/Emacs-Elisp-Programming/Elisp_Programming.html#sec-1-4-1
+(defun choose-browser (url &rest args)
+  "Ask user what browser to open the URL using ARGS."
+  (interactive "sURL: ")
+  (if (y-or-n-p "Use external browser? ")
+      (browse-url-generic url)
+    (w3m-browse-url url)))
 
-(require 'ielm)
-
-(defun ielm/clear-repl ()
-  "Clear current REPL buffer."
-  (interactive)
-  (let ((inhibit-read-only t))
-    (erase-buffer)
-    (ielm-send-input)))
-
-(define-key inferior-emacs-lisp-mode-map
-            (kbd "M-RET")
-            #'ielm-return)
-
-(define-key inferior-emacs-lisp-mode-map
-            (kbd "C-j")
-            #'ielm-return)
-
-(define-key inferior-emacs-lisp-mode-map
-            (kbd "RET")
-            #'electric-newline-and-maybe-indent)
-
-(define-key inferior-emacs-lisp-mode-map
-            (kbd "<up>")
-            #'previous-line)
-
-(define-key inferior-emacs-lisp-mode-map
-            (kbd "<down>")
-            #'next-line)
-
-(define-key inferior-emacs-lisp-mode-map
-            (kbd "C-c C-q")
-            #'ielm/clear-repl
-            )
+(setq browse-url-browser-function 'choose-browser)
+(global-set-key "\C-xm" 'browse-url-at-point)
 
 ;; added in rhino linux machine for emacs 29.1
 (setq warning-minimum-level :error)
