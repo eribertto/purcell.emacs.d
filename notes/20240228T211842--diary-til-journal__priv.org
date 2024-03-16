@@ -20,4 +20,4 @@
 * After you make edits to your home.nix file listed in the flake.nix make sure to run the commands:
 ** home-manager switch --flake .
 ** nix flake update
-** restart the terminal to reflect the changes, in case of shell aliases and functions.
+** restart the terminal to reflect the changes, in case of edits of shell aliases and functions.
