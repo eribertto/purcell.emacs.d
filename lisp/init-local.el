@@ -544,7 +544,11 @@
 (use-package egg-timer)
 (global-set-key (kbd "C-s-a") #'egg-timer-schedule)
 
-
+(add-hook 'after-init-hook #'(lambda ()
+                               (interactive)
+                               (require 'server)
+                               (or (server-running-p)
+                                   (server-start))))
 
 (provide 'init-local)
 ;;; init-local.el ends here
