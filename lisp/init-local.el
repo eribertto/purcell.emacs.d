@@ -528,7 +528,7 @@
 
 (use-package w3m)
 (setq browse-url-browser-function 'browse-url-generic
-      browse-url-generic-program "/usr/bin/firefox")
+      browse-url-generic-program "/usr/bin/firefox-beta")
 
 (defun choose-browser (url &rest args)
   "Ask user what browser to open the URL using ARGS."
@@ -539,6 +539,11 @@
 
 (setq browse-url-browser-function 'choose-browser)
 (global-set-key "\C-xm" 'browse-url-at-point)
+
+;; (require 'egg-timer)
+(use-package egg-timer)
+(global-set-key (kbd "C-s-a") #'egg-timer-schedule)
+
 
 
 (provide 'init-local)
