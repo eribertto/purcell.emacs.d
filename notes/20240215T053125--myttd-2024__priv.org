@@ -17,6 +17,8 @@
 **** Repair of home roof
 **** Replacement of home water pump.
 * TODO Inquire the unknown debit memo from Metrobank account dated March 9, 2024 amount 11K+
+** Update: sent message to Shing MTB iloilo for assistance and provided her with my bank details plus pix of the debit memo in question.
+** Hoping she will get back to me with update (praying.)
 * TODO Watch YT vid how to close all positions ibkr
 * TODO Learn yet another dotfile manager https://yadm.io/
 * TODO Learn about hyperbole https://www.gnu.org/software/hyperbole/

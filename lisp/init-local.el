@@ -550,5 +550,8 @@
                                (or (server-running-p)
                                    (server-start))))
 
+(tab-bar-history-mode)
+
+
 (provide 'init-local)
 ;;; init-local.el ends here
