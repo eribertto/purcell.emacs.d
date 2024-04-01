@@ -24,3 +24,11 @@
 ** at 10pm I installed Endeavour OS over NixOS hoping to resolve the issue but no go, got the same bsod result.
 ** at 0530 the next day retried the install process but same result no go, this time using the Rhino Linux install image.
 ** decided to bring the PC to office for further troubleshooting.
+** Update 3/31 in office:
+*** After several linux-install tries and fails to boot to grub/boot manager, I finally succeeded booting directly to NixOS grub/boot manager.
+*** This was achieved by doing manual partitioning of each partition from /boot, root, /home and swap. Especially in /boot where important flags were set.
+*** Each partition was fully formatted to ensure no cruft remain. Also ensure booting is normal by doing repetitive rebooting and logging in to desktop aka stress test.
+*** Big issue: when screen sleeps it can no longer resume to wake up state. Probably due to nvidia old gpu Quadro M300M. Temp workaround is set display not to turn off screen when idle.
+*** Also added nvidia settings in the config.nix file. This should be refactored as a module file imported from the config file.
+*** add nvidia nixos wiki page here for reference.
+** djakajkaj
