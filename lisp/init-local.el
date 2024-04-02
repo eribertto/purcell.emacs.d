@@ -1,4 +1,4 @@
-;;; init-local.el --- Configure default locale -*- lexical-binding: t -*-
+ ;;; init-local.el --- Configure default locale -*- lexical-binding: t -*-
 ;;; Commentary:
 ;;; Code:
 
@@ -39,6 +39,7 @@
 (fit-frame-to-buffer)
 (menu-bar-mode 1)
 (auto-save-visited-mode)
+(setq auto-save-visited-interval 50)
 ;;(tab-bar-mode 1)
 (desktop-save-mode 1)
 ;; Show the tab-bar as soon as tab-bar functions are invoked
@@ -90,21 +91,7 @@
 (add-hook 'xah-fly-command-mode-activate-hook 'my-modeline-color-on)
 (add-hook 'xah-fly-insert-mode-activate-hook  'my-modeline-color-off)
 
-;; setup unicode as per this link
-;; http://xahlee.info/emacs/emacs/emacs_set_font_symbol.html
-;; symbola-font and JuliaMono are installed via apt-get
-;; (set-fontset-font t 'symbol
-;;                   (cond
-;;                    ((eq system-type 'windows-nt)
-;;                     (cond
-;;                      ((member "Segoe UI Symbol" (font-family-list)) "Segoe UI Symbol")))
-;;                    ((eq system-type 'darwin)
-;;                     (cond
-;;                      ((member "Apple Symbols" (font-family-list)) "Apple Symbols")))
-;;                    ((eq system-type 'gnu/linux)
-;;                     (cond
-;;                      ((member "Symbola" (font-family-list)) "Symbola")))))
-;;     ;; ((member "JuliaMono" (font-family-list)) "JuliaMono")))))
+
 
 ;; make aliases per this link https://www.youtube.com/watch?v=ufVldIrUOBg
 (defalias 'pcr 'package-refresh-contents)
@@ -308,43 +295,9 @@
  shr-use-colors nil                          ; No colours
  shr-indentation 2                           ; Left-side margin
  shr-width 80                                ; Fold text to specified columns
- eww-search-prefix "https://wiby.me/?q=")    ; Use another engine for searching
+ eww-search-prefix "https://www.google.com/webhp")    ; Use another engine for searching
 
-;; http://caiorss.github.io/Emacs-Elisp-Programming/Elisp_Programming.html#sec-1-4-1
 
-(require 'ielm)
-
-(defun ielm/clear-repl ()
-  "Clear current REPL buffer."
-  (interactive)
-  (let ((inhibit-read-only t))
-    (erase-buffer)
-    (ielm-send-input)))
-
-(define-key inferior-emacs-lisp-mode-map
-            (kbd "M-RET")
-            #'ielm-return)
-
-(define-key inferior-emacs-lisp-mode-map
-            (kbd "C-j")
-            #'ielm-return)
-
-(define-key inferior-emacs-lisp-mode-map
-            (kbd "RET")
-            #'electric-newline-and-maybe-indent)
-
-(define-key inferior-emacs-lisp-mode-map
-            (kbd "<up>")
-            #'previous-line)
-
-(define-key inferior-emacs-lisp-mode-map
-            (kbd "<down>")
-            #'next-line)
-
-(define-key inferior-emacs-lisp-mode-map
-            (kbd "C-c C-q")
-            #'ielm/clear-repl
-            )
 
 ;; added in rhino linux machine for emacs 29.1
 (setq warning-minimum-level :error)
@@ -417,41 +370,6 @@
 
 (setf url-queue-timeout 30)
 
-;; begin yeetube entry
-;; https://michal.sapka.me/emacs/watching-youtube-with-emacs/
-;; (use-package yeetube
-;;   :config
-;;   (:states 'normal
-;;            :keymaps 'yeetube-mode-map
-;;            "RET" 'yeetube-play
-;;            "d" 'yeetube-download-video
-;;            "b" 'yeetube-play-saved-video
-;;            "B" 'yeetube-save-video
-;;            "x" 'yeetube-remove-saved-video
-;;            "/" 'yeetube-search
-;;            "0" 'yeetube-toggle-video
-;;            ))
-
-;; ;; YT link handler
-;; (defun mms-open-link-under-point ()
-;;   "Youtube link handler."
-;;   (interactive)
-;;   (setq url (thing-at-point 'url))
-;;   (cond
-;;    ((string-match "youtube.com" url) (yeetube-search url))
-;;    (t (eww url)))
-;;   )
-
-;; ;; Add a simple keyboard navigation, and you’re done
-;; ;; (mms-leader-keys "RET RET" '(lambda () (interactive) (mms-open-link-under-point) :wk "follow link"))
-;; ;; end yeetube entry
-
-;;;;;; Functions - IBuffer-sidebar Toggle
-
-;; (defun em/ibuffer-sidebar-toggle ()
-;;   "Toggle `ibuffer-sidebar'."
-;;   (interactive)
-;;   (ibuffer-sidebar-toggle-sidebar))
 
 ;;;;; Dired-sidebar Configuration
 (use-package dired-sidebar
@@ -486,8 +404,9 @@
 
 (use-package org-web-tools
   :ensure t)
-
-
+;; (add-hook 'nix-mode-hook 'nixpkgs-fmt-on-save-mode)
+;; (add-hook 'nix-mode-hook 'nixpkgs-fmt-on-save-mode)
+(define-key 'nix-mode-map (kbd "C-c C-f") 'nixfmt)
 
 
 (provide 'init-local)
