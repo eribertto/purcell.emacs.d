@@ -289,16 +289,17 @@
 (use-package org-superstar)
 (add-hook 'org-mode-hook (lambda () (org-superstar-mode 1)))
 
-(setq
- browse-url-browser-function 'eww-browse-url ; Use eww as the default browser
- shr-use-fonts  nil                          ; No special fonts
- shr-use-colors nil                          ; No colours
- shr-indentation 2                           ; Left-side margin
- shr-width 80                                ; Fold text to specified columns
- eww-search-prefix "https://www.google.com/webhp")    ; Use another engine for searching
 
+(use-package w3m
+  ;; :straight (emacs-w3m :type git :host github :repo "emacs-w3m/emacs-w3m")
+  :demand w3m-load
+  :custom
+  (w3m-search-default-engine "google")
+  (w3m-display-mode 'plain)
+  (w3m-use-title-buffer-name t))
 
-
+(setq browse-url-browser-function 'w3m-browse-url ; Use w3m as the default browser
+      (autoload 'w3m-browse-url "w3m" "Ask a WWW browser to show a URL." t))
 ;; added in rhino linux machine for emacs 29.1
 (setq warning-minimum-level :error)
 
