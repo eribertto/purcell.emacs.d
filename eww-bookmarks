@@ -1,5 +1,6 @@
 ;; Auto-generated file; don't edit -*- mode: lisp-data -*-
-((:url "https://www2.lib.uchicago.edu/keith/emacs/" :title "Use GNU Emacs" :time "Thu Mar 21 06:40:15 2024")
+((:url "https://ianthehenry.com/posts/how-to-learn-nix/" :title "How to Learn Nix" :time "Wed Apr  3 19:53:20 2024")
+ (:url "https://www2.lib.uchicago.edu/keith/emacs/" :title "Use GNU Emacs" :time "Thu Mar 21 06:40:15 2024")
  (:url "https://nix-community.github.io/home-manager/options.xhtml#opt-home.packages" :title "Appendix A. Home Manager Configuration Options" :time "Sun Mar 17 20:43:49 2024")
  (:url "https://serokell.io/blog/practical-nix-flakes" :title "Practical Nix Flakes" :time "Sat Mar 16 19:29:26 2024")
  (:url "https://www.gnu.org/software/hyperbole/" :title "" :time "Fri Mar 15 08:49:14 2024")
