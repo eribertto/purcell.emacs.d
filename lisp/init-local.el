@@ -550,7 +550,7 @@
                                (or (server-running-p)
                                    (server-start))))
 
-;; (tab-bar-history-mode)
+(setq inferior-lisp-program "sbcl")
 
 
 (provide 'init-local)
