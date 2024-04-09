@@ -554,8 +554,16 @@
 (setq inferior-lisp-program "sbcl")
 
 ;; install sly https://github.com/joaotavora/sly
+;; https://joaotavora.github.io/sly/#A-SLY-tour-for-SLIME-users
+
 (use-package sly
   :ensure t)
+
+(eval-after-load 'sly
+  `(define-key sly-prefix-map (kbd "M-h") 'sly-documentation-lookup))
+
+;; https://www.quicklisp.org/beta/
+;; Make sure to follow the quicklisp install link above.
 
 
 (provide 'init-local)
