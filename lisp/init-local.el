@@ -550,7 +550,12 @@
                                (or (server-running-p)
                                    (server-start))))
 
+(add-to-list 'exec-path "/usr/bin")
 (setq inferior-lisp-program "sbcl")
+
+;; install sly https://github.com/joaotavora/sly
+(use-package sly
+  :ensure t)
 
 
 (provide 'init-local)
