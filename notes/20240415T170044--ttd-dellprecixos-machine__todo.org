@@ -1,0 +1,14 @@
+#+title:      TTD dellprecixos machine
+#+date:       [2024-04-15 Mon 17:00]
+#+filetags:   :todo:
+#+identifier: 20240415T170044
+
+* Begin this TTD list in this machine.
+
+* TODO Edit in the shell.nix alias the file to open when starting up this emacs client e.g. from configuration.md to this TTD file.
+
+* TODO Make new file gratitude journal or use logseq.
+
+* TODO Create a new priv repo in GH then point the remote url to the directory ~/.config/home-manager/.
+
+* Plan to get new boots to use e.g. make a comparo table between Berghaus, Hanwag, Topo Athletic and Zamberlan. Skip the commercial brands such as UA, Clarks, Columbia, Merrell.

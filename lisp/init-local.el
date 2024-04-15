@@ -1,4 +1,4 @@
- ;;; init-local.el --- Configure default locale -*- lexical-binding: t -*-
+;;; package --- Summary
 ;;; Commentary:
 ;;; Code:
 
@@ -41,7 +41,7 @@
 (auto-save-visited-mode)
 (setq auto-save-visited-interval 50)
 ;;(tab-bar-mode 1)
-(desktop-save-mode 1)
+;; (desktop-save-mode 1)
 ;; Show the tab-bar as soon as tab-bar functions are invoked
 ;; (setopt tab-bar-show 1)
 (setq tab-bar-tab-hints 1)
@@ -62,8 +62,8 @@
   (when (member "Menlo" (font-family-list))
     (set-frame-font "Menlo" t t)))
  ((eq system-type 'gnu/linux)
-  (when (member "Hack" (font-family-list))
-    (set-frame-font "Hack-20" t t)
+  (when (member "Iosevka" (font-family-list))
+    (set-frame-font "Iosevka-20" t t)
     (load-theme 'ef-frost t))))
 
 ;; begin customization of xah fly keys
@@ -319,7 +319,10 @@
 ;; can specify them in `ef-themes-to-toggle' and then invoke the command
 ;; `ef-themes-toggle'.  All the themes are included in the variable
 ;; `ef-themes-collection'.
-(setq ef-themes-to-toggle '(ef-summer ef-winter))
+
+;; Load the theme of choice:
+(load-theme 'ef-cherie :no-confirm)
+(setq ef-themes-to-toggle '(ef-cherie ef-winter))
 
 (setq ef-themes-headings ; read the manual's entry or the doc string
       '((0 variable-pitch light 1.9)
@@ -338,9 +341,6 @@
 
 ;; Disable all other themes to avoid awkward blending:
 (mapc #'disable-theme custom-enabled-themes)
-
-;; Load the theme of choice:
-(load-theme 'ef-winter :no-confirm)
 
 ;; OR use this to load the theme which also calls `ef-themes-post-load-hook':
 ;; (ef-themes-select 'ef-summer)
