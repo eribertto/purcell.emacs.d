@@ -5,10 +5,12 @@
 
 * Begin this TTD list in this machine.
 
+* DONE Plan to get new boots to use e.g. make a comparo table between Berghaus, Hanwag, Topo Athletic and Zamberlan. Skip the commercial brands such as UA, Clarks, Columbia, Merrell.
+CLOSED: [2024-04-16 Tue 16:03]
+
+** Finish order of Zanberlan boots, this is my choice.
 * TODO Edit in the shell.nix alias the file to open when starting up this emacs client e.g. from configuration.md to this TTD file.
 
 * TODO Make new file gratitude journal or use logseq.
 
 * TODO Create a new priv repo in GH then point the remote url to the directory ~/.config/home-manager/.
-
-* Plan to get new boots to use e.g. make a comparo table between Berghaus, Hanwag, Topo Athletic and Zamberlan. Skip the commercial brands such as UA, Clarks, Columbia, Merrell.
