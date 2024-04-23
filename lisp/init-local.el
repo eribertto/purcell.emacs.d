@@ -378,7 +378,7 @@
 (mapc #'disable-theme custom-enabled-themes)
 
 ;; Load the theme of choice:
-(load-theme 'ef-winter :no-confirm)
+(load-theme 'ef-cherie :no-confirm)
 
 ;; OR use this to load the theme which also calls `ef-themes-post-load-hook':
 ;; (ef-themes-select 'ef-summer)
