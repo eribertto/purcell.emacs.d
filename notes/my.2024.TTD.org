@@ -5,13 +5,26 @@
 
 * Begin this TTD list in this machine.
 
+* FYI: these two have made sly go crazy in the cli
+**   sly-asdf                       20221119.2235  installed             ASDF system support for SLY
+**   sly-quicklisp                  20211206.948   installed             Quicklisp support for SLY
+* TODO Plan to get BP-ready smartwatch
+** https://www.zdnet.com/article/best-blood-pressure-watch/
+* TODO Followup the arrival of amazon order boots.
+
+* TODO Resume learning Common Lisp Udemy course.
+
+* TODO Plan for celeb of wedding anniv this May 22 e.g. weekend trip to Guimaras just like the trip of sis nene Sonia.
+
+* DONE Create a new priv repo in GH then point the remote url to the directory ~/.config/home-manager/
+CLOSED: [2024-04-23 Tue 13:24]
+*** Or copy make a soft link of this directory and point it inside dot emacs dir.
 * DONE Plan to get new boots to use e.g. make a comparo table between Berghaus, Hanwag, Topo Athletic and Zamberlan. Skip the commercial brands such as UA, Clarks, Columbia, Merrell.
 CLOSED: [2024-04-16 Tue 16:03]
 
 ** Finish order of Zanberlan boots, this is my choice.
-* TODO Edit in the shell.nix alias the file to open when starting up this emacs client e.g. from configuration.md to this TTD file.
+* DONE Edit in the shell.nix alias the file to open when starting up this emacs client e.g. from configuration.md to this TTD file.
+CLOSED: [2024-04-20 Sat 16:03]
 
 * DONE Make new file gratitude journal or use logseq.
 CLOSED: [2024-04-20 Sat 15:53]
-
-* TODO Create a new priv repo in GH then point the remote url to the directory ~/.config/home-manager/.
