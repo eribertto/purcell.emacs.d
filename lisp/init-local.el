@@ -39,8 +39,10 @@
 (fit-frame-to-buffer)
 (menu-bar-mode 1)
 (auto-save-visited-mode)
+(setq auto-save-visited-interval 30)
 ;;(tab-bar-mode 1)
-;; (desktop-save-mode 1)
+(desktop-save-mode 1)
+(setq desktop-save t)
 ;; Show the tab-bar as soon as tab-bar functions are invoked
 ;; (setopt tab-bar-show 1)
 (setq tab-bar-tab-hints 1)
