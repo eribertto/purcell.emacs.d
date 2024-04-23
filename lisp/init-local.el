@@ -10,6 +10,12 @@
 (with-eval-after-load 'package
   (add-to-list 'package-archives '("melpa" . "https://melpa.org/packages/") t))
 
+;; install packages using loop
+(dolist (package '(markdown-mode deadgrep nix-mode w3m ef-themes dired-sidebar denote paredit rainbow-delimiters xah-fly-keys popper all-the-icons all-the-icons-dired all-the-icons-completion marginalia vertico orderless corfu magit org-superstar org-super-agenda sly eglot eat savehist)
+                 )
+  (unless (package-installed-p package)
+    (package-install package)))
+
 ;; add own personal lisp codes here
 ;; setup frame font including minibuffer and modeline
 ;; http://xahlee.info/emacs/emacs/emacs_list_and_set_font.html
