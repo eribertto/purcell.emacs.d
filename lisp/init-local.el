@@ -11,7 +11,7 @@
   (add-to-list 'package-archives '("melpa" . "https://melpa.org/packages/") t))
 
 ;; install packages using loop
-(dolist (package '(markdown-mode deadgrep nix-mode w3m ef-themes dired-sidebar denote paredit rainbow-delimiters xah-fly-keys popper all-the-icons all-the-icons-dired all-the-icons-completion marginalia vertico orderless corfu magit org-superstar org-super-agenda sly eglot eat savehist)
+(dolist (package '(markdown-mode pdf-tools hyperbole deadgrep nix-mode w3m ef-themes dired-sidebar denote paredit rainbow-delimiters xah-fly-keys popper all-the-icons all-the-icons-dired all-the-icons-completion marginalia vertico orderless corfu magit org-superstar org-super-agenda sly eglot eat savehist)
                  )
   (unless (package-installed-p package)
     (package-install package)))
@@ -59,19 +59,6 @@
 ;; (add-to-list 'default-frame-alist '(width . 100))
 
 (setq fill-column 100) ;; ditch the default 70, we're 2023 now.
-
-;; set default font
-(cond
- ((eq system-type 'windows-nt)
-  (when (member "Consolas" (font-family-list))
-    (set-frame-font "Consolas" t t)))
- ((eq system-type 'darwin)              ; macOS
-  (when (member "Menlo" (font-family-list))
-    (set-frame-font "Menlo" t t)))
- ((eq system-type 'gnu/linux)
-  (when (member "Hack" (font-family-list))
-    (set-frame-font "Hack-26" t t)
-    (load-theme 'modus-vivendi-tinted t))))
 
 ;; begin customization of xah fly keys
 ;; add global toggle key command/insert mode
@@ -447,7 +434,7 @@
 (use-package nix-mode
   :mode "\\.nix\\'")
 
-(global-org-modern-mode-enable-in-buffers)
+;; (global-org-modern-mode-enable-in-buffers)
 ;; (org-roam-mode)
 
 (defun org-agenda-open-hook ()
@@ -546,9 +533,9 @@
 (setq browse-url-browser-function 'choose-browser)
 (global-set-key "\C-xm" 'browse-url-at-point)
 
-;; (require 'egg-timer)
-(use-package egg-timer)
-(global-set-key (kbd "C-s-a") #'egg-timer-schedule)
+;; ;; (require 'egg-timer)
+;; (use-package egg-timer)
+;; (global-set-key (kbd "C-s-a") #'egg-timer-schedule)
 
 (add-hook 'after-init-hook #'(lambda ()
                                (interactive)
@@ -556,7 +543,7 @@
                                (or (server-running-p)
                                    (server-start))))
 
-(add-to-list 'exec-path "/usr/bin")
+(add-to-list 'exec-path "~/.nix-profile/bin")
 (setq inferior-lisp-program "sbcl")
 
 ;; install sly https://github.com/joaotavora/sly
