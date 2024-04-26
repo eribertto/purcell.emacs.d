@@ -16,6 +16,8 @@
 
 * TODO Plan for celeb of wedding anniv this May 22 e.g. weekend trip to Guimaras just like the trip of sis nene Sonia.
 
+* DONE Download Fedora 40 and verify checksum security.
+CLOSED: [2024-04-25 Thu 09:56]
 * DONE Create a new priv repo in GH then point the remote url to the directory ~/.config/home-manager/
 CLOSED: [2024-04-23 Tue 13:24]
 *** Or copy make a soft link of this directory and point it inside dot emacs dir.
