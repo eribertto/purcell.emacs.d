@@ -18,50 +18,82 @@
   # The home.packages option allows you to install Nix packages into your
   # environment.
   home.packages = with pkgs; [
-    # # Adds the 'hello' command to your environment. It prints a friendly
-    # # "Hello, world!" when run.
-    # pkgs.hello
 
-    lolcat
-    lsd
-    tree
-    bat
-    cowsay
-    fortune
-    wezterm
-    mpv
-    nnn
-    fastfetch
-    vlc
-    gnome.gnome-tweaks
     emacs29-gtk3
-    emacsPackages.nixpkgs-fmt
-    nixpkgs-fmt
-    emacsPackages.tree-sitter
-    emacsPackages.pandoc
+    emacsPackages.mpv
+    emacsPackages.w3m
+    sbcl
+    lispPackages.quicklisp
+    aria
+    # transmission-qt #bittorrent
+    qbittorrent-qt5
     pandoc
-    htop
-    #gh # move to /etc/nixos/configuration.nix
-    brave
-    fzf
-    aria2
-    mc
+    emacsPackages.pandoc
+    libsForQt5.kate
+    nixfmt # nix code formatter
+    alejandra # yet another formatter, see github page for details, another candidate is nixfmt
+    mpv
     fastfetch
-    transmission
+    htop
+    ponysay
+    fortune
+    cowsay
+    lolcat
+    mediawriter # usb iso writer
+    python3 # version 3.11.8 as of April 25/24
+    # onlyoffice-bin
+    libreoffice-qt
+    ncdu
+    which
+    file
+    tree
+    lsd
+    gparted
+    meld # diff tool
+    procs
+    du-dust
+    ripgrep
+    koreader # epub (and others) reader
+    bandwhich
+    bat
+    lshw # provide detailed info of hardware
+    geany
+    gnome.gnome-tweaks
+    kitty
+    kitty-img
+    kitty-themes
+    w3m
+    nyxt # lisp-coded cli browser https://nyxt.atlas.engineer/
+    vivaldi # browser
+    hblock
+    gh
+    lazygit # https://github.com/jesseduffield/lazygit
+    # logseq
+    starship
+    unicode-emoji
+    twitter-color-emoji
+    nodePackages.emojione
+    emojione
+    jetbrains-mono
+    source-code-pro
 
+    # audio/video chat
+    # zoom-us
+    # telegram-desktop
+
+    # pdf readers
+    libsForQt5.okular
+    sioyek # pdf for technical papers
+    zathura # pdf reader
 
     # # It is sometimes useful to fine-tune packages, for example, by applying
     # # overrides. You can do that directly here, just don't forget the
     # # parentheses. Maybe you want to install Nerd Fonts with a limited number of
     # # fonts?
-    (pkgs.nerdfonts.override { fonts = [ "FantasqueSansMono" "FiraCode" ]; })
+    (pkgs.nerdfonts.override {
+      fonts = [ "FantasqueSansMono" "FiraCode" "Iosevka" "Inconsolata" ];
+    })
 
-    # # You can also create simple shell scripts directly inside your
-    # # configuration. For example, this adds a command 'my-hello' to your
-    # # environment:
-    # (pkgs.writeShellScriptBin "my-hello" ''
-    #   echo "Hello, ${config.home.username}!"
-    # '')
   ];
 
   # Home Manager is pretty good at managing dotfiles. The primary way to manage
@@ -79,24 +111,17 @@
     # '';
   };
 
-  # Home Manager can also manage your environment variables through
-  # 'home.sessionVariables'. If you don't want to manage your shell through Home
-  # Manager then you have to manually source 'hm-session-vars.sh' located at
-  # either
-  #
-  #  ~/.nix-profile/etc/profile.d/hm-session-vars.sh
-  #
-  # or
-  #
-  #  ~/.local/state/nix/profiles/profile/etc/profile.d/hm-session-vars.sh
-  #
-  # or
-  #
-  #  /etc/profiles/per-user/eriberttom/etc/profile.d/hm-session-vars.sh
-  #
+
   home.sessionVariables = {
-    # EDITOR = "emacs";
+    EDITOR = "emacsclient -t";
+    VISUAL = "emacsclient -c -a emacs";
+    ALTERNATE_EDITOR = "";
+
   };
+  # services.emacs.defaultEditor = true;
+  services.emacs.startWithUserSession = "graphical";
+  services.emacs.enable = true;
+  xsession.enable = true;
 
   # Let Home Manager install and manage itself.
   programs.home-manager.enable = true;
