@@ -1,25 +1,130 @@
-;;; package --- Summary
+;;; init-local.el --- Configure default init file -*- lexical-binding: t -*-
 ;;; Commentary:
 ;;; Code:
 
-;;    copied from bedrock-emacs
-;;    https://melpa.org/#/getting-started
-;; You can simply uncomment the following if you'd like to get started with
-;; MELPA packages quickly:
-;;
-(with-eval-after-load 'package
-  (add-to-list 'package-archives '("melpa" . "https://melpa.org/packages/") t))
+;;; Emfy 0.3.0 <https://github.com/susam/emfy>
+;;; edited by user me April 13, 2024
 
-;; add own personal lisp codes here
-;; setup frame font including minibuffer and modeline
-;; http://xahlee.info/emacs/emacs/emacs_list_and_set_font.html
+(require 'desktop)
+(desktop-save-mode 1)
+(defun my-desktop-save ()
+  "Don't prompt desktop-save-in-desktop-dir."
+  (interactive)
+  (if (eq (desktop-owner) (emacs-pid))
+      (desktop-save desktop-dirname))
+  )
+(add-hook 'auto-save-hook 'my-desktop-save)
 
-;; http://xahlee.info/emacs/misc/xah-fly-keys.html
-;; (add-to-list 'load-path "~/.emacs.d/xah-fly-keys")
-(use-package xah-fly-keys
-  :config
-  (xah-fly-keys-set-layout "qwerty")
-  (xah-fly-keys 1))
+
+;; Customize user interface.
+(when (display-graphic-p)
+  (tool-bar-mode 1)
+  (scroll-bar-mode 1))
+(setq inhibit-startup-screen t)
+(column-number-mode)
+
+
+;; Show stray whitespace.
+(setq-default show-trailing-whitespace t)
+(setq-default indicate-empty-lines t)
+(setq-default indicate-buffer-boundaries 'left)
+
+;; Add a newline automatically at the end of a file while saving.
+(setq-default require-final-newline t)
+
+;; Consider a period followed by a single space to be end of sentence.
+(setq sentence-end-double-space nil)
+
+;; Use spaces, not tabs, for indentation.
+(setq-default indent-tabs-mode nil)
+
+;; Display the distance between two tab stops as 4 characters wide.
+(setq-default tab-width 4)
+
+;; Indentation setting for various languages.
+(setq c-basic-offset 4)
+(setq js-indent-level 2)
+(setq css-indent-offset 2)
+
+;; Highlight matching pairs of parentheses.
+(setq show-paren-delay 0)
+(show-paren-mode)
+
+;; Write auto-saves and backups to separate directory.
+(make-directory "~/.tmp/emacs/auto-save/" t)
+(setq auto-save-file-name-transforms '((".*" "~/.tmp/emacs/auto-save/" t)))
+(setq backup-directory-alist '(("." . "~/.tmp/emacs/backup/")))
+
+;; Do not move the current file while creating backup.
+(setq backup-by-copying t)
+
+;; Disable lockfiles.
+(setq create-lockfiles nil)
+
+;; ;; Workaround for https://debbugs.gnu.org/34341 in GNU Emacs <= 26.3.
+;; (when (and (version< emacs-version "26.3") (>= libgnutls-version 30603))
+;;   (setq gnutls-algorithm-priority "NORMAL:-VERS-TLS1.3"))
+
+;; Write customizations to a separate file instead of this file.
+(setq custom-file (expand-file-name "custom.el" user-emacs-directory))
+(load custom-file t)
+
+;; Enable installation of packages from MELPA.
+(require 'package)
+(add-to-list 'package-archives '("melpa" . "https://melpa.org/packages/") t)
+(package-initialize)
+(unless package-archive-contents
+  (package-refresh-contents))
+
+;; Install packages.
+(dolist (package '(markdown-mode deadgrep nix-mode w3m ef-themes dired-sidebar denote paredit rainbow-delimiters xah-fly-keys popper all-the-icons all-the-icons-dired all-the-icons-completion marginalia sly  eat eglot savehist vertico orderless corfu magit org-superstar))
+  (unless (package-installed-p package)
+    (package-install package)))
+
+;; sly-asdf sly-quicklisp ;; exclude this from the dolist, for now
+
+
+;; Enable Paredit.
+(add-hook 'emacs-lisp-mode-hook 'enable-paredit-mode)
+(add-hook 'eval-expression-minibuffer-setup-hook 'enable-paredit-mode)
+(add-hook 'ielm-mode-hook 'enable-paredit-mode)
+(add-hook 'lisp-interaction-mode-hook 'enable-paredit-mode)
+(add-hook 'lisp-mode-hook 'enable-paredit-mode)
+
+;; Enable Rainbow Delimiters.
+(add-hook 'emacs-lisp-mode-hook 'rainbow-delimiters-mode)
+(add-hook 'ielm-mode-hook 'rainbow-delimiters-mode)
+(add-hook 'lisp-interaction-mode-hook 'rainbow-delimiters-mode)
+(add-hook 'lisp-mode-hook 'rainbow-delimiters-mode)
+
+;; Customize Rainbow Delimiters.
+(require 'rainbow-delimiters)
+(set-face-foreground 'rainbow-delimiters-depth-1-face "#c66")  ; red
+(set-face-foreground 'rainbow-delimiters-depth-2-face "#6c6")  ; green
+(set-face-foreground 'rainbow-delimiters-depth-3-face "#69f")  ; blue
+(set-face-foreground 'rainbow-delimiters-depth-4-face "#cc6")  ; yellow
+(set-face-foreground 'rainbow-delimiters-depth-5-face "#6cc")  ; cyan
+(set-face-foreground 'rainbow-delimiters-depth-6-face "#c6c")  ; magenta
+(set-face-foreground 'rainbow-delimiters-depth-7-face "#ccc")  ; light gray
+(set-face-foreground 'rainbow-delimiters-depth-8-face "#999")  ; medium gray
+(set-face-foreground 'rainbow-delimiters-depth-9-face "#666")  ; dark gray
+
+;; Custom command.
+(defun show-current-time ()
+  "Show current time."
+  (interactive)
+  (message (current-time-string)))
+
+;; Custom key sequences.
+(global-set-key (kbd "C-c t") 'show-current-time)
+(global-set-key (kbd "C-c d") 'delete-trailing-whitespace)
+
+;; Start server.
+(require 'server)
+(unless (server-running-p)
+  (server-start))
+
+;; Some customizations
 
 ;; set utf8
 (set-charset-priority 'unicode) ;; utf8 in every nook and cranny
@@ -36,39 +141,10 @@
 (setq user-full-name "Eriberto Mendz")
 (setq user-mail-address "erimendz@gmail.com")
 
-(fit-frame-to-buffer)
-(menu-bar-mode 1)
-(auto-save-visited-mode)
-(setq auto-save-visited-interval 50)
-;;(tab-bar-mode 1)
-;; (desktop-save-mode 1)
-;; Show the tab-bar as soon as tab-bar functions are invoked
-;; (setopt tab-bar-show 1)
-(setq tab-bar-tab-hints 1)
-(setq tab-bar-close-button-show t)
-
-;; from emacswiki
-;; (add-to-list 'default-frame-alist '(height . 36))
-;; (add-to-list 'default-frame-alist '(width . 100))
-
-(setq fill-column 100) ;; ditch the default 70, we're 2023 now.
-
-;; set default font
-(cond
- ((eq system-type 'windows-nt)
-  (when (member "Consolas" (font-family-list))
-    (set-frame-font "Consolas" t t)))
- ((eq system-type 'darwin)              ; macOS
-  (when (member "Menlo" (font-family-list))
-    (set-frame-font "Menlo" t t)))
- ((eq system-type 'gnu/linux)
-  (when (member "Iosevka" (font-family-list))
-    (set-frame-font "Iosevka-20" t t)
-    (load-theme 'ef-frost t))))
-
-;; begin customization of xah fly keys
-;; add global toggle key command/insert mode
-;; note F4 is taken so use F5 instead
+(use-package xah-fly-keys
+  :config
+  (xah-fly-keys-set-layout "qwerty")
+  (xah-fly-keys 1))
 
 (global-set-key (kbd "<f5>") 'xah-fly-mode-toggle) ; this works
 
@@ -85,13 +161,15 @@
 ;; EndeavourOS = " "
 (setq xah-fly-command-mode-indicator " ")
 (setq xah-fly-insert-mode-indicator "✏" )
-(defun my-modeline-color-on () (set-face-background 'mode-line "blue"))
-(defun my-modeline-color-off () (set-face-background 'mode-line "firebrick"))
+(defun my-modeline-color-on ()
+  "Make mode-line color blue."
+  (set-face-background 'mode-line "blue"))
+(defun my-modeline-color-off ()
+  "Make mode-line color firebrick."
+  (set-face-background 'mode-line "firebrick"))
 
 (add-hook 'xah-fly-command-mode-activate-hook 'my-modeline-color-on)
 (add-hook 'xah-fly-insert-mode-activate-hook  'my-modeline-color-off)
-
-
 
 ;; make aliases per this link https://www.youtube.com/watch?v=ufVldIrUOBg
 (defalias 'pcr 'package-refresh-contents)
@@ -102,14 +180,6 @@
 (defalias 'fsa 'write-file)
 (defalias 'jof 'other-frame)
 (defalias 'jow 'other-window)
-
-
-
-
-;; https://www.emacswiki.org/emacs/Scrolling
-;; page scroll by 30 lines increment
-;; (global-set-key "\M-n"  (lambda () (interactive) (scroll-up   30)) )
-;; (global-set-key "\M-h"  (lambda () (interactive) (scroll-down 30)) )
 
 ;; prettify dired with icons
 (use-package all-the-icons)
@@ -125,28 +195,6 @@
   :after (marginalia all-the-icons)
   :hook (marginalia-mode . all-the-icons-completion-marginalia-setup)
   :init (all-the-icons-completion-mode))
-
-(use-package pdf-tools
-  :demand t
-  :hook (TeX-after-compilation-finished . TeX-revert-document-buffer)
-  :mode ("\\.pdf\\'" . pdf-view-mode)
-  :config
-  (require 'pdf-tools)
-  (require 'pdf-view)
-  (require 'pdf-misc)
-  (require 'pdf-occur)
-  (require 'pdf-util)
-  (require 'pdf-annot)
-  (require 'pdf-info)
-  (require 'pdf-isearch)
-  (require 'pdf-history)
-  (require 'pdf-links)
-  (pdf-tools-install :noquery))
-
-;; (pdf-tools-install :no-query))
-
-;; popper entries
-;; https://mirrors.zju.edu.cn/elpa/gnu/popper.html
 
 (use-package popper
   :ensure t ; or :straight t
@@ -193,16 +241,268 @@
 (let ((hl-line-hooks '(text-mode-hook prog-mode-hook)))
   (mapc (lambda (hook) (add-hook hook 'hl-line-mode)) hl-line-hooks))
 
-
-
 ;; Enable horizontal scrolling
 (setopt mouse-wheel-tilt-scroll t)
 (setopt mouse-wheel-flip-direction t)
 
 ;; #################################################################################
 
-;; begin config denote note-taking
+(use-package org-superstar)
+(add-hook 'org-mode-hook (lambda () (org-superstar-mode 1)))
 
+;; added in rhino linux machine for emacs 29.1
+(setq warning-minimum-level :error)
+
+;;;; Dired : built-in navigation of folders
+(use-package dired
+  :ensure nil  ; emacs built-in
+  :bind (:map dired-mode-map ("u" . dired-up-directory))
+  :custom(dired-kill-when-opening-new-dired-buffer t)) ; Auto close previous folder buffer
+
+;; https://protesilaos.com/emacs/ef-themes#h:dd9e06f2-eef0-4afe-8a12-b7af5d597108
+;; add ef-themes
+;; Make customisations that affect Emacs faces BEFORE loading a theme
+;; (any change needs a theme re-load to take effect).
+;; (require 'ef-themes)
+(use-package ef-themes)
+;; If you like two specific themes and want to switch between them, you
+;; can specify them in `ef-themes-to-toggle' and then invoke the command
+;; `ef-themes-toggle'.  All the themes are included in the variable
+;; `ef-themes-collection'.
+(setq ef-themes-to-toggle '(ef-summer ef-winter))
+
+(setq ef-themes-headings ; read the manual's entry or the doc string
+      '((0 variable-pitch light 1.9)
+        (1 variable-pitch light 1.8)
+        (2 variable-pitch regular 1.7)
+        (3 variable-pitch regular 1.6)
+        (4 variable-pitch regular 1.5)
+        (5 variable-pitch 1.4) ; absence of weight means `bold'
+        (6 variable-pitch 1.3)
+        (7 variable-pitch 1.2)
+        (t variable-pitch 1.1)))
+
+;; They are nil by default...
+(setq ef-themes-mixed-fonts t
+      ef-themes-variable-pitch-ui t)
+
+;; Disable all other themes to avoid awkward blending:
+(mapc #'disable-theme custom-enabled-themes)
+
+;; Load the theme of choice:
+;; (load-theme 'ef-cherie :no-confirm)
+
+;; OR use this to load the theme which also calls `ef-themes-post-load-hook':
+(ef-themes-select 'ef-cherie)
+
+;; The themes we provide are recorded in the `ef-themes-dark-themes',
+;; `ef-themes-light-themes'.
+;; We also provide these commands, but do not assign them to any key:
+;;
+;; - `ef-themes-toggle'
+;; - `ef-themes-select'
+;; - `ef-themes-select-dark'
+;; - `ef-themes-select-light'
+;; - `ef-themes-load-random'
+;; - `ef-themes-preview-colors'
+;; - `ef-themes-preview-colors-current'
+
+;; for deadgrep
+(global-set-key (kbd "<f6>") nil) ;; unset f6 to give way to deadgrep
+(global-set-key (kbd "<f6>") #'deadgrep)
+
+;;;;; Dired-sidebar Configuration
+;; https://github.com/danijelcamdzic/dotemacs/blob/main/init.el
+
+(use-package dired-sidebar
+  :ensure t
+  :config
+  ;; Make the window not fixed
+  (setq dired-sidebar-window-fixed nil))
+
+;;;;;; Functions - Dired-sidebar toggle
+
+(defun em/dired-sidebar-toggle ()
+  "Toggle `dired-sidebar'."
+  (interactive)
+  (dired-sidebar-toggle-sidebar))
+
+;; enable nix mode
+(use-package nix-mode
+  :mode "\\.nix\\'")
+
+(use-package w3m
+  :ensure t)
+
+;; rewrite this browser setting on 2024-03-15
+;; as per this link https://www.emacswiki.org/emacs/BrowseUrl
+;; Choosing among various browsers
+;; note w3m is installed using nix home-manager
+
+(use-package w3m)
+(setq browse-url-browser-function 'browse-url-generic
+      browse-url-generic-program "/usr/bin/firefox-beta")
+
+(defun choose-browser (url &rest args)
+  "Ask user what browser to open the URL using ARGS."
+  (interactive "sURL: ")
+  (if (y-or-n-p "Use external browser? ")
+      (browse-url-generic url)
+    (w3m-browse-url url)))
+
+(setq browse-url-browser-function 'choose-browser)
+(global-set-key "\C-xm" 'browse-url-at-point)
+
+(add-hook 'after-init-hook #'(lambda ()
+                               (interactive)
+                               (require 'server)
+                               (or (server-running-p)
+                                   (server-start))))
+
+
+;; sly/slime sbcl section
+;; install sly https://github.com/joaotavora/sly
+;; https://joaotavora.github.io/sly/#A-SLY-tour-for-SLIME-users
+(use-package sly
+  :ensure t)
+(add-to-list 'exec-path "~/.nix-profile/bin/") ; nixos system
+(setq inferior-lisp-program "sbcl")
+(add-hook 'sly-mode-hook
+          (lambda ()
+            (unless (sly-connected-p)
+              (save-excursion (sly)))))
+(eval-after-load 'sly
+  `(define-key sly-prefix-map (kbd "M-h") 'sly-documentation-lookup))
+
+;; Set your lisp system and some contribs
+;; (require 'sly-autoloads)
+;; (setq sly-contribs '(sly-asdf sly-quicklisp))
+
+
+
+;; Enable vertico
+(use-package vertico
+  :init
+  (vertico-mode)
+
+  ;; Different scroll margin
+  ;; (setq vertico-scroll-margin 0)
+
+  ;; Show more candidates
+  ;; (setq vertico-count 20)
+
+  ;; Grow and shrink the Vertico minibuffer
+  ;; (setq vertico-resize t)
+
+  ;; Optionally enable cycling for `vertico-next' and `vertico-previous'.
+  ;; (setq vertico-cycle t)
+  )
+
+;; Persist history over Emacs restarts. Vertico sorts by history position.
+(use-package savehist
+  :init
+  (savehist-mode))
+
+;; A few more useful configurations...
+(use-package emacs
+  :init
+  ;; Add prompt indicator to `completing-read-multiple'.
+  ;; We display [CRM<separator>], e.g., [CRM,] if the separator is a comma.
+  (defun crm-indicator (args)
+    (cons (format "[CRM%s] %s"
+                  (replace-regexp-in-string
+                   "\\`\\[.*?]\\*\\|\\[.*?]\\*\\'" ""
+                   crm-separator)
+                  (car args))
+          (cdr args)))
+  (advice-add #'completing-read-multiple :filter-args #'crm-indicator)
+
+  ;; Do not allow the cursor in the minibuffer prompt
+  (setq minibuffer-prompt-properties
+        '(read-only t cursor-intangible t face minibuffer-prompt))
+  (add-hook 'minibuffer-setup-hook #'cursor-intangible-mode)
+
+  ;; Support opening new minibuffers from inside existing minibuffers.
+  (setq enable-recursive-minibuffers t)
+
+  ;; Emacs 28 and newer: Hide commands in M-x which do not work in the current
+  ;; mode.  Vertico commands are hidden in normal buffers. This setting is
+  ;; useful beyond Vertico.
+  (setq read-extended-command-predicate #'command-completion-default-include-p))
+
+;; Optionally use the `orderless' completion style.
+(use-package orderless
+  :init
+  ;; Configure a custom style dispatcher (see the Consult wiki)
+  ;; (setq orderless-style-dispatchers '(+orderless-consult-dispatch orderless-affix-dispatch)
+  ;;       orderless-component-separator #'orderless-escapable-split-on-space)
+  (setq completion-styles '(orderless basic)
+        completion-category-defaults nil
+        completion-category-overrides '((file (styles partial-completion)))))
+
+;; Option 1: Additional bindings
+(keymap-set vertico-map "?" #'minibuffer-completion-help)
+(keymap-set vertico-map "M-RET" #'minibuffer-force-complete-and-exit)
+(keymap-set vertico-map "M-TAB" #'minibuffer-complete)
+
+;; Option 2: Replace `vertico-insert' to enable TAB prefix expansion.
+;; (keymap-set vertico-map "TAB" #'minibuffer-complete)
+
+;; Use `consult-completion-in-region' if Vertico is enabled.
+;; Otherwise use the default `completion--in-region' function.
+(setq completion-in-region-function
+      (lambda (&rest args)
+        (apply (if vertico-mode
+                   #'consult-completion-in-region
+                 #'completion--in-region)
+               args)))
+
+(use-package corfu
+  ;; Optional customizations
+  ;; :custom
+  ;; (corfu-cycle t)                ;; Enable cycling for `corfu-next/previous'
+  ;; (corfu-auto t)                 ;; Enable auto completion
+  ;; (corfu-separator ?\s)          ;; Orderless field separator
+  ;; (corfu-quit-at-boundary nil)   ;; Never quit at completion boundary
+  ;; (corfu-quit-no-match nil)      ;; Never quit, even if there is no match
+  ;; (corfu-preview-current nil)    ;; Disable current candidate preview
+  ;; (corfu-preselect 'prompt)      ;; Preselect the prompt
+  ;; (corfu-on-exact-match nil)     ;; Configure handling of exact matches
+  ;; (corfu-scroll-margin 5)        ;; Use scroll margin
+
+  ;; Enable Corfu only for certain modes.
+  ;; :hook ((prog-mode . corfu-mode)
+  ;;        (shell-mode . corfu-mode)
+  ;;        (eshell-mode . corfu-mode))
+
+  ;; Recommended: Enable Corfu globally.  This is recommended since Dabbrev can
+  ;; be used globally (M-/).  See also the customization variable
+  ;; `global-corfu-modes' to exclude certain modes.
+  :init
+  (global-corfu-mode))
+
+;; A few more useful configurations...
+(use-package emacs
+  :init
+  ;; TAB cycle if there are only few candidates
+  ;; (setq completion-cycle-threshold 3)
+
+  ;; Enable indentation+completion using the TAB key.
+  ;; `completion-at-point' is often bound to M-TAB.
+  (setq tab-always-indent 'complete)
+
+  ;; Emacs 30 and newer: Disable Ispell completion function. As an alternative,
+  ;; try `cape-dict'.
+  (setq text-mode-ispell-word-completion nil)
+
+  ;; Emacs 28 and newer: Hide commands in M-x which do not apply to the current
+  ;; mode.  Corfu commands are hidden, since they are not used via M-x. This
+  ;; setting is useful beyond Corfu.
+  (setq read-extended-command-predicate #'command-completion-default-include-p))
+
+
+
+;; begin config denote note-taking
 (use-package denote
   :init
   (add-hook 'find-file-hook #'denote-link-buttonize-buffer)
@@ -277,138 +577,28 @@
 ;; `context-menu-mode'.
 (add-hook 'context-menu-functions #'denote-context-menu)
 
-;; end config denote note-taking
+;; Enable rich annotations using the Marginalia package
+(use-package marginalia
+  ;; Bind `marginalia-cycle' locally in the minibuffer.  To make the binding
+  ;; available in the *Completions* buffer, add it to the
+  ;; `completion-list-mode-map'.
+  :bind (:map minibuffer-local-map
+         ("M-A" . marginalia-cycle))
 
-;; doom-modeline
-;; (use-package doom-modeline
-;;    :ensure t
-;;    :hook (after-init . doom-modeline-mode))
+  ;; The :init section is always executed.
+  :init
 
-;; note org-superstar.el is placed under lisp dir
-;; (require 'org-superstar)
-(use-package org-superstar)
-(add-hook 'org-mode-hook (lambda () (org-superstar-mode 1)))
+  ;; Marginalia must be activated in the :init section of use-package such that
+  ;; the mode gets enabled right away. Note that this forces loading the
+  ;; package.
+  (marginalia-mode))
 
+(all-the-icons-completion-mode)
+(add-hook 'marginalia-mode-hook #'all-the-icons-completion-marginalia-setup)
 
-(use-package w3m
-  ;; :straight (emacs-w3m :type git :host github :repo "emacs-w3m/emacs-w3m")
-  :demand w3m-load
-  :custom
-  (w3m-search-default-engine "google")
-  (w3m-display-mode 'plain)
-  (w3m-use-title-buffer-name t))
-
-(setq browse-url-browser-function 'w3m-browse-url ; Use w3m as the default browser
-      (autoload 'w3m-browse-url "w3m" "Ask a WWW browser to show a URL." t))
-;; added in rhino linux machine for emacs 29.1
-(setq warning-minimum-level :error)
-
-;;;; Dired : built-in navigation of folders
-(use-package dired
-  :ensure nil  ; emacs built-in
-  :bind (:map dired-mode-map ("u" . dired-up-directory))
-  :custom(dired-kill-when-opening-new-dired-buffer t)) ; Auto close previous folder buffer
-
-;; https://protesilaos.com/emacs/ef-themes#h:dd9e06f2-eef0-4afe-8a12-b7af5d597108
-;; add ef-themes
-;; Make customisations that affect Emacs faces BEFORE loading a theme
-;; (any change needs a theme re-load to take effect).
-;; (require 'ef-themes)
-(use-package ef-themes)
-;; If you like two specific themes and want to switch between them, you
-;; can specify them in `ef-themes-to-toggle' and then invoke the command
-;; `ef-themes-toggle'.  All the themes are included in the variable
-;; `ef-themes-collection'.
-
-;; Load the theme of choice:
-(load-theme 'ef-cherie :no-confirm)
-(setq ef-themes-to-toggle '(ef-cherie ef-winter))
-
-(setq ef-themes-headings ; read the manual's entry or the doc string
-      '((0 variable-pitch light 1.9)
-        (1 variable-pitch light 1.8)
-        (2 variable-pitch regular 1.7)
-        (3 variable-pitch regular 1.6)
-        (4 variable-pitch regular 1.5)
-        (5 variable-pitch 1.4) ; absence of weight means `bold'
-        (6 variable-pitch 1.3)
-        (7 variable-pitch 1.2)
-        (t variable-pitch 1.1)))
-
-;; They are nil by default...
-(setq ef-themes-mixed-fonts t
-      ef-themes-variable-pitch-ui t)
-
-;; Disable all other themes to avoid awkward blending:
-(mapc #'disable-theme custom-enabled-themes)
-
-;; OR use this to load the theme which also calls `ef-themes-post-load-hook':
-;; (ef-themes-select 'ef-summer)
-
-;; The themes we provide are recorded in the `ef-themes-dark-themes',
-;; `ef-themes-light-themes'.
-;; We also provide these commands, but do not assign them to any key:
-;;
-;; - `ef-themes-toggle'
-;; - `ef-themes-select'
-;; - `ef-themes-select-dark'
-;; - `ef-themes-select-light'
-;; - `ef-themes-load-random'
-;; - `ef-themes-preview-colors'
-;; - `ef-themes-preview-colors-current'
-
-;; for deadgrep
-(global-set-key (kbd "<f6>") nil) ;; unset f6 to give way to deadgrep
-(global-set-key (kbd "<f6>") #'deadgrep)
-
-;; Elfeed basic entries
-(setq elfeed-feeds
-      '("https://planet.emacslife.com/atom.xml"
-        "https://www.reddit.com/r/emacs.rss"
-        "https://www.reddit.com/r/orgmode.rss"
-        "https://blog.tecosaur.com/tmio/rss.xml"
-        "http://oremacs.com/atom.xml"))
-
-(setf url-queue-timeout 30)
-
-
-;;;;; Dired-sidebar Configuration
-(use-package dired-sidebar
-  :ensure t
-  :config
-  ;; Make the window not fixed
-  (setq dired-sidebar-window-fixed nil))
-
-;;;;;; Functions - Dired-sidebar toggle
-(defun em/dired-sidebar-toggle ()
-  "Toggle `dired-sidebar'."
-  (interactive)
-  (dired-sidebar-toggle-sidebar))
-
-;; show/hide gui functions
-(defun em/gui-hide-bars ()
-  "Disable scroll bar, menu bar, and tool bar."
-  (interactive)
-  (scroll-bar-mode -1)
-  (menu-bar-mode -1)
-  (tool-bar-mode -1))
-
-(defun em/gui-show-bars ()
-  "Enable scroll bar, menu bar, and tool bar."
-  (interactive)
-  (scroll-bar-mode 1)
-  (menu-bar-mode 1)
-  (tool-bar-mode -1))
-
-(use-package nix-mode
-  :mode "\\.nix\\'")
-
-(use-package org-web-tools
+;; eat terminal emulator
+(use-package eat
   :ensure t)
-;; (add-hook 'nix-mode-hook 'nixpkgs-fmt-on-save-mode)
-;; (add-hook 'nix-mode-hook 'nixpkgs-fmt-on-save-mode)
-(define-key 'nix-mode-map (kbd "C-c C-f") 'nixfmt)
 
-
-(provide 'init-local)
+(provide 'init-local.el)
 ;;; init-local.el ends here
