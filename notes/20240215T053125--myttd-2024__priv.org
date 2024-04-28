@@ -14,11 +14,17 @@
 **** Farm house garage pavement for parking.
 **** Farm goat house construction.
 **** Home solar system install.
-**** Repair of home roof
 **** Replacement of home water pump.
+**** DONE Repair of home roof
+CLOSED: [2024-04-28 Sun 21:09]
+:LOGBOOK:
+- State "DONE"       from              [2024-04-28 Sun 21:09]
+:END:
+
+* TODO Learn Racket programming language (start April 28/24)
 * TODO Inquire the unknown debit memo from Metrobank account dated March 9, 2024 amount 11K+
-** Update: sent message to Shing MTB iloilo for assistance and provided her with my bank details plus pix of the debit memo in question.
-** Hoping she will get back to me with update (praying.)
+*** Update: sent message to Shing MTB iloilo for assistance and provided her with my bank details plus pix of the debit memo in question.
+*** Hoping she will get back to me with update (praying.)
 * TODO Watch YT vid how to close all positions ibkr
 * TODO Learn yet another dotfile manager https://yadm.io/
 * TODO Learn about hyperbole https://www.gnu.org/software/hyperbole/
