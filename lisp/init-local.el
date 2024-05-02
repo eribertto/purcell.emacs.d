@@ -11,7 +11,7 @@
   (add-to-list 'package-archives '("melpa" . "https://melpa.org/packages/") t))
 
 ;; install packages using loop
-(dolist (package '(markdown-mode pdf-tools hyperbole deadgrep nix-mode w3m ef-themes dired-sidebar denote paredit rainbow-delimiters xah-fly-keys popper all-the-icons all-the-icons-dired all-the-icons-completion marginalia vertico orderless corfu magit org-superstar org-super-agenda sly eglot eat savehist)
+(dolist (package '(markdown-mode pdf-tools hyperbole deadgrep nix-mode w3m ef-themes dired-sidebar denote paredit rainbow-delimiters xah-fly-keys popper all-the-icons all-the-icons-dired all-the-icons-completion marginalia vertico orderless corfu magit org-superstar org-super-agenda sly eglot eat racket-mode geiser geiser-racket scribble-mode savehist vundo olivetti)
                  )
   (unless (package-installed-p package)
     (package-install package)))
