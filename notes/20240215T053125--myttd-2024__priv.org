@@ -25,6 +25,7 @@ CLOSED: [2024-04-28 Sun 21:09]
 
 * PROJECT Learn Racket programming language (start April 28/24)
 * TODO Prepare tuition payment for Nonoy plus balance home allowance sjp 2024-05-03
+* TODO Create shell.nix in this E590 machine and add aliases including emacs in full-screen when started.
 * TODO Inquire the unknown debit memo from Metrobank account dated March 9, 2024 amount 11K+
 *** Update: sent message to Shing MTB iloilo for assistance and provided her with my bank details plus pix of the debit memo in question.
 *** Hoping she will get back to me with update (praying.)
