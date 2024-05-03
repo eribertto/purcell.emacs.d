@@ -437,10 +437,10 @@
 ;; (global-org-modern-mode-enable-in-buffers)
 ;; (org-roam-mode)
 
-(defun org-agenda-open-hook ()
-  ;; Turn on Olivetti mode."
-  olivetti-mode)
-(add-hook 'org-agenda-mode-hook 'org-agenda-open-hook)
+;; (defun org-agenda-open-hook ()
+;;   ;; Turn on Olivetti mode."
+;;   olivetti-mode)
+;; (add-hook 'org-agenda-mode-hook 'org-agenda-open-hook)
 
 (use-package org-super-agenda)
 (org-super-agenda-mode)
