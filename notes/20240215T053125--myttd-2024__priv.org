@@ -6,6 +6,8 @@
 * PROJECT Plan to learn Nix and NixOS configuration
 * PROJECT learn more of denote note-taking by Prot
 * PROJECT Followup BDO release of original OR/CR.
+** Update 2024-05-03:
+***** On May 9 Mrs to go to the bank to collect the original OR/CR cleared of undue payment. This is the final copy.
 * PROJECT Monitor completion of Prulife payment to end this May 2024, see this[[file:~/Downloads/PruLife.calc.2024.pdf][ scanned copy]]
 * PROJECT Top up Tonik account of kids, mrs account this year 2024, source account MBT.
 * PROJECT Home projects to complete this 2024 e.g.
@@ -21,20 +23,43 @@ CLOSED: [2024-04-28 Sun 21:09]
 - State "DONE"       from              [2024-04-28 Sun 21:09]
 :END:
 
-* TODO Learn Racket programming language (start April 28/24)
+* PROJECT Learn Racket programming language (start April 28/24)
+* TODO Prepare tuition payment for Nonoy plus balance home allowance sjp 2024-05-03
 * TODO Inquire the unknown debit memo from Metrobank account dated March 9, 2024 amount 11K+
 *** Update: sent message to Shing MTB iloilo for assistance and provided her with my bank details plus pix of the debit memo in question.
 *** Hoping she will get back to me with update (praying.)
-* TODO Watch YT vid how to close all positions ibkr
-* TODO Learn yet another dotfile manager https://yadm.io/
-* TODO Learn about hyperbole https://www.gnu.org/software/hyperbole/
+*** Update 2024-05-03: Shing never returned my inquiry. Oh well.
+* DONE Watch YT vid how to close all positions ibkr
+CLOSED: [2024-05-03 Fri 20:46]
+:LOGBOOK:
+- State "DONE"       from "TODO"       [2024-05-03 Fri 20:46]
+:END:
+
+* DONE Reset KA2 to default settings, find updates and make new keybinding configuration.
+CLOSED: [2024-05-03 Fri 20:47]
+:LOGBOOK:
+- State "DONE"       from "TODO"       [2024-05-03 Fri 20:47]
+:END:
+
+** make defalias for scroll-up/down
+* DONE Learn yet another dotfile manager https://yadm.io/
+CLOSED: [2024-05-03 Fri 20:46]
+:LOGBOOK:
+- State "DONE"       from "TODO"       [2024-05-03 Fri 20:46]
+:END:
+
+* DONE Learn about hyperbole https://www.gnu.org/software/hyperbole/
+CLOSED: [2024-05-03 Fri 20:46]
+:LOGBOOK:
+- State "DONE"       from "TODO"       [2024-05-03 Fri 20:46]
+:END:
+
 * TODO Learn org-agenda and org-super-agenda
+
 * TODO how to do emacs overlay in NixOS
-* TODO MADA card will expire in 09/24 this year so fya. Visit mubarraz industrial area office.
+* NEXT MADA card will expire in 09/24 this year so fya. Visit mubarraz industrial area office.
 * TODO Begin topup of GotyMe digital bank.
 * TODO Take down notes/tips from reddit post digital bank password recovery strats in the event of death of owner.
-* TODO Reset KA2 to default settings, find updates and make new keybinding configuration.
-** make defalias for scroll-up/down
 * WAITING Plan to replace from all-terrain to offroad tires our Ford ranger sport pickup.
 :LOGBOOK:
 - State "WAITING"    from              [2024-03-04 Mon 06:03] \\
