@@ -24,12 +24,25 @@ CLOSED: [2024-04-28 Sun 21:09]
 :END:
 
 * PROJECT Learn Racket programming language (start April 28/24)
+* NEXT MADA card will expire in 09/24 this year so fya. Visit mubarraz industrial area office.
 * TODO Prepare tuition payment for Nonoy plus balance home allowance sjp 2024-05-03
 * TODO Create shell.nix in this E590 machine and add aliases including emacs in full-screen when started.
 * TODO Inquire the unknown debit memo from Metrobank account dated March 9, 2024 amount 11K+
 *** Update: sent message to Shing MTB iloilo for assistance and provided her with my bank details plus pix of the debit memo in question.
 *** Hoping she will get back to me with update (praying.)
 *** Update 2024-05-03: Shing never returned my inquiry. Oh well.
+
+* TODO Learn org-agenda and org-super-agenda
+
+* HOLD how to do emacs overlay in NixOS
+* TODO Begin topup of GotyMe digital bank.
+* TODO Take down notes/tips from reddit post digital bank password recovery strats in the event of death of owner.
+* WAITING Plan to replace from all-terrain to offroad tires our Ford ranger sport pickup.
+:LOGBOOK:
+- State "WAITING"    from              [2024-03-04 Mon 06:03] \\
+  Not a priority
+:END:
+
 * DONE Watch YT vid how to close all positions ibkr
 CLOSED: [2024-05-03 Fri 20:46]
 :LOGBOOK:
@@ -53,18 +66,6 @@ CLOSED: [2024-05-03 Fri 20:46]
 CLOSED: [2024-05-03 Fri 20:46]
 :LOGBOOK:
 - State "DONE"       from "TODO"       [2024-05-03 Fri 20:46]
-:END:
-
-* TODO Learn org-agenda and org-super-agenda
-
-* TODO how to do emacs overlay in NixOS
-* NEXT MADA card will expire in 09/24 this year so fya. Visit mubarraz industrial area office.
-* TODO Begin topup of GotyMe digital bank.
-* TODO Take down notes/tips from reddit post digital bank password recovery strats in the event of death of owner.
-* WAITING Plan to replace from all-terrain to offroad tires our Ford ranger sport pickup.
-:LOGBOOK:
-- State "WAITING"    from              [2024-03-04 Mon 06:03] \\
-  Not a priority
 :END:
 
 * DONE How to update to latest kernel NixOS
