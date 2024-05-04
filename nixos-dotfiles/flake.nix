@@ -1,18 +1,44 @@
 {
-  description = "A simple NixOS flake";
+  description = "My First flake in Dell Precision 7710 machine";
   inputs = {
-    # NixOS official package source, using the nixos-23.11 branch here
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-23.11";
+    # add home-manager
+    home-manager.url = "github:nix-community/home-manager/release-23.11";
+    home-manager.inputs.nixpkgs.follows = "nixpkgs";
   };
-  outputs = { self, nixpkgs, ... }@inputs: {
-    # Please replace my-nixos with your hostname
-    nixosConfigurations.eribenixos = nixpkgs.lib.nixosSystem {
+  outputs = { self, nixpkgs, home-manager, ... }:
+  let
+    lib = nixpkgs.lib;
+    system = "x86_64-linux";
+    # pkgs = nixpkgs.legacyPackages.${system}; # see modified snippet below
+    # allowUnfree packages
+    pkgs = import nixpkgs {
       system = "x86_64-linux";
-      modules = [
-        # Import the previous configuration.nix we used,
-        # so the old configuration file still takes effect
-        ./configuration.nix
-      ];
+      config = { allowUnfree = true; };
+    };
+
+  in {
+    nixosConfigurations = {
+      delliprecinix = lib.nixosSystem {
+        # system = "x86_64-linux";
+        # duplication of above so just use inherit
+        inherit system;
+        modules = [ ./configuration.nix
+        ];
+      };
+    };
+    homeConfigurations = {
+      eriberttom = home-manager.lib.homeManagerConfiguration {
+        inherit pkgs;
+        modules = [ ./home.nix
+        ./git.nix
+        ./kitty.nix
+        ./shell.nix
+        # ./fonts.nix
+        # add ./emacs.nix
+        ];
+      };
     };
   };
+
 }

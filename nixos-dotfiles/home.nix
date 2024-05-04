@@ -41,6 +41,8 @@
     lolcat
     mediawriter # usb iso writer
     python3 # version 3.11.8 as of April 25/24
+    # https://racket-lang.org/
+    racket
     # onlyoffice-bin
     libreoffice-qt
     ncdu
@@ -53,7 +55,7 @@
     procs
     du-dust
     ripgrep
-    koreader # epub (and others) reader
+    # koreader # epub (and others) reader
     bandwhich
     bat
     lshw # provide detailed info of hardware
@@ -67,6 +69,7 @@
     vivaldi # browser
     hblock
     gh
+    flatpak
     lazygit # https://github.com/jesseduffield/lazygit
     # logseq
     starship
@@ -74,8 +77,13 @@
     twitter-color-emoji
     nodePackages.emojione
     emojione
+    # fonts
+    roboto-serif
+    roboto-mono
     jetbrains-mono
     source-code-pro
+    # Linux devices manager for the Logitech Unifying Receiver
+    solaar
 
     # audio/video chat
     # zoom-us
