@@ -47,7 +47,10 @@ in
     shellAliases = myAliases;
     initExtra = ''
       cdl () {
+      fortune -s | cowsay | lolcat
+      echo
       cd "$@" && ls
+      echo
       }
     '';
 
