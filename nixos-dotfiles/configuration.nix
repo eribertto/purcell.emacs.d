@@ -123,8 +123,8 @@
 
     # enable flatpak
     services.flatpak.enable = true;
-    xdg.portal.extraPortals = [ pkgs.xdg-desktop-portal-gtk ];
-    xdg.portal.config.common.default = "gtk";
+#     xdg.portal.extraPortals = [ pkgs.xdg-desktop-portal-gtk ];
+#     xdg.portal.config.common.default = "gtk";
 
     # Enable sound with pipewire.
     sound.enable = true;
@@ -150,7 +150,7 @@
     users.users.eriberttom = {
       isNormalUser = true;
       description = "Eribertto Mendz";
-      extraGroups = [ "networkmanager" "wheel" ];
+      extraGroups = [ "networkmanager" "wheel" "vboxusers" "podman" ];
       packages = with pkgs; [
         # see list in home-manager
       ];
@@ -161,16 +161,26 @@
     # allow flakes experimental features
     nix.settings.experimental-features = [ "nix-command" "flakes" ];
 
-    # List packages installed in system profile. To search, run:
-    # set editor
-    # environment.variables.EDITOR = "emacs";
+    # Add virtualbox support
+#     virtualisation.virtualbox.host.enable = true;
+#     virtualisation.virtualbox.guest.x11 = true;
+    # virtualisation.virtualbox.host.enableExtensionPack = true;
+    # virtualisation.virtualbox.guest.enable = true;
+
+#     users.extraGroups.vboxusers.members = [ "eriberttom" ];
+    # dont forget to add virtualbox pkg in home.nix
+    boot.initrd.availableKernelModules = [ "xhci_pci" "ehci_pci" "ahci" "usbhid" "usb_storage" "sd_mod" ];
+    boot.kernelModules = [ "kvm-amd" "kvm-intel"];
+
+
+    # system-wide packages
     environment.systemPackages = with pkgs; [
       vim # NO to nano omg ayfkdm???!!!
       wget
       git
       firefox-beta-bin
       curl
-      # flatpak
+#       virtualbox
       #emacsPackages.emacs # see emacs in home.nix
 
     ];

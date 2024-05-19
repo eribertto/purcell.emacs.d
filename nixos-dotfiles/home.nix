@@ -33,6 +33,8 @@
     nixfmt # nix code formatter
     alejandra # yet another formatter, see github page for details, another candidate is nixfmt
     mpv
+    smplayer # gui based off mpv/mplayer
+    freetube # open source YT client with privacy-focused.
     fastfetch
     htop
     ponysay
@@ -55,12 +57,16 @@
     procs
     du-dust
     ripgrep
+    mc # midnight commander https://github.com/MidnightCommander/mc/tree/master
     # koreader # epub (and others) reader
     bandwhich
     bat
     lshw # provide detailed info of hardware
     geany
     gnome.gnome-tweaks
+    gnomeExtensions.gtile
+    gnome.simple-scan
+    hplip
     kitty
     kitty-img
     kitty-themes
@@ -82,8 +88,22 @@
     roboto-mono
     jetbrains-mono
     source-code-pro
+    # development environment/kits
+    distrobox # https://distrobox.it/
+    podman
+    devbox # https://www.jetify.com/devbox/docs/quickstart/
+    # vpn clients
+    mullvad-vpn
+    # mullvad
+    wireguard-go # https://git.zx2c4.com/wireguard-go/about/
+
+
+    # virtualbox
     # Linux devices manager for the Logitech Unifying Receiver
-    solaar
+    # solaar # disabled since mouse got replaced by a normal one.
+    # googleearth-pro # this gets error Includes vulnerable bundled libraries.
+
+
 
     # audio/video chat
     # zoom-us
@@ -101,8 +121,14 @@
     (pkgs.nerdfonts.override {
       fonts = [ "FantasqueSansMono" "FiraCode" "Iosevka" "Inconsolata" ];
     })
-
+    # add simple shell scripts in login environment
+    (pkgs.writeShellScriptBin "my-hello" ''
+      echo "Hello there, ${config.home.username}!"
+      # echo "$(fortune) | $(cowsay) | $(lolcat)"
+    '')
   ];
+
+
 
   # Home Manager is pretty good at managing dotfiles. The primary way to manage
   # plain files is through 'home.file'.
@@ -121,9 +147,10 @@
 
 
   home.sessionVariables = {
-    EDITOR = "emacsclient -t";
+    EDITOR = "emacsclient -c -n";
     VISUAL = "emacsclient -c -a emacs";
     ALTERNATE_EDITOR = "";
+    BROWSER = "firefox-beta";
 
   };
   # services.emacs.defaultEditor = true;
