@@ -4,17 +4,19 @@
 #+identifier: 20240415T170044
 
 * Begin this TTD list in this machine.
-
-* FYI: these two have made sly go crazy in the cli
-**   sly-asdf                       20221119.2235  installed             ASDF system support for SLY
-**   sly-quicklisp                  20211206.948   installed             Quicklisp support for SLY
+* TODO Setup up mullvad-vpn and devbox in this machine 2024-05-19
 * TODO Plan to get BP-ready smartwatch
 ** https://www.zdnet.com/article/best-blood-pressure-watch/
-* TODO Followup the arrival of amazon order boots.
-
-* TODO Resume learning Common Lisp Udemy course.
-
 * TODO Plan for celeb of wedding anniv this May 22 e.g. weekend trip to Guimaras just like the trip of sis nene Sonia.
+* DONE FYI: these two have made sly go crazy in the cli
+CLOSED: [2024-05-19 Sun 14:18]
+**   sly-asdf                       20221119.2235  installed             ASDF system support for SLY
+**   sly-quicklisp                  20211206.948   installed             Quicklisp support for SLY
+* DONE Resume learning Common Lisp Udemy course.
+CLOSED: [2024-05-19 Sun 14:18]
+
+* DONE Followup the arrival of amazon order boots.
+CLOSED: [2024-05-19 Sun 14:17]
 
 * DONE Download Fedora 40 and verify checksum security.
 CLOSED: [2024-04-25 Thu 09:56]

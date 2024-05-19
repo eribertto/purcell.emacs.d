@@ -1,0 +1,34 @@
+#+title:      NixOS notes and links
+#+date:       [2024-05-19 Sun 16:33]
+#+filetags:   :nixos:
+#+identifier: 20240519T163302
+
+* See below links for reference guide:
+
+*** https://www.nixhub.io/
+
+*** Devbox environment https://www.jetify.com/devbox/docs/quickstart/
+
+*** Devbox examples https://github.com/jetify-com/devbox/tree/main/examples/development
+
+*** wireguard-go https://search.nixos.org/packages?channel=23.11&show=wireguard-go&size=50&sort=relevance&type=packages&query=wireguard
+
+*** Home manager manual https://nix-community.github.io/home-manager/index.xhtml#sec-usage-dotfiles
+
+*** Home manager configuration options https://nix-community.github.io/home-manager/options.xhtml
+
+*** MyNixOS https://mynixos.com/
+
+*** NixOS manual https://nixos.org/manual/nixos/stable/#sec-nix-gc
+
+*** Google earth Samar-Leyte map https://earth.google.com/web/search/iloilo/@11.5114948,124.92215769,105.1180207a,224817.58134216d,35y,0h,0t,0r/data=CigiJgokCRIfQATHpktAERojAw1KVRPAGR6oCuQ9KGNAIcv22uGhBmbAOgMKATA
+
+*** Python Automate the Boring stuff https://automatetheboringstuff.com/2e/chapter1/
+
+*** Nix Dev environments YT https://www.youtube.com/watch?v=yQwW8dkuHqw
+
+*** Nixpkgs manual https://nixos.org/manual/nixpkgs/stable/#sec-stdenv-phases
+
+*** Movies online https://on.fmoviesto.site/movies
+
+***
