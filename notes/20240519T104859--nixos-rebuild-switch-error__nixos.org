@@ -1,0 +1,14 @@
+#+title:      Nixos rebuild switch error
+#+date:       [2024-05-19 Sun 10:48]
+#+filetags:   :nixos:
+#+identifier: 20240519T104859
+
+* Today i finally resolved the titled error in this machine after so many days of having this error.
+
+*** The steps i did is trial and error e.g. first i disabled the lines containing gtk portal in configuration.nix file.
+
+*** Then after another run of the command still having the error i disabled all lines containing virtualbox in the same config file then re-run again the command.
+
+*** This time the nixos-rebuild switch --flake command went through with no errors.
+
+*** The machine will be rebooted after finishing this note taking steps.
