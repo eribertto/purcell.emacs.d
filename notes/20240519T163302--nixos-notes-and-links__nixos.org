@@ -5,15 +5,12 @@
 
 * See below links for reference guide:
 
-*** Fleek https://getfleek.dev/ (This repository has been archived by the owner on Mar 24, 2024. It is now read-only.)
-
+*** Direnv wiki https://github.com/direnv/direnv/wiki
 *** Emacs overlay https://github.com/nix-community/emacs-overlay
+*** Fleek https://getfleek.dev/ (This repository has been archived by the owner on Mar 24, 2024. It is now read-only.)
 *** https://www.nixhub.io/
-
 *** Devbox environment https://www.jetify.com/devbox/docs/quickstart/
-
 *** Devbox examples https://github.com/jetify-com/devbox/tree/main/examples/development
-
 *** wireguard-go https://search.nixos.org/packages?channel=23.11&show=wireguard-go&size=50&sort=relevance&type=packages&query=wireguard
 
 *** Home manager manual https://nix-community.github.io/home-manager/index.xhtml#sec-usage-dotfiles
