@@ -52,6 +52,7 @@ in
       cd "$@" && ls
       echo
       }
+      eval "$(direnv hook bash)"
     '';
 
   };
