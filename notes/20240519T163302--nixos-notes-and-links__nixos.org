@@ -5,6 +5,9 @@
 
 * See below links for reference guide:
 
+*** Fleek https://getfleek.dev/ (This repository has been archived by the owner on Mar 24, 2024. It is now read-only.)
+
+*** Emacs overlay https://github.com/nix-community/emacs-overlay
 *** https://www.nixhub.io/
 
 *** Devbox environment https://www.jetify.com/devbox/docs/quickstart/
