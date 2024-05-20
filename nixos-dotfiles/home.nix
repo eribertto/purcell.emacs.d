@@ -96,6 +96,7 @@
     mullvad-vpn
     # mullvad
     wireguard-go # https://git.zx2c4.com/wireguard-go/about/
+    restic # backup https://restic.net/
 
 
     # virtualbox
