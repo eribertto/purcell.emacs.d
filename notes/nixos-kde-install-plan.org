@@ -36,4 +36,5 @@ nvme0n1     259:5    0 476.9G  0 disk
 *** See link https://restic.readthedocs.io/en/stable/
 *** Github repo is very current https://github.com/restic/restic
 *** Backup to partition /dev/sda.
-***
+** Success renaming spare disks in this machine by booting to live disk then using parted/gparted to rename the disks in question. Confirmed the rename was a success by returning to this OS and checking the mounted disk names.
+** Now I can play with restic backup and perform backups to either in sda or nvme1n1.
