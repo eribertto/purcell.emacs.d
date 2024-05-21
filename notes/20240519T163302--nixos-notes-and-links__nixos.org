@@ -5,6 +5,9 @@
 
 * See below links for reference guide:
 
+*** Making a dev shell with nix flakes https://fasterthanli.me/series/building-a-rust-service-with-nix/part-10
+*** Learn Nix from the ground up https://fasterthanli.me/series/building-a-rust-service-with-nix/part-9
+
 *** Direnv wiki https://github.com/direnv/direnv/wiki
 *** Emacs overlay https://github.com/nix-community/emacs-overlay
 *** Fleek https://getfleek.dev/ (This repository has been archived by the owner on Mar 24, 2024. It is now read-only.)
