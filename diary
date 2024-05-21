@@ -9,3 +9,5 @@ TTDs
 7. Search for reference guide of mounting spare disks in NixOS re edit fileSystems and swapDevices NixOS options in configuration.nix
 8. Learn more of direnv, devbox, nix-ld, nix-develop. See links file in org format.
 9. dajkakajk
+May 21, 2024
+1. new entry in this local emacs client.
