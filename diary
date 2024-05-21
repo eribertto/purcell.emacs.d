@@ -1,0 +1,11 @@
+May 21, 2024
+TTDs
+1. Have early dinner
+2. Send bpi transfer receipt to sjp re wedding anniv treat tomorrow
+3. IDEA: install NixOS KDE version in spare ssd drive in this machine.
+4. Email Prulife re completed payment of family policy.
+5. FB msg Uriel re work resumption of home solar hybrid system.
+6. Make backup test using restic of this machine to separate partition drive sda. Use cli flag --exclude-file.
+7. Search for reference guide of mounting spare disks in NixOS re edit fileSystems and swapDevices NixOS options in configuration.nix
+8. Learn more of direnv, devbox, nix-ld, nix-develop. See links file in org format.
+9. dajkakajk
