@@ -5,6 +5,7 @@
 
 * See below links for reference guide:
 
+*** Emacs diary and calendar video https://www.youtube.com/watch?v=NkhgIB64zgc
 *** Emacs diary mode https://www.emacswiki.org/emacs/DiaryMode
 *** Making a dev shell with nix flakes https://fasterthanli.me/series/building-a-rust-service-with-nix/part-10
 *** Learn Nix from the ground up https://fasterthanli.me/series/building-a-rust-service-with-nix/part-9

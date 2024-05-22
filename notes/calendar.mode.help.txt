@@ -1,0 +1,1606 @@
+Minor modes enabled in this buffer: Anzu Corfu Envrc Font-Lock
+Whitespace-Cleanup Whole-Line-Or-Region-Local
+
+The major mode is Calendar mode defined in calendar.el:
+
+A major mode for the calendar window.
+For a complete description, see the info node ‘Calendar/Diary’.
+
+
+Key             Binding
+
+0 .. 9			digit-argument
+
+C-@				calendar-set-mark
+C-a				calendar-beginning-of-week
+C-b				calendar-backward-day
+C-e				calendar-end-of-week
+C-f				calendar-forward-day
+C-n				calendar-forward-week
+C-p				calendar-backward-week
+C-v				calendar-scroll-left-three-months
+SPC				scroll-other-window
+-				negative-argument
+.				calendar-goto-today
+<				calendar-scroll-right
+>				calendar-scroll-left
+?				calendar-goto-info-node
+D				diary-view-other-diary-entries
+M				calendar-lunar-phases
+S				calendar-sunrise-sunset
+a				calendar-list-holidays
+c				org-calendar-goto-agenda
+d				diary-view-entries
+h				calendar-cursor-holidays
+m				diary-mark-entries
+o				calendar-other-month
+q				calendar-exit
+s				diary-show-all-entries
+u				calendar-unmark
+x				calendar-mark-holidays
+DEL				scroll-other-window-down
+S-SPC			scroll-other-window-down
+C-SPC			calendar-set-mark
+<down>			calendar-forward-week
+<left>			calendar-backward-day
+<next>			calendar-scroll-left-three-months
+<prior>			calendar-scroll-right-three-months
+<right>			calendar-forward-day
+<up>			calendar-backward-week
+
+C-c C-l			calendar-redraw
+
+C-x C-x			calendar-exchange-point-and-mark
+C-x <			calendar-scroll-right
+C-x >			calendar-scroll-left
+C-x [			calendar-backward-year
+C-x ]			calendar-forward-year
+
+M-<				calendar-beginning-of-year
+M-=				calendar-count-days-region
+M->				calendar-end-of-year
+M-a				calendar-beginning-of-month
+M-e				calendar-end-of-month
+M-v				calendar-scroll-right-three-months
+M-{				calendar-backward-month
+M-}				calendar-forward-month
+
+A a				appt-add
+A d				appt-delete
+
+H m				cal-html-cursor-month
+H y				cal-html-cursor-year
+
+g C				calendar-chinese-goto-date
+g D				calendar-goto-day-of-year
+g a				calendar-astro-goto-day-number
+g b				calendar-bahai-goto-date
+g c				calendar-iso-goto-date
+g d				calendar-goto-date
+g e				calendar-ethiopic-goto-date
+g f				calendar-french-goto-date
+g h				calendar-hebrew-goto-date
+g i				calendar-islamic-goto-date
+g j				calendar-julian-goto-date
+g k				calendar-coptic-goto-date
+g p				calendar-persian-goto-date
+g w				calendar-iso-goto-week
+
+i a				diary-insert-anniversary-entry
+i b				diary-insert-block-entry
+i c				diary-insert-cyclic-entry
+i d				diary-insert-entry
+i m				diary-insert-monthly-entry
+i t				todo-insert-item-from-calendar
+i w				diary-insert-weekly-entry
+i y				diary-insert-yearly-entry
+
+p C				calendar-chinese-print-date
+p a				calendar-astro-print-day-number
+p b				calendar-bahai-print-date
+p c				calendar-iso-print-date
+p d				calendar-print-day-of-year
+p e				calendar-ethiopic-print-date
+p f				calendar-french-print-date
+p h				calendar-hebrew-print-date
+p i				calendar-islamic-print-date
+p j				calendar-julian-print-date
+p k				calendar-coptic-print-date
+p m				calendar-mayan-print-date
+p o				calendar-print-other-dates
+p p				calendar-persian-print-date
+
+t M				cal-tex-cursor-month-landscape
+t Y				cal-tex-cursor-year-landscape
+t d				cal-tex-cursor-day
+t m				cal-tex-cursor-month
+t y				cal-tex-cursor-year
+
+<vertical-scroll-bar> <mouse-1>	calendar-scroll-toolkit-scroll
+
+<down-mouse-2> <Exit calendar>			 calendar-exit
+<down-mouse-2> <List holidays>			 calendar-list-holidays
+<down-mouse-2> <Lunar phases>			 calendar-lunar-phases
+<down-mouse-2> <Mark diary entries>		 diary-mark-entries
+<down-mouse-2> <Mark holidays>			 calendar-mark-holidays
+<down-mouse-2> <Scroll backward>		 calendar-scroll-right-three-months
+<down-mouse-2> <Scroll forward>			 calendar-scroll-left-three-months
+<down-mouse-2> <Show diary>				 diary-show-all-entries
+<down-mouse-2> <Sunrise times for month> calendar-sunrise-sunset-month
+<down-mouse-2> <Unmark>					 calendar-unmark
+
+<remap> <capitalize-region>		calendar-not-implemented
+<remap> <copy-region-as-kill>	calendar-not-implemented
+<remap> <downcase-region>		calendar-not-implemented
+<remap> <kill-region>			calendar-not-implemented
+<remap> <mark-defun>			calendar-not-implemented
+<remap> <mark-page>				calendar-not-implemented
+<remap> <mark-paragraph>		calendar-not-implemented
+<remap> <mark-sexp>				calendar-not-implemented
+<remap> <mark-whole-buffer>		calendar-not-implemented
+<remap> <mark-word>				calendar-not-implemented
+<remap> <narrow-to-region>		calendar-not-implemented
+<remap> <upcase-region>			calendar-not-implemented
+<remap> <write-region>			calendar-not-implemented
+
+g m l			calendar-mayan-goto-long-count-date
+
+i C a			diary-chinese-insert-anniversary-entry
+i C d			diary-chinese-insert-entry
+i C m			diary-chinese-insert-monthly-entry
+i C y			diary-chinese-insert-yearly-entry
+
+i B d			diary-bahai-insert-entry
+i B m			diary-bahai-insert-monthly-entry
+i B y			diary-bahai-insert-yearly-entry
+
+i i d			diary-islamic-insert-entry
+i i m			diary-islamic-insert-monthly-entry
+i i y			diary-islamic-insert-yearly-entry
+
+i h d			diary-hebrew-insert-entry
+i h m			diary-hebrew-insert-monthly-entry
+i h y			diary-hebrew-insert-yearly-entry
+
+t f W			cal-tex-cursor-filofax-week
+t f d			cal-tex-cursor-filofax-daily
+t f w			cal-tex-cursor-filofax-2week
+t f y			cal-tex-cursor-filofax-year
+
+t w 1			cal-tex-cursor-week
+t w 2			cal-tex-cursor-week2
+t w 3			cal-tex-cursor-week-iso
+t w 4			cal-tex-cursor-week-monday
+t w W			cal-tex-cursor-week2-summary
+
+g m n c			calendar-mayan-next-round-date
+g m n h			calendar-mayan-next-haab-date
+g m n t			calendar-mayan-next-tzolkin-date
+
+g m p c			calendar-mayan-previous-round-date
+g m p h			calendar-mayan-previous-haab-date
+g m p t			calendar-mayan-previous-tzolkin-date
+
+
+This mode runs the hook ‘calendar-mode-hook’, as the final or
+penultimate step during initialization.
+
+Global minor modes enabled: All-The-Icons-Completion
+Auto-Compile-On-Load Auto-Compile-On-Save Auto-Encryption Blink-Cursor
+Column-Number Context-Menu Corfu-Popupinfo Corfu-Terminal
+Default-Text-Scale Delete-Selection Denote-Rename-Buffer Desktop-Save
+Dimmer Diredfl-Global Electric-Indent Electric-Pair Envrc-Global
+File-Name-Shadow Gcmh Global-Anzu Global-Auto-Revert Global-Corfu
+Global-Diff-Hl Global-Eldoc Global-Font-Lock Global-Page-Break-Lines
+Global-So-Long Global-Whitespace-Cleanup Hes Immortal-Scratch Ipretty
+Marginalia Menu-Bar Mode-Line-Bell Pixel-Scroll-Precision Popper-Echo
+Popper Projectile Projectile-Rails-Global Recentf Repeat Savehist
+Show-Paren Tab-Bar Tool-Bar Tooltip Transient-Mark Vertico Which-Key
+Whole-Line-Or-Region-Global Winner Xah-Fly-Keys
+
+
+Anzu minor mode (no indicator):
+minor-mode which display search information in mode-line.
+
+This is a minor mode.  If called interactively, toggle the ‘Anzu
+mode’ mode.  If the prefix argument is positive, enable the mode,
+and if it is zero or negative, disable the mode.
+
+If called from Lisp, toggle the mode if ARG is ‘toggle’.  Enable
+the mode if ARG is nil, omitted, or is a positive number.
+Disable the mode if ARG is a negative number.
+
+To check whether the minor mode is enabled in the current buffer,
+evaluate ‘anzu-mode’.
+
+The mode’s hook is called both when the mode is enabled and when
+it is disabled.
+
+
+Corfu minor mode (no indicator):
+COmpletion in Region FUnction.
+
+This is a minor mode.  If called interactively, toggle the ‘Corfu
+mode’ mode.  If the prefix argument is positive, enable the mode,
+and if it is zero or negative, disable the mode.
+
+If called from Lisp, toggle the mode if ARG is ‘toggle’.  Enable
+the mode if ARG is nil, omitted, or is a positive number.
+Disable the mode if ARG is a negative number.
+
+To check whether the minor mode is enabled in the current buffer,
+evaluate ‘corfu-mode’.
+
+The mode’s hook is called both when the mode is enabled and when
+it is disabled.
+
+
+Envrc minor mode (indicator envrc[none]):
+A local minor mode in which env vars are set by direnv.
+
+This is a minor mode.  If called interactively, toggle the ‘Envrc
+mode’ mode.  If the prefix argument is positive, enable the mode,
+and if it is zero or negative, disable the mode.
+
+If called from Lisp, toggle the mode if ARG is ‘toggle’.  Enable
+the mode if ARG is nil, omitted, or is a positive number.
+Disable the mode if ARG is a negative number.
+
+To check whether the minor mode is enabled in the current buffer,
+evaluate ‘envrc-mode’.
+
+The mode’s hook is called both when the mode is enabled and when
+it is disabled.
+
+
+Font-Lock minor mode (no indicator):
+Toggle syntax highlighting in this buffer (Font Lock mode).
+
+When Font Lock mode is enabled, text is fontified as you type it:
+
+ - Comments are displayed in ‘font-lock-comment-face’;
+ - Strings are displayed in ‘font-lock-string-face’;
+ - Certain other expressions are displayed in other faces
+   according to the value of the variable ‘font-lock-keywords’.
+
+To customize the faces (colors, fonts, etc.) used by Font Lock for
+fontifying different parts of buffer text, use M-x customize-face.
+
+You can enable Font Lock mode in any major mode automatically by
+turning on in the major mode’s hook.  For example, put in your
+~/.emacs:
+
+ (add-hook 'c-mode-hook 'turn-on-font-lock)
+
+Alternatively, you can use Global Font Lock mode to automagically
+turn on Font Lock mode in buffers whose major mode supports it
+and whose major mode is one of ‘font-lock-global-modes’.  For
+example, put in your ~/.emacs:
+
+ (global-font-lock-mode t)
+
+Where major modes support different levels of fontification, you
+can use the variable ‘font-lock-maximum-decoration’ to specify
+which level you generally prefer.  When you turn Font Lock mode
+on/off the buffer is fontified/defontified.
+
+To add your own highlighting for some major mode, and modify the
+highlighting selected automatically via the variable
+‘font-lock-maximum-decoration’, you can use
+‘font-lock-add-keywords’.
+
+To fontify a buffer, without turning on Font Lock mode and
+regardless of buffer size, you can use M-x font-lock-fontify-buffer.
+
+To fontify a block (the function or paragraph containing point,
+or a number of lines around point), perhaps because modification
+on the current line caused syntactic change on other lines, you
+can use M-x font-lock-fontify-block.
+
+You can set your own default settings for some mode, by setting a
+buffer local value for ‘font-lock-defaults’, via its mode hook.
+
+The above is the default behavior of ‘font-lock-mode’; you may
+specify your own function which is called when ‘font-lock-mode’
+is toggled via ‘font-lock-function’.
+
+This is a minor mode.  If called interactively, toggle the
+‘Font-Lock mode’ mode.  If the prefix argument is positive,
+enable the mode, and if it is zero or negative, disable the mode.
+
+If called from Lisp, toggle the mode if ARG is ‘toggle’.  Enable
+the mode if ARG is nil, omitted, or is a positive number.
+Disable the mode if ARG is a negative number.
+
+To check whether the minor mode is enabled in the current buffer,
+evaluate ‘font-lock-mode’.
+
+The mode’s hook is called both when the mode is enabled and when
+it is disabled.
+
+
+Whitespace-Cleanup minor mode (no indicator):
+Automatically call ‘whitespace-cleanup’ on save.
+
+This is a minor mode.  If called interactively, toggle the
+‘Whitespace-Cleanup mode’ mode.  If the prefix argument is
+positive, enable the mode, and if it is zero or negative, disable
+the mode.
+
+If called from Lisp, toggle the mode if ARG is ‘toggle’.  Enable
+the mode if ARG is nil, omitted, or is a positive number.
+Disable the mode if ARG is a negative number.
+
+To check whether the minor mode is enabled in the current buffer,
+evaluate ‘whitespace-cleanup-mode’.
+
+The mode’s hook is called both when the mode is enabled and when
+it is disabled.
+
+
+Whole-Line-Or-Region-Local minor mode (no indicator):
+Make chosen commands operate on the current line if no region is active.
+
+Modify ‘whole-line-or-region-local-mode-map’ to change which
+commands are affected.
+
+This is a minor mode.  If called interactively, toggle the
+‘Whole-Line-Or-Region-Local mode’ mode.  If the prefix argument
+is positive, enable the mode, and if it is zero or negative,
+disable the mode.
+
+If called from Lisp, toggle the mode if ARG is ‘toggle’.  Enable
+the mode if ARG is nil, omitted, or is a positive number.
+Disable the mode if ARG is a negative number.
+
+To check whether the minor mode is enabled in the current buffer,
+evaluate ‘whole-line-or-region-local-mode’.
+
+The mode’s hook is called both when the mode is enabled and when
+it is disabled.
+
+
+All-The-Icons-Completion minor mode (no indicator):
+Add icons to completion candidates.
+
+This is a global minor mode.  If called interactively, toggle the
+‘All-The-Icons-Completion mode’ mode.  If the prefix argument is
+positive, enable the mode, and if it is zero or negative, disable
+the mode.
+
+If called from Lisp, toggle the mode if ARG is ‘toggle’.  Enable
+the mode if ARG is nil, omitted, or is a positive number.
+Disable the mode if ARG is a negative number.
+
+To check whether the minor mode is enabled in the current buffer,
+evaluate ‘(default-value 'all-the-icons-completion-mode)’.
+
+The mode’s hook is called both when the mode is enabled and when
+it is disabled.
+
+
+Auto-Compile-On-Load minor mode (no indicator):
+Before loading a library recompile it if it needs recompilation.
+
+A library needs to be recompiled if the source file is newer than
+its byte-compile destination.  Without this advice the outdated
+byte code file would be loaded instead.
+
+Also see the related ‘auto-compile-on-save-mode’.
+
+This is a global minor mode.  If called interactively, toggle the
+‘Auto-Compile-On-Load mode’ mode.  If the prefix argument is
+positive, enable the mode, and if it is zero or negative, disable
+the mode.
+
+If called from Lisp, toggle the mode if ARG is ‘toggle’.  Enable
+the mode if ARG is nil, omitted, or is a positive number.
+Disable the mode if ARG is a negative number.
+
+To check whether the minor mode is enabled in the current buffer,
+evaluate ‘(default-value 'auto-compile-on-load-mode)’.
+
+The mode’s hook is called both when the mode is enabled and when
+it is disabled.
+
+
+Auto-Compile-On-Save minor mode (no indicator):
+Toggle Auto-Compile mode in all buffers.
+With prefix ARG, enable Auto-Compile-On-Save mode if ARG is positive;
+otherwise, disable it.
+
+If called from Lisp, toggle the mode if ARG is ‘toggle’.
+Enable the mode if ARG is nil, omitted, or is a positive number.
+Disable the mode if ARG is a negative number.
+
+Auto-Compile mode is enabled in all buffers where
+‘turn-on-auto-compile-mode’ would do it.
+
+See ‘auto-compile-mode’ for more information on Auto-Compile mode.
+
+
+Auto-Encryption minor mode (no indicator):
+Toggle automatic file encryption/decryption (Auto Encryption mode).
+
+This is a global minor mode.  If called interactively, toggle the
+‘Auto-Encryption mode’ mode.  If the prefix argument is positive,
+enable the mode, and if it is zero or negative, disable the mode.
+
+If called from Lisp, toggle the mode if ARG is ‘toggle’.  Enable
+the mode if ARG is nil, omitted, or is a positive number.
+Disable the mode if ARG is a negative number.
+
+To check whether the minor mode is enabled in the current buffer,
+evaluate ‘(default-value 'auto-encryption-mode)’.
+
+The mode’s hook is called both when the mode is enabled and when
+it is disabled.
+
+
+Blink-Cursor minor mode (no indicator):
+Toggle cursor blinking (Blink Cursor mode).
+
+If the value of ‘blink-cursor-blinks’ is positive (10 by default),
+the cursor stops blinking after that number of blinks, if Emacs
+gets no input during that time.
+
+See also ‘blink-cursor-interval’ and ‘blink-cursor-delay’.
+
+This command is effective only on graphical frames.  On text-only
+terminals, cursor blinking is controlled by the terminal.
+
+This is a global minor mode.  If called interactively, toggle the
+‘Blink-Cursor mode’ mode.  If the prefix argument is positive,
+enable the mode, and if it is zero or negative, disable the mode.
+
+If called from Lisp, toggle the mode if ARG is ‘toggle’.  Enable
+the mode if ARG is nil, omitted, or is a positive number.
+Disable the mode if ARG is a negative number.
+
+To check whether the minor mode is enabled in the current buffer,
+evaluate ‘(default-value 'blink-cursor-mode)’.
+
+The mode’s hook is called both when the mode is enabled and when
+it is disabled.
+
+
+Column-Number minor mode (no indicator):
+Toggle column number display in the mode line (Column Number mode).
+
+See ‘mode-line-position-column-format’ for how this number is
+presented.
+
+This is a global minor mode.  If called interactively, toggle the
+‘Column-Number mode’ mode.  If the prefix argument is positive,
+enable the mode, and if it is zero or negative, disable the mode.
+
+If called from Lisp, toggle the mode if ARG is ‘toggle’.  Enable
+the mode if ARG is nil, omitted, or is a positive number.
+Disable the mode if ARG is a negative number.
+
+To check whether the minor mode is enabled in the current buffer,
+evaluate ‘(default-value 'column-number-mode)’.
+
+The mode’s hook is called both when the mode is enabled and when
+it is disabled.
+
+
+Context-Menu minor mode (no indicator):
+Toggle Context Menu mode.
+
+When Context Menu mode is enabled, clicking the mouse button down-mouse-3
+activates the menu whose contents depends on its surrounding context.
+
+This is a global minor mode.  If called interactively, toggle the
+‘Context-Menu mode’ mode.  If the prefix argument is positive,
+enable the mode, and if it is zero or negative, disable the mode.
+
+If called from Lisp, toggle the mode if ARG is ‘toggle’.  Enable
+the mode if ARG is nil, omitted, or is a positive number.
+Disable the mode if ARG is a negative number.
+
+To check whether the minor mode is enabled in the current buffer,
+evaluate ‘(default-value 'context-menu-mode)’.
+
+The mode’s hook is called both when the mode is enabled and when
+it is disabled.
+
+
+Key             Binding
+
+<menu>			context-menu-open
+  (this binding is currently shadowed)
+
+
+
+Corfu-Popupinfo minor mode (no indicator):
+Corfu info popup minor mode.
+
+This is a global minor mode.  If called interactively, toggle the
+‘Corfu-Popupinfo mode’ mode.  If the prefix argument is positive,
+enable the mode, and if it is zero or negative, disable the mode.
+
+If called from Lisp, toggle the mode if ARG is ‘toggle’.  Enable
+the mode if ARG is nil, omitted, or is a positive number.
+Disable the mode if ARG is a negative number.
+
+To check whether the minor mode is enabled in the current buffer,
+evaluate ‘(default-value 'corfu-popupinfo-mode)’.
+
+The mode’s hook is called both when the mode is enabled and when
+it is disabled.
+
+
+Corfu-Terminal minor mode (no indicator):
+Corfu popup on terminal.
+
+This is a global minor mode.  If called interactively, toggle the
+‘Corfu-Terminal mode’ mode.  If the prefix argument is positive,
+enable the mode, and if it is zero or negative, disable the mode.
+
+If called from Lisp, toggle the mode if ARG is ‘toggle’.  Enable
+the mode if ARG is nil, omitted, or is a positive number.
+Disable the mode if ARG is a negative number.
+
+To check whether the minor mode is enabled in the current buffer,
+evaluate ‘(default-value 'corfu-terminal-mode)’.
+
+The mode’s hook is called both when the mode is enabled and when
+it is disabled.
+
+
+Default-Text-Scale minor mode (no indicator):
+Change the size of the "default" face in every frame.
+
+This is a global minor mode.  If called interactively, toggle the
+‘Default-Text-Scale mode’ mode.  If the prefix argument is
+positive, enable the mode, and if it is zero or negative, disable
+the mode.
+
+If called from Lisp, toggle the mode if ARG is ‘toggle’.  Enable
+the mode if ARG is nil, omitted, or is a positive number.
+Disable the mode if ARG is a negative number.
+
+To check whether the minor mode is enabled in the current buffer,
+evaluate ‘(default-value 'default-text-scale-mode)’.
+
+The mode’s hook is called both when the mode is enabled and when
+it is disabled.
+
+
+Delete-Selection minor mode (no indicator):
+Toggle Delete Selection mode.
+
+When Delete Selection mode is enabled, typed text replaces the selection
+if the selection is active.  Otherwise, typed text is just inserted at
+point regardless of any selection.
+
+See ‘delete-selection-helper’ and ‘delete-selection-pre-hook’ for
+information on adapting behavior of commands in Delete Selection mode.
+
+This is a global minor mode.  If called interactively, toggle the
+‘Delete-Selection mode’ mode.  If the prefix argument is
+positive, enable the mode, and if it is zero or negative, disable
+the mode.
+
+If called from Lisp, toggle the mode if ARG is ‘toggle’.  Enable
+the mode if ARG is nil, omitted, or is a positive number.
+Disable the mode if ARG is a negative number.
+
+To check whether the minor mode is enabled in the current buffer,
+evaluate ‘(default-value 'delete-selection-mode)’.
+
+The mode’s hook is called both when the mode is enabled and when
+it is disabled.
+
+
+Denote-Rename-Buffer minor mode (no indicator):
+Automatically rename Denote buffers to be easier to read.
+
+A buffer is renamed upon visiting the underlying file.  This
+means that existing buffers are not renamed until they are
+visited again in a new buffer (files are visited with the command
+‘find-file’ or related).
+
+This is a global minor mode.  If called interactively, toggle the
+‘Denote-Rename-Buffer mode’ mode.  If the prefix argument is
+positive, enable the mode, and if it is zero or negative, disable
+the mode.
+
+If called from Lisp, toggle the mode if ARG is ‘toggle’.  Enable
+the mode if ARG is nil, omitted, or is a positive number.
+Disable the mode if ARG is a negative number.
+
+To check whether the minor mode is enabled in the current buffer,
+evaluate ‘(default-value 'denote-rename-buffer-mode)’.
+
+The mode’s hook is called both when the mode is enabled and when
+it is disabled.
+
+
+Desktop-Save minor mode (no indicator):
+Toggle desktop saving (Desktop Save mode).
+
+When Desktop Save mode is enabled, the state of Emacs is saved from one
+session to another.  The saved Emacs "desktop configuration" includes the
+buffers, their file names, major modes, buffer positions, window and frame
+configuration, and some important global variables.
+
+To enable this feature for future sessions, customize ‘desktop-save-mode’
+to t, or add this line in your init file:
+
+    (desktop-save-mode 1)
+
+When this mode is enabled, Emacs will save the desktop when it exits
+(this may prompt you, see the option ‘desktop-save’).  The next time
+Emacs starts, if this mode is active it will restore the desktop.
+
+To manually save the desktop at any time, use the command M-x desktop-save.
+To load it, use M-x desktop-read.
+
+Once a desktop file exists, Emacs will auto-save it according to the
+option ‘desktop-auto-save-timeout’.
+
+To see all the options you can set, browse the ‘desktop’ customization group.
+
+For further details, see info node ‘(emacs)Saving Emacs Sessions’.
+
+This is a global minor mode.  If called interactively, toggle the
+‘Desktop-Save mode’ mode.  If the prefix argument is positive,
+enable the mode, and if it is zero or negative, disable the mode.
+
+If called from Lisp, toggle the mode if ARG is ‘toggle’.  Enable
+the mode if ARG is nil, omitted, or is a positive number.
+Disable the mode if ARG is a negative number.
+
+To check whether the minor mode is enabled in the current buffer,
+evaluate ‘(default-value 'desktop-save-mode)’.
+
+The mode’s hook is called both when the mode is enabled and when
+it is disabled.
+
+
+Dimmer minor mode (no indicator):
+Visually highlight the selected buffer.
+
+This is a global minor mode.  If called interactively, toggle the
+‘Dimmer mode’ mode.  If the prefix argument is positive, enable
+the mode, and if it is zero or negative, disable the mode.
+
+If called from Lisp, toggle the mode if ARG is ‘toggle’.  Enable
+the mode if ARG is nil, omitted, or is a positive number.
+Disable the mode if ARG is a negative number.
+
+To check whether the minor mode is enabled in the current buffer,
+evaluate ‘(default-value 'dimmer-mode)’.
+
+The mode’s hook is called both when the mode is enabled and when
+it is disabled.
+
+
+Diredfl-Global minor mode (no indicator):
+Toggle Diredfl mode in all buffers.
+With prefix ARG, enable Diredfl-Global mode if ARG is positive;
+otherwise, disable it.
+
+If called from Lisp, toggle the mode if ARG is ‘toggle’.
+Enable the mode if ARG is nil, omitted, or is a positive number.
+Disable the mode if ARG is a negative number.
+
+Diredfl mode is enabled in all buffers where ‘(lambda nil (when
+(derived-mode-p ’dired-mode) (diredfl-mode)))’ would do it.
+
+See ‘diredfl-mode’ for more information on Diredfl mode.
+
+
+Electric-Indent minor mode (no indicator):
+Toggle on-the-fly reindentation of text lines (Electric Indent mode).
+
+When enabled, this reindents whenever the hook ‘electric-indent-functions’
+returns non-nil, or if you insert one of the "electric characters".
+The electric characters normally include the newline, but can
+also include other characters as needed by the major mode; see
+‘electric-indent-chars’ for the actual list.
+
+By "reindent" we mean remove any existing indentation, and then
+indent the line according to context and rules of the major mode.
+
+This is a global minor mode.  To toggle the mode in a single buffer,
+use ‘electric-indent-local-mode’.
+
+This is a global minor mode.  If called interactively, toggle the
+‘Electric-Indent mode’ mode.  If the prefix argument is positive,
+enable the mode, and if it is zero or negative, disable the mode.
+
+If called from Lisp, toggle the mode if ARG is ‘toggle’.  Enable
+the mode if ARG is nil, omitted, or is a positive number.
+Disable the mode if ARG is a negative number.
+
+To check whether the minor mode is enabled in the current buffer,
+evaluate ‘(default-value 'electric-indent-mode)’.
+
+The mode’s hook is called both when the mode is enabled and when
+it is disabled.
+
+
+Electric-Pair minor mode (no indicator):
+Toggle automatic parens pairing (Electric Pair mode).
+
+Electric Pair mode is a global minor mode.  When enabled, typing
+an open parenthesis automatically inserts the corresponding
+closing parenthesis, and vice versa.  (Likewise for brackets, etc.).
+If the region is active, the parentheses (brackets, etc.) are
+inserted around the region instead.
+
+To toggle the mode in a single buffer, use ‘electric-pair-local-mode’.
+
+This is a global minor mode.  If called interactively, toggle the
+‘Electric-Pair mode’ mode.  If the prefix argument is positive,
+enable the mode, and if it is zero or negative, disable the mode.
+
+If called from Lisp, toggle the mode if ARG is ‘toggle’.  Enable
+the mode if ARG is nil, omitted, or is a positive number.
+Disable the mode if ARG is a negative number.
+
+To check whether the minor mode is enabled in the current buffer,
+evaluate ‘(default-value 'electric-pair-mode)’.
+
+The mode’s hook is called both when the mode is enabled and when
+it is disabled.
+
+
+Envrc-Global minor mode (no indicator):
+Toggle Envrc mode in all buffers.
+With prefix ARG, enable Envrc-Global mode if ARG is positive;
+otherwise, disable it.
+
+If called from Lisp, toggle the mode if ARG is ‘toggle’.
+Enable the mode if ARG is nil, omitted, or is a positive number.
+Disable the mode if ARG is a negative number.
+
+Envrc mode is enabled in all buffers where ‘(lambda nil (when (and
+(not (minibufferp)) (not (file-remote-p default-directory))
+(executable-find direnv)) (envrc-mode 1)))’ would do it.
+
+See ‘envrc-mode’ for more information on Envrc mode.
+
+
+File-Name-Shadow minor mode (no indicator):
+Toggle file-name shadowing in minibuffers (File-Name Shadow mode).
+
+File-Name Shadow mode is a global minor mode.  When enabled, any
+part of a filename being read in the minibuffer that would be
+ignored (because the result is passed through
+‘substitute-in-file-name’) is given the properties in
+‘file-name-shadow-properties’, which can be used to make that
+portion dim, invisible, or otherwise less visually noticeable.
+
+This is a global minor mode.  If called interactively, toggle the
+‘File-Name-Shadow mode’ mode.  If the prefix argument is
+positive, enable the mode, and if it is zero or negative, disable
+the mode.
+
+If called from Lisp, toggle the mode if ARG is ‘toggle’.  Enable
+the mode if ARG is nil, omitted, or is a positive number.
+Disable the mode if ARG is a negative number.
+
+To check whether the minor mode is enabled in the current buffer,
+evaluate ‘(default-value 'file-name-shadow-mode)’.
+
+The mode’s hook is called both when the mode is enabled and when
+it is disabled.
+
+
+Gcmh minor mode (no indicator):
+Minor mode to tweak Garbage Collection strategy.
+
+This is a global minor mode.  If called interactively, toggle the
+‘GCMH mode’ mode.  If the prefix argument is positive, enable the
+mode, and if it is zero or negative, disable the mode.
+
+If called from Lisp, toggle the mode if ARG is ‘toggle’.  Enable
+the mode if ARG is nil, omitted, or is a positive number.
+Disable the mode if ARG is a negative number.
+
+To check whether the minor mode is enabled in the current buffer,
+evaluate ‘(default-value 'gcmh-mode)’.
+
+The mode’s hook is called both when the mode is enabled and when
+it is disabled.
+
+
+Global-Anzu minor mode (no indicator):
+Toggle Anzu mode in all buffers.
+With prefix ARG, enable Global Anzu mode if ARG is positive; otherwise, disable it.
+
+If called from Lisp, toggle the mode if ARG is ‘toggle’.
+Enable the mode if ARG is nil, omitted, or is a positive number.
+Disable the mode if ARG is a negative number.
+
+Anzu mode is enabled in all buffers where ‘anzu--turn-on’ would do it.
+
+See ‘anzu-mode’ for more information on Anzu mode.
+
+
+Global-Auto-Revert minor mode (no indicator):
+Toggle Global Auto-Revert Mode.
+
+Global Auto-Revert Mode is a global minor mode that reverts any
+buffer associated with a file when the file changes on disk.  Use
+‘auto-revert-mode’ to revert a particular buffer.
+
+If ‘global-auto-revert-non-file-buffers’ is non-nil, this mode
+may also revert some non-file buffers, as described in the
+documentation of that variable.  It ignores buffers with modes
+matching ‘global-auto-revert-ignore-modes’, and buffers with a
+non-nil value of ‘global-auto-revert-ignore-buffer’.
+
+When a buffer is reverted, a message is generated.  This can be
+suppressed by setting ‘auto-revert-verbose’ to nil.
+
+This function calls the hook ‘global-auto-revert-mode-hook’.
+It displays the text that ‘global-auto-revert-mode-text’
+specifies in the mode line.
+
+This is a global minor mode.  If called interactively, toggle the
+‘Global Auto-Revert mode’ mode.  If the prefix argument is
+positive, enable the mode, and if it is zero or negative, disable
+the mode.
+
+If called from Lisp, toggle the mode if ARG is ‘toggle’.  Enable
+the mode if ARG is nil, omitted, or is a positive number.
+Disable the mode if ARG is a negative number.
+
+To check whether the minor mode is enabled in the current buffer,
+evaluate ‘(default-value 'global-auto-revert-mode)’.
+
+The mode’s hook is called both when the mode is enabled and when
+it is disabled.
+
+
+Global-Corfu minor mode (no indicator):
+Toggle Corfu mode in all buffers.
+With prefix ARG, enable Global Corfu mode if ARG is positive;
+otherwise, disable it.
+
+If called from Lisp, toggle the mode if ARG is ‘toggle’.
+Enable the mode if ARG is nil, omitted, or is a positive number.
+Disable the mode if ARG is a negative number.
+
+Corfu mode is enabled in all buffers where ‘corfu--on’ would do it.
+
+See ‘corfu-mode’ for more information on Corfu mode.
+
+
+Global-Diff-Hl minor mode (no indicator):
+Toggle Diff-Hl mode in all buffers.
+With prefix ARG, enable Global Diff-Hl mode if ARG is positive;
+otherwise, disable it.
+
+If called from Lisp, toggle the mode if ARG is ‘toggle’.
+Enable the mode if ARG is nil, omitted, or is a positive number.
+Disable the mode if ARG is a negative number.
+
+Diff-Hl mode is enabled in all buffers where ‘diff-hl--global-turn-on’
+would do it.
+
+See ‘diff-hl-mode’ for more information on Diff-Hl mode.
+
+
+Global-Eldoc minor mode (no indicator):
+Toggle Eldoc mode in all buffers.
+With prefix ARG, enable Global Eldoc mode if ARG is positive;
+otherwise, disable it.
+
+If called from Lisp, toggle the mode if ARG is ‘toggle’.
+Enable the mode if ARG is nil, omitted, or is a positive number.
+Disable the mode if ARG is a negative number.
+
+Eldoc mode is enabled in all buffers where ‘turn-on-eldoc-mode’ would
+do it.
+
+See ‘eldoc-mode’ for more information on Eldoc mode.
+
+
+Global-Font-Lock minor mode (no indicator):
+Toggle Font-Lock mode in all buffers.
+With prefix ARG, enable Global Font-Lock mode if ARG is positive;
+otherwise, disable it.
+
+If called from Lisp, toggle the mode if ARG is ‘toggle’.
+Enable the mode if ARG is nil, omitted, or is a positive number.
+Disable the mode if ARG is a negative number.
+
+Font-Lock mode is enabled in all buffers where
+‘turn-on-font-lock-if-desired’ would do it.
+
+See ‘font-lock-mode’ for more information on Font-Lock mode.
+
+
+Global-Page-Break-Lines minor mode (no indicator):
+Toggle Page-Break-Lines mode in all buffers.
+With prefix ARG, enable Global Page-Break-Lines mode if ARG is
+positive; otherwise, disable it.
+
+If called from Lisp, toggle the mode if ARG is ‘toggle’.
+Enable the mode if ARG is nil, omitted, or is a positive number.
+Disable the mode if ARG is a negative number.
+
+Page-Break-Lines mode is enabled in all buffers where
+‘page-break-lines-mode-maybe’ would do it.
+
+See ‘page-break-lines-mode’ for more information on Page-Break-Lines
+mode.
+
+
+Global-So-Long minor mode (no indicator):
+Toggle automated performance mitigations for files with long lines.
+
+Many Emacs modes struggle with buffers which contain excessively long lines,
+and may consequently cause unacceptable performance issues.
+
+This is commonly on account of "minified" code (i.e. code that has been
+compacted into the smallest file size possible, which often entails removing
+newlines should they not be strictly necessary).
+
+When such files are detected by ‘so-long-predicate’, we invoke the selected
+‘so-long-action’ to mitigate potential performance problems in the buffer.
+
+Use M-x so-long-commentary for more information.
+
+Use M-x so-long-customize to open the customization group ‘so-long’ to
+configure the behavior.
+
+This is a global minor mode.  If called interactively, toggle the
+‘Global So-Long mode’ mode.  If the prefix argument is positive,
+enable the mode, and if it is zero or negative, disable the mode.
+
+If called from Lisp, toggle the mode if ARG is ‘toggle’.  Enable
+the mode if ARG is nil, omitted, or is a positive number.
+Disable the mode if ARG is a negative number.
+
+To check whether the minor mode is enabled in the current buffer,
+evaluate ‘(default-value 'global-so-long-mode)’.
+
+The mode’s hook is called both when the mode is enabled and when
+it is disabled.
+
+
+Global-Whitespace-Cleanup minor mode (no indicator):
+Toggle Whitespace-Cleanup mode in all buffers.
+With prefix ARG, enable Global Whitespace-Cleanup mode if ARG is
+positive; otherwise, disable it.
+
+If called from Lisp, toggle the mode if ARG is ‘toggle’.
+Enable the mode if ARG is nil, omitted, or is a positive number.
+Disable the mode if ARG is a negative number.
+
+Whitespace-Cleanup mode is enabled in all buffers where
+‘whitespace-cleanup-mode--maybe’ would do it.
+
+See ‘whitespace-cleanup-mode’ for more information on
+Whitespace-Cleanup mode.
+
+
+Hes minor mode (no indicator):
+Toggle highlighting of escape sequences.
+
+This is a global minor mode.  If called interactively, toggle the
+‘Hes mode’ mode.  If the prefix argument is positive, enable the
+mode, and if it is zero or negative, disable the mode.
+
+If called from Lisp, toggle the mode if ARG is ‘toggle’.  Enable
+the mode if ARG is nil, omitted, or is a positive number.
+Disable the mode if ARG is a negative number.
+
+To check whether the minor mode is enabled in the current buffer,
+evaluate ‘(default-value 'hes-mode)’.
+
+The mode’s hook is called both when the mode is enabled and when
+it is disabled.
+
+
+Immortal-Scratch minor mode (no indicator):
+When the scratch buffer is killed, immediately respawn it.
+
+This is a global minor mode.  If called interactively, toggle the
+‘Immortal-Scratch mode’ mode.  If the prefix argument is
+positive, enable the mode, and if it is zero or negative, disable
+the mode.
+
+If called from Lisp, toggle the mode if ARG is ‘toggle’.  Enable
+the mode if ARG is nil, omitted, or is a positive number.
+Disable the mode if ARG is a negative number.
+
+To check whether the minor mode is enabled in the current buffer,
+evaluate ‘(default-value 'immortal-scratch-mode)’.
+
+The mode’s hook is called both when the mode is enabled and when
+it is disabled.
+
+
+Ipretty minor mode (no indicator):
+Toggle ipretty mode globally.
+
+   With no argument, this command toggles the mode.
+   Non-null prefix argument turns on the mode.
+   Null prefix argument turns off the mode.
+
+This is a global minor mode.  If called interactively, toggle the
+‘Ipretty mode’ mode.  If the prefix argument is positive, enable
+the mode, and if it is zero or negative, disable the mode.
+
+If called from Lisp, toggle the mode if ARG is ‘toggle’.  Enable
+the mode if ARG is nil, omitted, or is a positive number.
+Disable the mode if ARG is a negative number.
+
+To check whether the minor mode is enabled in the current buffer,
+evaluate ‘(default-value 'ipretty-mode)’.
+
+The mode’s hook is called both when the mode is enabled and when
+it is disabled.
+
+
+Marginalia minor mode (no indicator):
+Annotate completion candidates with richer information.
+
+This is a global minor mode.  If called interactively, toggle the
+‘Marginalia mode’ mode.  If the prefix argument is positive,
+enable the mode, and if it is zero or negative, disable the mode.
+
+If called from Lisp, toggle the mode if ARG is ‘toggle’.  Enable
+the mode if ARG is nil, omitted, or is a positive number.
+Disable the mode if ARG is a negative number.
+
+To check whether the minor mode is enabled in the current buffer,
+evaluate ‘(default-value 'marginalia-mode)’.
+
+The mode’s hook is called both when the mode is enabled and when
+it is disabled.
+
+
+Menu-Bar minor mode (no indicator):
+Toggle display of a menu bar on each frame (Menu Bar mode).
+
+This command applies to all frames that exist and frames to be
+created in the future.
+
+This is a global minor mode.  If called interactively, toggle the
+‘Menu-Bar mode’ mode.  If the prefix argument is positive, enable
+the mode, and if it is zero or negative, disable the mode.
+
+If called from Lisp, toggle the mode if ARG is ‘toggle’.  Enable
+the mode if ARG is nil, omitted, or is a positive number.
+Disable the mode if ARG is a negative number.
+
+To check whether the minor mode is enabled in the current buffer,
+evaluate ‘menu-bar-mode’.
+
+The mode’s hook is called both when the mode is enabled and when
+it is disabled.
+
+
+Mode-Line-Bell minor mode (no indicator):
+Flash the mode line instead of ringing the bell.
+
+This is a global minor mode.  If called interactively, toggle the
+‘Mode-Line-Bell mode’ mode.  If the prefix argument is positive,
+enable the mode, and if it is zero or negative, disable the mode.
+
+If called from Lisp, toggle the mode if ARG is ‘toggle’.  Enable
+the mode if ARG is nil, omitted, or is a positive number.
+Disable the mode if ARG is a negative number.
+
+To check whether the minor mode is enabled in the current buffer,
+evaluate ‘(default-value 'mode-line-bell-mode)’.
+
+The mode’s hook is called both when the mode is enabled and when
+it is disabled.
+
+
+Pixel-Scroll-Precision minor mode (no indicator):
+Toggle pixel scrolling.
+
+When enabled, this minor mode allows to scroll the display
+precisely, according to the turning of the mouse wheel.
+
+This is a global minor mode.  If called interactively, toggle the
+‘Pixel-Scroll-Precision mode’ mode.  If the prefix argument is
+positive, enable the mode, and if it is zero or negative, disable
+the mode.
+
+If called from Lisp, toggle the mode if ARG is ‘toggle’.  Enable
+the mode if ARG is nil, omitted, or is a positive number.
+Disable the mode if ARG is a negative number.
+
+To check whether the minor mode is enabled in the current buffer,
+evaluate ‘(default-value 'pixel-scroll-precision-mode)’.
+
+The mode’s hook is called both when the mode is enabled and when
+it is disabled.
+
+
+Popper-Echo minor mode (no indicator):
+Toggle Popper Echo mode.
+
+Show popup names in cycling order in the echo area when
+performing an action that involves showing a popup.  These popups
+can be accessed directly or acted upon by using quick keys (see
+‘popper-echo-dispatch-keys’).
+
+To define buffers as popups and customize popup display, see
+‘popper-mode’.
+
+This is a global minor mode.  If called interactively, toggle the
+‘Popper-Echo mode’ mode.  If the prefix argument is positive,
+enable the mode, and if it is zero or negative, disable the mode.
+
+If called from Lisp, toggle the mode if ARG is ‘toggle’.  Enable
+the mode if ARG is nil, omitted, or is a positive number.
+Disable the mode if ARG is a negative number.
+
+To check whether the minor mode is enabled in the current buffer,
+evaluate ‘(default-value 'popper-echo-mode)’.
+
+The mode’s hook is called both when the mode is enabled and when
+it is disabled.
+
+
+Popper minor mode (no indicator):
+Toggle Popper mode.
+
+When enabled, treat certain buffer windows as popups, a class of
+window that can be summoned or dismissed with a command.  See the
+customization options for details on how to designate buffer
+types as popups.
+
+This is a global minor mode.  If called interactively, toggle the
+‘Popper mode’ mode.  If the prefix argument is positive, enable
+the mode, and if it is zero or negative, disable the mode.
+
+If called from Lisp, toggle the mode if ARG is ‘toggle’.  Enable
+the mode if ARG is nil, omitted, or is a positive number.
+Disable the mode if ARG is a negative number.
+
+To check whether the minor mode is enabled in the current buffer,
+evaluate ‘(default-value 'popper-mode)’.
+
+The mode’s hook is called both when the mode is enabled and when
+it is disabled.
+
+
+Projectile minor mode (indicator Proj):
+Minor mode to assist project management and navigation.
+
+When called interactively, toggle ‘projectile-mode’.  With prefix
+ARG, enable ‘projectile-mode’ if ARG is positive, otherwise disable
+it.
+
+When called from Lisp, enable ‘projectile-mode’ if ARG is omitted,
+nil or positive.  If ARG is ‘toggle’, toggle ‘projectile-mode’.
+Otherwise behave as if called interactively.
+
+
+Key             Binding
+
+C-c p ESC		projectile-project-buffers-other-buffer
+C-c p !			projectile-run-shell-command-in-root
+C-c p &			projectile-run-async-shell-command-in-root
+C-c p ?			projectile-find-references
+C-c p C			projectile-configure-project
+C-c p D			projectile-dired
+C-c p E			projectile-edit-dir-locals
+C-c p F			projectile-find-file-in-known-projects
+C-c p I			projectile-ibuffer
+C-c p K			projectile-package-project
+C-c p L			projectile-install-project
+C-c p P			projectile-test-project
+C-c p R			projectile-regenerate-tags
+C-c p S			projectile-save-project-buffers
+C-c p T			projectile-find-test-file
+C-c p V			projectile-browse-dirty-projects
+C-c p a			projectile-find-other-file
+C-c p b			projectile-switch-to-buffer
+C-c p c			projectile-compile-project
+C-c p d			projectile-find-dir
+C-c p e			projectile-recentf
+C-c p f			projectile-find-file
+C-c p g			projectile-find-file-dwim
+C-c p i			projectile-invalidate-cache
+C-c p j			projectile-find-tag
+C-c p k			projectile-kill-buffers
+C-c p l			projectile-find-file-in-directory
+C-c p m			projectile-commander
+C-c p o			projectile-multi-occur
+C-c p p			projectile-switch-project
+C-c p q			projectile-switch-open-project
+C-c p r			projectile-replace
+C-c p t			projectile-toggle-between-implementation-and-test
+C-c p u			projectile-run-project
+C-c p v			projectile-vc
+C-c p z			projectile-cache-current-file
+C-c p <left>	projectile-previous-project-buffer
+C-c p <right>	projectile-next-project-buffer
+
+C-c p x e		projectile-run-eshell
+C-c p x g		projectile-run-gdb
+C-c p x i		projectile-run-ielm
+C-c p x s		projectile-run-shell
+C-c p x t		projectile-run-term
+C-c p x v		projectile-run-vterm
+
+C-c p s g		projectile-grep
+C-c p s r		projectile-ripgrep
+C-c p s s		projectile-ag
+C-c p s x		projectile-find-references
+
+C-c p 5 D		projectile-dired-other-frame
+C-c p 5 a		projectile-find-other-file-other-frame
+C-c p 5 b		projectile-switch-to-buffer-other-frame
+C-c p 5 d		projectile-find-dir-other-frame
+C-c p 5 f		projectile-find-file-other-frame
+C-c p 5 g		projectile-find-file-dwim-other-frame
+C-c p 5 t		projectile-find-implementation-or-test-other-frame
+
+C-c p 4 C-o		projectile-display-buffer
+C-c p 4 D		projectile-dired-other-window
+C-c p 4 a		projectile-find-other-file-other-window
+C-c p 4 b		projectile-switch-to-buffer-other-window
+C-c p 4 d		projectile-find-dir-other-window
+C-c p 4 f		projectile-find-file-other-window
+C-c p 4 g		projectile-find-file-dwim-other-window
+C-c p 4 t		projectile-find-implementation-or-test-other-window
+
+C-c p x 4 v		projectile-run-vterm-other-window
+
+
+
+Projectile-Rails-Global minor mode (no indicator):
+Toggle Projectile-Rails mode in all buffers.
+With prefix ARG, enable Projectile-Rails-Global mode if ARG is
+positive; otherwise, disable it.
+
+If called from Lisp, toggle the mode if ARG is ‘toggle’.
+Enable the mode if ARG is nil, omitted, or is a positive number.
+Disable the mode if ARG is a negative number.
+
+Projectile-Rails mode is enabled in all buffers where
+‘projectile-rails-on’ would do it.
+
+See ‘projectile-rails-mode’ for more information on Projectile-Rails
+mode.
+
+
+Recentf minor mode (no indicator):
+Toggle keeping track of opened files (Recentf mode).
+
+This mode maintains a list of recently opened files and makes it
+easy to visit them.  The recent files list is automatically saved
+across Emacs sessions.
+
+You can use ‘recentf-open’ or ‘recentf-open-files’ to visit
+files.
+
+When Recentf mode is enabled, a "Open Recent" submenu is
+displayed in the "File" menu, containing a list of files that
+were operated on recently, in the most-recently-used order.
+
+By default, only operations like opening a file, writing a buffer
+to a file, and killing a buffer is counted as "operating" on
+the file.  If instead you want to prioritize files that appear in
+buffers you switch to a lot, you can say something like the following:
+
+  (add-hook 'buffer-list-update-hook #'recentf-track-opened-file)
+
+This is a global minor mode.  If called interactively, toggle the
+‘Recentf mode’ mode.  If the prefix argument is positive, enable
+the mode, and if it is zero or negative, disable the mode.
+
+If called from Lisp, toggle the mode if ARG is ‘toggle’.  Enable
+the mode if ARG is nil, omitted, or is a positive number.
+Disable the mode if ARG is a negative number.
+
+To check whether the minor mode is enabled in the current buffer,
+evaluate ‘(default-value 'recentf-mode)’.
+
+The mode’s hook is called both when the mode is enabled and when
+it is disabled.
+
+
+Repeat minor mode (no indicator):
+Toggle Repeat mode.
+
+When Repeat mode is enabled, certain commands bound to multi-key
+sequences can be repeated by typing a single key, after typing the
+full key sequence once.
+The commands which can be repeated like that are those whose symbol
+ has the property ‘repeat-map’ which specifies a keymap of single
+keys for repeating.
+See ‘describe-repeat-maps’ for a list of all repeatable commands.
+
+This is a global minor mode.  If called interactively, toggle the
+‘Repeat mode’ mode.  If the prefix argument is positive, enable
+the mode, and if it is zero or negative, disable the mode.
+
+If called from Lisp, toggle the mode if ARG is ‘toggle’.  Enable
+the mode if ARG is nil, omitted, or is a positive number.
+Disable the mode if ARG is a negative number.
+
+To check whether the minor mode is enabled in the current buffer,
+evaluate ‘(default-value 'repeat-mode)’.
+
+The mode’s hook is called both when the mode is enabled and when
+it is disabled.
+
+
+Savehist minor mode (no indicator):
+Toggle saving of minibuffer history (Savehist mode).
+
+When Savehist mode is enabled, minibuffer history is saved
+to ‘savehist-file’ periodically and when exiting Emacs.  When
+Savehist mode is enabled for the first time in an Emacs session,
+it loads the previous minibuffer histories from ‘savehist-file’.
+The variable ‘savehist-autosave-interval’ controls the
+periodicity of saving minibuffer histories.
+
+If ‘savehist-save-minibuffer-history’ is non-nil (the default),
+all recorded minibuffer histories will be saved.  You can arrange
+for additional history variables to be saved and restored by
+customizing ‘savehist-additional-variables’, which by default is
+an empty list.  For example, to save the history of commands
+invoked via M-x, add ‘command-history’ to the list in
+‘savehist-additional-variables’.
+
+Alternatively, you could customize ‘savehist-save-minibuffer-history’
+to nil, and add to ‘savehist-additional-variables’ only those
+history variables you want to save.
+
+To ignore some history variables, add their symbols to the list
+in ‘savehist-ignored-variables’.
+
+This mode should normally be turned on from your Emacs init file.
+Calling it at any other time replaces your current minibuffer
+histories, which is probably undesirable.
+
+This is a global minor mode.  If called interactively, toggle the
+‘Savehist mode’ mode.  If the prefix argument is positive, enable
+the mode, and if it is zero or negative, disable the mode.
+
+If called from Lisp, toggle the mode if ARG is ‘toggle’.  Enable
+the mode if ARG is nil, omitted, or is a positive number.
+Disable the mode if ARG is a negative number.
+
+To check whether the minor mode is enabled in the current buffer,
+evaluate ‘(default-value 'savehist-mode)’.
+
+The mode’s hook is called both when the mode is enabled and when
+it is disabled.
+
+
+Show-Paren minor mode (no indicator):
+Toggle visualization of matching parens (Show Paren mode).
+
+When enabled, any matching parenthesis is highlighted in ‘show-paren-style’
+after ‘show-paren-delay’ seconds of Emacs idle time.
+
+Also see ‘show-paren-predicate’, which controls which buffers
+this mode is enabled in.
+
+This is a global minor mode.  To toggle the mode in a single buffer,
+use ‘show-paren-local-mode’.
+
+This is a global minor mode.  If called interactively, toggle the
+‘Show-Paren mode’ mode.  If the prefix argument is positive,
+enable the mode, and if it is zero or negative, disable the mode.
+
+If called from Lisp, toggle the mode if ARG is ‘toggle’.  Enable
+the mode if ARG is nil, omitted, or is a positive number.
+Disable the mode if ARG is a negative number.
+
+To check whether the minor mode is enabled in the current buffer,
+evaluate ‘(default-value 'show-paren-mode)’.
+
+The mode’s hook is called both when the mode is enabled and when
+it is disabled.
+
+
+Tab-Bar minor mode (no indicator):
+Toggle the tab bar in all graphical frames (Tab Bar mode).
+
+This is a global minor mode.  If called interactively, toggle the
+‘Tab-Bar mode’ mode.  If the prefix argument is positive, enable
+the mode, and if it is zero or negative, disable the mode.
+
+If called from Lisp, toggle the mode if ARG is ‘toggle’.  Enable
+the mode if ARG is nil, omitted, or is a positive number.
+Disable the mode if ARG is a negative number.
+
+To check whether the minor mode is enabled in the current buffer,
+evaluate ‘tab-bar-mode’.
+
+The mode’s hook is called both when the mode is enabled and when
+it is disabled.
+
+
+Tool-Bar minor mode (no indicator):
+Toggle the tool bar in all graphical frames (Tool Bar mode).
+
+See ‘tool-bar-add-item’ and ‘tool-bar-add-item-from-menu’ for
+conveniently adding tool bar items.
+
+This is a global minor mode.  If called interactively, toggle the
+‘Tool-Bar mode’ mode.  If the prefix argument is positive, enable
+the mode, and if it is zero or negative, disable the mode.
+
+If called from Lisp, toggle the mode if ARG is ‘toggle’.  Enable
+the mode if ARG is nil, omitted, or is a positive number.
+Disable the mode if ARG is a negative number.
+
+To check whether the minor mode is enabled in the current buffer,
+evaluate ‘tool-bar-mode’.
+
+The mode’s hook is called both when the mode is enabled and when
+it is disabled.
+
+
+Tooltip minor mode (no indicator):
+Toggle Tooltip mode.
+
+When this global minor mode is enabled, Emacs displays help
+text (e.g. for buttons and menu items that you put the mouse on)
+in a pop-up window.
+
+When Tooltip mode is disabled, Emacs displays help text in the
+echo area, instead of making a pop-up window.
+
+This is a global minor mode.  If called interactively, toggle the
+‘Tooltip mode’ mode.  If the prefix argument is positive, enable
+the mode, and if it is zero or negative, disable the mode.
+
+If called from Lisp, toggle the mode if ARG is ‘toggle’.  Enable
+the mode if ARG is nil, omitted, or is a positive number.
+Disable the mode if ARG is a negative number.
+
+To check whether the minor mode is enabled in the current buffer,
+evaluate ‘(default-value 'tooltip-mode)’.
+
+The mode’s hook is called both when the mode is enabled and when
+it is disabled.
+
+
+Transient-Mark minor mode (no indicator):
+Toggle Transient Mark mode.
+
+Transient Mark mode is a global minor mode.  When enabled, the
+region is highlighted with the ‘region’ face whenever the mark
+is active.  The mark is "deactivated" after certain non-motion
+commands, including those that change the text in the buffer, and
+during shift or mouse selection by any unshifted cursor motion
+command (see Info node ‘Shift Selection’ for more details).
+
+You can also deactivate the mark by typing C-g or
+M-ESC ESC.
+
+Many commands change their behavior when Transient Mark mode is
+in effect and the mark is active, by acting on the region instead
+of their usual default part of the buffer’s text.  Examples of
+such commands include M-;, M-x flush-lines, M-x keep-lines,
+<f7> r, C-M-%, M-x ispell, and C-x u.
+To see the documentation of commands that are sensitive to the
+Transient Mark mode, invoke C-h d and type "transient"
+or "mark.*active" at the prompt.
+
+This is a global minor mode.  If called interactively, toggle the
+‘Transient-Mark mode’ mode.  If the prefix argument is positive,
+enable the mode, and if it is zero or negative, disable the mode.
+
+If called from Lisp, toggle the mode if ARG is ‘toggle’.  Enable
+the mode if ARG is nil, omitted, or is a positive number.
+Disable the mode if ARG is a negative number.
+
+To check whether the minor mode is enabled in the current buffer,
+evaluate ‘(default-value 'transient-mark-mode)’.
+
+The mode’s hook is called both when the mode is enabled and when
+it is disabled.
+
+
+Vertico minor mode (no indicator):
+VERTical Interactive COmpletion.
+
+This is a global minor mode.  If called interactively, toggle the
+‘Vertico mode’ mode.  If the prefix argument is positive, enable
+the mode, and if it is zero or negative, disable the mode.
+
+If called from Lisp, toggle the mode if ARG is ‘toggle’.  Enable
+the mode if ARG is nil, omitted, or is a positive number.
+Disable the mode if ARG is a negative number.
+
+To check whether the minor mode is enabled in the current buffer,
+evaluate ‘(default-value 'vertico-mode)’.
+
+The mode’s hook is called both when the mode is enabled and when
+it is disabled.
+
+
+Which-Key minor mode (no indicator):
+Toggle which-key-mode.
+
+This is a global minor mode.  If called interactively, toggle the
+‘Which-Key mode’ mode.  If the prefix argument is positive,
+enable the mode, and if it is zero or negative, disable the mode.
+
+If called from Lisp, toggle the mode if ARG is ‘toggle’.  Enable
+the mode if ARG is nil, omitted, or is a positive number.
+Disable the mode if ARG is a negative number.
+
+To check whether the minor mode is enabled in the current buffer,
+evaluate ‘(default-value 'which-key-mode)’.
+
+The mode’s hook is called both when the mode is enabled and when
+it is disabled.
+
+
+Whole-Line-Or-Region-Global minor mode (no indicator):
+Toggle Whole-Line-Or-Region-Local mode in all buffers.
+With prefix ARG, enable Whole-Line-Or-Region-Global mode if ARG is
+positive; otherwise, disable it.
+
+If called from Lisp, toggle the mode if ARG is ‘toggle’.
+Enable the mode if ARG is nil, omitted, or is a positive number.
+Disable the mode if ARG is a negative number.
+
+Whole-Line-Or-Region-Local mode is enabled in all buffers where
+‘(lambda nil (unless (apply ’derived-mode-p
+whole-line-or-region-inhibit-modes) (whole-line-or-region-local-mode
+1)))’ would do it.
+
+See ‘whole-line-or-region-local-mode’ for more information on
+Whole-Line-Or-Region-Local mode.
+
+
+Winner minor mode (no indicator):
+Toggle Winner mode on or off.
+
+Winner mode is a global minor mode that records the changes in
+the window configuration (i.e. how the frames are partitioned
+into windows) so that the changes can be "undone" using the
+command ‘winner-undo’.  By default this one is bound to the key
+sequence C-c <left>.  If you change your mind (while undoing),
+you can press C-c <right> (calling ‘winner-redo’).
+
+This is a global minor mode.  If called interactively, toggle the
+‘Winner mode’ mode.  If the prefix argument is positive, enable
+the mode, and if it is zero or negative, disable the mode.
+
+If called from Lisp, toggle the mode if ARG is ‘toggle’.  Enable
+the mode if ARG is nil, omitted, or is a positive number.
+Disable the mode if ARG is a negative number.
+
+To check whether the minor mode is enabled in the current buffer,
+evaluate ‘(default-value 'winner-mode)’.
+
+The mode’s hook is called both when the mode is enabled and when
+it is disabled.
+
+
+Xah-Fly-Keys minor mode (indicator ∑flykeys):
+A modal keybinding set, like vim, but based on ergonomic
+
+  principles, like Dvorak layout.
+
+URL ‘http://xahlee.info/emacs/misc/xah-fly-keys.html’
+
+This is a global minor mode.  If called interactively, toggle the
+‘Xah-Fly-Keys mode’ mode.  If the prefix argument is positive,
+enable the mode, and if it is zero or negative, disable the mode.
+
+If called from Lisp, toggle the mode if ARG is ‘toggle’.  Enable
+the mode if ARG is nil, omitted, or is a positive number.
+Disable the mode if ARG is a negative number.
+
+To check whether the minor mode is enabled in the current buffer,
+evaluate ‘(default-value 'xah-fly-keys)’.
+
+The mode’s hook is called both when the mode is enabled and when
+it is disabled.

@@ -42,9 +42,9 @@
 (setq-default tab-width 4)
 
 ;; Indentation setting for various languages.
-(setq c-basic-offset 4)
-(setq js-indent-level 2)
-(setq css-indent-offset 2)
+;; (setq c-basic-offset 4)
+;; (setq js-indent-level 2)
+;; (setq css-indent-offset 2)
 
 ;; Highlight matching pairs of parentheses.
 (setq show-paren-delay 0)
@@ -77,7 +77,7 @@
   (package-refresh-contents))
 
 ;; Install packages.
-(dolist (package '(markdown-mode deadgrep nix-mode w3m ef-themes dired-sidebar denote paredit rainbow-delimiters xah-fly-keys popper all-the-icons all-the-icons-dired all-the-icons-completion marginalia sly  eat eglot savehist racket-mode geiser-racket quack scribble-mode vertico orderless corfu magit org-superstar))
+(dolist (package '(markdown-mode deadgrep nix-mode w3m ef-themes dired-sidebar denote paredit rainbow-delimiters xah-fly-keys popper all-the-icons all-the-icons-dired all-the-icons-completion marginalia sly  eat eglot savehist racket-mode geiser-racket quack scribble-mode vertico orderless corfu magit howm org-superstar))
   (unless (package-installed-p package)
     (package-install package)))
 
@@ -99,7 +99,8 @@
 (add-hook 'lisp-mode-hook 'rainbow-delimiters-mode)
 
 ;; Customize Rainbow Delimiters.
-(require 'rainbow-delimiters)
+;; (require 'rainbow-delimiters)
+(use-package rainbow-delimiters)
 (set-face-foreground 'rainbow-delimiters-depth-1-face "#c66")  ; red
 (set-face-foreground 'rainbow-delimiters-depth-2-face "#6c6")  ; green
 (set-face-foreground 'rainbow-delimiters-depth-3-face "#69f")  ; blue
@@ -584,7 +585,7 @@
   ;; available in the *Completions* buffer, add it to the
   ;; `completion-list-mode-map'.
   :bind (:map minibuffer-local-map
-         ("M-A" . marginalia-cycle))
+              ("M-A" . marginalia-cycle))
 
   ;; The :init section is always executed.
   :init
@@ -600,6 +601,8 @@
 ;; eat terminal emulator
 (use-package eat
   :ensure t)
+
+(use-package howm) ; https://www.emacswiki.org/emacs/HowmMode
 
 (provide 'init-local.el)
 ;;; init-local.el ends here

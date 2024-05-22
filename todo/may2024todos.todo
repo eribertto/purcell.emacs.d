@@ -1,5 +1,8 @@
-(("myitems" . [4 0 4 0]))
+(("myitems" . [7 0 4 0]))
 --==-- myitems
+[May 22, 2024] Readup howm pdf manual and do configuration FYI: package is installed in emacs
+[May 22, 2024] Do ripgrep tutorial
+[May 22, 2024] Watch Prots video emacs calendar and diary
 [May 21, 2024] Make backup exercise using restic app, use sda as destination backup.
 [May 21, 2024] IDEA: plan to install NixOS KDE in spare ssd drive of this machine.
 [May 21, 2024] Learn more of direnv, devbox, nix-ld, nix-develop. See links file in notes dir of this dot emacs.d dir.
