@@ -604,5 +604,10 @@
 
 (use-package howm) ; https://www.emacswiki.org/emacs/HowmMode
 
+;; calendar/diary customizations
+(setq calendar-week-start-day 1) ; begin on Monday
+(setq calendar-weekend-days '(6 7))
+
+
 (provide 'init-local.el)
 ;;; init-local.el ends here

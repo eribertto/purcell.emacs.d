@@ -1,6 +1,7 @@
-(("myitems" . [7 0 4 0]))
+(("myitems" . [8 0 4 0]))
 --==-- myitems
 [May 22, 2024] Readup howm pdf manual and do configuration FYI: package is installed in emacs
+[May 22, 2024] Read up Emacs Calendar and Diary info manual
 [May 22, 2024] Do ripgrep tutorial
 [May 22, 2024] Watch Prots video emacs calendar and diary
 [May 21, 2024] Make backup exercise using restic app, use sda as destination backup.
