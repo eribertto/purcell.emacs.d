@@ -603,6 +603,9 @@
   :ensure t)
 
 ;; begin howm config
+;; symbols to indicate the completeness of notes or progress tasks
+(setq action-lock-switch-default '("{ }" "{○}" "{◔}" "{◑}" "{◕}" "{●}"))
+
 (use-package howm
   :ensure t) ; https://www.emacswiki.org/emacs/HowmMode
 
