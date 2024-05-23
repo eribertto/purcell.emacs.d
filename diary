@@ -17,3 +17,6 @@ Work hugrs TTD (Joseph turnover)
 * Camera system
 * ??? (Forgot, see Juhani Hamdan)
 * Today in the office our power supply is unstable, makes the PC reboot several times. Good thing this laptop has enough juices to keep it ON until the power stabilized.
+May 23, 2024
+* Today in /etc/nixos dir I mv configuration.nix to bak.configuration.nix then made a soft link of the same file from ~/.config/home-manager/configuration.nix.
+* Now any edits to the home user config.nix will be reflected in the systems configuration.nix.

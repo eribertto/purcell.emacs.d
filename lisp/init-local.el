@@ -602,7 +602,40 @@
 (use-package eat
   :ensure t)
 
-(use-package howm) ; https://www.emacswiki.org/emacs/HowmMode
+;; begin howm config
+(use-package howm
+  :ensure t) ; https://www.emacswiki.org/emacs/HowmMode
+
+(setq howm-remember-insertion-format "%s")
+(setq howm-home-directory "~/howm/")
+(setq howm-directory "~/howm/")
+(setq howm-keyword-file (expand-file-name ".howm-keys" howm-home-directory))
+(setq howm-history-file (expand-file-name ".howm-history" howm-home-directory))
+(setq howm-file-name-format "%Y/%m/%Y-%m-%d-%H%M%S.md") ; use markdown format
+;; By defualt, the menu file (0000-00-00-000000.txt) is located in the same folder as the notes. To change the location, set it in the below variable.
+;; (setq howm-menu-file "~/path-to-the-file/0000-00-00-000000.txt")
+
+;; You can specify additional directories in which howm should search for notes.
+(setq howm-search-path '("~/.emacs.d/notes" "~/.emacs.d/todo"))
+(setq howm-search-other-dir t)
+(setq howm-view-keep-one-window t)
+
+;; optimize hown loading process
+(setq howm-view-use-grep t) ;; use external grep
+(setq howm-menu-refresh-after-save nil)
+(setq howm-menu-expiry-hours 1) ;; cache menu N hours
+(setq howm-menu-file "0000-00-00-000000.txt") ;; don't *search*
+
+;; use note titles instead of numeric values
+(add-hook 'howm-mode-hook 'howm-mode-set-buffer-name)
+(add-hook 'after-save-hook 'howm-mode-set-buffer-name)
+
+;; make howm and org-mode play nice with each other
+(add-hook 'org-mode-hook 'howm-mode)
+
+;; indicate the priority of each task in the plan section of howm menu
+(setq howm-menu-todo-priority-format "(%8.1f)")
+;; end howm config
 
 ;; calendar/diary customizations
 (setq calendar-week-start-day 1) ; begin on Monday
