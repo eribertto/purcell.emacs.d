@@ -5,6 +5,7 @@
 
 * See below links for reference guide:
 
+*** Have a look at this rust exercise website https://rust-exercises.com/
 *** Emacs diary and calendar video https://www.youtube.com/watch?v=NkhgIB64zgc
 *** Emacs diary mode https://www.emacswiki.org/emacs/DiaryMode
 *** Making a dev shell with nix flakes https://fasterthanli.me/series/building-a-rust-service-with-nix/part-10

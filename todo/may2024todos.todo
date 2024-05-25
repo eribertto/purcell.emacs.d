@@ -1,15 +1,11 @@
-(("myitems" . [15 0 4 0]))
+(("myitems" . [11 0 9 0]))
 --==-- myitems
+[May 25, 2024] Get Noon package items received by Tamimi admin office today.
 [May 23, 2024] Get ready to be Joseph's replacement next week May 26/24. Get his turnover notes.
 [May 23, 2024] Update CV and send to Fahad Aljeld PM Jafurah project
-[May 23, 2024] Plan to setup howm variables from the guide blog of leahneukirchen.org
 [May 23, 2024] Plan to do payment of MBT credit card received this month
-[May 23, 2024] Plan to get new sports earbuds BT https://www.runnersworld.com/gear/a20852590/the-best-wireless-headphones-for-running/
-[May 22, 2024] Readup howm pdf manual and do configuration FYI: package is installed in emacs
 [May 23, 2024] Plan to top up GoTyme online banking.
 [May 23, 2024] Plan to setup wireguard-go, mullvad vpn in this machine.
-[May 22, 2024] Read up Emacs Calendar and Diary info manual
-[May 22, 2024] Do ripgrep tutorial
 [May 22, 2024] Watch Prots video emacs calendar and diary
 [May 21, 2024] Make backup exercise using restic app, use sda as destination backup.
 [May 21, 2024] IDEA: plan to install NixOS KDE in spare ssd drive of this machine.
@@ -17,6 +13,11 @@
 [May 21, 2024] Search NixOS manual for mounting spare disks e.g. configuration.nix options such as fileSystems and swapDevices
 
 ==--== DONE 
+[DONE May 25, 2024] [May 22, 2024] Do readup of ripgrep tutorial
+[DONE May 25, 2024] [May 23, 2024] Plan to get new sports earbuds BT https://www.runnersworld.com/gear/a20852590/the-best-wireless-headphones-for-running/
+[DONE May 25, 2024] [May 22, 2024] Read up Emacs Calendar and Diary info manual
+[DONE May 25, 2024] [May 22, 2024] Readup howm pdf manual and do configuration FYI: package is installed in emacs
+[DONE May 25, 2024] [May 23, 2024] Plan to setup howm variables from the guide blog of leahneukirchen.org
 [DONE May 21, 2024] [May 21, 2024] Email Prulife re make them know I am aware our family policy payment is completed.
 [DONE May 21, 2024] [May 21, 2024] Send to sjp bpi fund receipt for wedding anniv treat tom, our 25th year of marriage.
 [DONE May 21, 2024] [May 21, 2024] FB msg Uriel re work resumption of our home solar hybrid system.
