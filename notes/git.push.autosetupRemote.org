@@ -1,0 +1,5 @@
+push.autoSetupRemote in 'git help config'
+
+git config --global --add --bool push.autoSetupRemote true
+
+https://stackoverflow.com/questions/17847213/how-to-configure-git-push-to-automatically-set-upstream-without-u
