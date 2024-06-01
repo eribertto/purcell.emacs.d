@@ -53,6 +53,7 @@ in
       echo
       }
       eval "$(direnv hook bash)"
+      my-hello
     '';
 
   };

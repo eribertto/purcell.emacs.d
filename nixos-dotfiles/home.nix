@@ -97,6 +97,9 @@
     # mullvad
     wireguard-go # https://git.zx2c4.com/wireguard-go/about/
     restic # backup https://restic.net/
+    rustic-rs # https://github.com/rustic-rs/rustic <=== restic replacement
+    gnome-usage
+    gnome.gnome-system-monitor
 
 
     # virtualbox
@@ -125,7 +128,8 @@
     # add simple shell scripts in login environment
     (pkgs.writeShellScriptBin "my-hello" ''
       echo "Hello there, ${config.home.username}!"
-      # echo "$(fortune) | $(cowsay) | $(lolcat)"
+      echo "Today $(date +'%F %A') is a great day to be ALIVE!"
+      fortune -s | lolcat
     '')
   ];
 
