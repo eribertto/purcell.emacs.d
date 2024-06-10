@@ -1,6 +1,9 @@
-(("private" . [2 0 0 0]))
+(("private" . [3 0 2 0]))
 --==-- private
-[Jun 5, 2024] Send to sjp bpi 23K for balance June home budget.
+[Jun 10, 2024] Plan to upgrade this nixos machine to latest 24.05. Fyi the git branch is switched to dev2405
+[Jun 10, 2024] Update emacs packages in this machine e590
 [Jun 5, 2024] Plan to try out the new NixOS 24.05 install.
 
 ==--== DONE 
+[DONE Jun 10, 2024] [Jun 5, 2024] Get ready for Khobar trip tomorrow pm or Friday early AM.
+[DONE Jun 10, 2024] [Jun 5, 2024] Send to sjp bpi 23K for balance June home budget.
