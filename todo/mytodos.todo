@@ -1,9 +1,12 @@
-(("private" . [3 0 2 0]))
+(("private" . [3 0 5 0]))
 --==-- private
-[Jun 10, 2024] Plan to upgrade this nixos machine to latest 24.05. Fyi the git branch is switched to dev2405
-[Jun 10, 2024] Update emacs packages in this machine e590
-[Jun 5, 2024] Plan to try out the new NixOS 24.05 install.
+[Jun 12, 2024] Complete the docs needed for net metering scheme application to Ileco for our solar panel system.
+[Jun 12, 2024] Get ready to bring clothes and things to Khobar this weekend.
+[Jun 12, 2024] Plan to fix the disappearing home-manager in Dell precision machine in office.
 
 ==--== DONE 
+[DONE Jun 12, 2024] [Jun 5, 2024] Plan to try out the new NixOS 24.05 install.
+[DONE Jun 12, 2024] [Jun 10, 2024] Update emacs packages in this machine e590
+[DONE Jun 12, 2024] [Jun 10, 2024] Plan to upgrade this nixos machine to latest 24.05. Fyi the git branch is switched to dev2405
 [DONE Jun 10, 2024] [Jun 5, 2024] Get ready for Khobar trip tomorrow pm or Friday early AM.
 [DONE Jun 10, 2024] [Jun 5, 2024] Send to sjp bpi 23K for balance June home budget.

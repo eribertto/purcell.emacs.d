@@ -1,0 +1,20 @@
+#+title:      nixos-upgrade-june11.2024
+#+date:       [2024-06-11 Tue 20:02]
+#+filetags:   :nixos:
+#+identifier: 20240611T200236
+
+* Today I did the steps to upgrade this E590 machine from 23.11 to 24.05 version.
+
+*** Most of these steps are recorded in the git log of .dotfiles dir.
+
+*** Edited the main files flake.nix and configuration.nix while home.nix and hardware-configuration.nix remained as is.
+
+*** See the git log/history for the edits I made.
+
+*** Side note: plan to install wl-clipboard in home.nix list. This is needed to allow copy/paste in gitui interface. ATM it gives error looking for this file/app.
+
+*** Take note you have to add the new channels nixos-unstable and home-manager in the cli for both normal and root users. Then you run nix-channel --update.
+
+*** Then you run as root nixos-rebuild switch --upgrade-all followed by nixos-rebuild switch --flake .
+
+**** This will fetch a lot of new file versions of the apps listed in configuration.nix. For home-manager run home-manager switch --flake . (if you have edited/updated home.nix)
