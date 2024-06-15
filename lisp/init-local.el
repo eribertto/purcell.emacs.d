@@ -50,23 +50,19 @@
 (setq user-full-name "Eriberto Mendz")
 (setq user-mail-address "erimendz@gmail.com")
 
-(fit-frame-to-buffer)
-(menu-bar-mode 1)
-(auto-save-visited-mode)
+;; (fit-frame-to-buffer)
+;; (auto-save-visited-mode)
 ;; NOTE: ‘auto-save-visited-interval’ value is now 45 from 5 2024-03-23
+(menu-bar-mode 1)
+(desktop-save-mode 1)
 
 ;;(tab-bar-mode 1)
-;; (desktop-save-mode 1)
 ;; Show the tab-bar as soon as tab-bar functions are invoked
 ;; (setopt tab-bar-show 1)
 (setq tab-bar-tab-hints 1)
 (setq tab-bar-close-button-show t)
 
-;; from emacswiki
-;; (add-to-list 'default-frame-alist '(height . 36))
-;; (add-to-list 'default-frame-alist '(width . 100))
-
-(setq fill-column 100) ;; ditch the default 70, we're 2023 now.
+(setq fill-column 100) ;; ditch the default 70, we're 2024 now.
 
 ;; begin customization of xah fly keys
 ;; add global toggle key command/insert mode
