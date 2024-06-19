@@ -1,0 +1,66 @@
+#+title:      Install Nix package manager
+#+date:       [2024-03-01 ven 12:41]
+#+filetags:   :nixos:priv:
+#+identifier: 20240301T124101
+
+* See dired listing of nix cloned repos:
+
+  /home/eriberttom/Github-repos:
+
+  drwxrwxr-x  4 eriberttom eriberttom 4096 Dec 22 08:28 awesome-elisp
+  drwxrwxr-x  3 eriberttom eriberttom 4096 Dec 22 08:28 bash_scripts
+  drwxrwxr-x  9 eriberttom eriberttom 4096 Feb 29 21:20 emacs-application-framework
+  drwxrwxr-x  5 eriberttom eriberttom 4096 Feb 19 21:27 emacs-bedrock
+  drwxrwxr-x 15 eriberttom eriberttom 4096 Dec 22 08:28 emacs-xahfly
+  drwxrwxr-x  8 eriberttom eriberttom 4096 Mar  2 06:54 librephoenix-nixos-config
+  drwxrwxr-x 10 eriberttom eriberttom 4096 Dec 22 08:28 magnars.emacs.d
+  drwxrwxr-x  5 eriberttom eriberttom 4096 Dec 22 08:28 mytodos
+  drwxrwxr-x  3 eriberttom eriberttom 4096 Mar  1 20:34 nix-flake-template
+  drwxrwxr-x  4 eriberttom eriberttom 4096 Dec 22 08:28 patrick-delliot-emacs.d
+  drwxrwxr-x 10 eriberttom eriberttom 4096 Mar  2 07:05 wimpy-nix-config
+  drwxrwxr-x  3 eriberttom eriberttom 4096 Feb 19 21:26 xah-fly-keys
+
+* See below binary  tree location of installed apps:
+
+󰕈 eriberttom  …/profiles/default/bin   12:42  ll
+total 3.6M
+-r-xr-xr-x 1 root root 3.6M Jan  1  1970 nix*
+lrwxrwxrwx 1 root root    3 Jan  1  1970 nix-build -> nix*
+lrwxrwxrwx 1 root root    3 Jan  1  1970 nix-channel -> nix*
+lrwxrwxrwx 1 root root    3 Jan  1  1970 nix-collect-garbage -> nix*
+lrwxrwxrwx 1 root root    3 Jan  1  1970 nix-copy-closure -> nix*
+lrwxrwxrwx 1 root root    3 Jan  1  1970 nix-daemon -> nix*
+lrwxrwxrwx 1 root root    3 Jan  1  1970 nix-env -> nix*
+lrwxrwxrwx 1 root root    3 Jan  1  1970 nix-hash -> nix*
+lrwxrwxrwx 1 root root    3 Jan  1  1970 nix-instantiate -> nix*
+lrwxrwxrwx 1 root root    3 Jan  1  1970 nix-prefetch-url -> nix*
+lrwxrwxrwx 1 root root    3 Jan  1  1970 nix-shell -> nix*
+lrwxrwxrwx 1 root root    3 Jan  1  1970 nix-store -> nix*
+* DONE Success installing Nix package manager following the below link:
+CLOSED: [2024-03-02 Sat 07:37]
+:LOGBOOK:
+- State "DONE"       from              [2024-03-02 Sat 07:37]
+:END:
+
+** https://github.com/DeterminateSystems/nix-installer
+
+* The above tree is cp/paste from eat buffer. If exec as insert-buffer function it makes this org file read-only-text.
+* Good starting guide for NixOS distribution:
+** https://nixos-and-flakes.thiscute.world/nixos-with-flakes/get-started-with-nixos
+* Manual NixOS home-manager:
+** https://nix-community.github.io/home-manager/
+* DONE [[https://www.youtube.com/watch?v=glQoiK5DOZY&t=53s][Nix Revolution : Crafting the Ultimate Dev Toolkit - Part 1]]
+CLOSED: [2024-03-01 Fri 22:49]
+:LOGBOOK:
+- State "DONE"       from              [2024-03-01 Fri 22:49]
+:END:
+
+** note: i followed this nix tutorial in YT
+** TIL today i learned that readlink binary follows soft link(s) in the FS.
+** See transcript notes as per below link, open with org-open-at-point command.
+*** [[file:nix.rev.part.1.YT.transcript.org][transcript notes]]
+** Completed the section Nix develop.
+** TIL do home-manager switch anytime you add edits in home.nix.
+** Do nix-collect-garbage command to reclaim space of installed apps.
+** Installed nnn with home-manager
+*** https://github.com/jarun/nnn?tab=readme-ov-file

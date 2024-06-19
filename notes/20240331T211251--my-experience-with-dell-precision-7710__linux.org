@@ -1,0 +1,34 @@
+#+title:      My experience with Dell Precision 7710
+#+date:       [2024-03-31 Sun 21:12]
+#+filetags:   :linux:
+#+identifier: 20240331T211251
+
+* This sums up my experience so far of installing Linux to a refurbished Dell Precision 17" laptop.
+* Buy price was SR 2150 in Al-Khobar shop last Friday March 29, 2024
+** March 30 I took it home to residential camp then started trying out various distros using ventoy in usb device.
+** After several tries the pc became unbootable due to error code: 0xc000000f. Win11 is no longer bootable.
+** No amount of tweaking in the bios boot sequence setup could get the pc return to its prestine state.
+** Even installing several flavors of Linux like NixOS, Endeavour OS, Rhino Linux cant make it boot directly into Linux. It always show the Blue Screen of Death aka bsod as seen in this pix folder:
+*** [[file:~/Pictures/dell-pc-2024/][Dell precision pix]]
+** /dev//nvme1n1 is the win11 partition (Toshiba476.94 GB)
+** //dev//nvme0n1 is spare partition (SK hymix 476.94 GB)
+** /dev/sda is the spare HDD (Toshiba 465.7 GB)
+* Install NixOS to disk nvme1n1, delete MS OS with username eriberttom, BHU890)) passwd
+** Erase disk, set swap with no hibernte
+** allowunFree
+** see pix of partitioning details as per above link.
+** begin install 1647 and end 1700
+** reboot after install and greeted by bsod as above.
+** do a hot reboot and go to boot seq to tweak the boot order and reboot again but no go, same result
+** even with different permutations of boot order and adjustment in the bios didnt help.
+** at 10pm I installed Endeavour OS over NixOS hoping to resolve the issue but no go, got the same bsod result.
+** at 0530 the next day retried the install process but same result no go, this time using the Rhino Linux install image.
+** decided to bring the PC to office for further troubleshooting.
+** Update 3/31 in office:
+*** After several linux-install tries and fails to boot to grub/boot manager, I finally succeeded booting directly to NixOS grub/boot manager.
+*** This was achieved by doing manual partitioning of each partition from /boot, root, /home and swap. Especially in /boot where important flags were set.
+*** Each partition was fully formatted to ensure no cruft remain. Also ensure booting is normal by doing repetitive rebooting and logging in to desktop aka stress test.
+*** Big issue: when screen sleeps it can no longer resume to wake up state. Probably due to nvidia old gpu Quadro M300M. Temp workaround is set display not to turn off screen when idle.
+*** Also added nvidia settings in the config.nix file. This should be refactored as a module file imported from the config file.
+*** add nvidia nixos wiki page here for reference.
+** djakajkaj

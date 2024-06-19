@@ -10,12 +10,22 @@
 (with-eval-after-load 'package
   (add-to-list 'package-archives '("melpa" . "https://melpa.org/packages/") t))
 
+
+;; install packages using loop
+(dolist (package '(markdown-mode pdf-tools hyperbole deadgrep nix-mode w3m ef-themes dired-sidebar denote paredit rainbow-delimiters xah-fly-keys popper all-the-icons all-the-icons-dired all-the-icons-completion marginalia vertico orderless corfu magit org-superstar org-super-agenda sly eglot eat racket-mode geiser geiser-racket scribble-mode savehist vundo olivetti)
+                 )
+  (unless (package-installed-p package)
+    (package-install package)))
+
+
 ;; add own personal lisp codes here
 ;; setup frame font including minibuffer and modeline
 ;; http://xahlee.info/emacs/emacs/emacs_list_and_set_font.html
 
 ;; http://xahlee.info/emacs/misc/xah-fly-keys.html
-;; (add-to-list 'load-path "~/.emacs.d/xah-fly-keys")
+
+(add-to-list 'load-path "~/.emacs.d/xah-fly-keys")
+
 (use-package xah-fly-keys
   :config
   (xah-fly-keys-set-layout "qwerty")
@@ -36,34 +46,23 @@
 (setq user-full-name "Eriberto Mendz")
 (setq user-mail-address "erimendz@gmail.com")
 
-(fit-frame-to-buffer)
+
+;; (fit-frame-to-buffer)
+;; (auto-save-visited-mode)
+;; NOTE: ‘auto-save-visited-interval’ value is now 45 from 5 2024-03-23
 (menu-bar-mode 1)
-(auto-save-visited-mode)
-;;(tab-bar-mode 1)
 (desktop-save-mode 1)
+
+;;(tab-bar-mode 1)
+
 ;; Show the tab-bar as soon as tab-bar functions are invoked
 ;; (setopt tab-bar-show 1)
 (setq tab-bar-tab-hints 1)
 (setq tab-bar-close-button-show t)
 
-;; from emacswiki
-;; (add-to-list 'default-frame-alist '(height . 36))
-;; (add-to-list 'default-frame-alist '(width . 100))
 
 (setq fill-column 100) ;; ditch the default 70, we're 2023 now.
 
-;; set default font
-(cond
- ((eq system-type 'windows-nt)
-  (when (member "Consolas" (font-family-list))
-    (set-frame-font "Consolas" t t)))
- ((eq system-type 'darwin)              ; macOS
-  (when (member "Menlo" (font-family-list))
-    (set-frame-font "Menlo" t t)))
- ((eq system-type 'gnu/linux)
-  (when (member "Hack" (font-family-list))
-    (set-frame-font "Hack-20" t t)
-    (load-theme 'ef-frost t))))
 
 ;; begin customization of xah fly keys
 ;; add global toggle key command/insert mode
@@ -84,8 +83,12 @@
 ;; EndeavourOS = " "
 (setq xah-fly-command-mode-indicator " ")
 (setq xah-fly-insert-mode-indicator "✏" )
-(defun my-modeline-color-on () (set-face-background 'mode-line "blue"))
-(defun my-modeline-color-off () (set-face-background 'mode-line "firebrick"))
+(defun my-modeline-color-on ()
+  "Make mode-line color blue."
+  (set-face-background 'mode-line "blue"))
+(defun my-modeline-color-off ()
+  "Make mode-line color firebrick."
+  (set-face-background 'mode-line "firebrick"))
 
 (add-hook 'xah-fly-command-mode-activate-hook 'my-modeline-color-on)
 (add-hook 'xah-fly-insert-mode-activate-hook  'my-modeline-color-off)
@@ -93,18 +96,6 @@
 ;; setup unicode as per this link
 ;; http://xahlee.info/emacs/emacs/emacs_set_font_symbol.html
 ;; symbola-font and JuliaMono are installed via apt-get
-;; (set-fontset-font t 'symbol
-;;                   (cond
-;;                    ((eq system-type 'windows-nt)
-;;                     (cond
-;;                      ((member "Segoe UI Symbol" (font-family-list)) "Segoe UI Symbol")))
-;;                    ((eq system-type 'darwin)
-;;                     (cond
-;;                      ((member "Apple Symbols" (font-family-list)) "Apple Symbols")))
-;;                    ((eq system-type 'gnu/linux)
-;;                     (cond
-;;                      ((member "Symbola" (font-family-list)) "Symbola")))))
-;;     ;; ((member "JuliaMono" (font-family-list)) "JuliaMono")))))
 
 ;; make aliases per this link https://www.youtube.com/watch?v=ufVldIrUOBg
 (defalias 'pcr 'package-refresh-contents)
@@ -294,52 +285,11 @@
 
 ;; doom-modeline
 ;; (use-package doom-modeline
-;;    :ensure t
-;;    :hook (after-init . doom-modeline-mode))
 
 ;; note org-superstar.el is placed under lisp dir
 ;; (require 'org-superstar)
 (use-package org-superstar)
 (add-hook 'org-mode-hook (lambda () (org-superstar-mode 1)))
-
-(setq
- browse-url-browser-function 'eww-browse-url ; Use eww as the default browser
- shr-use-fonts  nil                          ; No special fonts
- shr-use-colors nil                          ; No colours
- shr-indentation 2                           ; Left-side margin
- shr-width 80                                ; Fold text to specified columns
- eww-search-prefix "https://wiby.me/?q=")    ; Use another engine for searching
-
-;; http://caiorss.github.io/Emacs-Elisp-Programming/Elisp_Programming.html#sec-1-4-1
-
-(require 'ielm)
-
-(defun ielm/clear-repl ()
-  "Clear current REPL buffer."
-  (interactive)
-  (let ((inhibit-read-only t))
-    (erase-buffer)
-    (ielm-send-input)))
-
-(define-key inferior-emacs-lisp-mode-map
-            (kbd "M-RET")
-            #'ielm-return)
-
-(define-key inferior-emacs-lisp-mode-map
-            (kbd "C-j")
-            #'ielm-return)
-
-(define-key inferior-emacs-lisp-mode-map
-            (kbd "RET")
-            #'electric-newline-and-maybe-indent)
-
-(define-key inferior-emacs-lisp-mode-map
-            (kbd "<up>")
-            #'previous-line)
-
-(define-key inferior-emacs-lisp-mode-map
-            (kbd "<down>")
-            #'next-line)
 
 (define-key inferior-emacs-lisp-mode-map
             (kbd "C-c C-q")
@@ -386,7 +336,7 @@
 (mapc #'disable-theme custom-enabled-themes)
 
 ;; Load the theme of choice:
-(load-theme 'ef-winter :no-confirm)
+(load-theme 'ef-cherie :no-confirm)
 
 ;; OR use this to load the theme which also calls `ef-themes-post-load-hook':
 ;; (ef-themes-select 'ef-summer)
@@ -416,44 +366,6 @@
         "http://oremacs.com/atom.xml"))
 
 (setf url-queue-timeout 30)
-
-;; begin yeetube entry
-;; https://michal.sapka.me/emacs/watching-youtube-with-emacs/
-;; (use-package yeetube
-;;   :config
-;;   (:states 'normal
-;;            :keymaps 'yeetube-mode-map
-;;            "RET" 'yeetube-play
-;;            "d" 'yeetube-download-video
-;;            "b" 'yeetube-play-saved-video
-;;            "B" 'yeetube-save-video
-;;            "x" 'yeetube-remove-saved-video
-;;            "/" 'yeetube-search
-;;            "0" 'yeetube-toggle-video
-;;            ))
-
-;; ;; YT link handler
-;; (defun mms-open-link-under-point ()
-;;   "Youtube link handler."
-;;   (interactive)
-;;   (setq url (thing-at-point 'url))
-;;   (cond
-;;    ((string-match "youtube.com" url) (yeetube-search url))
-;;    (t (eww url)))
-;;   )
-
-;; ;; Add a simple keyboard navigation, and you’re done
-;; ;; (mms-leader-keys "RET RET" '(lambda () (interactive) (mms-open-link-under-point) :wk "follow link"))
-;; ;; end yeetube entry
-
-;;;;;; Functions - IBuffer-sidebar Toggle
-
-;; (defun em/ibuffer-sidebar-toggle ()
-;;   "Toggle `ibuffer-sidebar'."
-;;   (interactive)
-;;   (ibuffer-sidebar-toggle-sidebar))
-
-;;;;; Dired-sidebar Configuration
 (use-package dired-sidebar
   :ensure t
   :config
@@ -461,10 +373,125 @@
   (setq dired-sidebar-window-fixed nil))
 
 ;;;;;; Functions - Dired-sidebar toggle
+
 (defun em/dired-sidebar-toggle ()
   "Toggle `dired-sidebar'."
   (interactive)
   (dired-sidebar-toggle-sidebar))
+
+;;;; Visual Modes
+;; Enable outline-minor-mode as soon as .el file is opened
+(add-hook 'emacs-lisp-mode-hook 'outline-minor-mode)
+
+
+;; enable nix mode
+(use-package nix-mode
+  :mode "\\.nix\\'")
+
+;; (global-org-modern-mode-enable-in-buffers)
+;; (org-roam-mode)
+
+;; (defun org-agenda-open-hook ()
+;;   ;; Turn on Olivetti mode."
+;;   olivetti-mode)
+;; (add-hook 'org-agenda-mode-hook 'org-agenda-open-hook)
+
+(use-package org-super-agenda)
+(org-super-agenda-mode)
+
+;; this is a sample code snippet from org-super-agenda
+;; https://github.com/alphapapa/org-super-agenda
+
+
+(let ((org-super-agenda-groups
+       '(;; Each group has an implicit boolean OR operator between its selectors.
+         (:name "Today"           ; Optionally specify section name
+                :time-grid t      ; Items that appear on the time grid
+                :todo "TODAY")    ; Items that have this TODO keyword
+         (:name "Important"
+                ;; Single arguments given alone
+                :tag "bills"
+                :priority "A")
+         ;; Set order of multiple groups at once
+         (:order-multi (2 (:name "Shopping in town"
+                                 ;; Boolean AND group matches items that match all subgroups
+                                 :and (:tag "shopping" :tag "@town"))
+                          (:name "Food-related"
+                                 ;; Multiple args given in list with implicit OR
+                                 :tag ("food" "dinner"))
+                          (:name "Personal"
+                                 :habit t
+                                 :tag "personal")
+                          (:name "Space-related (non-moon-or-planet-related)"
+                                 ;; Regexps match case-insensitively on the entire entry
+                                 :and (:regexp ("space" "NASA")
+                                               ;; Boolean NOT also has implicit OR between selectors
+                                               :not (:regexp "moon" :tag "planet")))))
+         ;; Groups supply their own section names when none are given
+         (:todo "WAITING" :order 8)     ; Set order of this section
+         (:todo ("SOMEDAY" "TO-READ" "CHECK" "TO-WATCH" "WATCHING")
+                ;; Show this group at the end of the agenda (since it has the
+                ;; highest number). If you specified this group last, items
+                ;; with these todo keywords that e.g. have priority A would be
+                ;; displayed in that group instead, because items are grouped
+                ;; out in the order the groups are listed.
+                :order 9)
+         (:priority<= "B"
+                      ;; Show this section after "Today" and "Important", because
+                      ;; their order is unspecified, defaulting to 0. Sections
+                      ;; are displayed lowest-number-first.
+                      :order 1)
+         ;; After the last group, the agenda will display items that didn't
+         ;; match any of these groups, with the default order position of 99
+         )))
+  (org-agenda nil "a"))
+
+(use-package vundo
+  :ensure t)
+(setq vundo-glyph-alist vundo-unicode-symbols)
+
+(use-package hyperbole
+  :ensure t
+  :config
+  (hyperbole-mode))
+
+(use-package w3m
+  :ensure t)
+
+(use-package w3m)
+(setq browse-url-browser-function 'browse-url-generic
+      browse-url-generic-program "/usr/bin/firefox-beta")
+
+(defun choose-browser (url &rest args)
+  "Ask user what browser to open the URL using ARGS."
+  (interactive "sURL: ")
+  (if (y-or-n-p "Use external browser? ")
+      (browse-url-generic url)
+    (w3m-browse-url url)))
+
+(setq browse-url-browser-function 'choose-browser)
+(global-set-key "\C-xm" 'browse-url-at-point)
+
+(add-hook 'after-init-hook #'(lambda ()
+                               (interactive)
+                               (require 'server)
+                               (or (server-running-p)
+                                   (server-start))))
+
+(add-to-list 'exec-path "~/.nix-profile/bin")
+(setq inferior-lisp-program "sbcl")
+
+;; install sly https://github.com/joaotavora/sly
+;; https://joaotavora.github.io/sly/#A-SLY-tour-for-SLIME-users
+
+(use-package sly
+  :ensure t)
+
+(eval-after-load 'sly
+  `(define-key sly-prefix-map (kbd "M-h") 'sly-documentation-lookup))
+
+;; https://www.quicklisp.org/beta/
+;; Make sure to follow the quicklisp install link above.
 
 ;; show/hide gui functions
 (defun em/gui-hide-bars ()
@@ -486,9 +513,6 @@
 
 (use-package org-web-tools
   :ensure t)
-
-
-
 
 (provide 'init-local)
 ;;; init-local.el ends here

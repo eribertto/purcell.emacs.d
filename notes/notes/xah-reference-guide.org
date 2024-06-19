@@ -1,0 +1,580 @@
+Xah Fly Keys 
+
+Emacs: Xah Fly Keys Tutorial
+
+By Xah Lee. Date: 2018-03-30. Last updated: 2023-09-30.
+
+Here's Xah Fly Keys tutorial for beginners. I assume you have made no customization. 
+
+[X] QWERTY [ ] Dvorak [ ] Colemak [ ] Colemak DH [ ] Workman 
+
+* Pick a layout above. All keybinding shortcuts on this page changes accordingly.
+
+Command/Insert Mode Switch
+
+Alt+Space (xah-fly-command-mode-activate) → switch to command mode. 
+
+f or Space Space (xah-fly-insert-mode-activate) → switch to insert mode. 
+
+Cursor Movement
+
+Switch to command mode. Then, follow keys are arrows. 
+
+
+    i
+ j k l
+
+* u (backward-word) → Move left by word.
+* o (forward-word) → Move right by word.
+
+Try them. Try many times. Feel your finger muscles with the cursor movement. 
+
+* h (xah-beginning-of-line-or-block) → Move to beginning of line/indent/paragraph. Repeated call
+ moves to previous paragraph.
+* ; (xah-end-of-line-or-block) → Move to end of line/indent/paragraph. Repeated call moves to next
+ paragraph.
+
+Space h (beginning-of-buffer) 
+
+Space n (end-of-buffer) 
+
+Text Editing
+
+* e (xah-backward-kill-word) → Delete word left.
+* r (xah-kill-word) → Delete word right.
+
+d (xah-smart-delete) → Delete something to the left. It may be 1 char, or whitespace, or bracketed
+text. 
+
+g (xah-delete-current-text-block) → Delete the current text block. 
+
+5 (delete-char) → Delete 1 character to the right. 
+
+w (xah-shrink-whitespaces) → Delete whitespaces. Repeated call delete more whitespaces. 
+
+Space g (kill-line) → Delete to end of line. 
+
+undo
+
+y (undo) → undo. 
+
+To redo, do an undo, then press key to switch to command mode (or Ctrl+g), then do undo. To reverse
+direction, press Ctrl+g again. 
+
+Tip: I recommend not to use any external undo/redo package. 
+
+Cut Copy Paste
+
+x (xah-cut-line-or-region) → Cut current line or selection. Repeated call cut more lines. 
+
+c (xah-copy-line-or-region) → Copy current line or selection. Repeated call copy more lines. 
+
+v (xah-paste-or-paste-previous) → Paste. Repeated call paste previous. 
+
+To paste something twice, call paste, then enter space or return or switch command mode, then paste
+again. 
+
+To paste something 5 times, Space . (universal-argument) 5, then call paste. 
+
+More: 
+
+Space c (xah-copy-all-or-region) → Copy all. 
+
+Space x (xah-cut-all-or-region) → Cut all. 
+
+Space t (xah-show-kill-ring) → Show copy history. 
+
+Copy and Paste to Register
+
+* Space k 3 (xah-copy-to-register-1) → Copy current line or selection to register 1. 
+* Space k 4 (xah-paste-from-register-1) → Paste from register 1. 
+* Space k c (copy-to-register) → Copy selection to a register.
+* Space k v (copy-to-register) → Paste from a register.
+
+[see Emacs: Copy to Register] 
+
+Mark and Text Selection
+
+t (set-mark-command) → Start selection. Move cursor to expand. Press again to unmark. 
+
+Text Selection Shortcuts
+
+6 (xah-select-block) → Selects text block. Repeated call extends to next block. 
+
+7 (xah-select-line) → Selects line. Repeated call extends to next line. 
+
+8 (xah-extend-selection) → Select current word or bracketed text. Repeated call extend selection. 
+
+9 (xah-select-text-in-quote) → selects inner text between brackets or quotes (e.g. string) 
+
+Space a (mark-whole-buffer) → select all. 
+
+execute-extended-command (M-x)
+
+a or Space Enter (execute-extended-command) → call a command by name. 
+
+iSearch
+
+n (isearch-forward) → Interactive search and also move cursor. 
+
+Space y (xah-search-current-word) → Search current word or selection. 
+
+When in isearch: 
+
+* Ctrl+y to paste.
+* left/right arrow keys ← → do search backward/forward.
+* up/down arrow keys ↑ ↓ do previous/next search item.
+* Return exit isearch and leave cursor at the current location.
+* Ctrl+g exit isearch and leave cursor at original location.
+
+There's no key to begin backward search. Just do isearch then press left arrow key. 
+
+Tip: i recommend not installing external packages to jump cursor to locations. 
+
+Find Replace
+
+Space r (query-replace) 
+
+Space k r (query-replace-regexp) 
+
+Open Close Save
+
+You can use the following standard keys for now. 
+
+* Ctrl+n (xah-new-empty-buffer) → New. 
+* Ctrl+o (find-file) → Open. 
+* Ctrl+w (xah-close-current-buffer) → Close. 
+* Ctrl+s (save-buffer) → Save. 
+* Ctrl+Shift+s (write-file) → Save as. 
+* Ctrl+Shift+t (xah-open-last-closed) → Open last closed 
+
+When you are comfortable with Xah Fly Keys, and feel like you want to reduce using Control key, then
+learn the following. 
+
+* Space i l (xah-new-empty-buffer) 
+* Space i e (find-file) 
+* Space u (xah-close-current-buffer) 
+* Space ; (save-buffer) 
+* Space i ; (write-file) 
+* Space i r (xah-open-last-closed) 
+
+Open Files
+
+Space i e (find-file) → Open file. 
+
+Space i f (xah-open-file-at-cursor) → Open URL or file path. 
+
+Space i c (xah-copy-file-path) 
+
+Space m (dired-jump) → go to dired and place cursor on file name. 
+
+Open recently opened/closed files: 
+
+* Space i j (recentf-open-files) → List recently opened files. 
+* Space i r (xah-open-last-closed)
+* Space i y (xah-open-recently-closed) → list recently closed files. 
+
+Bookmark related for fast open files: 
+
+* Space i p (bookmark-set) → Add current file to bookmark. 
+* Space i i (bookmark-bmenu-list) → list bookmarks
+* Space i o (bookmark-jump) → open a file in bookmark. 
+
+You should never need to type file path to open file, unless it's a new file you rarely work with. 
+
+All files or directories you work daily, should be bookmarked [see Emacs: Bookmark] , or with open
+recent. [see Emacs: Open Recently Opened File] 
+
+Open Files in External App
+
+* Space i w (xah-open-in-external-app) → Open in external apps (for image, pdf, vidio/audio files,
+ etc.) 
+* Space i s (xah-show-in-desktop) → Open the operating system's folder viewer. 
+
+switch buffer
+
+* Space f (switch-to-buffer)
+* Space i d (ibuffer) → list buffers.
+
+* Ctrl+8 or Ctrl+Tab (xah-next-user-buffer)
+* Ctrl+7 or Ctrl+Shift+Tab (xah-previous-user-buffer)
+* Ctrl+6 (xah-next-emacs-buffer)
+* Ctrl+5 (xah-previous-emacs-buffer)
+
+Split Buffer
+
+3 (delete-other-windows) → Unsplit all. 
+
+4 (split-window-below) → Split top/bottom 
+
+, (xah-next-window-or-frame) → Switch cursor to next pane or next window (emacs frame). 
+
+Space 3 (delete-window) → remove current pane. 
+
+Space 4 (split-window-right) → split left/right. 
+
+Tip: on large monitor, avoid workflow with 1 fullscreen. [see Emacs Workflow: Fullscreen vs Multiple
+Frames] 
+
+Working with Quote and Brackets
+
+xah-fly-keys has a system to work with brackets. Brackets includes ()[]{}“” and all Unicode: Brackets,
+Quotes «»「」【】《》 
+
+Move to Brackets
+
+* m (xah-backward-left-bracket) → move to left bracket.
+* . (xah-forward-right-bracket) → move to right bracket.
+* / (xah-goto-matching-bracket) → When cursor is on a bracket, jump to the matching one. If cursor is
+ not on a bracket, move it to parent left bracket.
+
+Select Brackets
+
+when cursor is on a bracket, 8 (xah-extend-selection) selects the whole. 
+
+Delete Whole Bracketed Text
+
+d (xah-smart-delete) → when the left char is a bracket, delete the bracketed text. The deleted text is
+automatically copied. 
+
+Delete Bracket Pair
+
+move cursor to the right of a bracket, then Space . (universal-argument) d (xah-smart-delete) 
+
+Delete a Single Bracket
+
+move cursor to the left of it, then press 5 (delete-char) . 
+
+Insert Brackets
+
+* ALWAYS insert left/right brackets together.
+* These commands insert bracket pairs.
+* When cursor is at beginning of line, they put brackets around the line.
+* When there is a text selection, they put brackets around it.
+
+* Space d k (xah-insert-paren) → Insert parenthesis pair.
+* Space d l (xah-insert-square-bracket) → Insert square brackets pair.
+* Space d j (xah-insert-brace) → Insert curly brackets pair.
+* Space d u (xah-insert-ascii-double-quote) → Insert double quote pair.
+* Space d s (xah-insert-ascii-single-quote) → Insert single quote pair.
+
+Now, type Space d Ctrl+h to see all other brackets and quotes you can insert. 
+
+Change Brackets
+
+* Alt+x xah-change-bracket-pairs
+
+Font Size
+
+* Ctrl++ (text-scale-increase)
+* Ctrl+- (text-scale-decrease)
+
+* Space l a (text-scale-adjust) 
+
+List All Leader Keys
+
+Space Ctrl+h → list all leader key sequences and commands. (if you have which-key-mode installed, you
+must turn it off first.) 
+
+More Advanced
+
+ok, the above are the basics. 
+
+Now, there are about 200 commands with leader keys. These basically replace what emacs C-x does. 
+
+You might want to learn them as you go. 
+
+When in command mode, press Space Ctrl+h to list all leader key sequence commands. 
+
+Remember to use Alt+x describe-function and Alt+x describe-key to find what's the key or
+command name. 
+
+Misc Notes
+
+Command Mode Key Must be Most Easy Key
+
+It's critically important that the key to switch to command mode must be the most easy key on your
+keyboard. 
+
+I suggest the CapsLock on typical PC keyboards or laptop keyboards. 
+
+For how, see Emacs: Xah Fly Keys Customization 
+
+Insert Mode is Same as Default GNU Emacs Key
+
+When in insert mode, it acts like Xah Fly Keys is off. (except a handful of global keys with Ctrl or Meta,
+but you can turn them off in customization.) 
+
+In some emacs modes such as dired , typing a letter will run some special command. For example, in
+dired, m for mark, u for unmark. 
+
+So, whenever you think there is some problem, do switch to insert mode. 
+
+* Next notes follow below
+
+* Emacs: Xah Fly Keys Mode Status Customization
+
+Disable Change to Emacs Control Keybinding
+
+By default, Xah Fly Keys support standard ones like copy cut paste open, etc. When disabled, no control
+binding is changed by Xah Fly Keys.
+
+
+;; put this BEFORE loading Xah Fly Keys
+(setq xah-fly-use-control-key nil)
+
+Disable Changes to Emacs Meta Keybinding
+
+By default, Xah Fly Keys disables most of emacs meta keybinding, and add 2 or so. 
+
+You can disable this by:
+
+
+;; put this BEFORE loading Xah Fly Keys
+(setq xah-fly-use-meta-key nil)
+
+Add a Global Key to Activate/Toggle Command/Insert Mode
+
+* Emacs: Xah Fly Keys, Add Keys to Switch Mode
+
+Emacs Keybinding Syntax
+
+This is helpful in finding the emacs syntax for keys: 
+
+* Emacs Keybinding Syntax
+
+Make the CapsLock Key do Home Key
+
+* How to Make the CapsLock Key do Home Key
+
+Add Keys to Command Mode Keymap
+
+
+;; put this AFTER loading Xah Fly Keys
+(define-key xah-fly-command-map (kbd "x") 'command-name-x)
+
+Add Keys in Insert Mode Keymap
+
+
+;; put this AFTER loading Xah Fly Keys
+(define-key xah-fly-insert-map (kbd "x") 'command-name-x)
+
+Make Escape Key Do Cancel (C-g)
+
+You can make the Escape key do emacs's Ctrl+g. (for cancel. Usually bound to keyboard-quit )
+
+
+;; make esc key do cancel. works only in gui emacs
+(define-key key-translation-map (kbd "<escape>") (kbd "C-g"))
+
+Note: this works 99% of time. When it doesn't, just press Ctrl+g. (the only case i know it doesn't work is
+when you quit emacs, and emacs says there are unsaved file and if you still want to quit, and pressing
+Escape to cancel quit doesn't work, but Ctrl+g works.)
+
+Note: for text terminal users, escape key is critical if you do not have Meta key setup. Because Meta+x
+can be typed by Escape x. So, if you remap Escape, you lose that.
+
+Make Escape Key Do Both Activate Command Mode and Cancel
+
+* Emacs: Xah Fly Keys Make Escape Key Do Both Activate Command Mode and Cancel
+
+Add a Global Leader Key
+
+You can add a global leader key, so you don't have to switch to command mode first. This is especially
+useful if you have a Foot Pedal or extra thumb keys.
+
+
+;; put this AFTER loading Xah Fly Keys
+(global-set-key (kbd "<f10>") xah-fly-leader-key-map)
+
+Modify Leader Key Sequence
+
+* Emacs: Xah Fly Keys, Modify Leader Key Sequence
+
+Xah Fly Keys Hooks
+
+There are these hooks you can use:
+
+xah-fly-command-mode-activate-hook
+ Hook variable. Value should be a list of function Symbols. When command mode is activated, these
+ functions are called after activation. 
+xah-fly-insert-mode-activate-hook
+ Hook variable. Value should be a list of function Symbols. When insert mode is activated, these
+ functions are called after activation. 
+
+Setup Major Mode Custom Keys
+
+Here's the best way to create leader key set for any Major Mode , so you don't have to press Ctrl+c.
+
+1 Get a list of the major mode's commands you want. You do this by first activate the major mode (or
+ open a file that invoke the major mode), then, Alt+x describe-mode, to list all commands of the
+ mode.
+2 Then, decide on a leader key to call them. For example, if leader key is F9, you might have F9 a and F9
+ b and F9 c.
+3 Find out what's the keymap name in the major mode. (look at its source code), then do as follows.
+ You can do this for org mode, magit mode. Here's a example with go-mode.el.
+
+
+;; example of adding a leader key map to golang mode
+(when (fboundp 'go-mode)
+
+  (defun xah-config-go-mode ()
+    "config go-mode. Version 2021-01-15"
+    (interactive)
+    (progn
+      ;; create a keymap
+      (define-prefix-command 'xah-golang-leader-map)
+      ;; add keys to it
+      (define-key xah-golang-leader-map (kbd "c") 'xah-gofmt)
+      (define-key xah-golang-leader-map (kbd "j") 'godef-jump)
+      ;; add more of the major mode key/command here
+      )
+    ;; modify the major mode's key map, so that a key becomes your leader key
+    (define-key go-mode-map (kbd "<f9>") xah-golang-leader-map)
+    ;;
+    )
+
+  (add-hook 'go-mode-hook 'xah-config-go-mode))
+
+Make a Key do x Depending on Major Mode
+
+Emacs Init: Smart Keybinding (Major-Mode-Dependent) 
+
+Russian Layout Addon
+
+Emacs: Xah Fly Keys for Russian Layout
+
+Start in Command Mode When Emacs Daemon Starts
+
+
+;; 2021-03-10 this fix the problem of: when emacs start as daemon, xah fly keys is not in command mode. thx to David Wilson (daviwil)
+
+(defun my/server-fix-up()
+  "Make sure 'xah-fly-keys' is starting in command-mode.
+
+https://github.com/xahlee/xah-fly-keys/issues/103
+https://github.com/daviwil/emacs-from-scratch/blob/master/show-notes/Emacs-Tips-08.org#configuring-the-ui-for-new-frames"
+  (xah-fly-keys-set-layout "dvorak")
+  (xah-fly-keys t))
+
+(if (daemonp)
+    (add-hook 'server-after-make-frame-hook 'my/server-fix-up))
+
+What Keyspots Are Available for Personal Keybinding?
+
+You can bind keys to any of the spots for personal commands. 
+
+* Shift+letter is mostly empty while in command mode.
+* Meta+letter are now mostly empty.
+* Ctrl+letter has lots empty spots.
+
+You can create a whole leader key map sequence for all your personal keys. For example, start with 
+
+* Space digit
+* Space Space
+
+xtodo WORK IN PROGRESS. the following are originally written by Will Dey in 2020-04 when he did a
+major rewrite of Xah Fly Keys key engine. It is in the process of editing and merged on this page. 
+
+Remapping
+
+A very effective way to change what the command-mode keys do based on the major/minor mode is
+Remapping Commands. for example: 
+
+(define-key my-mode-map [remap command_name_1] 'command_name_2) 
+
+Remapping Commands (ELISP Manual) 
+
+Command remapping works regardless the keyboard layout of Xah Fly Keys, and allows you to make
+the customizations in the major/minor mode's map rather than the global xah-fly-command-map.
+Emacs automatically looks up remappings after finding the command bound to a key. Xah Fly Keys
+defines no command remappings, so they will always be looked up in the normal major and minor
+mode maps. 
+
+To add a remapping, find the command that Xah Fly Keys binds to a key in command mode (e.g.
+through describe-key), then add a binding in the major/minor mode's map like this: 
+
+(define-key major-or-minor-mode-map [remap xah-fly-command-name]
+'mode-specific-command-name) 
+
+For example, to make the “i j k l” keys scroll a PDF Tools page while in command mode: 
+
+
+(with-eval-after-load 'pdf-view
+  (define-key pdf-view-mode-map [remap next-line] 'pdf-view-next-line-or-next-page)
+  (define-key pdf-view-mode-map [remap previous-line] 'pdf-view-previous-line-or-previous-page))
+
+Final Words
+
+I recommend that you do not change much keys in Xah Fly Keys. Just stick to it. Because, one thing
+about creating a keybinding system is that there's a lot habit to overcome. I've been changing keys
+every month from about 2008 to 2017. Each time, it's extremely painful, and with strong desire to go
+back. And, once you start to explore keys, you often become biased towards your CURRENT workflow or
+work. So, you get into a situation that you change every few months, when project changes, or your
+choice of major mode changes, and in particular, when your keyboard changes. Also, if you don't have a
+year or two dedicated study about keybinding system, you create a key system that you think must be
+logically flawless, but actually just to your habit, your hands, your current keyboard, and your workflow,
+not to someone else.
+
+xah-fly-keys's keybinding choices is not scientifically the best, because that is basically an illusive
+concept, but is near optimal.
+
+If you are interested in keybinding efficiency research, be sure to read:
+
+* Next tips follow below
+
+By Xah Lee. Date: 2022-01-22. Last updated: 2023-01-24.
+
+This is how you customize Xah Fly Keys command/insert activation status indicator. 
+
+change mode indicator in mode line
+
+
+(setq xah-fly-command-mode-indicator "🔺")
+(setq xah-fly-insert-mode-indicator "✏" )
+
+or, you can add background color like this: 
+
+
+(setq xah-fly-command-mode-indicator (propertize "⦿" 'face '(:foreground "red")))
+
+(2023-01-24 thanks to jamesni) 
+
+* Unicode: Geometric Shapes 🔺
+* Unicode: User Interface Icons 🗑
+
+you need proper font setup for unicode. [see Emacs Init: Setup Font] 
+
+change current line highlight
+
+
+(defun my-highlight-line-on () (global-hl-line-mode 1))
+(defun my-highlight-line-off () (global-hl-line-mode 0))
+
+(add-hook 'xah-fly-command-mode-activate-hook 'my-highlight-line-on)
+(add-hook 'xah-fly-insert-mode-activate-hook  'my-highlight-line-off)
+
+;; (remove-hook 'xah-fly-command-mode-activate-hook 'my-highlight-line-on)
+;; (remove-hook 'xah-fly-insert-mode-activate-hook  'my-highlight-line-off)
+
+[see Emacs: What is Hook] 
+
+change mode line background color
+
+
+(defun my-modeline-color-on () (set-face-background 'mode-line "firebrick"))
+(defun my-modeline-color-off () (set-face-background 'mode-line "grey"))
+
+(add-hook 'xah-fly-command-mode-activate-hook 'my-modeline-color-on)
+(add-hook 'xah-fly-insert-mode-activate-hook  'my-modeline-color-off)
+
+change background color
+
+
+(defun my-xfk-command-color () (set-background-color "lightgrey"))
+(defun my-xfk-insert-color () (set-background-color "white"))
+
+(add-hook 'xah-fly-command-mode-activate-hook 'my-xfk-command-color)
+(add-hook 'xah-fly-insert-mode-activate-hook  'my-xfk-insert-color)
+
+

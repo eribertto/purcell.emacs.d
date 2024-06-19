@@ -1,0 +1,60 @@
+* NB: use occur to search for texts of choice in a buffer, sort of a replacement for isearch since the latter seems like not working in an org buffer.
+
+* New Toyota Innova Zenix non-hybrid variant 1.67M php.
+** https://www.youtube.com/watch?v=DmjqynsZ9xc
+** This is the hybrid variant very good at 1.97M php.
+*** https://www.youtube.com/watch?v=pzZamcIDbRc
+
+* [[https://emacs.stackexchange.com/questions/12383/how-to-unbind-a-key][How to bind/unbind a key in emacs]]
+** see the above link or the below:
+You can unset the key in at least two ways:
+
+(global-set-key (kbd "C-e") nil)
+(global-unset-key (kbd "C-e"))
+
+Note that I got this information with a web search for emacs unset key.
+
+* NB: deadgrep is installed and is awesome!!!
+** https://github.com/Wilfred/deadgrep
+
+* Begin using elfeed and friends https://github.com/skeeto/elfeed
+Some I have in my feeds
+
+https://oneofus.la/have-emacs-will-hack/feed.xml
+
+http://oremacs.com/atom.xml
+
+https://updates.orgmode.org/feed/changes
+
+https://planet.emacslife.com/atom.xml
+
+http://pragmaticemacs.com/feed/
+
+https://www.reddit.com/r/emacs.rss
+
+https://www.reddit.com/r/orgmode.rss
+
+https://blog.tecosaur.com/tmio/rss.xml
+
+;; Somewhere in your .emacs file
+(setq elfeed-feeds
+      '("http://nullprogram.com/feed/"
+        "https://planet.emacslife.com/atom.xml"
+        "https://www.reddit.com/r/emacs.rss"
+        "https://www.reddit.com/r/orgmode.rss"
+        "https://blog.tecosaur.com/tmio/rss.xml"
+        "http://oremacs.com/atom.xml"))
+
+(setf url-queue-timeout 30)
+
+* To search and replace regexp e.g. replace numbers with something else, use isearch-query-replace-regexp or use the menu edit->replace->replace regexp
+
+* [[https://www.youtube.com/watch?v=1-UIzYPn38s][Emacs control where buffers are displayed]]
+** the link above is a good one explanation how display-buffer-alist works.
+
+* Home electricity monthly consumption in kwh:
+
+** October 2023 616
+** November 692
+** December 631
+** January 2024 669

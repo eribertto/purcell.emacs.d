@@ -1,0 +1,27 @@
+* See below error to fix:
+** Done edited .gitconfig per this link
+❯ git push
+fatal: The current branch nuc.kde.eos has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+git push --set-upstream origin nuc.kde.eos
+
+To have this happen automatically for branches without a tracking
+upstream, see 'push.autoSetupRemote' in 'git help config'.
+
+** insert link below
+** dakjkd
+
+Auto setup remote branch and never again see an error about the missing upstream
+Published: 2022.07.17 · 1 minute read
+
+A little git tip published on Twitter by James Ide went viral a few days ago, and it inspired me to write down this post. You usually see this when you try to git push a local branch that misses a remote upstream.
+
+Failed attempt to git push to a remote branch without setting up the upstream
+In most cases, something that we need in this case is to push the current branch to the remote repository under the same branch name. Luckily we have two helpful configuration options to do it.
+
+git config --global --add push.default current
+git config --global --add push.autoSetupRemote true
+Setting any of these confuguration options (push.default or push.autoSetupRemote) will automatically push to the receiving end a branch with the same name. Additionally, push.autoSetupRemote (added to git 2.37.0) sets the upstream tracking to the corresponding branch.
+
+No more git push --set-upstream origin test && git push again! Bye 👋

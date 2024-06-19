@@ -1,0 +1,195 @@
++title:      MyTTD 2024
+#+date:       [2024-02-15 ĵaŭ 05:31]
+#+filetags:   :priv:
+#+identifier: 20240215T053125
+
+* PROJECT Plan to learn Nix and NixOS configuration
+* PROJECT learn more of denote note-taking by Prot
+* PROJECT Monitor completion of Prulife payment to end this May 2024, see this[[file:~/Downloads/PruLife.calc.2024.pdf][ scanned copy]]
+* PROJECT Top up Tonik account of kids, mrs account this year 2024, source account MBT.
+* PROJECT Home projects to complete this 2024 e.g.
+**** Farm house fencing
+**** Farm house elevated tank installation
+**** Farm house garage pavement for parking.
+**** Farm goat house construction.
+**** Home solar system install.
+**** Replacement of home water pump.
+**** DONE Repair of home roof
+CLOSED: [2024-04-28 Sun 21:09]
+:LOGBOOK:
+- State "DONE"       from              [2024-04-28 Sun 21:09]
+:END:
+
+* PROJECT Learn Racket programming language (start April 28/24)
+* NEXT MADA card will expire in 09/24 this year so fya. Visit mubarraz industrial area office.
+* TODO Followup BDO release of original OR/CR.
+** Update 2024-05-03:
+***** On May 9 Mrs to go to the bank to collect the original OR/CR cleared of undue payment. This is the final copy.
+* TODO Create shell.nix in this E590 machine and add aliases including emacs in full-screen when started.
+* TODO Inquire the unknown debit memo from Metrobank account dated March 9, 2024 amount 11K+
+*** Update: sent message to Shing MTB iloilo for assistance and provided her with my bank details plus pix of the debit memo in question.
+*** Hoping she will get back to me with update (praying.)
+*** Update 2024-05-03: Shing never returned my inquiry. Oh well.
+
+* TODO Learn org-agenda and org-super-agenda
+
+* HOLD how to do emacs overlay in NixOS
+* TODO Begin topup of GotyMe digital bank.
+* TODO Take down notes/tips from reddit post digital bank password recovery strats in the event of death of owner.
+* WAITING Plan to replace from all-terrain to offroad tires our Ford ranger sport pickup.
+:LOGBOOK:
+- State "WAITING"    from              [2024-03-04 Mon 06:03] \\
+  Not a priority
+:END:
+
+* DONE Prepare tuition payment for Nonoy plus balance home allowance sjp 2024-05-03
+CLOSED: [2024-05-06 Mon 19:52]
+:LOGBOOK:
+- State "DONE"       from "TODO"       [2024-05-06 Mon 19:52]
+:END:
+
+* DONE Watch YT vid how to close all positions ibkr
+CLOSED: [2024-05-03 Fri 20:46]
+:LOGBOOK:
+- State "DONE"       from "TODO"       [2024-05-03 Fri 20:46]
+:END:
+
+* DONE Reset KA2 to default settings, find updates and make new keybinding configuration.
+CLOSED: [2024-05-03 Fri 20:47]
+:LOGBOOK:
+- State "DONE"       from "TODO"       [2024-05-03 Fri 20:47]
+:END:
+
+** make defalias for scroll-up/down
+* DONE Learn yet another dotfile manager https://yadm.io/
+CLOSED: [2024-05-03 Fri 20:46]
+:LOGBOOK:
+- State "DONE"       from "TODO"       [2024-05-03 Fri 20:46]
+:END:
+
+* DONE Learn about hyperbole https://www.gnu.org/software/hyperbole/
+CLOSED: [2024-05-03 Fri 20:46]
+:LOGBOOK:
+- State "DONE"       from "TODO"       [2024-05-03 Fri 20:46]
+:END:
+
+* DONE How to update to latest kernel NixOS
+CLOSED: [2024-03-09 Sat 07:22]
+:LOGBOOK:
+- State "DONE"       from "TODO"       [2024-03-09 Sat 07:22]
+:END:
+
+* DONE Send bank transfers:
+CLOSED: [2024-03-06 Wed 06:23]
+:LOGBOOK:
+- State "DONE"       from "TODO"       [2024-03-06 Wed 06:23]
+:END:
+
+** DONE to sjp bpi 40K
+CLOSED: [2024-03-01 Fri 21:19]
+:LOGBOOK:
+- State "DONE"       from              [2024-03-01 Fri 21:19]
+:END:
+
+** DONE to nonoy bpi 5K
+CLOSED: [2024-03-04 Mon 05:56]
+:LOGBOOK:
+- State "DONE"       from              [2024-03-04 Mon 05:56]
+:END:
+
+** DONE to mymy mbt 10K (for mama)
+CLOSED: [2024-03-06 Wed 06:23]
+:LOGBOOK:
+- State "DONE"       from              [2024-03-06 Wed 06:23]
+:END:
+
+** DONE to ctb mbt 10K
+CLOSED: [2024-03-06 Wed 06:23]
+:LOGBOOK:
+- State "DONE"       from              [2024-03-06 Wed 06:23]
+:END:
+
+* DONE Pay mbt credit card min 50 php until due date March 11, 2024.
+CLOSED: [2024-03-04 Mon 05:56]
+:LOGBOOK:
+- State "DONE"       from              [2024-03-04 Mon 05:56]
+:END:
+
+** Update 2024-03-04: paid 3K via Gcash channel.
+* DONE Plan to transfer funds from riyadbank to bpi, mbt
+CLOSED: [2024-03-04 Mon 04:25]
+:LOGBOOK:
+- State "DONE"       from "TODO"       [2024-03-04 Mon 04:25]
+:END:
+* DONE Visit UM for vehicle checkup re 4x4 error message randomly popping up each morning startup.
+CLOSED: [2024-03-01 Fri 21:29]
+:LOGBOOK:
+- State "DONE"       from              [2024-03-01 Fri 21:29]
+:END:
+
+* DONE Disable emacs EAF
+CLOSED: [2024-03-01 Fri 21:05]
+:LOGBOOK:
+- State "DONE"       from              [2024-03-01 Fri 21:05]
+:END:
+
+* DONE Plan to setup emacs EAF.
+CLOSED: [2024-03-01 Fri 20:40]
+:LOGBOOK:
+- State "DONE"       from "TODO"       [2024-03-01 Fri 20:40]
+:END:
+
+* DONE Add this message from NixOS e590 machine.
+CLOSED: [2024-02-29 ĵaŭ 20:12]
+:LOGBOOK:
+- State "DONE"       from              [2024-02-29 ĵaŭ 20:12]
+:END:
+
+* DONE Plan to subscribe to mystc new data plan 7 days from today 2024-02-17
+CLOSED: [2024-02-25 dim 17:57]
+:LOGBOOK:
+- State "DONE"       from "TODO"       [2024-02-25 dim 17:57]
+:END:
+
+* DONE Install elfeed and friends, use as reddit reader?
+CLOSED: [2024-02-22 ĵaŭ 10:46]
+:LOGBOOK:
+- State "DONE"       from "TODO"       [2024-02-22 ĵaŭ 10:46]
+:END:
+
+* DONE Plan to install deadgrep https://github.com/Wilfred/deadgrep
+CLOSED: [2024-02-19 lun 21:45]
+:LOGBOOK:
+- State "DONE"       from "NEXT"       [2024-02-19 lun 21:45]
+:END:
+
+* DONE Install nerd fonts like firacode, iosevka, jetbrainsMono, etc.
+CLOSED: [2024-02-19 lun 21:12]
+:LOGBOOK:
+- State "DONE"       from              [2024-02-19 lun 21:12]
+:END:
+
+* DONE Install starship prompt with cargo
+CLOSED: [2024-02-19 lun 21:04]
+:LOGBOOK:
+- State "DONE"       from              [2024-02-19 lun 21:04]
+:END:
+
+* DONE install rustup and friends
+CLOSED: [2024-02-15 ĵaŭ 07:06]
+:LOGBOOK:
+- State "DONE"       from "TODO"       [2024-02-15 ĵaŭ 07:06]
+:END:
+
+* DONE Send fund for birthday of tata tom Feb. 16, 2024.
+CLOSED: [2024-02-17 sab 17:39]
+:LOGBOOK:
+- State "DONE"       from "TODO"       [2024-02-17 sab 17:39]
+:END:
+
+* CANCELLED Plan for places to visit with SJP and kids this january 2024.
+CLOSED: [2024-02-15 ĵaŭ 05:37]
+:LOGBOOK:
+- State "CANCELLED"  from "NEXT"       [2024-02-15 ĵaŭ 05:37] \\
+  not enough time.
+:END:

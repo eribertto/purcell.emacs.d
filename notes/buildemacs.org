@@ -1,0 +1,10 @@
+#+TITLE: Building Emacs from source
+#+AUTHOR: Eriberto Mendz
+#+EMAIL: erimendz@gmail.com
+
+* README :noexport:
+This is a literate document that can potentially execute code from your computer to this document.
+See this link https://www.youtube.com/watch?v=BAFZ-vTnfSo&t=10s
+#+begin_src elisp :results none
+  (load-theme 'ef-elea-light)
+#+end_src

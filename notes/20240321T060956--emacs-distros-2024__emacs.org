@@ -1,0 +1,43 @@
+#+title:      Emacs distros 2024
+#+date:       [2024-03-21 Thu 06:09]
+#+filetags:   :emacs:
+#+identifier: 20240321T060956
+
+https://www.reddit.com/r/emacs/comments/12byp43/testing_different_emacs_distros_easy_way_in_emacs/
+
+Testing different Emacs distros easy way in Emacs 29/30
+
+Emacs 29 has got new startup options: --init-directory. Here is how you can use it (for those daredevils who build their own Emacs, until 29 is
+finalized):
+
+In your shell, clone those repo(s) you would like to test:
+
+git clone https://github.com/syl20bnr/spacemacs
+git clone https://github.com/bbatsov/prelude
+git clone https://github.com/jkitchin/scimax
+git clone https://github.com/purcell/emacs.d
+
+If you choose to test Purcell Emacs, then after you have cloned it, rename it to something better than "emacs.d", for example:
+
+mv emacs.d purcell
+
+You can now run your Emacs from command line in respective directory:
+
+emacs --init-directory=~/spacemacs&
+emacs --init-directory=~/prelude&
+emacs --init-directory=~/scimax&
+emacs --init-directory=~/purcell&
+
+Easy.
+
+I actually never tried anyone's setup before, but always had on my to-do to actually try those (+ Doom, but Doom seems to require slightly more
+fiddling). As a small review: Spacemacs and Prelude worked out of the box without any issues. Scimax is a bit older, and for some reason, it choked
+a bit during the installation. I had to press C-g once or twice to get it going. Also, every time Emacs starts, it is chewing on something until I press
+C-g. I haven't investigated on what. But other than that, despite all the warnings during the package installation, it seems to work quite well. I am
+impressed with the amount of polish and integration all three has done. I can certainly recommend any, especially Scimax for those of you who
+are doing lots of org, org-babel and who write scientific articles and reports. Spacemacs seems to be the most polished of them the three, visually
+and technically, while Scimax seems to be actually most useful, especially if you are an academic.
+
+If you are new to Emacs and learning, it is not worth spending hours chasing packages and configuring stuff. Install Emacs, and you can be going
+solidly in less than five minutes with any of those three. Probably Doom to, but can't be just cloned and auto-installed via provided init.el as those
+three guys.

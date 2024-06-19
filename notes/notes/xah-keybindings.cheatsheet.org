@@ -1,0 +1,241 @@
+* Overriding Bindings Starting With SPC:
+
+Key             Binding
+
+SPC RET		execute-extended-command
+SPC SPC		xah-fly-insert-mode-activate
+SPC .		universal-argument
+SPC 3		delete-window
+SPC 4		split-window-right
+SPC 5		balance-windows
+SPC 6		xah-upcase-sentence
+SPC 9		ispell-word
+SPC ;		save-buffer
+SPC \		toggle-input-method
+SPC a		mark-whole-buffer
+SPC b		xah-toggle-previous-letter-case
+SPC c		xah-copy-all-or-region
+SPC f		switch-to-buffer
+SPC g		kill-line
+SPC h		beginning-of-buffer
+SPC m		dired-jump
+SPC n		end-of-buffer
+SPC p		recenter-top-bottom
+SPC q		xah-fill-or-unfill
+SPC r		query-replace
+SPC s		exchange-point-and-mark
+SPC t		xah-show-kill-ring
+SPC u		xah-close-current-buffer
+SPC x		xah-cut-all-or-region
+SPC y		xah-search-current-word
+
+SPC , ,		delete-frame
+SPC , c		xah-run-current-file
+SPC , d		eval-defun
+SPC , e		eval-buffer
+SPC , f		eval-region
+SPC , m		eval-last-sexp
+SPC , r		eval-expression
+SPC , x		save-buffers-kill-terminal
+SPC , DEL	xah-delete-current-file-make-backup
+
+SPC k ,		xah-next-window-or-frame
+SPC k 1		xah-append-to-register-1
+SPC k 2		xah-clear-register-1
+SPC k 3		xah-copy-to-register-1
+SPC k 4		xah-paste-from-register-1
+SPC k 7		xah-append-to-register-1
+SPC k 8		xah-clear-register-1
+SPC k a		xah-reformat-to-sentence-lines
+SPC k b		xah-title-case-region-or-line
+SPC k c		copy-to-register
+SPC k d		list-matching-lines
+SPC k e		xah-sort-lines
+SPC k f		delete-matching-lines
+SPC k g		delete-non-matching-lines
+SPC k h		mark-defun
+SPC k j		repeat-complex-command
+SPC k k		repeat
+SPC k l		goto-char
+SPC k m		xah-make-backup-and-save
+SPC k o		copy-rectangle-to-register
+SPC k p		xah-escape-quotes
+SPC k r		query-replace-regexp
+SPC k s		xah-clean-whitespace
+SPC k t		delete-duplicate-lines
+SPC k u		goto-line
+SPC k v		insert-register
+SPC k w		sort-numeric-fields
+SPC k x		xah-cut-text-in-quote
+SPC k y		move-to-column
+SPC k <down>	xah-move-block-down
+SPC k <up>	xah-move-block-up
+
+SPC o SPC	rectangle-mark-mode
+SPC o 3		number-to-register
+SPC o 4		increment-register
+SPC o b		xah-double-backslash-to-slash
+SPC o c		xah-slash-to-backslash
+SPC o d		call-last-kbd-macro
+SPC o e		kmacro-start-macro
+SPC o f		xah-quote-lines
+SPC o g		xah-space-to-newline
+SPC o h		delete-rectangle
+SPC o i		replace-rectangle
+SPC o j		xah-change-bracket-pairs
+SPC o l		rectangle-number-lines
+SPC o o		yank-rectangle
+SPC o p		clear-rectangle
+SPC o r		kmacro-end-macro
+SPC o s		open-rectangle
+SPC o t		delete-whitespace-rectangle
+SPC o u		kill-rectangle
+SPC o v		xah-slash-to-double-backslash
+SPC o w		apply-macro-to-region-lines
+
+SPC l SPC	whitespace-mode
+SPC l ,		eww
+SPC l .		visual-line-mode
+SPC l /		abort-recursive-edit
+SPC l 0		shell-command-on-region
+SPC l 1		set-input-method
+SPC l 2		global-hl-line-mode
+SPC l 4		global-display-line-numbers-mode
+SPC l 6		calendar
+SPC l 7		calc
+SPC l 9		shell-command
+SPC l ;		count-matches
+SPC l a		text-scale-adjust
+SPC l b		save-some-buffers
+SPC l c		flyspell-buffer
+SPC l d		eshell
+SPC l e		toggle-frame-maximized
+SPC l f		shell
+SPC l g		make-frame-command
+SPC l h		narrow-to-page
+SPC l i		toggle-case-fold-search
+SPC l j		widen
+SPC l k		narrow-to-defun
+SPC l l		xah-narrow-to-region
+SPC l m		jump-to-register
+SPC l n		toggle-debug-on-error
+SPC l o		count-words
+SPC l p		toggle-word-wrap
+SPC l r		read-only-mode
+SPC l s		variable-pitch-mode
+SPC l t		toggle-truncate-lines
+SPC l u		xah-toggle-read-novel-mode
+SPC l v		menu-bar-open
+SPC l w		abbrev-mode
+
+SPC j .		apropos-value
+SPC j /		describe-coding-system
+SPC j ;		describe-syntax
+SPC j a		apropos-command
+SPC j b		describe-command
+SPC j c		man
+SPC j d		view-echo-area-messages
+SPC j f		elisp-index-search
+SPC j g		info
+SPC j h		apropos-documentation
+SPC j i		describe-char
+SPC j j		describe-function
+SPC j l		describe-variable
+SPC j m		describe-mode
+SPC j n		describe-bindings
+SPC j o		apropos-variable
+SPC j p		view-lossage
+SPC j s		describe-language-environment
+SPC j u		info-lookup-symbol
+SPC j v		describe-key
+SPC j y		describe-face
+
+SPC d ,		xah-insert-angle-bracket
+SPC d .		xah-insert-markdown-triple-quote
+SPC d a		xah-insert-double-angle-bracket
+SPC d c		insert-char
+SPC d d		xah-insert-unicode
+SPC d f		xah-insert-date
+SPC d g		xah-insert-curly-single-quote
+SPC d h		xah-insert-double-curly-quote
+SPC d j		xah-insert-brace
+SPC d k		xah-insert-paren
+SPC d l		xah-insert-square-bracket
+SPC d m		xah-insert-corner-bracket
+SPC d n		xah-insert-black-lenticular-bracket
+SPC d o		xah-insert-tortoise-shell-bracket
+SPC d p		xah-insert-formfeed
+SPC d r		xah-insert-single-angle-quote
+SPC d s		xah-insert-ascii-single-quote
+SPC d t		xah-insert-double-angle-quote
+SPC d u		xah-insert-ascii-double-quote
+SPC d v		xah-insert-markdown-quote
+SPC d y		xah-insert-emacs-quote
+
+SPC i /		revert-buffer-with-coding-system
+SPC i ;		write-file
+SPC i b		set-buffer-file-coding-system
+SPC i c		xah-copy-file-path
+SPC i d		ibuffer
+SPC i e		find-file
+SPC i f		xah-open-file-at-cursor
+SPC i i		bookmark-bmenu-list
+SPC i j		recentf-open-files
+SPC i l		xah-new-empty-buffer
+SPC i o		bookmark-jump
+SPC i p		bookmark-set
+SPC i r		xah-open-last-closed
+SPC i s		xah-show-in-desktop
+SPC i t		xah-list-recently-closed
+SPC i u		xah-open-in-terminal
+SPC i w		xah-open-in-external-app
+SPC i y		xah-open-recently-closed
+
+SPC w k		xref-find-definitions
+SPC w l		xref-pop-marker-stack
+
+SPC e d		isearch-forward-symbol-at-point
+SPC e e		highlight-symbol-at-point
+SPC e f		isearch-forward-symbol
+SPC e i		highlight-lines-matching-regexp
+SPC e j		highlight-regexp
+SPC e k		highlight-phrase
+SPC e r		isearch-forward-word
+SPC e u		unhighlight-regexp
+
+SPC TAB TAB	indent-for-tab-command
+SPC TAB ;	indent-sexp
+SPC TAB g	complete-symbol
+SPC TAB o	indent-region
+SPC TAB u	indent-rigidly
+
+SPC d i ,	inverse-add-global-abbrev
+SPC d i f	expand-abbrev
+SPC d i i	add-global-abbrev
+SPC d i j	expand-jump-to-previous-slot
+SPC d i k	edit-abbrevs
+SPC d i l	expand-jump-to-next-slot
+SPC d i m	inverse-add-mode-abbrev
+SPC d i o	expand-region-abbrevs
+SPC d i t	abbrev-prefix-mark
+SPC d i u	add-mode-abbrev
+SPC d i y	unexpand-abbrev
+
+SPC / /		vc-next-action
+SPC / 1		vc-create-tag
+SPC / 2		vc-insert-headers
+SPC / 4		vc-retrieve-tag
+SPC / 5		vc-revision-other-window
+SPC / 6		vc-switch-backend
+SPC / 7		vc-update-change-log
+SPC / h		vc-annotate
+SPC / i		vc-update
+SPC / j		vc-diff
+SPC / k		vc-register
+SPC / l		vc-print-log
+SPC / m		vc-dir
+SPC / n		vc-root-diff
+SPC / o		vc-merge
+SPC / p		vc-print-root-log
+SPC / u		vc-push
+SPC / y		vc-revert

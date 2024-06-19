@@ -1,0 +1,30 @@
+#+title:      NixOS tutorial
+#+date:       [2024-03-03 Sun 22:00]
+#+filetags:   :linux:nixos:nixoslinuxnix:
+#+identifier: 20240303T220003
+
+* See below link to YT tutorial series for NixOS:
+** DONE [[https://www.youtube.com/watch?v=6WLaNIlDW0M&list=PL_WcXIXdDWWpuypAEKzZF2b5PijTluxRG&index=2][Why would you use NixOS]]
+CLOSED: [2024-03-04 Mon 20:18]
+:LOGBOOK:
+- State "DONE"       from              [2024-03-04 Mon 20:18]
+:END:
+
+** DONE [[https://www.youtube.com/watch?v=ACybVzRvDhs&list=PL_WcXIXdDWWpuypAEKzZF2b5PijTluxRG][You should use Flakes right away!]]
+CLOSED: [2024-03-04 Mon 20:07]
+:LOGBOOK:
+- State "DONE"       from              [2024-03-04 Mon 20:07]
+:END:
+
+** DONE [[https://www.youtube.com/watch?v=IiyBeR-Guqw&list=PL_WcXIXdDWWpuypAEKzZF2b5PijTluxRG&index=3][How to Manage Your Dotfiles]]
+CLOSED: [2024-03-04 Mon 20:07]
+:LOGBOOK:
+- State "DONE"       from              [2024-03-04 Mon 20:07]
+:END:
+
+** [[https://www.youtube.com/watch?v=bV3hfalcSKs&list=PL_WcXIXdDWWpuypAEKzZF2b5PijTluxRG&index=4][Start adding Modularity to your config]]
+* See other nix tutorial link [[denote:20240301T124101][Install Nix package manager]]
+
+* See infor for Emacs [[https://github.com/nix-community/emacs-overlay][overlays]]
+
+* Search for [[https://mynixos.com/][NixOS packages]]

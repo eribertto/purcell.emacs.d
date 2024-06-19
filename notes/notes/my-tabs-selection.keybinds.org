@@ -1,0 +1,70 @@
+* How to create keybinding shortcuts to tab-next and tab-prev functions
+** tab-next is an alias for ‘tab-bar-switch-to-next-tab’ in ‘tab-bar.el’.
+
+It is bound to C-x t o.
+
+(tab-next &optional ARG)
+
+Switch to ARGth next tab.
+Interactively, ARG is the prefix numeric argument and defaults to 1.
+
+** tab-previous is an alias for ‘tab-bar-switch-to-prev-tab’ in
+‘tab-bar.el’.
+
+It is bound to C-x t O.
+
+(tab-previous &optional ARG)
+
+Switch to ARGth previous tab.
+Interactively, ARG is the prefix numeric argument and defaults to 1.
+
+* how about M-arrow-left, M-arrow-right, what keys are bound to these?
+
+M-<left> runs the command org-metaleft (found in org-mode-map), which
+is an interactive native-compiled Lisp function in ‘org.el’.
+
+It is bound to M-<left> and ESC <left>.
+
+(org-metaleft &optional ARG)
+
+Promote heading, list item at point or move table column left.
+
+Calls ‘org-do-promote’, ‘org-outdent-item’ or ‘org-table-move-column’,
+depending on context.  With no specific context, calls the Emacs
+default ‘backward-word’.  See the individual commands for more
+information.
+
+This function runs the hook ‘org-metaleft-hook’ as a first step,
+and returns at first non-nil value.
+
+* how about C-6, C-7?
+C-6 runs the command xah-next-emacs-buffer (found in global-map),
+which is an interactive Lisp closure in ‘xah-fly-keys.el’.
+
+It is bound to C-6.
+
+(xah-next-emacs-buffer)
+
+Switch to the next emacs buffer.
+“emacs buffer” here is buffer whose name starts with *.
+
+
+C-7 runs the command xah-previous-user-buffer (found in global-map),
+which is an interactive Lisp closure in ‘xah-fly-keys.el’.
+
+It is bound to C-S-<iso-lefttab>, C-S-<tab> and C-7.
+
+(xah-previous-user-buffer)
+
+Switch to the previous user buffer.
+“user buffer” is determined by ‘xah-user-buffer-p’.
+
+* How about M-6, M-7? Nope, also occupied
+
+* How about C-S-6, C-S-7? Yes both are undefined!
+
+;; xah lees guide http://xahlee.info/emacs/emacs/keyboard_shortcuts.html
+;; keybinding shortcuts syntax for emacs 29
+
+(keymap-global-set "C-^" #'tab-previous)
+(keymap-global-set "C-&" #'tab-next)
