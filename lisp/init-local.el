@@ -10,18 +10,22 @@
 (with-eval-after-load 'package
   (add-to-list 'package-archives '("melpa" . "https://melpa.org/packages/") t))
 
+
 ;; install packages using loop
 (dolist (package '(markdown-mode pdf-tools hyperbole deadgrep nix-mode w3m ef-themes dired-sidebar denote paredit rainbow-delimiters xah-fly-keys popper all-the-icons all-the-icons-dired all-the-icons-completion marginalia vertico orderless corfu magit org-superstar org-super-agenda sly eglot eat racket-mode geiser geiser-racket scribble-mode savehist vundo olivetti)
                  )
   (unless (package-installed-p package)
     (package-install package)))
 
+
 ;; add own personal lisp codes here
 ;; setup frame font including minibuffer and modeline
 ;; http://xahlee.info/emacs/emacs/emacs_list_and_set_font.html
 
 ;; http://xahlee.info/emacs/misc/xah-fly-keys.html
+
 (add-to-list 'load-path "~/.emacs.d/xah-fly-keys")
+
 (use-package xah-fly-keys
   :config
   (xah-fly-keys-set-layout "qwerty")
@@ -42,6 +46,7 @@
 (setq user-full-name "Eriberto Mendz")
 (setq user-mail-address "erimendz@gmail.com")
 
+
 ;; (fit-frame-to-buffer)
 ;; (auto-save-visited-mode)
 ;; NOTE: ‘auto-save-visited-interval’ value is now 45 from 5 2024-03-23
@@ -49,12 +54,15 @@
 (desktop-save-mode 1)
 
 ;;(tab-bar-mode 1)
+
 ;; Show the tab-bar as soon as tab-bar functions are invoked
 ;; (setopt tab-bar-show 1)
 (setq tab-bar-tab-hints 1)
 (setq tab-bar-close-button-show t)
 
-(setq fill-column 100) ;; ditch the default 70, we're 2024 now.
+
+(setq fill-column 100) ;; ditch the default 70, we're 2023 now.
+
 
 ;; begin customization of xah fly keys
 ;; add global toggle key command/insert mode
@@ -88,18 +96,6 @@
 ;; setup unicode as per this link
 ;; http://xahlee.info/emacs/emacs/emacs_set_font_symbol.html
 ;; symbola-font and JuliaMono are installed via apt-get
-(set-fontset-font t 'symbol
-                  (cond
-                   ((eq system-type 'windows-nt)
-                    (cond
-                     ((member "Segoe UI Symbol" (font-family-list)) "Segoe UI Symbol")))
-                   ((eq system-type 'darwin)
-                    (cond
-                     ((member "Apple Symbols" (font-family-list)) "Apple Symbols")))
-                   ((eq system-type 'gnu/linux)
-                    (cond
-                     ((member "Symbola" (font-family-list)) "Symbola")))))
-    ;; ((member "JuliaMono" (font-family-list)) "JuliaMono")))))
 
 ;; make aliases per this link https://www.youtube.com/watch?v=ufVldIrUOBg
 (defalias 'pcr 'package-refresh-contents)
@@ -289,45 +285,11 @@
 
 ;; doom-modeline
 ;; (use-package doom-modeline
-;;   :ensure t
-;;   :hook (after-init . doom-modeline-mode))
 
 ;; note org-superstar.el is placed under lisp dir
 ;; (require 'org-superstar)
 (use-package org-superstar)
 (add-hook 'org-mode-hook (lambda () (org-superstar-mode 1)))
-
-
-;; http://caiorss.github.io/Emacs-Elisp-Programming/Elisp_Programming.html#sec-1-4-1
-
-(require 'ielm)
-
-(defun ielm/clear-repl ()
-  "Clear current REPL buffer."
-  (interactive)
-  (let ((inhibit-read-only t))
-    (erase-buffer)
-    (ielm-send-input)))
-
-(define-key inferior-emacs-lisp-mode-map
-            (kbd "M-RET")
-            #'ielm-return)
-
-(define-key inferior-emacs-lisp-mode-map
-            (kbd "C-j")
-            #'ielm-return)
-
-(define-key inferior-emacs-lisp-mode-map
-            (kbd "RET")
-            #'electric-newline-and-maybe-indent)
-
-(define-key inferior-emacs-lisp-mode-map
-            (kbd "<up>")
-            #'previous-line)
-
-(define-key inferior-emacs-lisp-mode-map
-            (kbd "<down>")
-            #'next-line)
 
 (define-key inferior-emacs-lisp-mode-map
             (kbd "C-c C-q")
@@ -404,10 +366,6 @@
         "http://oremacs.com/atom.xml"))
 
 (setf url-queue-timeout 30)
-
-;;;;; Dired-sidebar Configuration
-;; https://github.com/danijelcamdzic/dotemacs/blob/main/init.el
-
 (use-package dired-sidebar
   :ensure t
   :config
@@ -500,21 +458,6 @@
 (use-package w3m
   :ensure t)
 
-;; rewrite this browser setting on 2024-03-15
-;; as per this link https://www.emacswiki.org/emacs/BrowseUrl
-;; Choosing among various browsers
-;; note w3m is installed using nix home-manager
-
-
-
-;; (setq
-;;  browse-url-browser-function 'eww-browse-url ; Use eww as the default browser
-;;  shr-use-fonts  nil                          ; No special fonts
-;;  shr-use-colors nil                          ; No colours
-;;  shr-indentation 2                           ; Left-side margin
-;;  shr-width 80                                ; Fold text to specified columns
-;;  eww-search-prefix "https://wiby.me/?q=")    ; Use another engine for searching
-
 (use-package w3m)
 (setq browse-url-browser-function 'browse-url-generic
       browse-url-generic-program "/usr/bin/firefox-beta")
@@ -528,10 +471,6 @@
 
 (setq browse-url-browser-function 'choose-browser)
 (global-set-key "\C-xm" 'browse-url-at-point)
-
-;; ;; (require 'egg-timer)
-;; (use-package egg-timer)
-;; (global-set-key (kbd "C-s-a") #'egg-timer-schedule)
 
 (add-hook 'after-init-hook #'(lambda ()
                                (interactive)
@@ -554,6 +493,26 @@
 ;; https://www.quicklisp.org/beta/
 ;; Make sure to follow the quicklisp install link above.
 
+;; show/hide gui functions
+(defun em/gui-hide-bars ()
+  "Disable scroll bar, menu bar, and tool bar."
+  (interactive)
+  (scroll-bar-mode -1)
+  (menu-bar-mode -1)
+  (tool-bar-mode -1))
+
+(defun em/gui-show-bars ()
+  "Enable scroll bar, menu bar, and tool bar."
+  (interactive)
+  (scroll-bar-mode 1)
+  (menu-bar-mode 1)
+  (tool-bar-mode -1))
+
+(use-package nix-mode
+  :mode "\\.nix\\'")
+
+(use-package org-web-tools
+  :ensure t)
 
 (provide 'init-local)
 ;;; init-local.el ends here

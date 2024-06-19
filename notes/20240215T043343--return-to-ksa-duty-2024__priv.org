@@ -4,7 +4,6 @@
 #+identifier: 20240215T043343
 
 * Begin this tracking journal of my return to duty.
-
 * It's been 6 days now since my return flight e.g. Feb. 9 night time or 7 pm.
-
 * Now i switch branch to feb.2024.dev
+

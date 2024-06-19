@@ -1,0 +1,209 @@
+  GNOME (wikipedia:en:GNOME) is available as a module (and also especially as a
+  module for services.xserver.desktopManager).
+
+  GNOME (/(ɡ)noʊm/) is a desktop environment that aims to be simple and easy to
+  use. It is designed by The GNOME Project and is composed entirely of free and
+  open-source software. GNOME is a part of the GNU Project.
+
+  Contents
+
+  * 1 Installation
+
+    * 1.1 Excluding some GNOME applications from the default install
+
+  * 2 Configuration
+
+    * 2.1 Managing extensions
+    * 2.2 Dark mode
+
+  * 3 Tips and tricks
+
+    * 3.1 Running GNOME programs outside of GNOME
+    * 3.2 Systray Icons
+    * 3.3 Running ancient applications
+    * 3.4 Dynamic triple buffering
+    * 3.5 Profiling (with sysprof)
+
+  * 4 Troubleshoots
+
+    * 4.1 Change user's profile picture
+    * 4.2 automatic login
+
+  * 5 Also see
+
+  Installation
+
+  To use GNOME, add this to your configuration.nix:
+
+services.xserver.enable = true;
+services.xserver.displayManager.gdm.enable = true;
+services.xserver.desktopManager.gnome.enable = true;
+
+  Excluding some GNOME applications from the default install
+
+  Not all applications that come pre-installed with the GNOME desktop
+  environment are desirable for everyone to have on their machines. There's a
+  way to edit configuration.nix to exclude these kinds of packages, for example
+  as follows:
+
+environment.gnome.excludePackages = (with pkgs; [
+  gnome-photos
+  gnome-tour
+]) ++ (with pkgs.gnome; [
+  cheese # webcam tool
+  gnome-music
+  gnome-terminal
+  gedit # text editor
+  epiphany # web browser
+  geary # email reader
+  evince # document viewer
+  gnome-characters
+  totem # video player
+  tali # poker game
+  iagno # go game
+  hitori # sudoku game
+  atomix # puzzle game
+]);
+
+  Configuration
+
+  Managing extensions
+
+  GNOME extensions are managed and configured by the program "Extension" that
+  comes with GNOME.
+
+  Extensions to be installed system-wide by adding them to NixOS configuration
+  in environment.systemPackages or per-user, or from the GNOME extensions
+  website using a Web browser extension.
+
+  Dark mode
+
+  Change default color theme for all GTK4 applications to dark using Home
+  Manager. Change myuser to the user you want to apply the configuration to.
+
+home-manager.users.myuser = {
+  dconf = {
+    enable = true;
+    settings."org/gnome/desktop/interface".color-scheme = "prefer-dark";
+  };
+};
+
+  Tips and tricks
+
+  Running GNOME programs outside of GNOME
+
+  While we are packaging GNOME platform-based applications to be largely
+  self-contained, they still depend, for one reason or another, on some global
+  configuration. The gnome.nix module sets all the necessary options for you but
+  if you are running customized set-up, you might need to replicate that
+  yourself.
+
+  For instance, if you see the following error:
+
+ dconf-WARNING **: failed to commit changes to dconf: GDBus.Error:org.freedesktop.DBus.Error.ServiceUnknown: The name ca.desrt.dconf was not provided by any .service files
+
+  you should enable dconf module:
+
+programs.dconf.enable = true;
+
+  Many applications rely heavily on having an icon theme available, GNOME’s
+  Adwaita is a good choice but most recent icon themes should work as well.
+
+environment.systemPackages = [ gnome.adwaita-icon-theme ];
+
+  Systray Icons
+
+  To get systray icons, install the related gnome shell extension
+
+environment.systemPackages = with pkgs; [ gnomeExtensions.appindicator ];
+
+  And ensure gnome-settings-daemon udev rules are enabled :
+
+services.udev.packages = with pkgs; [ gnome.gnome-settings-daemon ];
+
+  Running ancient applications
+
+  Long ago, in the GNOME 2 era, applications used GConf service to store
+  configuration. This has been deprecated for many years but some applications
+  were abandoned before they managed to upgrade to a newer dconf system. If you
+  are running such application and getting an error like:
+
+GLib.GException: Failed to contact configuration server; the most common cause is a missing or misconfigured D-Bus session bus daemon. See http://projects.gnome.org/gconf/ for information
+
+  you need to add gnome2.GConf to the list of dbus packages in your
+  configuration.nix:
+
+services.dbus.packages = with pkgs; [ gnome2.GConf ];
+
+  After applying the update one also has restart their desktop session to
+  refresh the user-specific dbus session.
+
+  Dynamic triple buffering
+
+  Big merge request against Mutter improves the performance of the window
+  manager by a lot (and is already used by Ubuntu). Not merged into nixpkgs due
+  to philosophy of nixpkgs, but users are free to add this overlay to get it
+  too.
+
+  Currently it's adapted for Gnome 45.
+
+nixpkgs.overlays = [
+  (final: prev: {
+    gnome = prev.gnome.overrideScope' (gnomeFinal: gnomePrev: {
+      mutter = gnomePrev.mutter.overrideAttrs ( old: {
+        src = pkgs.fetchgit {
+          url = "https://gitlab.gnome.org/vanvugt/mutter.git";
+          # GNOME 45: triple-buffering-v4-45
+          rev = "0b896518b2028d9c4d6ea44806d093fd33793689";
+          sha256 = "sha256-mzNy5GPlB2qkI2KEAErJQzO//uo8yO0kPQUwvGDwR4w=";
+        };
+      } );
+    });
+  })
+];
+
+  You might need to disable aliases to make it work:
+
+nixpkgs.config.allowAliases = false;
+
+  Profiling (with sysprof)
+
+  Install sysprof as a system package (it won't work properly if installed
+  against users). Then enable the associated service with
+
+services.sysprof.enable = true;
+
+  Troubleshoots
+
+  Change user's profile picture
+
+  Currently there is no way to change the user's profile picture using Gnome
+  Control Center (see this issue) and currently there is no plan to support it
+  officially in NixOS. However, you can modify it by copying the profile picture
+  that you want to the path /home/$USER/.face as a workaround, i.e.
+
+$ mv /path/to/image.jpg ~/.face
+
+  automatic login
+
+  If you have enabled auto login (with GNOME) with something like
+
+grep autoLogin /etc/nixos/configuration.nix
+
+services.xserver.displayManager.autoLogin.enable = true;
+services.xserver.displayManager.autoLogin.user = "account";
+
+  than add the following (as a workaround for a current (2023)[1] problem)
+
+# nano /etc/nixos/configuration.nix
+
+systemd.services."getty@tty1".enable = false;
+systemd.services."autovt@tty1".enable = false;
+
+  .
+
+  Also see
+
+  GNOME/Calendar
+
+  1 ↑ https://github.com/NixOS/nixpkgs/issues/103746#issuecomment-945091229
