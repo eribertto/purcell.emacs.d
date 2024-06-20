@@ -291,10 +291,10 @@
 (use-package org-superstar)
 (add-hook 'org-mode-hook (lambda () (org-superstar-mode 1)))
 
-(define-key inferior-emacs-lisp-mode-map
-            (kbd "C-c C-q")
-            #'ielm/clear-repl
-            )
+;; (define-key inferior-emacs-lisp-mode-map
+;;             (kbd "C-c C-q")
+;;             #'ielm/clear-repl
+;;             )
 
 ;; added in rhino linux machine for emacs 29.1
 (setq warning-minimum-level :error)
