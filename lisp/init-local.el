@@ -52,11 +52,8 @@
 ;; NOTE: ‘auto-save-visited-interval’ value is now 45 from 5 2024-03-23
 (menu-bar-mode t)
 (desktop-save-mode t)
-
-;;(tab-bar-mode 1)
-
+;; (desktop-load-locked-desktop t)
 ;; Show the tab-bar as soon as tab-bar functions are invoked
-;; (setopt tab-bar-show 1)
 (setq tab-bar-tab-hints t)
 (setq tab-bar-close-button-show t)
 
