@@ -1,0 +1,5 @@
+* Today I started Perl tutorial series in this E590 NixOS machine.
+** See the diary section for tutorial tracking log.
+** I'll just make it a simple tutorial tracking, no fancy formatting whatsoever.
+** Nix-ld seems to be working. Next I will check if cpan will work ootb.
+** My IDE is emacs.
