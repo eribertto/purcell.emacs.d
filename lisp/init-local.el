@@ -206,6 +206,7 @@
 
 (use-package denote
   :init
+
   ;; (add-hook 'find-file-hook #'denote-link-buttonize-buffer)
   (add-hook 'dired-mode-hook #'denote-dired-mode-in-directories)
   ;; Remember to check the doc strings of those variables.
