@@ -36,3 +36,4 @@ Begin section 2 (Done items)
       2.7
 Jul 17, 2024
 First entry after a long while. Note this coming from emacs version 31.0.50 build with makepkg in Arch Linux host of distrobox
+FYI: this emacs git version from Arch is only accessible inside Arch and cannot be detected by other apps of the host machine. Unless you do distrobox-export like in this link https://fedoramagazine.org/run-distrobox-on-fedora-linux/ then maybe it will work. This is a TODO task.
