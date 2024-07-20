@@ -12,11 +12,13 @@
 
 
 ;; install packages using loop
-(dolist (package '(markdown-mode pdf-tools hyperbole deadgrep nix-mode w3m ef-themes dired-sidebar denote paredit rainbow-delimiters xah-fly-keys popper all-the-icons all-the-icons-dired all-the-icons-completion marginalia vertico orderless corfu magit org-superstar org-super-agenda sly eglot eat racket-mode geiser geiser-racket scribble-mode savehist vundo olivetti)
+(dolist (package '(markdown-mode  hyperbole deadgrep nix-mode w3m ef-themes dired-sidebar denote paredit rainbow-delimiters xah-fly-keys popper all-the-icons all-the-icons-dired all-the-icons-completion marginalia vertico orderless corfu magit org-superstar org-super-agenda sly eglot eat  savehist vundo olivetti)
                  )
   (unless (package-installed-p package)
     (package-install package)))
 
+;; racket-mode geiser geiser-racket scribble-mode
+;; pdf-tools
 
 ;; add own personal lisp codes here
 ;; setup frame font including minibuffer and modeline
@@ -127,22 +129,22 @@
   :hook (marginalia-mode . all-the-icons-completion-marginalia-setup)
   :init (all-the-icons-completion-mode))
 
-(use-package pdf-tools
-  :demand t
-  :hook (TeX-after-compilation-finished . TeX-revert-document-buffer)
-  :mode ("\\.pdf\\'" . pdf-view-mode)
-  :config
-  (require 'pdf-tools)
-  (require 'pdf-view)
-  (require 'pdf-misc)
-  (require 'pdf-occur)
-  (require 'pdf-util)
-  (require 'pdf-annot)
-  (require 'pdf-info)
-  (require 'pdf-isearch)
-  (require 'pdf-history)
-  (require 'pdf-links)
-  (pdf-tools-install :noquery))
+;; (use-package pdf-tools
+;;   :demand t
+;;   :hook (TeX-after-compilation-finished . TeX-revert-document-buffer)
+;;   :mode ("\\.pdf\\'" . pdf-view-mode)
+;;   :config
+;;   (require 'pdf-tools)
+;;   (require 'pdf-view)
+;;   (require 'pdf-misc)
+;;   (require 'pdf-occur)
+;;   (require 'pdf-util)
+;;   (require 'pdf-annot)
+;;   (require 'pdf-info)
+;;   (require 'pdf-isearch)
+;;   (require 'pdf-history)
+;;   (require 'pdf-links)
+;;   (pdf-tools-install :noquery))
 
 ;; (pdf-tools-install :no-query))
 
@@ -458,7 +460,7 @@
 
 (use-package w3m)
 (setq browse-url-browser-function 'browse-url-generic
-      browse-url-generic-program "/usr/bin/firefox-beta")
+      browse-url-generic-program "/usr/bin/firefox")
 
 (defun choose-browser (url &rest args)
   "Ask user what browser to open the URL using ARGS."
