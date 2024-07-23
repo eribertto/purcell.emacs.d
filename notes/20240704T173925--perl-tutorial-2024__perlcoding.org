@@ -3,3 +3,10 @@
 ** I'll just make it a simple tutorial tracking, no fancy formatting whatsoever.
 ** Nix-ld seems to be working. Next I will check if cpan will work ootb.
 ** My IDE is emacs.
+** 2024-07-18
+*** Perl language server is difficult to setup here in NixOS. I resorted installing distrobox and disabled all perl-related stuffs in the host machine.
+*** I will try to setup Perl coding tutorial in distrobox Arch linux environment.
+*** Or maybe in Fedora 40 distrobox image in a dedicated terminal utilizing the power of dnf groupinstall command.
+**** See this link https://github.com/89luca89/distrobox#containers-distros.
+**** Update: Fedora latest image is installed but when entering the guest OS it says perl not found. Indeed my host perl is installed in the root environment. Hmmmm interesting scenario.
+**** Install of perl 5.36.3 failed Installation process failed. To spot any issues, check the log file.
