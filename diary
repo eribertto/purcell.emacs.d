@@ -36,3 +36,19 @@ Begin section 2 (Done items)
       2.7
 Jul 17, 2024
 First entry after a long while. Note this coming from emacs version 31.0.50 build with makepkg in Arch Linux host of distrobox
+Jul 29, 2024
+Begin today my diary entries in emacs org-agenda>insert>diary. This is TP460P machine.
+Today I plan to try out Aurora immutable Fedora-based OS. I already made a list of device
+partitions backed-up in ~/Github-repos/mytodos/dotfiles2024/eos.TP460P.lsblk.blkid.list.
+Wow :-) I'm amazed that inside diary mode there is tab completion. Amazing emacs stuff.
+
+* Today i woke up past 3AM not the very best of sleep but still thank you Lord for giving me
+another lease of life. Thank you for guiding me in my sleep and giving me energy today to do
+my bw kb exercises and yoga stretching. Thank you for giving me the strength to do such activities.
+* Today I will start my day so I pray you guide me as I complete my day. I pray you guide and
+protect my family and friends back home. Give them guidance and protection as they continue with
+their lives as well.
+Jul 30, 2024
+TIL to add diary entry you need to call org-agenda command first and select the date and hit i. This will allow you to add your todays diary entry.
+Today i got up after 3 AM and did my early morning walk and yoga stretching. Thank you Lord for guiding me in my sleep regardless if its short. A sleep is a sleep so thank you. Today i subscribed to Yazio fitness plan for one year. Thank you for giving me the capacity to pay the required fee and I pray you guide me to meet my fitness goals this year.
+Today i downloaded the EndeavourOS iso and sha512sum is good. TODO burn this in Ventoy for future testing.
