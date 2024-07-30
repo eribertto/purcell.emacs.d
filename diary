@@ -36,6 +36,9 @@ Begin section 2 (Done items)
       2.7
 Jul 17, 2024
 First entry after a long while. Note this coming from emacs version 31.0.50 build with makepkg in Arch Linux host of distrobox
+FYI: this emacs git version from Arch is only accessible inside Arch and cannot be detected by other apps of the host machine. Unless you do distrobox-export like in this link https://fedoramagazine.org/run-distrobox-on-fedora-linux/ then maybe it will work. This is a TODO task.
+Jul 18, 2024
+Another day today. Thank you Lord for giving me a good sleep last night. I appreciate the energy you give me in waking up early morning and finishing my daily walk/run/yoga exercises. Thank you always. I look forward for your blessings and guidance as I continue with my day today.
 Jul 29, 2024
 Begin today my diary entries in emacs org-agenda>insert>diary. This is TP460P machine.
 Today I plan to try out Aurora immutable Fedora-based OS. I already made a list of device
