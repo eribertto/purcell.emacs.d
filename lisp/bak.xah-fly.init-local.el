@@ -26,12 +26,12 @@
 
 ;; http://xahlee.info/emacs/misc/xah-fly-keys.html
 
-;; (add-to-list 'load-path "~/.emacs.d/xah-fly-keys")
+(add-to-list 'load-path "~/.emacs.d/xah-fly-keys")
 
-;; (use-package xah-fly-keys
-;;   :config
-;;   (xah-fly-keys-set-layout "qwerty")
-;;   (xah-fly-keys 1))
+(use-package xah-fly-keys
+  :config
+  (xah-fly-keys-set-layout "qwerty")
+  (xah-fly-keys 1))
 
 ;; set utf8
 (set-charset-priority 'unicode) ;; utf8 in every nook and cranny
@@ -67,7 +67,7 @@
 ;; add global toggle key command/insert mode
 ;; note F4 is taken so use F5 instead
 
-;; (global-set-key (kbd "<f5>") 'xah-fly-mode-toggle) ; this works
+(global-set-key (kbd "<f5>") 'xah-fly-mode-toggle) ; this works
 
 ;; add a key to insert mode to activate command mode sort of jk escape in vim
 ;; note the term 'a key' meaning only one key char
@@ -80,17 +80,17 @@
 
 ;; modeline colors and icons
 ;; EndeavourOS = " "
-;; (setq xah-fly-command-mode-indicator " ")
-;; (setq xah-fly-insert-mode-indicator "✏" )
-;; (defun my-modeline-color-on ()
-;;   "Make mode-line color blue."
-;;   (set-face-background 'mode-line "blue"))
-;; (defun my-modeline-color-off ()
-;;   "Make mode-line color firebrick."
-;;   (set-face-background 'mode-line "firebrick"))
+(setq xah-fly-command-mode-indicator " ")
+(setq xah-fly-insert-mode-indicator "✏" )
+(defun my-modeline-color-on ()
+  "Make mode-line color blue."
+  (set-face-background 'mode-line "blue"))
+(defun my-modeline-color-off ()
+  "Make mode-line color firebrick."
+  (set-face-background 'mode-line "firebrick"))
 
-;; (add-hook 'xah-fly-command-mode-activate-hook 'my-modeline-color-on)
-;; (add-hook 'xah-fly-insert-mode-activate-hook  'my-modeline-color-off)
+(add-hook 'xah-fly-command-mode-activate-hook 'my-modeline-color-on)
+(add-hook 'xah-fly-insert-mode-activate-hook  'my-modeline-color-off)
 
 ;; setup unicode as per this link
 ;; http://xahlee.info/emacs/emacs/emacs_set_font_symbol.html
@@ -478,17 +478,17 @@
                                (or (server-running-p)
                                    (server-start))))
 
-;; (add-to-list 'exec-path "~/.nix-profile/bin")
-;; (setq inferior-lisp-program "sbcl")
+(add-to-list 'exec-path "~/.nix-profile/bin")
+(setq inferior-lisp-program "sbcl")
 
 ;; install sly https://github.com/joaotavora/sly
 ;; https://joaotavora.github.io/sly/#A-SLY-tour-for-SLIME-users
 
-;; (use-package sly
-;;   :ensure t)
+(use-package sly
+  :ensure t)
 
-;; (eval-after-load 'sly
-;;   `(define-key sly-prefix-map (kbd "M-h") 'sly-documentation-lookup))
+(eval-after-load 'sly
+  `(define-key sly-prefix-map (kbd "M-h") 'sly-documentation-lookup))
 
 ;; https://www.quicklisp.org/beta/
 ;; Make sure to follow the quicklisp install link above.
