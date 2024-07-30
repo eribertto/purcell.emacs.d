@@ -1,12 +1,14 @@
 (("private" . [6 0 7 0]))
 --==-- private
-[Jul 17, 2024] Test to do distrobox-export of this emacs-git version from the link listed in the diary dated today.
-[Jul 17, 2024] Plan to make one video message to share to MHS batch 80 40th year reunion.
-[Jul 17, 2024] Plan to enable riyadbank new mada card received yesterday.
 [Jun 12, 2024] FYI wl-clipboard is now working from gitui to clipboard.
 [Jun 12, 2024] (STICKY) Done capslock swapped with control key using gnome-tweaks. Just toggle off once ergo keyboard is attach.
 [Jun 12, 2024] Complete the docs needed for net metering scheme application to Ileco for our solar panel system.
-
+[Jul 17, 2024] Test to do distrobox-export of this emacs-git version from the link listed in the diary dated today.
+[Jul 17, 2024] Plan to make one video message to share to MHS batch 80 40th year reunion.
+[Jul 17, 2024] Plan to enable riyadbank new mada card received yesterday.
+[Jul 30, 2024] Fed40: Plan to change modal editing mode from xah lee to evil to regain vim muscle memories
+[Jul 30, 2024] Create hard links of emacs todo and diary file and vc to ~/Github-repos/mytodos/dotfiles2024 folder
+[Jul 30, 2024] Fed40 box: Plan to resume Perl tutorial using Vim as IDE
 ==--== DONE 
 [DONE Jul 17, 2024] [Jun 12, 2024] Plan to fix the disappearing home-manager in Dell precision machine in office.
 [DONE Jul 17, 2024] [Jun 12, 2024] Get ready to bring clothes and things to Khobar this weekend.
