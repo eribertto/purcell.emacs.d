@@ -6,7 +6,7 @@
 ;;    https://melpa.org/#/getting-started
 ;; You can simply uncomment the following if you'd like to get started with
 ;; MELPA packages quickly:
-;;
+
 (with-eval-after-load 'package
   (add-to-list 'package-archives '("melpa" . "https://melpa.org/packages/") t))
 
@@ -17,21 +17,6 @@
   (unless (package-installed-p package)
     (package-install package)))
 
-;; racket-mode geiser geiser-racket scribble-mode
-;; pdf-tools
-
-;; add own personal lisp codes here
-;; setup frame font including minibuffer and modeline
-;; http://xahlee.info/emacs/emacs/emacs_list_and_set_font.html
-
-;; http://xahlee.info/emacs/misc/xah-fly-keys.html
-
-;; (add-to-list 'load-path "~/.emacs.d/xah-fly-keys")
-
-;; (use-package xah-fly-keys
-;;   :config
-;;   (xah-fly-keys-set-layout "qwerty")
-;;   (xah-fly-keys 1))
 
 ;; set utf8
 (set-charset-priority 'unicode) ;; utf8 in every nook and cranny
@@ -49,9 +34,6 @@
 (setq user-mail-address "erimendz@gmail.com")
 
 
-;; (fit-frame-to-buffer)
-;; (auto-save-visited-mode)
-;; NOTE: ‘auto-save-visited-interval’ value is now 45 from 5 2024-03-23
 (menu-bar-mode t)
 (desktop-save-mode t)
 ;; (desktop-load-locked-desktop t)
@@ -61,40 +43,6 @@
 
 
 (setq fill-column 100) ;; ditch the default 70, we're 2023 now.
-
-
-;; begin customization of xah fly keys
-;; add global toggle key command/insert mode
-;; note F4 is taken so use F5 instead
-
-;; (global-set-key (kbd "<f5>") 'xah-fly-mode-toggle) ; this works
-
-;; add a key to insert mode to activate command mode sort of jk escape in vim
-;; note the term 'a key' meaning only one key char
-;; use target key \ aka forward slash but
-;; note to use this literal char (in insert mode) hit C-q first
-
-;; this doesnt work in insert mode
-;; (define-key xah-fly-insert-map (kbd "\\") 'xah-fly-command-mode-activate)
-;; insert by doing C-q first then the character \  (in insert mode)
-
-;; modeline colors and icons
-;; EndeavourOS = " "
-;; (setq xah-fly-command-mode-indicator " ")
-;; (setq xah-fly-insert-mode-indicator "✏" )
-;; (defun my-modeline-color-on ()
-;;   "Make mode-line color blue."
-;;   (set-face-background 'mode-line "blue"))
-;; (defun my-modeline-color-off ()
-;;   "Make mode-line color firebrick."
-;;   (set-face-background 'mode-line "firebrick"))
-
-;; (add-hook 'xah-fly-command-mode-activate-hook 'my-modeline-color-on)
-;; (add-hook 'xah-fly-insert-mode-activate-hook  'my-modeline-color-off)
-
-;; setup unicode as per this link
-;; http://xahlee.info/emacs/emacs/emacs_set_font_symbol.html
-;; symbola-font and JuliaMono are installed via apt-get
 
 ;; make aliases per this link https://www.youtube.com/watch?v=ufVldIrUOBg
 (defalias 'pcr 'package-refresh-contents)
@@ -109,10 +57,6 @@
 
 
 
-;; https://www.emacswiki.org/emacs/Scrolling
-;; page scroll by 30 lines increment
-;; (global-set-key "\M-n"  (lambda () (interactive) (scroll-up   30)) )
-;; (global-set-key "\M-h"  (lambda () (interactive) (scroll-down 30)) )
 
 ;; prettify dired with icons
 (use-package all-the-icons)
@@ -129,24 +73,6 @@
   :hook (marginalia-mode . all-the-icons-completion-marginalia-setup)
   :init (all-the-icons-completion-mode))
 
-;; (use-package pdf-tools
-;;   :demand t
-;;   :hook (TeX-after-compilation-finished . TeX-revert-document-buffer)
-;;   :mode ("\\.pdf\\'" . pdf-view-mode)
-;;   :config
-;;   (require 'pdf-tools)
-;;   (require 'pdf-view)
-;;   (require 'pdf-misc)
-;;   (require 'pdf-occur)
-;;   (require 'pdf-util)
-;;   (require 'pdf-annot)
-;;   (require 'pdf-info)
-;;   (require 'pdf-isearch)
-;;   (require 'pdf-history)
-;;   (require 'pdf-links)
-;;   (pdf-tools-install :noquery))
-
-;; (pdf-tools-install :no-query))
 
 ;; popper entries
 ;; https://mirrors.zju.edu.cn/elpa/gnu/popper.html
@@ -338,21 +264,6 @@
 ;; Load the theme of choice:
 (load-theme 'ef-cherie :no-confirm)
 
-;; OR use this to load the theme which also calls `ef-themes-post-load-hook':
-;; (ef-themes-select 'ef-summer)
-
-;; The themes we provide are recorded in the `ef-themes-dark-themes',
-;; `ef-themes-light-themes'.
-;; We also provide these commands, but do not assign them to any key:
-;;
-;; - `ef-themes-toggle'
-;; - `ef-themes-select'
-;; - `ef-themes-select-dark'
-;; - `ef-themes-select-light'
-;; - `ef-themes-load-random'
-;; - `ef-themes-preview-colors'
-;; - `ef-themes-preview-colors-current'
-
 ;; for deadgrep
 (global-set-key (kbd "<f6>") nil) ;; unset f6 to give way to deadgrep
 (global-set-key (kbd "<f6>") #'deadgrep)
@@ -388,13 +299,6 @@
 (use-package nix-mode
   :mode "\\.nix\\'")
 
-;; (global-org-modern-mode-enable-in-buffers)
-;; (org-roam-mode)
-
-;; (defun org-agenda-open-hook ()
-;;   ;; Turn on Olivetti mode."
-;;   olivetti-mode)
-;; (add-hook 'org-agenda-mode-hook 'org-agenda-open-hook)
 
 (use-package org-super-agenda)
 (org-super-agenda-mode)
@@ -478,20 +382,6 @@
                                (or (server-running-p)
                                    (server-start))))
 
-;; (add-to-list 'exec-path "~/.nix-profile/bin")
-;; (setq inferior-lisp-program "sbcl")
-
-;; install sly https://github.com/joaotavora/sly
-;; https://joaotavora.github.io/sly/#A-SLY-tour-for-SLIME-users
-
-;; (use-package sly
-;;   :ensure t)
-
-;; (eval-after-load 'sly
-;;   `(define-key sly-prefix-map (kbd "M-h") 'sly-documentation-lookup))
-
-;; https://www.quicklisp.org/beta/
-;; Make sure to follow the quicklisp install link above.
 
 ;; show/hide gui functions
 (defun em/gui-hide-bars ()
