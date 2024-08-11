@@ -17,6 +17,8 @@
   (unless (package-installed-p package)
     (package-install package)))
 
+;; cperl mode https://www.emacswiki.org/emacs/CPerlMode#h5o-1
+(add-to-list 'major-mode-remap-alist '(perl-mode . cperl-mode))
 
 ;; set utf8
 (set-charset-priority 'unicode) ;; utf8 in every nook and cranny
