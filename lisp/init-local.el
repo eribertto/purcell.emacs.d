@@ -4,12 +4,27 @@
 
 ;;    copied from bedrock-emacs
 ;;    https://melpa.org/#/getting-started
-;; You can simply uncomment the following if you'd like to get started with
-;; MELPA packages quickly:
 
 (with-eval-after-load 'package
   (add-to-list 'package-archives '("melpa" . "https://melpa.org/packages/") t))
 
+;; occurkey https://www.emacswiki.org/emacs/OccurKey
+(defun my-occur ()
+  "Switch to *Occur* buffer, or run `occur'."
+  (interactive)
+  (if (get-buffer "*Occur*")
+      (switch-to-buffer-other-window "*Occur*")
+    (call-interactively 'occur)))
+
+(global-set-key (kbd "C-c o") 'my-occur)
+
+;; kill occur buffer
+(global-set-key (kbd "C-c C-M-o")
+                '(lambda ()
+                   "Kill the *Occur* buffer"
+                   (interactive)
+                   (kill-buffer "*Occur*")
+                   (delete-other-windows)))
 
 ;; install packages using loop
 (dolist (package '(markdown-mode  hyperbole deadgrep nix-mode w3m ef-themes dired-sidebar denote paredit rainbow-delimiters popper all-the-icons all-the-icons-dired all-the-icons-completion marginalia vertico orderless corfu magit org-superstar org-super-agenda sly eglot eat  savehist vundo olivetti)

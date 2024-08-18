@@ -59,3 +59,8 @@ Jul 30, 2024
 Entered from Fed40 machine: Success compiling Vim from SRC in this Fed40 machine Dell Precision. Now I have a working vim with Perl and Python enabled features.
 Jul 30, 2024
 Time 3:30pm Reverted to original Purcell keys configuration by removing all instances of xah fly keys modal mode.
+Aug 18, 2024
+Hello eDiary it's been a long while since my last visit. Thank you for having me here. Thank you for the gift of life today dear God. Thank you for the gift of family and friends. Thank you for the good health you have given us til now and hoping for the same in the future. FYI below:
+
+;; fyi M-x global-set-key > F8 > restart emacs and see if this is permanent or one time
+;; update: the change is immediate aka global
