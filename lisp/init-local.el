@@ -76,10 +76,6 @@
 (defalias 'jof 'other-frame)
 (defalias 'jow 'other-window)
 
-
-
-
-
 ;; prettify dired with icons
 (use-package all-the-icons)
 (use-package all-the-icons-dired
@@ -143,8 +139,6 @@
 ;; Modes to highlight the current line with
 (let ((hl-line-hooks '(text-mode-hook prog-mode-hook)))
   (mapc (lambda (hook) (add-hook hook 'hl-line-mode)) hl-line-hooks))
-
-
 
 ;; Enable horizontal scrolling
 (setopt mouse-wheel-tilt-scroll t)
