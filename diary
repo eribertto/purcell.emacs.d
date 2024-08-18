@@ -60,7 +60,24 @@ Entered from Fed40 machine: Success compiling Vim from SRC in this Fed40 machine
 Jul 30, 2024
 Time 3:30pm Reverted to original Purcell keys configuration by removing all instances of xah fly keys modal mode.
 Aug 18, 2024
-Hello eDiary it's been a long while since my last visit. Thank you for having me here. Thank you for the gift of life today dear God. Thank you for the gift of family and friends. Thank you for the good health you have given us til now and hoping for the same in the future. FYI below:
+Hello eDiary it's been a long while since my last visit. Thank you for having me here. Thank you for the gift of life today dear God. Thank you for the gift of family and friends. Thank you for the good health you have given us til now and hoping for the same in the future.
+FYI :
+=====
+yi M-x global-set-key > F8 > restart emacs and see if this is permanent or one time
+update: the change is immediate aka global
+========
 
-;; fyi M-x global-set-key > F8 > restart emacs and see if this is permanent or one time
-;; update: the change is immediate aka global
+fyi: cperl-hairy is set to on or non-nil
+cperl-hairy is a variable defined in ‘cperl-mode.el’.
+Its value is t
+Original value was nil
+========
+<f9> runs the command save-buffer (found in global-map), which is an
+interactive native-compiled Lisp function in ‘files.el’.
+It is bound to <f9> and C-x C-s.
+It can also be invoked from the menu: File → Save
+(save-buffer &optional ARG)
+========
+to return to your origin point/mark after a search, do C-u C-<Space> or C-x C-x
+========
+use avy-kill-region (for now) to select visible region  on the screen to kill the selection
