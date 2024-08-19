@@ -32,13 +32,18 @@
                    (delete-other-windows)))
 
 ;; install packages using loop
-(dolist (package '(markdown-mode  hyperbole deadgrep nix-mode w3m ef-themes dired-sidebar denote paredit rainbow-delimiters popper all-the-icons all-the-icons-dired all-the-icons-completion marginalia vertico orderless corfu magit org-superstar org-super-agenda sly eglot eat  savehist vundo olivetti)
+(dolist (package '(markdown-mode  hyperbole deadgrep nix-mode w3m ef-themes dired-sidebar denote paredit rainbow-delimiters popper all-the-icons all-the-icons-dired all-the-icons-completion marginalia vertico direnv orderless corfu magit org-superstar org-super-agenda sly eglot eat  savehist vundo olivetti)
                  )
   (unless (package-installed-p package)
     (package-install package)))
 
 ;; cperl mode https://www.emacswiki.org/emacs/CPerlMode#h5o-1
 (add-to-list 'major-mode-remap-alist '(perl-mode . cperl-mode))
+
+(use-package direnv
+  :config
+  (direnv-mode))
+
 
 ;; set utf8
 (set-charset-priority 'unicode) ;; utf8 in every nook and cranny
