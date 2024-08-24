@@ -162,7 +162,7 @@
   (add-hook 'dired-mode-hook #'denote-dired-mode-in-directories)
   ;; Remember to check the doc strings of those variables.
   (setq denote-directory (expand-file-name "~/.emacs.d/notes"))
-  (setq denote-known-keywords '("emacs" "philosophy" "linux" "todo" "coding" "priv" "cli" "technology" "economy" "bsd" "climate" "news"))
+  (setq denote-known-keywords '("emacs" "linux" "todo" "coding" "priv" "cli" "technology" "climate" "news"))
   (setq denote-infer-keywords t)
   (setq denote-sort-keywords t)
   (setq denote-file-type nil) ; Org is the default, set others here
@@ -240,11 +240,6 @@
 (use-package org-superstar)
 (add-hook 'org-mode-hook (lambda () (org-superstar-mode 1)))
 
-;; (define-key inferior-emacs-lisp-mode-map
-;;             (kbd "C-c C-q")
-;;             #'ielm/clear-repl
-;;             )
-
 ;; added in rhino linux machine for emacs 29.1
 (setq warning-minimum-level :error)
 
@@ -258,8 +253,9 @@
 ;; add ef-themes
 ;; Make customisations that affect Emacs faces BEFORE loading a theme
 ;; (any change needs a theme re-load to take effect).
-;; (require 'ef-themes)
+
 (use-package ef-themes)
+
 ;; If you like two specific themes and want to switch between them, you
 ;; can specify them in `ef-themes-to-toggle' and then invoke the command
 ;; `ef-themes-toggle'.  All the themes are included in the variable
