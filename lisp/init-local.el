@@ -2,7 +2,7 @@
 ;;; Commentary:
 ;;; Code:
 
-
+(global-set-key (kbd "<f8>") #'execute-extended-command PREFIXARG)
 
 ;; https://www.emacswiki.org/emacs/VisualLineMode
 (add-hook 'text-mode-hook 'turn-on-visual-line-mode)
@@ -80,10 +80,6 @@
 (defalias 'fsa 'write-file)
 (defalias 'jof 'other-frame)
 (defalias 'jow 'other-window)
-
-
-
-
 
 ;; prettify dired with icons
 (use-package all-the-icons)
@@ -289,7 +285,10 @@
 (mapc #'disable-theme custom-enabled-themes)
 
 ;; Load the theme of choice:
-(load-theme 'ef-cherie :no-confirm)
+;;(load-theme 'ef-cherie :no-confirm)
+(load-theme 'catppuccin :no-confirm)
+(setq catppuccin-flavor 'macchiato) ;; or 'latte, 'macchiato, or 'mocha or 'frappe
+(catppuccin-reload)
 
 ;; for deadgrep
 (global-set-key (kbd "<f6>") nil) ;; unset f6 to give way to deadgrep
