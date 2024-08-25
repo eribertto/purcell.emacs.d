@@ -2,7 +2,7 @@
 ;;; Commentary:
 ;;; Code:
 
-(global-set-key (kbd "<f8>") #'execute-extended-command PREFIXARG)
+(global-set-key (kbd "<f8>") #'execute-extended-command)
 
 ;; https://www.emacswiki.org/emacs/VisualLineMode
 (add-hook 'text-mode-hook 'turn-on-visual-line-mode)
